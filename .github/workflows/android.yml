@@ -1,0 +1,52 @@
+name: Android native app
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'apps/resume-android/**'
+      - 'web/data/profile.json'
+      - '.github/workflows/android.yml'
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.14.3'
+      - uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: karen-android-demo-signing-v1
+      - run: gradle -p apps/resume-android assemblePortfolio --no-daemon
+      - run: |
+          mkdir -p android-artifacts
+          cp apps/resume-android/app/build/outputs/apk/portfolio/app-portfolio.apk android-artifacts/karenangelis-curriculo.apk
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose android-artifacts/karenangelis-curriculo.apk
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging android-artifacts/karenangelis-curriculo.apk > android-artifacts/apk-info.txt
+          sha256sum android-artifacts/karenangelis-curriculo.apk > android-artifacts/SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android-native-apk
+          path: android-artifacts/
+      - name: Enable emulator acceleration
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          profile: pixel_6
+          disable-animations: true
+          script: python3 scripts/check-android.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: android-native-checks
+          path: android-artifacts/
