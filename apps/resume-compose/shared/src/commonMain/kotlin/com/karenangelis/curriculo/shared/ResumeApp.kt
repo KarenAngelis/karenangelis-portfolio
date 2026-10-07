@@ -59,6 +59,7 @@ fun ResumeApp() {
             } },
             bottomBar={ Surface(color=Panel) {
                 Column(Modifier.navigationBarsPadding()) {
+                    Text(status,fontSize=10.sp,color=Muted,modifier=Modifier.padding(horizontal=18.dp,vertical=4.dp))
                     Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(horizontal=8.dp,vertical=4.dp)) {
                         labels.forEachIndexed { index,label ->
                             TextButton(onClick={selected=index},colors=ButtonDefaults.textButtonColors(contentColor=if(selected==index) Lime else Muted)) { Text(label,fontSize=11.sp) }
@@ -114,7 +115,6 @@ fun ResumeApp() {
                             }
                         }
                     }
-                    item { Text(status,fontSize=11.sp,color=Muted) }
                 }
             }
         }
