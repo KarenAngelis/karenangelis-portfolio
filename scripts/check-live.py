@@ -5,7 +5,7 @@ import zipfile
 from urllib.request import urlopen
 
 base = "https://karenangelis.com"
-for path, marker in [("/", "Ideias ganham"), ("/demos/trends/", "Buscar notícias"), ("/demos/kotlin/", "kotlin-app")]:
+for path, marker in [("/", "Ideias ganham"), ("/demos/trends/", "Buscar notícias"), ("/app/?version=kotlin", "app-root")]:
     with urlopen(base + path, timeout=20) as response:
         text = response.read().decode()
         assert response.status == 200 and marker in text, path

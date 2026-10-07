@@ -4,12 +4,12 @@ Portfólio para `karenangelis.com`, com habilidades demonstradas por experiênci
 
 Publicado na VPS Hostinger em 7 de outubro de 2026: https://karenangelis.com.
 
-- Currículo em app web Kotlin/JS + API Go: https://karenangelis.com/demos/kotlin/
+- Currículo em app web Kotlin/JS + API Go: https://karenangelis.com/app/?version=kotlin
 - Alternativa de currículo web: https://karenangelis.com/demos/curriculo/
-- Google Trends + FastAPI: https://karenangelis.com/demos/trends/
+- Busca de notícias + FastAPI: https://karenangelis.com/demos/trends/
 - Documentação interativa da API: https://karenangelis.com/docs
 
-O currículo aparece uma única vez na página inicial, com um print real do app web. Em qualquer dispositivo, o card abre a versão interativa Kotlin/JS em `/demos/kotlin/`, conectada à API Go, sem instalação ou download. Os links de APK e abertura nativa foram retirados do fluxo público. No PC, a interface tem largura de celular (390px), com navegação inferior fixa. No celular, ocupa toda a tela e mantém a rolagem dentro do app. A versão web permite buscar habilidades e navegar pelas seções; ela não executa o APK em um emulador. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
+O currículo aparece uma única vez na página inicial, com um print real do app web. Em qualquer dispositivo, o card abre o app Compose Multiplatform compilado para WebAssembly em `/app/?version=kotlin`, conectada à API Go, sem instalação ou download. Os links de APK e abertura nativa foram retirados do fluxo público. No computador, o app fica centralizado com largura máxima de 420px, sem moldura de telefone, iframe ou apresentação externa. No celular, usa toda a largura e altura disponíveis. A interface é desenhada pelo Compose, com navegação interna e a mesma implementação usada no Android. Android e web executam as mesmas telas, navegação, busca e cliente da API, definidos em `apps/resume-compose/shared/src/commonMain`. A versão web é compilada do app para WebAssembly; ela não é uma página HTML recriando suas telas nem um emulador de APK. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
 
 ## Estrutura
 
@@ -42,21 +42,21 @@ py -m venv .venv
 .venv/Scripts/python.exe -m uvicorn main:app --app-dir apps/trends-api --host 127.0.0.1 --port 8000
 ```
 
-API: http://127.0.0.1:8000/api/trends?geo=BR&limit=10. Documentação: http://127.0.0.1:8000/docs.
+API: http://127.0.0.1:8000/api/news?q=Python&geo=BR&limit=10. Documentação: http://127.0.0.1:8000/docs. A busca exige um assunto e retorna apenas notícias.
 
 ```powershell
 cd apps/resume-api
 go run .
 ```
 
-A demonstração em `/demos/curriculo/` usa JavaScript e dados locais, com botão para consultar Go. A interface Kotlin real fica em `/demos/kotlin/` e depende do bundle compilado e da API Go, sem dados fictícios de fallback:
+A demonstração histórica em `/demos/curriculo/` usa JavaScript e dados locais. A implementação Kotlin/JS anterior foi preservada em `apps/resume-kotlin`; ela não é o app compartilhado atual. O currículo atual usa `ResumeApp()` tanto no Android quanto na web. O endereço antigo `/demos/kotlin/` redireciona para `/app/?version=kotlin`.
 
 ```powershell
 gradle -p apps/resume-kotlin jsBrowserDistribution --no-daemon
 Copy-Item apps/resume-kotlin/build/dist/js/productionExecutable/* web/demos/kotlin/ -Recurse -Force
 ```
 
-A versão Android solicitada pela Karen está em `apps/resume-android`; consulte seu README para build, assinatura de demonstração e distribuição. A versão web é uma alternativa e não substitui o app nativo.
+A versão Android está em `apps/resume-android`; consulte seu README para build e assinatura de demonstração. Ela usa as mesmas telas e estado do módulo compartilhado que a versão WebAssembly, acessível sem instalação.
 
 ## Verificar
 
@@ -89,3 +89,13 @@ O Caddy serve o frontend, encaminha as APIs e emite HTTPS automaticamente após 
 Links selecionados pela Karen: https://luniay.com.br/ e https://clycka.com/.
 Resumo inicial adaptado do perfil público https://github.com/KarenAngelis/KarenAngelis.
 Os blocos visuais de Luniay/Clycka são composições gráficas do portfólio, não capturas das telas dos produtos.
+
+## Aplicativo compartilhado Android + Web
+
+`apps/resume-compose/shared` contém `ResumeApp()` e a camada de dados compartilhada. A Activity Android e o ponto de entrada WebAssembly chamam essa mesma função. O workflow `resume-multiplatform.yml` compila os dois alvos juntos.
+
+```powershell
+gradle -p apps/resume-android :shared:wasmJsBrowserDistribution :app:assemblePortfolio --no-daemon
+```
+
+O pacote web compilado fica em `apps/resume-compose/shared/build/dist/wasmJs/productionExecutable`. Publique os arquivos em `web/app/`. O currículo incluído no build permite usar a interface quando a API está indisponível; o botão Atualizar consulta a API Go.

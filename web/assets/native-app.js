@@ -1,5 +1,5 @@
 export function configureNativeLink(anchor){
-  anchor.href='/demos/kotlin/';
+  anchor.href='/app/?version=kotlin';
   anchor.removeAttribute('download');
   anchor.target='_blank';anchor.rel='noopener noreferrer';
   anchor.setAttribute('aria-label','Testar currículo interativo no navegador');
