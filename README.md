@@ -9,7 +9,7 @@ Publicado na VPS Hostinger em 7 de outubro de 2026: https://karenangelis.com.
 - Google Trends + FastAPI: https://karenangelis.com/demos/trends/
 - Documentação interativa da API: https://karenangelis.com/docs
 
-O currículo aparece uma única vez na página inicial, com um print real do aplicativo Android. Em qualquer dispositivo, o card abre a versão interativa Kotlin/JS em `/demos/kotlin/`, conectada à API Go, sem instalação ou download. Os links de APK e abertura nativa foram retirados do fluxo público. A versão web permite buscar habilidades e navegar pelas seções; ela não executa o APK em um emulador. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
+O currículo aparece uma única vez na página inicial, com um print real do app web. Em qualquer dispositivo, o card abre a versão interativa Kotlin/JS em `/demos/kotlin/`, conectada à API Go, sem instalação ou download. Os links de APK e abertura nativa foram retirados do fluxo público. No PC, a interface tem largura de celular (390px), com navegação inferior fixa. No celular, ocupa toda a tela e mantém a rolagem dentro do app. A versão web permite buscar habilidades e navegar pelas seções; ela não executa o APK em um emulador. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
 
 ## Estrutura
 
