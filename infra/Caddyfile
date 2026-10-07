@@ -1,0 +1,19 @@
+{$PORTFOLIO_DOMAIN} {
+    encode zstd gzip
+    @trends path /api/trends /docs /openapi.json
+    handle @trends {
+        reverse_proxy trends-api:8000
+    }
+    handle /api/profile {
+        reverse_proxy resume-api:8080
+    }
+    handle {
+        root * /srv
+        file_server
+    }
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        X-Frame-Options DENY
+    }
+}

@@ -1,0 +1,6 @@
+import {readFile,readdir,access} from 'node:fs/promises';
+import {resolve,dirname} from 'node:path';
+import {spawnSync} from 'node:child_process';
+const root=resolve('web');let count=0;
+async function walk(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const path=resolve(dir,entry.name);if(entry.isDirectory()){await walk(path);continue;}if(path.endsWith('.js')){const result=spawnSync(process.execPath,['--check',path],{encoding:'utf8'});if(result.status!==0)throw new Error(result.stderr);}if(path.endsWith('.json'))JSON.parse(await readFile(path,'utf8'));if(path.endsWith('.html')){const content=await readFile(path,'utf8');if(!content.includes('lang="pt-BR"')||!content.includes('name="viewport"'))throw new Error(`Missing document metadata: ${path}`);for(const match of content.matchAll(/(?:href|src)="([^"]+)"/g)){const url=match[1];if(/^(https?:|#|mailto:)/.test(url)||url==='resume-kotlin.js')continue;let target=url.startsWith('/')?resolve(root,'.'+url):resolve(dirname(path),url);if(url.endsWith('/'))target=resolve(target,'index.html');await access(target);}}count++;}}
+await walk(root);console.log(`${count} arquivos verificados: sintaxe JS, JSON e referências locais.`);

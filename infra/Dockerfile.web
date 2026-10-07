@@ -1,0 +1,8 @@
+FROM gradle:8.14.3-jdk21 AS kotlin
+WORKDIR /src
+COPY apps/resume-kotlin/ .
+RUN gradle jsBrowserDistribution --no-daemon
+FROM caddy:2.11-alpine
+COPY web/ /srv/
+COPY --from=kotlin /src/build/dist/js/productionExecutable/ /srv/demos/kotlin/
+COPY infra/Caddyfile /etc/caddy/Caddyfile

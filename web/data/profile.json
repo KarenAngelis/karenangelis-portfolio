@@ -1,0 +1,13 @@
+{
+  "name": "Karen Angelis",
+  "role": "Desenvolvedora Full Stack",
+  "summary": "Conecto interfaces, APIs e regras de negócio para transformar ideias em aplicações que as pessoas podem usar.",
+  "github": "https://github.com/KarenAngelis",
+  "linkedin": "https://www.linkedin.com/in/karen-angelis/",
+  "skills": ["React", "Next.js", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Kotlin", "Go"],
+  "projects": [
+    {"name":"StockMaster","category":"fullstack","description":"Gestão de estoque e planejamento de produção com React, FastAPI e PostgreSQL.","url":"https://github.com/KarenAngelis/production-stock-api"},
+    {"name":"JIP","category":"fullstack","description":"Aplicação para organizar e produzir conteúdo de podcasts, com interface, APIs e autenticação.","url":"https://github.com/KarenAngelis/jip-fullstack"},
+    {"name":"Sistema-Crédito","category":"backend","description":"Projeto de estudo com Kotlin, Spring Boot e Spring Data JPA.","url":"https://github.com/KarenAngelis/Sistema-Credito"}
+  ]
+}

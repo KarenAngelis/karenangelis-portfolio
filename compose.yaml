@@ -1,0 +1,31 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      PORTFOLIO_DOMAIN: ${PORTFOLIO_DOMAIN:-karenangelis.com}
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - trends-api
+      - resume-api
+  trends-api:
+    build:
+      context: .
+      dockerfile: apps/trends-api/Dockerfile
+    restart: unless-stopped
+  resume-api:
+    build:
+      context: .
+      dockerfile: apps/resume-api/Dockerfile
+    restart: unless-stopped
+volumes:
+  caddy_data:
+  caddy_config:

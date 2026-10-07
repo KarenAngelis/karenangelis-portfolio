@@ -1,0 +1,50 @@
+name: Validate portfolio
+on: [push, pull_request]
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm run check
+  fastapi:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/trends-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - run: pip install -r requirements.txt
+      - run: python -m unittest -v
+  go:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/resume-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26'
+      - run: go test ./...
+  kotlin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.14.3'
+      - run: gradle -p apps/resume-kotlin jsBrowserDistribution --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume-kotlin
+          path: apps/resume-kotlin/build/dist/js/productionExecutable/

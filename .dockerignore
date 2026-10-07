@@ -1,0 +1,7 @@
+.git
+.venv
+node_modules
+**/build
+**/.gradle
+**/__pycache__
+.env
