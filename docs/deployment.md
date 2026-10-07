@@ -13,3 +13,11 @@ Se houver Traefik, Caddy ou Nginx já ativo:
 - Validar TLS e o fluxo completo do navegador antes de considerar a publicação concluída.
 
 O Compose padrão atende a VPS sem roteador existente. A configuração final será adaptada após obter acesso à VPS, evitando conflito de portas e interferência com projetos já hospedados.
+
+## VPS identificada em 7 de outubro de 2026
+
+Ubuntu 24.04, com Caddy existente no container `karsuel-proxy-1` usando rede host e arquivo `/opt/karsuel/infra/vps/Caddyfile.clycka` montado como somente leitura. Clycka usa portas locais 3100/8100.
+
+Para este ambiente, usar `docker compose -p karenangelis-portfolio -f compose.vps.yaml up -d --build`. Essa configuração publica apenas `127.0.0.1:4180`, serve o bundle Kotlin já validado pelo GitHub e mantém as APIs na rede interna. Adicionar o bloco de `infra/Caddyfile.host-snippet` ao Caddy existente, com cópia de segurança e validação antes de recarregar.
+
+O DNS de `karenangelis.com` precisa resolver para a VPS; a publicação só termina após validar domínio, TLS e demonstrações reais.
