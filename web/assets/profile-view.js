@@ -13,7 +13,7 @@ export function renderGroups(container,groups,{query='',area='all'}={}){
     const summary=element('summary');summary.append(element('span',group.title),element('small',`${group.items.length} competências`));
     const body=element('div','','skill-body');body.append(element('p',group.description));
     const badges=element('div','','skills');for(const item of group.items)badges.append(element('span',item));
-    body.append(badges,element('p',group.example,'skill-example'),link(group.demoLabel+' ↗',group.demoUrl));card.append(summary,body);container.append(card);
+    body.append(badges,element('p',group.example,'skill-example'),link(group.demoLabel,group.demoUrl));card.append(summary,body);container.append(card);
   }
   if(!selected.length)container.append(element('p','Nenhuma área encontrada. Tente outro termo.','status'));
   return selected.length;

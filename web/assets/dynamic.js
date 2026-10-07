@@ -15,7 +15,7 @@ function selectScenario(key){
   document.querySelector('#scenario-description').textContent=scenario.description;
   const tags=document.querySelector('#scenario-tags');tags.replaceChildren();
   for(const text of scenario.tags){const tag=document.createElement('span');tag.textContent=text;tags.append(tag);}
-  const example=document.querySelector('#scenario-example');example.href=scenario.url;example.textContent=scenario.label+' ↗';
+  const example=document.querySelector('#scenario-example');example.href=scenario.url;example.textContent=scenario.label;
   if(key==='app'){configureNativeLink(example);}else{example.removeAttribute('download');example.target='_blank';example.removeAttribute('aria-label');}
   chooser.querySelectorAll('button').forEach(button=>{const selected=button.dataset.scenario===key;button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));});
   const preview=document.querySelector('#scenario-preview');preview.classList.remove('changed');requestAnimationFrame(()=>preview.classList.add('changed'));

@@ -8,7 +8,7 @@ function render(profile){
   renderLanguages(document.querySelector('#languages'),profile.languages);
   renderSoftSkills(document.querySelector('#soft'),profile.softSkills);
   const projects=document.querySelector('#projects');projects.replaceChildren();
-  profile.projects.forEach(project=>{const row=element('article','','resume-entry');row.append(element('h3',project.name),element('p',project.description),link(project.linkLabel+' ↗',project.url));projects.append(row);});
+  profile.projects.forEach(project=>{const row=element('article','','resume-entry');row.append(element('h3',project.name),element('p',project.description),link(project.linkLabel,project.url));projects.append(row);});
 }
 try{const r=await fetch('../../data/profile.json');if(!r.ok)throw new Error();render(await r.json());source.textContent='Fonte: dados locais do portfólio. Interface web em JavaScript.';}catch{source.textContent='Não foi possível carregar o currículo.';source.classList.add('error');}
 document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{

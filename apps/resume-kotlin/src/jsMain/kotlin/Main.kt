@@ -11,7 +11,7 @@ fun node(tag: String, text: String = "", css: String = ""): HTMLElement {
 }
 
 fun projectLink(label: String, url: String): HTMLElement {
-    val link = node("a", "$label ↗", "text-link")
+    val link = node("a", "$label", "text-link")
     link.setAttribute("href", url)
     link.setAttribute("target", "_blank")
     link.setAttribute("rel", "noopener noreferrer")

@@ -21,7 +21,7 @@ try {
       const row=document.createElement('article');row.className='project-row';
       const number=document.createElement('span');number.className='project-number';number.textContent=String(index+1).padStart(2,'0');
       const info=document.createElement('div');const title=document.createElement('h3');title.textContent=p.name;const desc=document.createElement('p');desc.textContent=p.description;info.append(title,desc);
-      const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=p.linkLabel+' ↗';link.setAttribute('aria-label',`${p.linkLabel}: ${p.name} em outra aba`);row.append(number,info,link);container.append(row);
+      const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=p.linkLabel;link.setAttribute('aria-label',`${p.linkLabel}: ${p.name} em outra aba`);row.append(number,info,link);container.append(row);
     });
   }
   render();
