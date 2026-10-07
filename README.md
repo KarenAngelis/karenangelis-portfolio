@@ -4,12 +4,12 @@ Portfólio para `karenangelis.com`, com habilidades demonstradas por experiênci
 
 Publicado na VPS Hostinger em 7 de outubro de 2026: https://karenangelis.com.
 
-- Aplicativo Android em Kotlin + API Go: https://karenangelis.com/downloads/karenangelis-curriculo.apk
+- Currículo em app web Kotlin/JS + API Go: https://karenangelis.com/demos/kotlin/
 - Alternativa de currículo web: https://karenangelis.com/demos/curriculo/
 - Google Trends + FastAPI: https://karenangelis.com/demos/trends/
 - Documentação interativa da API: https://karenangelis.com/docs
 
-O currículo aparece uma única vez na página inicial, com um print real do aplicativo Android. No computador, o card abre a versão interativa Kotlin/JS em `/demos/kotlin/`, conectada à API Go. No Android, tenta abrir o aplicativo nativo e oferece o APK como alternativa. A versão web permite buscar habilidades e navegar pelas seções; ela não executa o APK em um emulador. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
+O currículo aparece uma única vez na página inicial, com um print real do aplicativo Android. Em qualquer dispositivo, o card abre a versão interativa Kotlin/JS em `/demos/kotlin/`, conectada à API Go, sem instalação ou download. Os links de APK e abertura nativa foram retirados do fluxo público. A versão web permite buscar habilidades e navegar pelas seções; ela não executa o APK em um emulador. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
 
 ## Estrutura
 
