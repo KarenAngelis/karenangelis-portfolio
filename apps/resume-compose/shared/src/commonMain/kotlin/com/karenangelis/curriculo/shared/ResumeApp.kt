@@ -16,6 +16,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withTimeout
+import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.serialization.json.JsonObject
 
 private val Lime=Color(0xffc5f16a)
@@ -24,24 +26,39 @@ private val Panel=Color(0xff1c211b)
 private val Muted=Color(0xffa6aaa2)
 private val labels=listOf("Habilidades","Experiência","Formação","Idiomas","Projetos","Contato")
 
+private data class ResumeState(
+    val profile: JsonObject=parseProfile(BundledProfile.json),
+    val selected: Int=0,
+    val query: String="",
+    val status: String="Currículo incluído no app",
+    val busy: Boolean=false
+)
+
 @Composable
 fun ResumeApp() {
     MaterialTheme(colorScheme=darkColorScheme(primary=Lime,onPrimary=Ink,background=Ink,surface=Panel,onSurface=Color(0xfff1f0e9))) {
-        var profile by remember { mutableStateOf(parseProfile(BundledProfile.json)) }
-        var selected by rememberSaveable { mutableStateOf(0) }
-        var query by rememberSaveable { mutableStateOf("") }
-        var status by remember { mutableStateOf("Currículo incluído no app") }
-        var busy by remember { mutableStateOf(false) }
+        var appState by remember { mutableStateOf(ResumeState()) }
+        val profile=appState.profile
+        val selected=appState.selected
+        val query=appState.query
+        val status=appState.status
+        val busy=appState.busy
         val scope=rememberCoroutineScope()
         val open=LocalUriHandler.current
         fun update() {
-            if(busy)return
-            busy=true;status="Atualizando currículo…"
+            if(appState.busy)return
+            appState=appState.copy(busy=true,status="Atualizando currículo…")
             scope.launch {
-                try { profile=fetchProfile();status="Currículo atualizado pela API Go" }
-                catch(e: CancellationException) { throw e }
-                catch(_: Exception) { status="Sem conexão · usando currículo incluído no app" }
-                finally { busy=false }
+                try {
+                    val updated=withTimeout(12000) { fetchProfile() }
+                    appState=appState.copy(profile=updated,status="Currículo atualizado pela API Go",busy=false)
+                } catch(_: TimeoutCancellationException) {
+                    appState=appState.copy(status="Sem conexão · usando currículo incluído no app",busy=false)
+                } catch(e: CancellationException) { throw e }
+                catch(e: Exception) {
+                    println("Profile update failed: ${e.message}")
+                    appState=appState.copy(status="Sem conexão · usando currículo incluído no app",busy=false)
+                }
             }
         }
         LaunchedEffect(Unit) { update() }
@@ -62,7 +79,7 @@ fun ResumeApp() {
                     Text(status,fontSize=10.sp,color=Muted,modifier=Modifier.padding(horizontal=18.dp,vertical=4.dp))
                     Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(horizontal=8.dp,vertical=4.dp)) {
                         labels.forEachIndexed { index,label ->
-                            TextButton(onClick={selected=index},colors=ButtonDefaults.textButtonColors(contentColor=if(selected==index) Lime else Muted)) { Text(label,fontSize=11.sp) }
+                            TextButton(onClick={appState=appState.copy(selected=index)},colors=ButtonDefaults.textButtonColors(contentColor=if(selected==index) Lime else Muted)) { Text(label,fontSize=11.sp) }
                         }
                     }
                     TextButton(onClick={visit(profile.text("whatsapp"))},modifier=Modifier.fillMaxWidth()) { Text("Vamos conversar") }
@@ -76,7 +93,7 @@ fun ResumeApp() {
                         0 -> {
                             item { Text(profile.text("fullName"),fontSize=20.sp,fontWeight=FontWeight.Bold);Text(profile.text("role"),fontSize=12.sp,color=Muted) }
                             item { ExpandCard("Sobre mim") { Text(profile.text("summary"),fontSize=13.sp,color=Muted) } }
-                            item { OutlinedTextField(value=query,onValueChange={query=it},singleLine=true,label={Text("Buscar habilidade")},placeholder={Text("Python, Flutter, UX…")},modifier=Modifier.fillMaxWidth()) }
+                            item { OutlinedTextField(value=query,onValueChange={appState=appState.copy(query=it)},singleLine=true,label={Text("Buscar habilidade")},placeholder={Text("Python, Flutter, UX…")},modifier=Modifier.fillMaxWidth()) }
                             val term=query.trim().lowercase()
                             val groups=profile.rows("skillGroups").filter { term.isEmpty() || (it.text("title")+" "+it.text("description")+" "+it.text("example")+" "+it.strings("items").joinToString(" ")).lowercase().contains(term) }
                             if(groups.isEmpty()) item { Text("Nenhuma habilidade encontrada. Tente outro termo.",color=Muted) }

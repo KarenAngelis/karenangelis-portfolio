@@ -1,5 +1,13 @@
 package com.karenangelis.curriculo.shared
-import io.ktor.client.HttpClient
-import io.ktor.client.engine.android.Android
-import io.ktor.client.plugins.HttpTimeout
-internal actual fun platformClient() = HttpClient(Android) { install(HttpTimeout) { requestTimeoutMillis=12000 } }
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import java.net.HttpURLConnection
+import java.net.URL
+internal actual suspend fun loadProfileBody(): String = withContext(Dispatchers.IO) {
+    val connection=URL("https://karenangelis.com/api/profile").openConnection() as HttpURLConnection
+    try {
+        connection.connectTimeout=8000;connection.readTimeout=8000
+        check(connection.responseCode==200)
+        connection.inputStream.bufferedReader(Charsets.UTF_8).use { it.readText() }
+    } finally { connection.disconnect() }
+}

@@ -1,11 +1,8 @@
 package com.karenangelis.curriculo.shared
 
-import io.ktor.client.HttpClient
-import io.ktor.client.request.get
-import io.ktor.client.statement.bodyAsText
 import kotlinx.serialization.json.*
 
-internal expect fun platformClient(): HttpClient
+internal expect suspend fun loadProfileBody(): String
 internal fun JsonObject.text(key: String): String = (get(key) as? JsonPrimitive)?.contentOrNull.orEmpty()
 internal fun JsonObject.rows(key: String): List<JsonObject> = (get(key) as? JsonArray)?.mapNotNull { it as? JsonObject }.orEmpty()
 internal fun JsonObject.strings(key: String): List<String> = (get(key) as? JsonArray)?.mapNotNull { (it as? JsonPrimitive)?.contentOrNull }.orEmpty()
@@ -16,10 +13,5 @@ internal fun parseProfile(body: String): JsonObject {
     return result
 }
 internal suspend fun fetchProfile(): JsonObject {
-    val client=platformClient()
-    try {
-        val response=client.get("https://karenangelis.com/api/profile")
-        require(response.status.value==200)
-        return parseProfile(response.bodyAsText())
-    } finally { client.close() }
+    return parseProfile(loadProfileBody())
 }
