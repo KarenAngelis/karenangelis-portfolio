@@ -7,9 +7,13 @@ try {
   const profile=await response.json();
   const catalog=document.querySelector('#skill-catalog');
   const search=document.querySelector('#skill-search'),area=document.querySelector('#skill-area');
+  let focused=[];
   for(const group of profile.skillGroups){const option=element('option',group.title);option.value=group.id;area.append(option);}
-  const updateCatalog=()=>{const total=renderGroups(catalog,profile.skillGroups,{query:search.value,area:area.value});document.querySelector('#skill-count').textContent=`${total} ${total===1?'área':'áreas'} · ${profile.skills.length} competências no repertório`;};
-  updateCatalog();search.addEventListener('input',updateCatalog);area.addEventListener('change',updateCatalog);
+  const updateCatalog=()=>{const groups=focused.length?profile.skillGroups.filter(g=>focused.includes(g.id)):profile.skillGroups;const total=renderGroups(catalog,groups,{query:search.value,area:area.value});document.querySelector('#skill-count').textContent=`${total} ${total===1?'área':'áreas'} · ${profile.skills.length} competências no repertório`;};
+  const clearFocus=()=>{focused=[];updateCatalog();};
+  updateCatalog();search.addEventListener('input',clearFocus);area.addEventListener('change',clearFocus);
+  window.addEventListener('portfolio-focus',event=>{focused=event.detail.ids;area.value='all';search.value='';updateCatalog();});
+  document.querySelector('#reset-catalog').addEventListener('click',()=>{focused=[];area.value='all';search.value='';updateCatalog();});
   renderSoftSkills(document.querySelector('#soft-skills'),profile.softSkills);
   renderExperience(document.querySelector('#career-timeline'),profile.experience);
   function render(filter='all'){
