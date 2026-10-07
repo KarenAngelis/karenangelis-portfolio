@@ -8,3 +8,4 @@
 .site-visual .project-brand{position:static;display:block;object-fit:contain;width:82%;height:auto;max-height:220px;max-width:390px;transform:none}
 .clycka-card .site-visual{background:radial-gradient(ellipse at center,#252344,#0b0d1a 75%)}
 .site-visual .clycka-brand{width:auto;height:230px;max-width:88%;max-height:82%}
+.moon-card .site-visual{background:radial-gradient(ellipse at bottom,#eae1cd,#faf6ed 75%)}
