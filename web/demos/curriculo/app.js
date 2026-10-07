@@ -12,5 +12,5 @@ document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener(
 }));
 document.querySelector('#connect').addEventListener('click',async(event)=>{
   const button=event.currentTarget;button.disabled=true;
-  try{const r=await fetch((['localhost','127.0.0.1'].includes(location.hostname)?'http://127.0.0.1:8080':'')+'/api/profile',{signal:AbortSignal.timeout(8000)});if(!r.ok)throw new Error();render(await r.json());source.textContent='Fonte: API Go local · GET /api/profile';source.classList.remove('error');}catch{source.textContent='API Go não está disponível. Inicie apps/resume-api com go run .; os dados locais continuam visíveis.';source.classList.add('error');}finally{button.disabled=false;}
+  try{const r=await fetch((['localhost','127.0.0.1'].includes(location.hostname)?'http://127.0.0.1:8080':'')+'/api/profile',{signal:AbortSignal.timeout(8000)});if(!r.ok)throw new Error();render(await r.json());source.textContent='Fonte: API Go · GET /api/profile';source.classList.remove('error');}catch{source.textContent='API Go indisponível. Os dados locais continuam visíveis; tente consultar novamente mais tarde.';source.classList.add('error');}finally{button.disabled=false;}
 });
