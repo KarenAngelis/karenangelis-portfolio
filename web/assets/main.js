@@ -8,7 +8,7 @@ try {
   const catalog=document.querySelector('#skill-catalog');
   const search=document.querySelector('#skill-search'),area=document.querySelector('#skill-area');
   for(const group of profile.skillGroups){const option=element('option',group.title);option.value=group.id;area.append(option);}
-  const updateCatalog=()=>{const total=renderGroups(catalog,profile.skillGroups,{query:search.value,area:area.value});document.querySelector('#skill-count').textContent=`${total} áreas · ${profile.skills.length} competências no repertório`;};
+  const updateCatalog=()=>{const total=renderGroups(catalog,profile.skillGroups,{query:search.value,area:area.value});document.querySelector('#skill-count').textContent=`${total} ${total===1?'área':'áreas'} · ${profile.skills.length} competências no repertório`;};
   updateCatalog();search.addEventListener('input',updateCatalog);area.addEventListener('change',updateCatalog);
   renderSoftSkills(document.querySelector('#soft-skills'),profile.softSkills);
   renderExperience(document.querySelector('#career-timeline'),profile.experience);

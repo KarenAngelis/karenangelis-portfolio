@@ -116,7 +116,7 @@
         "Credenciais criptografadas",
         "Validação de valor, moeda e recebedor"
       ],
-      "example": "Login e dados por usuario em aplicacoes web; contratos, permissoes e protecao das integracoes em sistemas corporativos.",
+      "example": "Login e dados por usuário em aplicações web; contratos, permissões e proteção das integrações em sistemas corporativos.",
       "demoUrl": "https://github.com/KarenAngelis/jip-fullstack",
       "demoLabel": "Ver autenticação no JIP"
     },
@@ -165,7 +165,7 @@
         "PDF e ReportLab",
         "OCR local com Tesseract"
       ],
-      "example": "JIP integra geracao de conteudo e relatorios; Reinaldo trabalha com demanda e estoque; Luniay integra IA e OCR. Experimentos de projeto incluem Prophet/LSTM.",
+      "example": "JIP integra geração de conteúdo e relatórios; Reinaldo trabalha com demanda e estoque; Luniay integra IA e OCR. Experimentos de projeto incluem Prophet/LSTM.",
       "demoUrl": "https://github.com/KarenAngelis/Reinaldo",
       "demoLabel": "Explorar projeto de dados"
     },
@@ -267,7 +267,7 @@
         "Office e Windows",
         "Power BI"
       ],
-      "example": "Trajetoria em Conta Azul, Zenvia e Ambiental, conectando atendimento, qualidade, compliance, processos e desenvolvimento.",
+      "example": "Trajetória em Conta Azul, Zenvia e Ambiental, conectando atendimento, qualidade, compliance, processos e desenvolvimento.",
       "demoUrl": "/#sobre",
       "demoLabel": "Conhecer minha trajetória"
     },
