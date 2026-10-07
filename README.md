@@ -2,6 +2,14 @@
 
 Portfólio para `karenangelis.com`, com habilidades demonstradas por experiências clicáveis, links para Luniay e Clycka e projetos públicos do GitHub.
 
+Publicado na VPS Hostinger em 7 de outubro de 2026: https://karenangelis.com.
+
+- Currículo em Kotlin/JS + Go: https://karenangelis.com/demos/kotlin/
+- Google Trends + FastAPI: https://karenangelis.com/demos/trends/
+- Documentação interativa da API: https://karenangelis.com/docs
+
+HTTPS, frontend, bundle Kotlin e endpoints Go/FastAPI foram verificados pelo domínio público a partir da VPS. Interações de interface foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
+
 ## Estrutura
 
 ```text

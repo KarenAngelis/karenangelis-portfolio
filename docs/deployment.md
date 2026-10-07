@@ -21,3 +21,7 @@ Ubuntu 24.04, com Caddy existente no container `karsuel-proxy-1` usando rede hos
 Para este ambiente, usar `docker compose -p karenangelis-portfolio -f compose.vps.yaml up -d --build`. Essa configuração publica apenas `127.0.0.1:4180`, serve o bundle Kotlin já validado pelo GitHub e mantém as APIs na rede interna. Adicionar o bloco de `infra/Caddyfile.host-snippet` ao Caddy existente, com cópia de segurança e validação antes de recarregar.
 
 O DNS de `karenangelis.com` precisa resolver para a VPS; a publicação só termina após validar domínio, TLS e demonstrações reais.
+
+Publicação concluída em 7 de outubro de 2026: registro A do domínio atualizado para a VPS com TTL 300; CNAME www preservado. Caddy emitiu certificados Let's Encrypt para ambos os nomes. `scripts/check-live.py` passou na VPS, validando frontend, Kotlin compilado, currículo Go e tendências reais FastAPI via HTTPS. O Clycka retornou HTTP 200 antes e após a alteração de roteamento.
+
+Backup da configuração anterior: `/opt/karsuel/infra/vps/Caddyfile.clycka.before-karen-20261007T145810Z`. A regra do portfólio deve ser preservada ao atualizar a configuração do Clycka no futuro.
