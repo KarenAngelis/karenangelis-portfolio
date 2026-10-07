@@ -9,3 +9,5 @@
 .clycka-card .site-visual{background:radial-gradient(ellipse at center,#252344,#0b0d1a 75%)}
 .site-visual .clycka-brand{width:auto;height:230px;max-width:88%;max-height:82%}
 .moon-card .site-visual{background:radial-gradient(ellipse at bottom,#eae1cd,#faf6ed 75%)}
+
+.app-preview{height:210px;display:flex;justify-content:center;align-items:center;background:radial-gradient(ellipse,#34432970,transparent 70%)}.app-preview img{height:210px;width:auto;border:1px solid #46513b;border-radius:14px;box-shadow:0 12px 26px #0006}.lab-card>div:last-child{margin-top:auto}

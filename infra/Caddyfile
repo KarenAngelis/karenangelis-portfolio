@@ -1,7 +1,5 @@
 {$PORTFOLIO_DOMAIN} {
     encode zstd gzip
-    @native path /demos/kotlin /demos/kotlin/
-    redir @native /downloads/karenangelis-curriculo.apk 302
     header /downloads/*.apk Content-Type application/vnd.android.package-archive
     header /downloads/*.apk Content-Disposition "attachment; filename=karenangelis-curriculo.apk"
     @trends path /api/trends /docs /openapi.json

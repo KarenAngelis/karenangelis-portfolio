@@ -5,20 +5,19 @@ import zipfile
 from urllib.request import urlopen
 
 base = "https://karenangelis.com"
-for path, marker in [("/", "Ideias ganham"), ("/demos/trends/", "Google Trends")]:
+for path, marker in [("/", "Ideias ganham"), ("/demos/trends/", "Google Trends"), ("/demos/kotlin/", "kotlin-app")]:
     with urlopen(base + path, timeout=20) as response:
         text = response.read().decode()
         assert response.status == 200 and marker in text, path
     print("OK", path)
-with urlopen(base + "/demos/kotlin/", timeout=30) as response:
-    assert response.geturl().endswith("/downloads/karenangelis-curriculo.apk")
+with urlopen(base + "/downloads/karenangelis-curriculo.apk", timeout=30) as response:
     assert "application/vnd.android.package-archive" in response.headers.get("Content-Type", "")
     apk = response.read()
     assert apk.startswith(b"PK") and len(apk) > 100_000
 with zipfile.ZipFile(io.BytesIO(apk)) as archive:
     assert "classes.dex" in archive.namelist() and "AndroidManifest.xml" in archive.namelist()
     assert json.loads(archive.read("assets/profile.json"))["name"] == "Karen Angelis"
-print("OK native Android APK + legacy link redirects to download")
+print("OK native Android APK download")
 with urlopen(base + "/api/profile", timeout=20) as response:
     profile = json.load(response)
     assert profile["name"] == "Karen Angelis" and profile["projects"]

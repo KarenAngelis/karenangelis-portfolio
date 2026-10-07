@@ -2,11 +2,11 @@ import http from 'node:http';
 import {readFile} from 'node:fs/promises';
 import {resolve, extname, sep} from 'node:path';
 const root=resolve('web');
-const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.apk':'application/vnd.android.package-archive'};
+const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.apk':'application/vnd.android.package-archive'};
 http.createServer(async(req,res)=>{
   try {
     const url=new URL(req.url,'http://localhost');
-    if(url.pathname==='/demos/kotlin/'||url.pathname==='/demos/kotlin'){res.writeHead(302,{Location:'/downloads/karenangelis-curriculo.apk'}).end();return;}
+    if(url.pathname==='/demos/kotlin'){res.writeHead(302,{Location:'/demos/kotlin/'}).end();return;}
     const path=resolve(root,'.'+decodeURIComponent(url.pathname)+(url.pathname.endsWith('/')?'index.html':''));
     if(!path.startsWith(root+sep)){res.writeHead(403).end();return;}
     const data=await readFile(path);
