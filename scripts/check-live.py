@@ -43,6 +43,17 @@ with urlopen(base + "/api/trends?geo=BR&q=Python&limit=2", timeout=20) as respon
     assert news["source"].startswith("https://news.google.com/rss/search")
     assert news["items"] and len(news["items"]) <= 2
 print("OK topic search + external news", len(news["items"]), "items")
+with urlopen(base + "/data/career.json", timeout=20) as response:
+    career = json.load(response)
+assert len(career) == 8
+for entry in career:
+    with urlopen(base + "/trajetoria/" + entry["slug"] + "/", timeout=20) as response:
+        page = response.read().decode()
+        assert "HARD SKILLS" in page and "SOFT SKILLS" in page
+    if entry["logo"]:
+        with urlopen(base + "/assets/companies/" + entry["logo"], timeout=20) as response:
+            assert len(response.read()) > 100
+print("OK 8 career pages + official logos")
 with urlopen("https://www.karenangelis.com", timeout=20) as response:
     assert "Ideias ganham" in response.read().decode()
 print("OK www + TLS")

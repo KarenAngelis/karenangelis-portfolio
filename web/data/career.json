@@ -1,0 +1,347 @@
+[
+  {
+    "company": "WEG · IEL / Inova Talentos",
+    "role": "Desenvolvimento Frontend / Full Stack",
+    "period": "jul/2026–atual",
+    "description": "Interfaces React/Next.js/TypeScript e backend Python/FastAPI em plataforma corporativa de qualidade. Integração de APIs, autenticação, permissões, persistência, testes, code review e entrega com GitLab CI/CD. Atuação por bolsa do programa IEL/Inova Talentos; código e telas internos são confidenciais.",
+    "slug": "weg",
+    "logo": "weg.svg",
+    "site": "https://www.weg.net/",
+    "context": "Atuação por bolsa do programa IEL / Inova Talentos em uma plataforma corporativa de qualidade e melhoria contínua.",
+    "activities": [
+      "Desenvolvimento e refatoração de interfaces com React, Next.js e TypeScript, conectadas a serviços backend e módulos existentes.",
+      "Criação de componentes, formulários, filtros, dashboards e fluxos reutilizáveis, considerando manutenção e experiência do usuário.",
+      "Integração de APIs REST, autenticação, renovação de tokens, permissões contextuais e tratamento de erros.",
+      "Participação no backend Python/FastAPI, na persistência e na validação das regras que conectam interface, API e dados.",
+      "Investigação de bugs e regressões, code review, testes e participação no ciclo de entrega com Git, GitLab e CI/CD.",
+      "Colaboração com backend, produto e áreas de negócio para compreender requisitos, discutir decisões técnicas e resolver problemas."
+    ],
+    "hard": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "FastAPI",
+      "APIs REST",
+      "Autenticação e permissões",
+      "SQL e persistência",
+      "Testes",
+      "Debugging",
+      "Git / GitLab",
+      "CI/CD",
+      "Design Systems"
+    ],
+    "soft": [
+      [
+        "Colaboração técnica",
+        "Construir junto com backend, produto e áreas de negócio, alinhando o comportamento da interface às regras do sistema."
+      ],
+      [
+        "Resolução de problemas",
+        "Investigar causas, reproduzir falhas e acompanhar regressões para chegar a uma correção consistente."
+      ],
+      [
+        "Comunicação e contexto",
+        "Traduzir requisitos em fluxos de uso e explicar decisões técnicas considerando as necessidades de quem utiliza a plataforma."
+      ]
+    ],
+    "learning": "Esta experiência conecta minha visão de processos e qualidade ao desenvolvimento: entender a operação, transformar necessidades em interfaces e conferir o fluxo completo até os dados."
+  },
+  {
+    "company": "Ambiental",
+    "role": "Analista de Processos e Melhoria Contínua",
+    "period": "out/2025–jun/2026",
+    "description": "Mapeamento AS-IS/TO-BE, requisitos, gargalos, indicadores e documentação de melhorias.",
+    "slug": "ambiental",
+    "logo": "ambiental.svg",
+    "site": "https://ambiental.sc/",
+    "context": "Experiência em análise de processos e melhoria contínua.",
+    "activities": [
+      "Mapeamento de processos AS-IS e TO-BE para compreender a operação atual e organizar possibilidades de melhoria.",
+      "Levantamento de requisitos e tradução de necessidades das áreas em documentação e especificações.",
+      "Identificação de gargalos e acompanhamento de indicadores para apoiar a análise dos processos.",
+      "Elaboração de relatórios e documentação de melhorias, conectando o contexto operacional às necessidades de evolução."
+    ],
+    "hard": [
+      "Mapeamento de processos",
+      "AS-IS / TO-BE",
+      "Levantamento de requisitos",
+      "Indicadores",
+      "Relatórios",
+      "Documentação",
+      "Melhoria contínua",
+      "Análise funcional"
+    ],
+    "soft": [
+      [
+        "Escuta e análise",
+        "Compreender as necessidades das áreas antes de propor uma mudança no processo."
+      ],
+      [
+        "Organização",
+        "Estruturar informações, requisitos e documentação para dar clareza ao trabalho."
+      ],
+      [
+        "Visão de negócio",
+        "Relacionar gargalos e necessidades operacionais às oportunidades de melhoria."
+      ]
+    ],
+    "learning": "Levo essa experiência para o desenvolvimento de software: antes de implementar uma tela ou uma regra, procuro entender o processo que ela precisa atender."
+  },
+  {
+    "company": "Quanta Educação / Isidoro Preparatório",
+    "role": "Colaboração em desenvolvimento Full Stack",
+    "period": "Desde 2025",
+    "description": "Plataforma educacional com React/Next.js/TypeScript, Python/FastAPI, autenticação, matrículas, pagamentos e agendamento.",
+    "slug": "quanta",
+    "logo": "quanta.png",
+    "site": "https://isidoropreparatorio.com.br/",
+    "context": "Colaboração no desenvolvimento da plataforma educacional Quanta Educação / Isidoro Preparatório.",
+    "activities": [
+      "Participação no desenvolvimento de interfaces com React, Next.js e TypeScript para a experiência de alunos e professores.",
+      "Desenvolvimento e integração de serviços Python/FastAPI para cursos, matrículas, pagamentos e agendamento de aulas.",
+      "Integração de autenticação e papéis de acesso aos fluxos da plataforma.",
+      "Integração de checkout e confirmações de pagamento, com validação das informações recebidas do provedor.",
+      "Tratamento de reservas e matrículas, considerando expiração, disponibilidade e prevenção de duplicações."
+    ],
+    "hard": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "APIs REST",
+      "Autenticação",
+      "Mercado Pago",
+      "Webhooks",
+      "OAuth / PKCE",
+      "Matrículas e reservas",
+      "Transações",
+      "Validação de pagamentos"
+    ],
+    "soft": [
+      [
+        "Colaboração",
+        "Desenvolver em um projeto compartilhado, conectando as entregas técnicas à experiência educacional."
+      ],
+      [
+        "Atenção aos detalhes",
+        "Considerar confirmações de pagamento, disponibilidade e estados dos fluxos para manter consistência."
+      ],
+      [
+        "Pensamento de produto",
+        "Relacionar os componentes e as regras às jornadas de alunos e professores."
+      ]
+    ],
+    "learning": "Uma plataforma educacional exige mais que páginas: matrícula, pagamento e reserva precisam conversar. Essa experiência reúne interface, backend e regras de negócio em um fluxo completo."
+  },
+  {
+    "company": "JIP / Raws Podcast",
+    "role": "Desenvolvimento Full Stack · projeto freelance",
+    "period": "2024–2025",
+    "description": "Aplicação de conteúdo para podcasts com Next.js/React, FastAPI, PostgreSQL, autenticação, IA, dashboards e relatórios.",
+    "slug": "jip",
+    "logo": null,
+    "site": null,
+    "context": "Projeto PJ / freelance de desenvolvimento Full Stack para pesquisa e produção de conteúdo de podcasts.",
+    "activities": [
+      "Desenvolvimento de interfaces e dashboards com Next.js, React e TypeScript.",
+      "Construção de APIs Python/FastAPI conectadas à persistência em PostgreSQL.",
+      "Implementação de autenticação e validações de tokens, considerando expiração e informações de identificação.",
+      "Integração de serviços de IA para apoiar pesquisa, pautas, roteiros e produção de conteúdo.",
+      "Organização de respostas estruturadas, relatórios e exportação de conteúdo em PDF."
+    ],
+    "hard": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Autenticação / JWT",
+      "APIs de IA",
+      "Dados estruturados",
+      "Dashboards",
+      "Relatórios",
+      "PDF"
+    ],
+    "soft": [
+      [
+        "Autonomia",
+        "Organizar o desenvolvimento de um projeto freelance e conectar as partes necessárias à entrega."
+      ],
+      [
+        "Criatividade aplicada",
+        "Transformar necessidades de pesquisa e produção de conteúdo em ferramentas de uso prático."
+      ],
+      [
+        "Visão do fluxo completo",
+        "Pensar na relação entre interface, autenticação, API, dados e geração de conteúdo."
+      ]
+    ],
+    "learning": "Nesse projeto, a habilidade técnica ganhou uma aplicação ligada à comunicação: reunir dados e serviços para apoiar quem pesquisa e produz conteúdo. O serviço original está inativo; o código permanece disponível no GitHub.",
+    "code": "https://github.com/KarenAngelis/jip-fullstack"
+  },
+  {
+    "company": "Zenvia",
+    "role": "Suporte técnico",
+    "period": "2024–2025",
+    "description": "Reprodução de erros, atendimento técnico, documentação e escalonamento para nível 2.",
+    "slug": "zenvia",
+    "logo": "zenvia.svg",
+    "site": "https://zenvia.com/",
+    "context": "Atuação em suporte técnico, atendimento e investigação de falhas.",
+    "activities": [
+      "Atendimento técnico e compreensão das dificuldades relatadas por clientes.",
+      "Reprodução de erros para identificar o comportamento observado e organizar o diagnóstico.",
+      "Documentação das ocorrências e dos passos necessários para investigação.",
+      "Escalonamento de demandas para nível 2, com informações que ajudam a dar continuidade ao atendimento."
+    ],
+    "hard": [
+      "Suporte técnico",
+      "Reprodução de erros",
+      "Diagnóstico",
+      "Documentação técnica",
+      "Escalonamento N2",
+      "Atendimento",
+      "SaaS"
+    ],
+    "soft": [
+      [
+        "Empatia",
+        "Compreender a dificuldade do cliente e conduzir o atendimento com clareza."
+      ],
+      [
+        "Comunicação técnica",
+        "Explicar o problema em linguagem acessível e registrar informações úteis para outros níveis de suporte."
+      ],
+      [
+        "Investigação",
+        "Organizar sintomas e passos de reprodução para apoiar a resolução do problema."
+      ]
+    ],
+    "learning": "O suporte fortaleceu meu olhar para software em uso: uma boa solução precisa funcionar e também ser compreensível para quem depende dela."
+  },
+  {
+    "company": "Conta Azul",
+    "role": "Compliance, qualidade, produto e atendimento",
+    "period": "2017–2024",
+    "description": "Suporte SaaS, ouvidoria, voz do cliente, compliance fiscal, testes e integrações com prefeituras; tutoriais e treinamentos.",
+    "slug": "conta-azul",
+    "logo": "conta-azul.svg",
+    "site": "https://contaazul.com/",
+    "context": "Trajetória em atendimento, compliance, qualidade e produto em ambiente ERP / SaaS.",
+    "activities": [
+      "Atendimento por chat, e-mail e telefone, com organização de demandas e utilização de Zendesk.",
+      "Atuação em ouvidoria e canais de reclamação, acompanhando a voz do cliente e necessidades de melhoria.",
+      "Contato com NPS e Portal de Ideias como fontes de percepção sobre a experiência e o produto.",
+      "Atuação em compliance fiscal, testes e integrações relacionadas à emissão fiscal e a prefeituras.",
+      "Investigação de causas e colaboração com produto, suporte e qualidade na melhoria de processos.",
+      "Produção de tutoriais e treinamentos para tornar informações e orientações mais claras."
+    ],
+    "hard": [
+      "ERP / SaaS",
+      "Zendesk",
+      "Compliance fiscal",
+      "NFS-e",
+      "Integrações com prefeituras",
+      "Testes funcionais",
+      "Investigação de causas",
+      "Ouvidoria",
+      "NPS",
+      "Voz do cliente",
+      "Tutoriais e treinamentos",
+      "Melhoria de processos"
+    ],
+    "soft": [
+      [
+        "Comunicação clara",
+        "Transformar dúvidas e informações do produto em orientações, tutoriais e treinamentos."
+      ],
+      [
+        "Escuta e relacionamento",
+        "Considerar reclamações e feedbacks para compreender a experiência do cliente."
+      ],
+      [
+        "Colaboração entre áreas",
+        "Conectar atendimento, produto, qualidade e contexto fiscal na investigação de problemas."
+      ]
+    ],
+    "learning": "Essa trajetória trouxe uma base que uso no código até hoje: compreender regras de negócio, investigar causas e olhar para a experiência de quem utiliza o sistema."
+  },
+  {
+    "company": "O Boticário",
+    "role": "Assistente de loja",
+    "period": "2016–2017",
+    "description": "Atendimento, relacionamento com clientes e organização.",
+    "slug": "boticario",
+    "logo": "boticario.webp",
+    "site": "https://www.boticario.com.br/",
+    "context": "Experiência de atendimento e relacionamento no varejo.",
+    "activities": [
+      "Atendimento a clientes e apoio à experiência na loja.",
+      "Relacionamento com clientes, considerando suas necessidades e dúvidas.",
+      "Organização da rotina e apoio às atividades da loja."
+    ],
+    "hard": [
+      "Atendimento no varejo",
+      "Relacionamento com clientes",
+      "Organização de loja",
+      "Rotinas operacionais"
+    ],
+    "soft": [
+      [
+        "Empatia",
+        "Ouvir e compreender o que cada pessoa precisa durante o atendimento."
+      ],
+      [
+        "Comunicação",
+        "Apresentar informações com clareza e construir um bom relacionamento."
+      ],
+      [
+        "Organização e colaboração",
+        "Manter a rotina organizada e contribuir com as atividades da equipe."
+      ]
+    ],
+    "learning": "A experiência no varejo reforçou minha atenção ao atendimento e à jornada do cliente, aspectos que hoje também considero ao construir uma interface."
+  },
+  {
+    "company": "Schulze",
+    "role": "Suporte de cobrança",
+    "period": "2011–2015",
+    "description": "Atendimento, negociação, acompanhamento de demandas e relacionamento.",
+    "slug": "schulze",
+    "logo": "schulze.png",
+    "site": "https://schulzerc.com.br/",
+    "context": "Experiência em suporte de cobrança, atendimento e negociação.",
+    "activities": [
+      "Atendimento e suporte a demandas relacionadas à cobrança.",
+      "Negociação e comunicação com clientes durante o acompanhamento das situações.",
+      "Acompanhamento das demandas e organização das informações necessárias à continuidade do atendimento.",
+      "Relacionamento com clientes, considerando clareza e respeito no contato."
+    ],
+    "hard": [
+      "Suporte de cobrança",
+      "Atendimento",
+      "Negociação",
+      "Acompanhamento de demandas",
+      "Organização de informações"
+    ],
+    "soft": [
+      [
+        "Negociação",
+        "Buscar entendimento durante o atendimento e conduzir conversas com objetividade."
+      ],
+      [
+        "Relacionamento",
+        "Manter clareza e respeito em situações que exigem atenção ao contexto do cliente."
+      ],
+      [
+        "Organização",
+        "Acompanhar demandas e informações para manter continuidade no trabalho."
+      ]
+    ],
+    "learning": "Essa experiência ajudou a desenvolver comunicação, negociação e acompanhamento de problemas, competências que atravessam minha trajetória profissional."
+  }
+]

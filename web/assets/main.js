@@ -1,4 +1,4 @@
-import {element,renderGroups,renderExperience,renderSoftSkills} from './profile-view.js';
+import {element,renderGroups,renderSoftSkills} from './profile-view.js';
 const container=document.querySelector('#project-list');
 document.querySelector('#year').textContent=new Date().getFullYear();
 try {
@@ -15,7 +15,6 @@ try {
   window.addEventListener('portfolio-focus',event=>{focused=event.detail.ids;area.value='all';search.value='';updateCatalog();});
   document.querySelector('#reset-catalog').addEventListener('click',()=>{focused=[];area.value='all';search.value='';updateCatalog();});
   renderSoftSkills(document.querySelector('#soft-skills'),profile.softSkills);
-  renderExperience(document.querySelector('#career-timeline'),profile.experience);
   function render(filter='all'){
     container.replaceChildren();
     profile.projects.filter(p=>filter==='all'||p.category===filter).forEach((p,index)=>{

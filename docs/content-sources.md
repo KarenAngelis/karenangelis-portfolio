@@ -25,3 +25,9 @@ O inventário mais recente prevalece sobre currículos anteriores quando corrige
 ADS é a formação atual em andamento. Marketing é graduação tecnológica concluída. A pós em Direito Tributário foi documentada como concluída; relatos sobre NFS-e não geraram uma segunda pós por inferência. Kanban Foundation aparece como obtenção histórica com validade documental até 2022. Espanhol foi preservado com nível atual a atualizar. Go é identificado como laboratório deste portfólio, sem atribuir histórico profissional anterior.
 
 Luniay e Clycka usam somente os links públicos indicados pela Karen. Fontes internas de trabalho, dados da pesquisa Reinaldo e motivação familiar/financeira não foram publicados. Não foram copiados código ou telas corporativas para criar demonstrações. O WhatsApp +55 (47) 99733-6808 foi incluído por pedido explícito da Karen nesta conversa.
+
+## Páginas de trajetória
+
+Em 7 de outubro de 2026, as oito experiências receberam páginas próprias com atividades, hard skills e soft skills contextualizadas. O conteúdo usa o inventário e os currículos já indicados, preservando os vínculos de bolsa, colaboração e freelance. Não foram criadas métricas de desempenho ou atribuídos cargos de liderança.
+
+As logos foram obtidas de páginas oficiais; os arquivos e URLs estão em `company-logo-sources.json`. A marca do JIP/Raws ainda não foi localizada; o nome aparece provisoriamente enquanto Karen informa o asset.
