@@ -1,13 +1,749 @@
 {
   "name": "Karen Angelis",
-  "role": "Desenvolvedora Full Stack",
-  "summary": "Conecto interfaces, APIs e regras de negócio para transformar ideias em aplicações que as pessoas podem usar.",
+  "fullName": "Karen Denich de Angelis",
+  "role": "Desenvolvedora Full Stack · Web, apps e integrações",
+  "summary": "Desenvolvo interfaces, aplicativos e serviços conectados a regras de negócio. Trabalho com React, Next.js, TypeScript e Python/FastAPI, além de Flutter/Dart, integrações, automações e aplicações com IA. Minha trajetória em suporte SaaS, qualidade, compliance, processos e Marketing me ajuda a construir soluções com atenção à experiência de quem usa.",
   "github": "https://github.com/KarenAngelis",
   "linkedin": "https://www.linkedin.com/in/karen-angelis/",
-  "skills": ["React", "Next.js", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Kotlin", "Go"],
+  "skillGroups": [
+    {
+      "id": "frontend",
+      "title": "Frontend e interfaces",
+      "description": "Componentes, formulários, dashboards e fluxos conectados ao backend.",
+      "items": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Styled Components",
+        "Design Systems",
+        "Componentização",
+        "Responsividade",
+        "Acessibilidade",
+        "Formulários e validação",
+        "Filtros e paginação",
+        "Debounce",
+        "Estados de carregamento e erro",
+        "Internacionalização"
+      ],
+      "example": "Frontend de Luniay e Clycka; interfaces corporativas e educacionais.",
+      "demoUrl": "https://luniay.com.br/",
+      "demoLabel": "Explorar Luniay"
+    },
+    {
+      "id": "mobile",
+      "title": "Apps e desenvolvimento mobile",
+      "description": "Aplicativos com telas, navegação, estado, serviços e persistência.",
+      "items": [
+        "Dart",
+        "Flutter",
+        "Apps Android",
+        "Navegação e estado",
+        "Integração com serviços",
+        "Persistência no app",
+        "Configuração e build Android",
+        "Kotlin",
+        "Kotlin DSL",
+        "Spring Boot",
+        "Spring Data JPA"
+      ],
+      "example": "Luniay é um app Flutter/Dart e também tem uma versão web. Kotlin aparece na integração Android e em projetos de estudo com Spring Boot.",
+      "demoUrl": "/demos/kotlin/",
+      "demoLabel": "Experimentar Kotlin + Go"
+    },
+    {
+      "id": "backend",
+      "title": "Backend e APIs",
+      "description": "Contratos, validações, serviços e regras de negócio.",
+      "items": [
+        "Python",
+        "FastAPI",
+        "APIs REST",
+        "Pydantic",
+        "Node.js",
+        "Express",
+        "Controllers e serviços",
+        "DTOs e schemas",
+        "Tratamento de erros",
+        "Integração frontend/backend",
+        "Refatoração de legado"
+      ],
+      "example": "APIs em projetos de educação, conteúdo, estoque e atendimento. O laboratório consulta o Google Trends com FastAPI.",
+      "demoUrl": "/demos/trends/",
+      "demoLabel": "Consultar API de tendências"
+    },
+    {
+      "id": "integrations",
+      "title": "Integrações, pagamentos e automação",
+      "description": "Fluxos por eventos, comunicação entre sistemas e tratamento de falhas.",
+      "items": [
+        "Webhooks",
+        "OAuth",
+        "PKCE S256",
+        "HMAC",
+        "Validação de assinaturas",
+        "Idempotência e deduplicação",
+        "Workers e tarefas em segundo plano",
+        "Integrações Google",
+        "Atendimento via WhatsApp",
+        "Checkout e pagamentos",
+        "Mercado Pago",
+        "Assinaturas e cobrança",
+        "Integração com consultas SAP"
+      ],
+      "example": "Clycka reúne atendimento e integrações; Quanta/Isidoro conecta pagamentos e reservas. A ativação de cada conector depende da configuração do serviço.",
+      "demoUrl": "https://clycka.com/",
+      "demoLabel": "Conhecer Clycka"
+    },
+    {
+      "id": "security",
+      "title": "Autenticação e segurança",
+      "description": "Identidade, sessões, permissões e proteção de integrações.",
+      "items": [
+        "Autenticação e autorização",
+        "JWT",
+        "NextAuth",
+        "Keycloak",
+        "OpenID Connect",
+        "Sessões e renovação de tokens",
+        "Papéis e permissões",
+        "Escopo por usuário e organização",
+        "Hash bcrypt",
+        "Credenciais criptografadas",
+        "Validação de valor, moeda e recebedor"
+      ],
+      "example": "Login e dados por usuario em aplicacoes web; contratos, permissoes e protecao das integracoes em sistemas corporativos.",
+      "demoUrl": "https://github.com/KarenAngelis/jip-fullstack",
+      "demoLabel": "Ver autenticação no JIP"
+    },
+    {
+      "id": "database",
+      "title": "Banco de dados e integridade",
+      "description": "Persistência, consultas e consistência das operações.",
+      "items": [
+        "SQL",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "SQLModel",
+        "Alembic",
+        "Migrations",
+        "Knex",
+        "SQLite",
+        "JSONB",
+        "Transações e rollback",
+        "Locks e concorrência",
+        "Auditoria e histórico de alterações",
+        "Consultas paginadas",
+        "MinIO e object storage",
+        "Supabase"
+      ],
+      "example": "StockMaster aplica regras de saldo e transações. Projetos educacionais tratam reservas concorrentes; Luniay usa dados e serviços Supabase.",
+      "demoUrl": "https://github.com/KarenAngelis/production-stock-api",
+      "demoLabel": "Ver regras de estoque"
+    },
+    {
+      "id": "ai-data",
+      "title": "IA, dados e relatórios",
+      "description": "Integração de modelos, organização de dados e respostas úteis para o produto.",
+      "items": [
+        "Integrações com APIs de IA",
+        "Agentes de atendimento",
+        "JSON e contratos de resposta",
+        "Embeddings",
+        "Fallback de serviços",
+        "Python aplicado a dados",
+        "pandas",
+        "NumPy",
+        "Agregação e validação temporal",
+        "MAE, RMSE e WMAPE",
+        "CSV e Excel",
+        "Dashboards",
+        "PDF e ReportLab",
+        "OCR local com Tesseract"
+      ],
+      "example": "JIP integra geracao de conteudo e relatorios; Reinaldo trabalha com demanda e estoque; Luniay integra IA e OCR. Experimentos de projeto incluem Prophet/LSTM.",
+      "demoUrl": "https://github.com/KarenAngelis/Reinaldo",
+      "demoLabel": "Explorar projeto de dados"
+    },
+    {
+      "id": "qa",
+      "title": "QA e qualidade de software",
+      "description": "Reproduzir falhas, definir cenários e validar interfaces, APIs e regras.",
+      "items": [
+        "Planos de teste",
+        "Testes funcionais e exploratórios",
+        "Gestão de bugs",
+        "Reprodução de erros",
+        "Critérios de aceitação",
+        "Testes de contratos e falhas",
+        "pytest",
+        "Playwright",
+        "Testes E2E",
+        "Jest",
+        "Testes de serviços JavaScript",
+        "Postman",
+        "Logs, curl e debugging",
+        "Análise de regressões",
+        "Code review"
+      ],
+      "example": "Curso de QA e prática em suporte e desenvolvimento. StockMaster possui testes de API, estoque e fluxo E2E documentados.",
+      "demoUrl": "https://github.com/KarenAngelis/production-stock-api/actions",
+      "demoLabel": "Ver testes do StockMaster"
+    },
+    {
+      "id": "delivery",
+      "title": "Entrega, infraestrutura e colaboração",
+      "description": "Versionamento, revisão, pipelines e publicação de aplicações.",
+      "items": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Branches e Merge Requests",
+        "CI/CD",
+        "Build e deploy",
+        "Docker",
+        "Docker Compose",
+        "Linux Ubuntu",
+        "VPS",
+        "Vercel",
+        "PowerShell",
+        "Shell/Bash",
+        "Diagnóstico entre QA e produção",
+        "Colaboração com infraestrutura",
+        "Vivência em Kubernetes/Rancher"
+      ],
+      "example": "Entrega com GitLab e pipelines corporativas; publicação dos projetos em VPS. No contexto Kubernetes/Rancher, atuação em diagnóstico e colaboração com infraestrutura.",
+      "demoUrl": "https://github.com/KarenAngelis",
+      "demoLabel": "Explorar meu GitHub"
+    },
+    {
+      "id": "ux",
+      "title": "UX, conteúdo e design",
+      "description": "Jornadas, informação, mensagens e feedback para ajudar as pessoas.",
+      "items": [
+        "UX aplicado a produto",
+        "UX Writing",
+        "Jornada do usuário",
+        "Arquitetura de informação",
+        "Navegação e hierarquia visual",
+        "Clareza de formulários e feedback",
+        "Fluxos de login e checkout",
+        "Identidade visual",
+        "Produção criativa e cultural",
+        "Escrita e conteúdo",
+        "Tutoriais e treinamentos"
+      ],
+      "example": "Autoria frontend em Luniay, Clycka e JIP; formação em UX Writing e experiência com orientações e treinamentos para usuários.",
+      "demoUrl": "https://luniay.com.br/",
+      "demoLabel": "Explorar experiência do Luniay"
+    },
+    {
+      "id": "business",
+      "title": "Processos, compliance e experiência do cliente",
+      "description": "Traduzir contexto operacional em requisitos e soluções.",
+      "items": [
+        "Mapeamento AS-IS/TO-BE",
+        "Requisitos e documentação",
+        "Melhoria de processos",
+        "Indicadores e relatórios",
+        "Visão de produto e negócio",
+        "Compliance",
+        "NFS-e e NFC-e",
+        "Fiscal brasileiro e ERP/SaaS",
+        "Zendesk",
+        "Suporte técnico SaaS",
+        "Ouvidoria e Reclame Aqui",
+        "NPS e voz do cliente",
+        "Investigação e escalonamento de falhas",
+        "Scrum",
+        "Kanban",
+        "Jira",
+        "Confluence",
+        "Excel e Google Sheets",
+        "Office e Windows",
+        "Power BI"
+      ],
+      "example": "Trajetoria em Conta Azul, Zenvia e Ambiental, conectando atendimento, qualidade, compliance, processos e desenvolvimento.",
+      "demoUrl": "/#sobre",
+      "demoLabel": "Conhecer minha trajetória"
+    },
+    {
+      "id": "complementary",
+      "title": "Estudos e prática complementar",
+      "description": "Repertório de projetos didáticos, cursos e tecnologias complementares.",
+      "items": [
+        "Go — laboratório do portfólio",
+        "C#",
+        "ASP.NET / ASP.NET MVC",
+        "Angular",
+        "Ruby",
+        "Vue",
+        "NestJS",
+        "AWS",
+        "Cypress",
+        "Selenium",
+        "CRM Dynamics",
+        "Prophet e LSTM — experimentos de projeto"
+      ],
+      "example": "Tecnologias registradas no inventário e em estudos/projetos. A profundidade varia por ferramenta e contexto de aplicação.",
+      "demoUrl": "https://github.com/KarenAngelis",
+      "demoLabel": "Explorar repositórios"
+    }
+  ],
+  "skills": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Styled Components",
+    "Design Systems",
+    "Componentização",
+    "Responsividade",
+    "Acessibilidade",
+    "Formulários e validação",
+    "Filtros e paginação",
+    "Debounce",
+    "Estados de carregamento e erro",
+    "Internacionalização",
+    "Dart",
+    "Flutter",
+    "Apps Android",
+    "Navegação e estado",
+    "Integração com serviços",
+    "Persistência no app",
+    "Configuração e build Android",
+    "Kotlin",
+    "Kotlin DSL",
+    "Spring Boot",
+    "Spring Data JPA",
+    "Python",
+    "FastAPI",
+    "APIs REST",
+    "Pydantic",
+    "Node.js",
+    "Express",
+    "Controllers e serviços",
+    "DTOs e schemas",
+    "Tratamento de erros",
+    "Integração frontend/backend",
+    "Refatoração de legado",
+    "Webhooks",
+    "OAuth",
+    "PKCE S256",
+    "HMAC",
+    "Validação de assinaturas",
+    "Idempotência e deduplicação",
+    "Workers e tarefas em segundo plano",
+    "Integrações Google",
+    "Atendimento via WhatsApp",
+    "Checkout e pagamentos",
+    "Mercado Pago",
+    "Assinaturas e cobrança",
+    "Integração com consultas SAP",
+    "Autenticação e autorização",
+    "JWT",
+    "NextAuth",
+    "Keycloak",
+    "OpenID Connect",
+    "Sessões e renovação de tokens",
+    "Papéis e permissões",
+    "Escopo por usuário e organização",
+    "Hash bcrypt",
+    "Credenciais criptografadas",
+    "Validação de valor, moeda e recebedor",
+    "SQL",
+    "PostgreSQL",
+    "SQLAlchemy",
+    "SQLModel",
+    "Alembic",
+    "Migrations",
+    "Knex",
+    "SQLite",
+    "JSONB",
+    "Transações e rollback",
+    "Locks e concorrência",
+    "Auditoria e histórico de alterações",
+    "Consultas paginadas",
+    "MinIO e object storage",
+    "Supabase",
+    "Integrações com APIs de IA",
+    "Agentes de atendimento",
+    "JSON e contratos de resposta",
+    "Embeddings",
+    "Fallback de serviços",
+    "Python aplicado a dados",
+    "pandas",
+    "NumPy",
+    "Agregação e validação temporal",
+    "MAE, RMSE e WMAPE",
+    "CSV e Excel",
+    "Dashboards",
+    "PDF e ReportLab",
+    "OCR local com Tesseract",
+    "Planos de teste",
+    "Testes funcionais e exploratórios",
+    "Gestão de bugs",
+    "Reprodução de erros",
+    "Critérios de aceitação",
+    "Testes de contratos e falhas",
+    "pytest",
+    "Playwright",
+    "Testes E2E",
+    "Jest",
+    "Testes de serviços JavaScript",
+    "Postman",
+    "Logs, curl e debugging",
+    "Análise de regressões",
+    "Code review",
+    "Git",
+    "GitHub",
+    "GitLab",
+    "Branches e Merge Requests",
+    "CI/CD",
+    "Build e deploy",
+    "Docker",
+    "Docker Compose",
+    "Linux Ubuntu",
+    "VPS",
+    "Vercel",
+    "PowerShell",
+    "Shell/Bash",
+    "Diagnóstico entre QA e produção",
+    "Colaboração com infraestrutura",
+    "Vivência em Kubernetes/Rancher",
+    "UX aplicado a produto",
+    "UX Writing",
+    "Jornada do usuário",
+    "Arquitetura de informação",
+    "Navegação e hierarquia visual",
+    "Clareza de formulários e feedback",
+    "Fluxos de login e checkout",
+    "Identidade visual",
+    "Produção criativa e cultural",
+    "Escrita e conteúdo",
+    "Tutoriais e treinamentos",
+    "Mapeamento AS-IS/TO-BE",
+    "Requisitos e documentação",
+    "Melhoria de processos",
+    "Indicadores e relatórios",
+    "Visão de produto e negócio",
+    "Compliance",
+    "NFS-e e NFC-e",
+    "Fiscal brasileiro e ERP/SaaS",
+    "Zendesk",
+    "Suporte técnico SaaS",
+    "Ouvidoria e Reclame Aqui",
+    "NPS e voz do cliente",
+    "Investigação e escalonamento de falhas",
+    "Scrum",
+    "Kanban",
+    "Jira",
+    "Confluence",
+    "Excel e Google Sheets",
+    "Office e Windows",
+    "Power BI",
+    "Go — laboratório do portfólio",
+    "C#",
+    "ASP.NET / ASP.NET MVC",
+    "Angular",
+    "Ruby",
+    "Vue",
+    "NestJS",
+    "AWS",
+    "Cypress",
+    "Selenium",
+    "CRM Dynamics",
+    "Prophet e LSTM — experimentos de projeto"
+  ],
+  "softSkills": [
+    {
+      "title": "Comunicação técnica e com clientes",
+      "example": "Tutoriais, treinamentos, suporte e documentação em linguagem acessível."
+    },
+    {
+      "title": "Escuta e foco no usuário",
+      "example": "Ouvidoria, NPS e feedback para investigar problemas e propor melhorias."
+    },
+    {
+      "title": "Pensamento crítico e resolução de problemas",
+      "example": "Investigar sintomas, testar hipóteses e validar correções."
+    },
+    {
+      "title": "Colaboração entre áreas",
+      "example": "Alinhar soluções com desenvolvimento, produto, suporte e negócio."
+    },
+    {
+      "title": "Organização e documentação",
+      "example": "Registrar contexto, prioridades, decisões e acompanhamento."
+    },
+    {
+      "title": "Aprendizado contínuo",
+      "example": "Aplicar formação e estudos em projetos web, mobile, backend e qualidade."
+    },
+    {
+      "title": "Adaptabilidade e flexibilidade cognitiva",
+      "example": "Atuação em suporte, processos, qualidade e desenvolvimento."
+    },
+    {
+      "title": "Negociação e resolução de conflitos",
+      "example": "Alinhar expectativas em atendimento, ouvidoria e relacionamento."
+    },
+    {
+      "title": "Criatividade e escrita",
+      "example": "Combinar conteúdo, comunicação e soluções de produto."
+    },
+    {
+      "title": "Visão de negócio",
+      "example": "Relacionar Marketing, fiscal, ERP/SaaS e processos às regras do sistema."
+    },
+    {
+      "title": "Cuidado com qualidade",
+      "example": "Critérios de aceitação, cenários de erro, contratos e testes."
+    },
+    {
+      "title": "Apresentação e argumentação",
+      "example": "Explicar projetos e decisões para pessoas técnicas e não técnicas."
+    }
+  ],
+  "experience": [
+    {
+      "company": "WEG · IEL / Inova Talentos",
+      "role": "Desenvolvimento Frontend / Full Stack",
+      "period": "jul/2026–atual",
+      "description": "Interfaces React/Next.js/TypeScript e backend Python/FastAPI em plataforma corporativa de qualidade. Integração de APIs, autenticação, permissões, persistência, testes, code review e entrega com GitLab CI/CD. Atuação por bolsa do programa IEL/Inova Talentos; código e telas internos são confidenciais."
+    },
+    {
+      "company": "Ambiental",
+      "role": "Analista de Processos e Melhoria Contínua",
+      "period": "out/2025–jun/2026",
+      "description": "Mapeamento AS-IS/TO-BE, requisitos, gargalos, indicadores e documentação de melhorias."
+    },
+    {
+      "company": "Quanta Educação / Isidoro Preparatório",
+      "role": "Colaboração em desenvolvimento Full Stack",
+      "period": "Desde 2025",
+      "description": "Plataforma educacional com React/Next.js/TypeScript, Python/FastAPI, autenticação, matrículas, pagamentos e agendamento."
+    },
+    {
+      "company": "JIP / Raws Podcast",
+      "role": "Desenvolvimento Full Stack · projeto freelance",
+      "period": "2024–2025",
+      "description": "Aplicação de conteúdo para podcasts com Next.js/React, FastAPI, PostgreSQL, autenticação, IA, dashboards e relatórios."
+    },
+    {
+      "company": "Zenvia",
+      "role": "Suporte técnico",
+      "period": "2024–2025",
+      "description": "Reprodução de erros, atendimento técnico, documentação e escalonamento para nível 2."
+    },
+    {
+      "company": "Conta Azul",
+      "role": "Compliance, qualidade, produto e atendimento",
+      "period": "2017–2024",
+      "description": "Suporte SaaS, ouvidoria, voz do cliente, compliance fiscal, testes e integrações com prefeituras; tutoriais e treinamentos."
+    },
+    {
+      "company": "O Boticário",
+      "role": "Assistente de loja",
+      "period": "2016–2017",
+      "description": "Atendimento, relacionamento com clientes e organização."
+    },
+    {
+      "company": "Schulze",
+      "role": "Suporte de cobrança",
+      "period": "2011–2015",
+      "description": "Atendimento, negociação, acompanhamento de demandas e relacionamento."
+    }
+  ],
+  "education": [
+    {
+      "title": "Análise e Desenvolvimento de Sistemas",
+      "institution": "Descomplica",
+      "status": "Em andamento",
+      "detail": "Formação atual registrada no inventário profissional."
+    },
+    {
+      "title": "Tecnólogo em Marketing",
+      "institution": "Faculdade Anhanguera de Joinville",
+      "status": "Concluído",
+      "detail": "Colação de grau em 2012."
+    },
+    {
+      "title": "Pós-graduação em Direito Tributário",
+      "institution": "UniAmérica / Descomplica",
+      "status": "Concluída",
+      "detail": "360h; curso concluído em 2021."
+    }
+  ],
+  "courses": [
+    {
+      "title": "Bootcamp Programador(a) de Software Iniciante",
+      "institution": "IGTI",
+      "detail": "2021 · 148h"
+    },
+    {
+      "title": "Basic Frontend",
+      "institution": "Descomplica",
+      "detail": "2026 · 240h · módulo de ADS"
+    },
+    {
+      "title": "Criando e Testando uma Aplicação com React e TypeScript",
+      "institution": "DIO",
+      "detail": "2026 · 4h"
+    },
+    {
+      "title": "Quality Assurance: plano de testes e gestão de bugs",
+      "institution": "Alura",
+      "detail": "2023 · 8h"
+    },
+    {
+      "title": "UX Writing: escrevendo textos para usuários",
+      "institution": "Alura",
+      "detail": "2023 · 8h"
+    },
+    {
+      "title": "Aprender a aprender: técnicas para seu autodesenvolvimento",
+      "institution": "Alura",
+      "detail": "2023 · 8h"
+    },
+    {
+      "title": "Ouvidoria",
+      "institution": "Portal Educação",
+      "detail": "2019 · 80h"
+    },
+    {
+      "title": "Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo",
+      "institution": "Enap / EV.G",
+      "detail": "2022 · 20h"
+    },
+    {
+      "title": "Formação Analista Fiscal",
+      "institution": "CEFIS",
+      "detail": "2020 · 3h40"
+    },
+    {
+      "title": "ICMS ST",
+      "institution": "CEFIS",
+      "detail": "2020 · 50min"
+    },
+    {
+      "title": "NFC-e",
+      "institution": "CEFIS",
+      "detail": "2020 · 4h20"
+    },
+    {
+      "title": "Scrum Foundation Professional Certificate",
+      "institution": "CertiProf",
+      "detail": "Obtido em 2020"
+    },
+    {
+      "title": "Kanban Foundation",
+      "institution": "Kanban Institute / CertiProf",
+      "detail": "Obtido em 2020 · validade documental até 2022"
+    },
+    {
+      "title": "Trilhas de desenvolvimento profissional",
+      "institution": "IEL",
+      "detail": "13 conclusões em 2026: Proatividade; Trabalho em Equipe; Pensamento Crítico; Criatividade; Negociação; Mudanças; Flexibilidade Cognitiva; Finanças Pessoais; Comunicação Assertiva; Tomada de Decisões; Reconhecimento; Oratória; Planejamento do Dia de Trabalho."
+    }
+  ],
+  "additionalStudies": [
+    "DIO: Kotlin Back-end Developer, HTML Web Developer, Lógica de Programação, TypeScript Full Stack Developer, C# com CRM Dynamics, ASP.NET MVC, Python AI Backend Developer e Angular Developer",
+    "Rocketseat: Explorer/Full Stack, React Developer, Integração Backend com Frontend e Deploy",
+    "Danki Code: React.js",
+    "Descomplica: Programming Basics e Ferramentas e Aplicações da Inteligência Artificial",
+    "E3: Mentalidade produtiva",
+    "FastAPI Testing e estudos de inglês pelo British Council"
+  ],
+  "languages": [
+    {
+      "name": "Português",
+      "level": "Nativo"
+    },
+    {
+      "name": "Italiano",
+      "level": "Fluente"
+    },
+    {
+      "name": "Inglês",
+      "level": "Intermediário para leitura e escrita técnica; conversação em desenvolvimento"
+    },
+    {
+      "name": "Espanhol",
+      "level": "Conhecimento registrado no histórico; nível atual a atualizar"
+    }
+  ],
   "projects": [
-    {"name":"StockMaster","category":"fullstack","description":"Gestão de estoque e planejamento de produção com React, FastAPI e PostgreSQL.","url":"https://github.com/KarenAngelis/production-stock-api"},
-    {"name":"JIP","category":"fullstack","description":"Aplicação para organizar e produzir conteúdo de podcasts, com interface, APIs e autenticação.","url":"https://github.com/KarenAngelis/jip-fullstack"},
-    {"name":"Sistema-Crédito","category":"backend","description":"Projeto de estudo com Kotlin, Spring Boot e Spring Data JPA.","url":"https://github.com/KarenAngelis/Sistema-Credito"}
+    {
+      "name": "Luniay",
+      "category": "fullstack",
+      "description": "Produto web e aplicativo Flutter/Dart, com autenticação, conteúdo por usuário, IA, assinaturas e testes de regras comerciais.",
+      "url": "https://luniay.com.br/",
+      "linkLabel": "Visitar aplicação"
+    },
+    {
+      "name": "Clycka",
+      "category": "fullstack",
+      "description": "Produto de atendimento e integrações com interface web, Python, dados persistentes, workers, OAuth e operação em VPS.",
+      "url": "https://clycka.com/",
+      "linkLabel": "Visitar aplicação"
+    },
+    {
+      "name": "StockMaster",
+      "category": "fullstack",
+      "description": "Gestão de estoque com React, FastAPI e PostgreSQL: saldo, transações, rollback e testes de API/E2E.",
+      "url": "https://github.com/KarenAngelis/production-stock-api",
+      "linkLabel": "Ver código"
+    },
+    {
+      "name": "JIP",
+      "category": "fullstack",
+      "description": "Podcasts com Next.js, FastAPI, autenticação, IA e relatórios. Código disponível; serviço original inativo.",
+      "url": "https://github.com/KarenAngelis/jip-fullstack",
+      "linkLabel": "Ver código"
+    },
+    {
+      "name": "Reinaldo",
+      "category": "data",
+      "description": "Python aplicado a demanda e estoque, pandas/NumPy, validação temporal, métricas e saídas CSV/HTML.",
+      "url": "https://github.com/KarenAngelis/Reinaldo",
+      "linkLabel": "Ver projeto"
+    },
+    {
+      "name": "Notes Backend",
+      "category": "backend",
+      "description": "Node.js, Express, Knex/SQLite, controllers, rotas, hash de senha e testes de serviço.",
+      "url": "https://github.com/KarenAngelis/NOTES_BACKEND",
+      "linkLabel": "Ver código"
+    },
+    {
+      "name": "Sistema-Crédito",
+      "category": "backend",
+      "description": "Estudo com Kotlin, Spring Boot e Spring Data JPA: DTOs, persistência, migrations e regras.",
+      "url": "https://github.com/KarenAngelis/Sistema-Credito",
+      "linkLabel": "Ver código"
+    },
+    {
+      "name": "Desafio Kotlin",
+      "category": "backend",
+      "description": "Prática orientada de modelagem de domínio educacional proposta pela DIO.",
+      "url": "https://github.com/KarenAngelis/Desafio-Kotlin",
+      "linkLabel": "Ver estudo"
+    },
+    {
+      "name": "Recomendação de produtos",
+      "category": "frontend",
+      "description": "React/JavaScript com preferências, pontuação, testes e backend mock.",
+      "url": "https://github.com/KarenAngelis/MONOREPO",
+      "linkLabel": "Ver projeto"
+    }
   ]
 }

@@ -1,16 +1,24 @@
+import {element,renderGroups,renderExperience,renderSoftSkills} from './profile-view.js';
 const container=document.querySelector('#project-list');
 document.querySelector('#year').textContent=new Date().getFullYear();
 try {
   const response=await fetch('data/profile.json');
   if(!response.ok)throw new Error('Dados indisponíveis');
   const profile=await response.json();
+  const catalog=document.querySelector('#skill-catalog');
+  const search=document.querySelector('#skill-search'),area=document.querySelector('#skill-area');
+  for(const group of profile.skillGroups){const option=element('option',group.title);option.value=group.id;area.append(option);}
+  const updateCatalog=()=>{const total=renderGroups(catalog,profile.skillGroups,{query:search.value,area:area.value});document.querySelector('#skill-count').textContent=`${total} áreas · ${profile.skills.length} competências no repertório`;};
+  updateCatalog();search.addEventListener('input',updateCatalog);area.addEventListener('change',updateCatalog);
+  renderSoftSkills(document.querySelector('#soft-skills'),profile.softSkills);
+  renderExperience(document.querySelector('#career-timeline'),profile.experience);
   function render(filter='all'){
     container.replaceChildren();
     profile.projects.filter(p=>filter==='all'||p.category===filter).forEach((p,index)=>{
       const row=document.createElement('article');row.className='project-row';
       const number=document.createElement('span');number.className='project-number';number.textContent=String(index+1).padStart(2,'0');
       const info=document.createElement('div');const title=document.createElement('h3');title.textContent=p.name;const desc=document.createElement('p');desc.textContent=p.description;info.append(title,desc);
-      const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Ver código ↗';link.setAttribute('aria-label',`Ver código de ${p.name} em outra aba`);row.append(number,info,link);container.append(row);
+      const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=p.linkLabel+' ↗';link.setAttribute('aria-label',`${p.linkLabel}: ${p.name} em outra aba`);row.append(number,info,link);container.append(row);
     });
   }
   render();

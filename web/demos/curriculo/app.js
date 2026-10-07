@@ -1,10 +1,14 @@
+import {element,link,renderGroups,renderExperience,renderEducation,renderLanguages,renderSoftSkills} from '../../assets/profile-view.js';
 const source=document.querySelector('#source');
 function render(profile){
   document.querySelector('#summary').textContent=profile.summary;
-  const skills=document.querySelector('#skills');skills.replaceChildren();
-  profile.skills.forEach(skill=>{const badge=document.createElement('span');badge.textContent=skill;skills.append(badge);});
+  renderGroups(document.querySelector('#skills'),profile.skillGroups);
+  renderExperience(document.querySelector('#experience'),profile.experience);
+  renderEducation(document.querySelector('#education'),profile);
+  renderLanguages(document.querySelector('#languages'),profile.languages);
+  renderSoftSkills(document.querySelector('#soft'),profile.softSkills);
   const projects=document.querySelector('#projects');projects.replaceChildren();
-  profile.projects.forEach(project=>{const row=document.createElement('article');row.className='project-row';const heading=document.createElement('h3');heading.textContent=project.name;const link=document.createElement('a');link.textContent='Abrir código ↗';link.href=project.url;link.target='_blank';link.rel='noopener noreferrer';row.append(heading,link);projects.append(row);});
+  profile.projects.forEach(project=>{const row=element('article','','resume-entry');row.append(element('h3',project.name),element('p',project.description),link(project.linkLabel+' ↗',project.url));projects.append(row);});
 }
 try{const r=await fetch('../../data/profile.json');if(!r.ok)throw new Error();render(await r.json());source.textContent='Fonte: dados locais do portfólio. Interface web em JavaScript.';}catch{source.textContent='Não foi possível carregar o currículo.';source.classList.add('error');}
 document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{
