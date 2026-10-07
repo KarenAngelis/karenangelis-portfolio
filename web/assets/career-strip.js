@@ -1,6 +1,8 @@
-const strip=document.querySelector('.company-showcase');
-const track=strip.querySelector('.company-track'),control=strip.querySelector('.company-motion');
-const copy=track.firstElementChild.cloneNode(true);copy.setAttribute('aria-hidden','true');copy.querySelectorAll('a').forEach(link=>{link.tabIndex=-1;link.removeAttribute('aria-label');link.querySelector('img')?.setAttribute('alt','');});track.append(copy);
+﻿const strip=document.querySelector('.company-showcase'),windowElement=strip.querySelector('.company-window');
+const previous=strip.querySelector('.company-previous'),next=strip.querySelector('.company-next');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-function update(){control.disabled=reduced.matches;control.setAttribute('aria-label',reduced.matches?'Movimento reduzido':strip.classList.contains('is-paused')?'Retomar movimento das empresas':'Pausar movimento das empresas');}
-control.addEventListener('click',()=>{const paused=strip.classList.toggle('is-paused');control.setAttribute('aria-pressed',String(paused));update();});reduced.addEventListener('change',update);update();
+function update(){previous.disabled=windowElement.scrollLeft<=2;next.disabled=windowElement.scrollLeft+windowElement.clientWidth>=windowElement.scrollWidth-2;}
+function move(direction){windowElement.scrollBy({left:direction*windowElement.clientWidth*.75,behavior:reduced.matches?'instant':'smooth'});}
+previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
+windowElement.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();
+strip.querySelectorAll('img').forEach(img=>img.addEventListener('load',update));

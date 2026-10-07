@@ -5,3 +5,6 @@
 .hero-cta:hover{filter:none;background:linear-gradient(135deg,#defaa9,#cef77d);box-shadow:inset 0 1px 0 #ffffff80,0 9px 30px #c5f16a25;transform:translateY(-2px)}
 .hero-cta:active{transform:translateY(0);box-shadow:inset 0 1px 0 #ffffff70,0 3px 12px #c5f16a12}
 @media(prefers-reduced-motion:reduce){.hero-cta:hover,.hero-cta:active{transform:none}}
+.site-visual .project-brand{position:static;display:block;object-fit:contain;width:82%;height:auto;max-height:220px;max-width:390px;transform:none}
+.clycka-card .site-visual{background:radial-gradient(ellipse at center,#252344,#0b0d1a 75%)}
+.site-visual .clycka-brand{width:auto;height:230px;max-width:88%;max-height:82%}
