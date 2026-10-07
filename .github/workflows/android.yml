@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'apps/resume-android/**'
+      - 'apps/resume-compose/**'
       - 'web/data/profile.json'
       - '.github/workflows/android.yml'
       - 'scripts/check-android.py'
