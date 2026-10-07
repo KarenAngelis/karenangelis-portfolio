@@ -21,6 +21,10 @@ def find(text):
             if node.get("text") == text:
                 return node
         time.sleep(1)
+    (out/"failure-ui.xml").write_text(ET.tostring(root,encoding="unicode"))
+    (out/"failure-logcat.txt").write_text(adb("logcat","-d","-t","500"))
+    adb("shell","screencap","-p","/sdcard/karen-failure.png")
+    adb("pull","/sdcard/karen-failure.png",str(out/"android-failure.png"))
     raise AssertionError("Native screen text missing: " + text)
 
 def tap(text):

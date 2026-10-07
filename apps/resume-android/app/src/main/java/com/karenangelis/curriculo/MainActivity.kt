@@ -11,6 +11,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.Gravity
 import android.view.View
+import android.view.WindowManager
 import android.widget.*
 import org.json.JSONArray
 import org.json.JSONObject
@@ -58,12 +59,15 @@ class MainActivity : Activity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
         selected = savedInstanceState?.getString("section") ?: "Habilidades"
         query = savedInstanceState?.getString("query") ?: ""
         profile = try { JSONObject(filesDir.resolve("profile.json").readText()) }
         catch (_: Exception) { JSONObject(assets.open("profile.json").bufferedReader().use { it.readText() }) }
         val root = column().apply { setBackgroundColor(ink); setPadding(dp(20),dp(12),dp(20),dp(10)) }
         setContentView(root)
+        root.isFocusableInTouchMode=true
+        root.requestFocus()
         root.setOnApplyWindowInsetsListener { view,insets ->
             view.setPadding(dp(20)+insets.systemWindowInsetLeft,dp(12)+insets.systemWindowInsetTop,dp(20)+insets.systemWindowInsetRight,dp(10)+insets.systemWindowInsetBottom);insets
         }
