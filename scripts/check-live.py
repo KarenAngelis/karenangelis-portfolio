@@ -37,6 +37,12 @@ with urlopen(base + "/api/trends?geo=BR&limit=2", timeout=20) as response:
     trends = json.load(response)
     assert trends["geo"] == "BR" and len(trends["items"]) <= 2
 print("OK /api/trends", len(trends["items"]), "items")
+with urlopen(base + "/api/trends?geo=BR&q=Python&limit=2", timeout=20) as response:
+    news = json.load(response)
+    assert news["mode"] == "news" and news["query"] == "Python"
+    assert news["source"].startswith("https://news.google.com/rss/search")
+    assert news["items"] and len(news["items"]) <= 2
+print("OK topic search + external news", len(news["items"]), "items")
 with urlopen("https://www.karenangelis.com", timeout=20) as response:
     assert "Ideias ganham" in response.read().decode()
 print("OK www + TLS")

@@ -1,3 +1,4 @@
+import './board.js';
 import {configureNativeLink} from './native-app.js';
 const paths={
   app:{title:'Um aplicativo de verdade, no seu Android.',description:'Baixe e instale o currículo nativo em Kotlin. Explore habilidades, experiências, formação e contato, inclusive offline; atualize os dados pela API Go.',tags:['Android nativo','Kotlin','Go','Offline'],url:'/downloads/karenangelis-curriculo.apk',label:'Abrir / baixar app Android',groups:['mobile','backend','database','ux']},
@@ -25,25 +26,6 @@ document.querySelector('#scenario-skills').addEventListener('click',()=>{
   document.querySelector('#habilidades').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
 });
 selectScenario(active);
-
-const tasks=[{title:'Criar a interface',stage:0},{title:'Conectar a API',stage:1},{title:'Validar os testes',stage:0}];
-const stages=['A fazer','Em andamento','Concluído'];
-const board=document.querySelector('#demo-board');
-function renderBoard(){
-  board.replaceChildren();
-  stages.forEach((label,index)=>{
-    const column=document.createElement('section');column.className='board-column';column.setAttribute('aria-label',label);
-    const heading=document.createElement('h4');heading.textContent=label+' · '+tasks.filter(t=>t.stage===index).length;column.append(heading);
-    for(const task of tasks.filter(t=>t.stage===index)){
-      const card=document.createElement('div');card.className='board-task';const title=document.createElement('span');title.textContent=task.title;card.append(title);
-      if(index<2){const button=document.createElement('button');button.type='button';button.textContent='Avançar →';button.setAttribute('aria-label',`Mover ${task.title} para ${stages[index+1]}`);button.addEventListener('click',()=>{task.stage++;renderBoard();});card.append(button);}else{const done=document.createElement('small');done.textContent='✓ Concluído';card.append(done);}
-      column.append(card);
-    }
-    board.append(column);
-  });
-  const count=tasks.filter(t=>t.stage===2).length;document.querySelector('#board-status').textContent=count===tasks.length?'Tudo concluído. Você acabou de usar uma interface com estado e feedback.':`${count} de ${tasks.length} tarefas concluídas. Avance uma tarefa para experimentar.`;
-}
-document.querySelector('#reset-board').addEventListener('click',()=>{tasks.forEach(t=>t.stage=0);renderBoard();});renderBoard();
 
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 if(!reduced.matches&&'IntersectionObserver' in window){

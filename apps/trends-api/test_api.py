@@ -37,6 +37,34 @@ class TrendsTests(unittest.TestCase):
         response = self.client.get("/health", headers={"Origin": "http://localhost:4173"})
         self.assertEqual(response.headers["access-control-allow-origin"], "http://localhost:4173")
 
+    def test_topic_search_uses_news_and_keeps_caches_separate(self):
+        content = b'<rss><channel><item><title>Python news</title><link>https://news.google.com/articles/example</link><source>Publisher</source></item></channel></rss>'
+        async def get(url, **kwargs):
+            return httpx.Response(200, content=content, request=httpx.Request("GET", url, params=kwargs["params"]))
+        with patch.object(httpx.AsyncClient, "get", side_effect=get) as upstream:
+            news = self.client.get("/api/trends", params={"q": "  Python  ", "geo": "US"}).json()
+            cached = self.client.get("/api/trends", params={"q": "PYTHON", "geo": "US"}).json()
+            different = self.client.get("/api/trends", params={"q": "Go", "geo": "US"}).json()
+            trending = self.client.get("/api/trends", params={"geo": "US"}).json()
+        self.assertEqual(news["mode"], "news")
+        self.assertEqual(news["query"], "Python")
+        self.assertEqual(cached["query"], "PYTHON")
+        self.assertEqual(news["items"][0]["publisher"], "Publisher")
+        self.assertIn("news.google.com/rss/search", news["source"])
+        self.assertTrue(cached["cached"])
+        self.assertFalse(different["cached"])
+        self.assertEqual(trending["mode"], "trending")
+        self.assertEqual(upstream.call_count, 3)
+        self.assertEqual(upstream.call_args_list[0].kwargs["params"]["hl"], "en-US")
+
+    def test_topic_validation_and_no_results(self):
+        self.assertEqual(self.client.get("/api/trends", params={"q": "x" * 101}).status_code, 422)
+        self.assertEqual(self.client.get("/api/trends", params={"q": "bad\x00text"}).status_code, 422)
+        response = httpx.Response(200, content=b'<rss><channel/></rss>', request=httpx.Request("GET", "https://news.google.com"))
+        with patch.object(httpx.AsyncClient, "get", return_value=response):
+            result = self.client.get("/api/trends", params={"q": "unusual topic"}).json()
+        self.assertEqual(result["items"], [])
+
 
 if __name__ == "__main__":
     unittest.main()
