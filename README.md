@@ -4,11 +4,12 @@ Portfólio para `karenangelis.com`, com habilidades demonstradas por experiênci
 
 Publicado na VPS Hostinger em 7 de outubro de 2026: https://karenangelis.com.
 
-- Currículo em Kotlin/JS + Go: https://karenangelis.com/demos/kotlin/
+- Aplicativo Android em Kotlin + API Go: https://karenangelis.com/downloads/karenangelis-curriculo.apk
+- Alternativa de currículo web: https://karenangelis.com/demos/curriculo/
 - Google Trends + FastAPI: https://karenangelis.com/demos/trends/
 - Documentação interativa da API: https://karenangelis.com/docs
 
-HTTPS, frontend, bundle Kotlin e endpoints Go/FastAPI foram verificados pelo domínio público a partir da VPS. Interações de interface foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
+O currículo principal é um aplicativo Android nativo, com APK instalável, telas Kotlin e atualização pela API Go. A implementação Kotlin/JS anterior foi preservada no código como demonstração web; o antigo link `/demos/kotlin/` passa a redirecionar para o download do APK. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
 
 ## Estrutura
 
@@ -18,6 +19,7 @@ web/data/profile.json Dados compartilhados do currículo
 apps/trends-api/      FastAPI: Google Trends RSS → JSON
 apps/resume-api/      Go: endpoint de currículo
 apps/resume-kotlin/   Interface Kotlin/JS que consome a API Go
+apps/resume-android/  Aplicativo Android nativo com Kotlin, dados offline e API Go
 infra/                Caddy e imagens Docker para a VPS
 compose.yaml          Serviços da publicação
 ```
@@ -54,7 +56,7 @@ gradle -p apps/resume-kotlin jsBrowserDistribution --no-daemon
 Copy-Item apps/resume-kotlin/build/dist/js/productionExecutable/* web/demos/kotlin/ -Recurse -Force
 ```
 
-Kotlin/JS foi escolhido para tornar a experiência acessível em outra página pelo navegador. Um app Android instalável é uma etapa separada.
+A versão Android solicitada pela Karen está em `apps/resume-android`; consulte seu README para build, assinatura de demonstração e distribuição. A versão web é uma alternativa e não substitui o app nativo.
 
 ## Verificar
 

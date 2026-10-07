@@ -1,5 +1,6 @@
+import {configureNativeLink} from './native-app.js';
 const paths={
-  app:{title:'Uma ideia vira um aplicativo.',description:'Telas, navegação, estado e integração com serviços. Experimente o currículo em Kotlin conectado à API Go, e conheça o Luniay web/mobile.',tags:['Flutter / Dart','Kotlin','Go','APIs','UX'],url:'/demos/kotlin/',label:'Abrir app do currículo',groups:['mobile','backend','database','ux']},
+  app:{title:'Um aplicativo de verdade, no seu Android.',description:'Baixe e instale o currículo nativo em Kotlin. Explore habilidades, experiências, formação e contato, inclusive offline; atualize os dados pela API Go.',tags:['Android nativo','Kotlin','Go','Offline'],url:'/downloads/karenangelis-curriculo.apk',label:'Abrir / baixar app Android',groups:['mobile','backend','database','ux']},
   api:{title:'Uma pergunta vira dados na tela.',description:'A API FastAPI consulta o feed do Google Trends e devolve dados reais para você explorar por país.',tags:['Python','FastAPI','Contratos','Tratamento de erros'],url:'/demos/trends/',label:'Consultar tendências reais',groups:['backend','database','qa','delivery']},
   automation:{title:'Um processo vira um fluxo conectado.',description:'Atendimento, conectores, eventos e tarefas em segundo plano. Conheça o Clycka e as habilidades por trás de suas integrações.',tags:['Webhooks','Workers','OAuth / PKCE','Idempotência'],url:'https://clycka.com/',label:'Conhecer Clycka',groups:['integrations','security','backend','delivery']},
   data:{title:'Dados viram uma decisão melhor.',description:'Explore o projeto de demanda e estoque, com Python, organização de dados, métricas e relatórios.',tags:['pandas','NumPy','Validação temporal','Dashboards'],url:'https://github.com/KarenAngelis/Reinaldo',label:'Explorar projeto de dados',groups:['ai-data','database','business']},
@@ -14,6 +15,7 @@ function selectScenario(key){
   const tags=document.querySelector('#scenario-tags');tags.replaceChildren();
   for(const text of scenario.tags){const tag=document.createElement('span');tag.textContent=text;tags.append(tag);}
   const example=document.querySelector('#scenario-example');example.href=scenario.url;example.textContent=scenario.label+' ↗';
+  if(key==='app'){configureNativeLink(example);}else{example.removeAttribute('download');example.target='_blank';example.removeAttribute('aria-label');}
   chooser.querySelectorAll('button').forEach(button=>{const selected=button.dataset.scenario===key;button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));});
   const preview=document.querySelector('#scenario-preview');preview.classList.remove('changed');requestAnimationFrame(()=>preview.classList.add('changed'));
 }
