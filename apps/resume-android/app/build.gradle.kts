@@ -12,6 +12,7 @@ android {
     buildTypes {
         create("portfolio") {
             initWith(getByName("release"))
+            matchingFallbacks += listOf("release")
             signingConfig = signingConfigs.getByName("debug")
             isDebuggable = false
             isMinifyEnabled = false
