@@ -9,7 +9,8 @@ fun main() {
     window.fetch("$origin/api/profile").then { response ->
         if (!response.ok) error("HTTP ${response.status}")
         response.json()
-    }.then { profile ->
+    }.then { raw ->
+        val profile: dynamic = raw
         root.textContent = ""
         val title = document.createElement("h2")
         title.textContent = profile.name as String
@@ -26,9 +27,8 @@ fun main() {
             skills.appendChild(badge)
         }
         root.appendChild(skills)
-        val projects = profile.projects
-        val count = projects.length as Int
-        for (index in 0 until count) {
+        val projects = profile.projects as Array<dynamic>
+        for (index in projects.indices) {
             val item = projects[index]
             val row = document.createElement("article") as HTMLElement
             row.className = "project-row"

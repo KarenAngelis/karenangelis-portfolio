@@ -32,6 +32,11 @@ jobs:
         with:
           go-version: '1.26'
       - run: go test ./...
+      - run: GOOS=windows GOARCH=amd64 go build -o resume-api.exe .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume-api-windows
+          path: apps/resume-api/resume-api.exe
   kotlin:
     runs-on: ubuntu-latest
     steps:
