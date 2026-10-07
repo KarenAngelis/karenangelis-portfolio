@@ -24,4 +24,4 @@ O inventário mais recente prevalece sobre currículos anteriores quando corrige
 
 ADS é a formação atual em andamento. Marketing é graduação tecnológica concluída. A pós em Direito Tributário foi documentada como concluída; relatos sobre NFS-e não geraram uma segunda pós por inferência. Kanban Foundation aparece como obtenção histórica com validade documental até 2022. Espanhol foi preservado com nível atual a atualizar. Go é identificado como laboratório deste portfólio, sem atribuir histórico profissional anterior.
 
-Luniay e Clycka usam somente os links públicos indicados pela Karen. Fontes internas de trabalho, dados da pesquisa Reinaldo, contatos pessoais e motivação familiar/financeira não foram publicados. Não foram copiados código ou telas corporativas para criar demonstrações.
+Luniay e Clycka usam somente os links públicos indicados pela Karen. Fontes internas de trabalho, dados da pesquisa Reinaldo e motivação familiar/financeira não foram publicados. Não foram copiados código ou telas corporativas para criar demonstrações. O WhatsApp +55 (47) 99733-6808 foi incluído por pedido explícito da Karen nesta conversa.
