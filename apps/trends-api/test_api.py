@@ -37,6 +37,15 @@ class TrendsTests(unittest.TestCase):
         response = self.client.get("/health", headers={"Origin": "http://localhost:4173"})
         self.assertEqual(response.headers["access-control-allow-origin"], "http://localhost:4173")
 
+    def test_news_requires_topic_and_never_returns_trending(self):
+        for params in ({}, {"q": ""}, {"q": "   "}):
+            self.assertEqual(self.client.get("/api/news", params=params).status_code, 422)
+        response = httpx.Response(200, content=b'<rss><channel><item><title>News</title><link>https://news.google.com/example</link></item></channel></rss>', request=httpx.Request("GET", "https://news.google.com"))
+        with patch.object(httpx.AsyncClient, "get", return_value=response):
+            result = self.client.get("/api/news", params={"q": "Python"}).json()
+        self.assertEqual(result["mode"], "news")
+        self.assertNotIn("traffic", result["items"][0])
+
     def test_topic_search_uses_news_and_keeps_caches_separate(self):
         content = b'<rss><channel><item><title>Python news</title><link>https://news.google.com/articles/example</link><source>Publisher</source></item></channel></rss>'
         async def get(url, **kwargs):

@@ -11,7 +11,7 @@ from defusedxml import ElementTree
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="Karen Angelis · Trends Lab", version="0.2.0")
+app = FastAPI(title="Karen Angelis · Notícias", version="0.3.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:4173", "http://127.0.0.1:4173", "https://karenangelis.com", "https://www.karenangelis.com"],
@@ -35,7 +35,15 @@ def health():
     return {"status": "ok"}
 
 
-@app.get("/api/trends")
+@app.get("/api/news")
+async def news(q: str = Query(..., min_length=1, max_length=100), geo: Literal["BR", "US", "PT"] = "BR", limit: int = Query(10, ge=1, le=20)):
+    if not q.strip():
+        raise HTTPException(422, "Digite um assunto para buscar notícias.")
+    result = await trends(geo=geo, limit=limit, q=q)
+    return {**result, "items": [{key: item[key] for key in ("title", "published", "url", "publisher")} for item in result["items"]]}
+
+
+@app.get("/api/trends", include_in_schema=False)
 async def trends(geo: Literal["BR", "US", "PT"] = "BR", limit: int = Query(10, ge=1, le=20), q: str = Query("", max_length=100)):
     query = " ".join(q.split())
     if any(unicodedata.category(char).startswith("C") for char in query):

@@ -2,7 +2,7 @@
     encode zstd gzip
     header /downloads/*.apk Content-Type application/vnd.android.package-archive
     header /downloads/*.apk Content-Disposition "attachment; filename=karenangelis-curriculo.apk"
-    @trends path /api/trends /docs /openapi.json
+    @trends path /api/trends /api/news /docs /openapi.json
     handle @trends {
         reverse_proxy trends-api:8000
     }

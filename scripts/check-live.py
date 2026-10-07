@@ -5,7 +5,7 @@ import zipfile
 from urllib.request import urlopen
 
 base = "https://karenangelis.com"
-for path, marker in [("/", "Ideias ganham"), ("/demos/trends/", "Google Trends"), ("/demos/kotlin/", "kotlin-app")]:
+for path, marker in [("/", "Ideias ganham"), ("/demos/trends/", "Buscar notícias"), ("/demos/kotlin/", "kotlin-app")]:
     with urlopen(base + path, timeout=20) as response:
         text = response.read().decode()
         assert response.status == 200 and marker in text, path
@@ -32,11 +32,7 @@ with urlopen(base, timeout=20) as response:
     for technology in ["Python", "JavaScript", "TypeScript", "Dart", "Kotlin", "Go", "SQL", "HTML", "CSS", "React", "Next.js", "FastAPI", "Flutter", "Spring Boot", "Express", "Node.js", "PostgreSQL", "Docker", "Kubernetes / Rancher", "VPS", "CI/CD"]:
         assert technology in home, technology
 print("OK skills + infrastructure + dynamic UI + WhatsApp")
-with urlopen(base + "/api/trends?geo=BR&limit=2", timeout=20) as response:
-    trends = json.load(response)
-    assert trends["geo"] == "BR" and len(trends["items"]) <= 2
-print("OK /api/trends", len(trends["items"]), "items")
-with urlopen(base + "/api/trends?geo=BR&q=Python&limit=2", timeout=20) as response:
+with urlopen(base + "/api/news?geo=BR&q=Python&limit=2", timeout=20) as response:
     news = json.load(response)
     assert news["mode"] == "news" and news["query"] == "Python"
     assert news["source"].startswith("https://news.google.com/rss/search")
