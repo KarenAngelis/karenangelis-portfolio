@@ -30,4 +30,4 @@ Luniay e Clycka usam somente os links públicos indicados pela Karen. Fontes int
 
 Em 7 de outubro de 2026, as oito experiências receberam páginas próprias com atividades, hard skills e soft skills contextualizadas. O conteúdo usa o inventário e os currículos já indicados, preservando os vínculos de bolsa, colaboração e freelance. Não foram criadas métricas de desempenho ou atribuídos cargos de liderança.
 
-As logos foram obtidas de páginas oficiais; os arquivos e URLs estão em `company-logo-sources.json`. A marca do JIP/Raws ainda não foi localizada; o nome aparece provisoriamente enquanto Karen informa o asset.
+As logos foram obtidas de páginas oficiais; os arquivos e URLs estão em `company-logo-sources.json`. Karen informou não ter mais a logo do JIP/Raws. O projeto aparece identificado pelo nome, no mesmo formato visual das demais marcas.
