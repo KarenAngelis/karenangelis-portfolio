@@ -6,6 +6,7 @@ on:
       - 'apps/resume-android/**'
       - 'web/data/profile.json'
       - '.github/workflows/android.yml'
+      - 'scripts/check-android.py'
 jobs:
   apk:
     runs-on: ubuntu-latest
@@ -42,8 +43,9 @@ jobs:
         with:
           api-level: 35
           arch: x86_64
-          profile: pixel_6
+          profile: pixel_2
           disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -camera-front none -memory 2048 -cores 2
           script: python3 scripts/check-android.py
       - uses: actions/upload-artifact@v4
         if: always()

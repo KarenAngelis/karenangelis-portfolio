@@ -3,6 +3,7 @@ import pathlib
 import subprocess
 import time
 import xml.etree.ElementTree as ET
+import re
 
 out = pathlib.Path("android-artifacts")
 package = "com.karenangelis.curriculo"
@@ -17,6 +18,13 @@ def snapshot():
 def find(text):
     for _ in range(10):
         root = snapshot()
+        texts = [node.get("text", "") for node in root.iter("node")]
+        if "Quickstep isn't responding" in texts:
+            close = next(node for node in root.iter("node") if node.get("text") == "Close app")
+            x1,y1,x2,y2 = map(int,re.findall(r"\d+",close.get("bounds")))
+            adb("shell","input","tap",str((x1+x2)//2),str((y1+y2)//2))
+            adb("shell","am","start","-W","-n",package+"/.MainActivity")
+            continue
         for node in root.iter("node"):
             if node.get("text") == text:
                 return node
@@ -28,14 +36,16 @@ def find(text):
     raise AssertionError("Native screen text missing: " + text)
 
 def tap(text):
-    import re
     node = find(text)
     x1,y1,x2,y2 = map(int,re.findall(r"\d+",node.get("bounds")))
     adb("shell", "input", "tap", str((x1+x2)//2), str((y1+y2)//2))
 
 adb("install", "-r", str(out/"karenangelis-curriculo.apk"))
+adb("shell","input","keyevent","KEYCODE_WAKEUP")
+adb("shell","wm","dismiss-keyguard")
 adb("shell", "am", "start", "-W", "-n", package+"/.MainActivity")
 find("Karen Denich de Angelis")
+find("Currículo atualizado pela API Go")
 adb("shell", "screencap", "-p", "/sdcard/karen-native.png")
 adb("pull", "/sdcard/karen-native.png", str(out/"android-native.png"))
 tap("Experiência")
