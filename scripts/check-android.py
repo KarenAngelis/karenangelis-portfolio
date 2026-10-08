@@ -26,7 +26,7 @@ def find(text):
             adb("shell","am","start","-W","-n",package+"/.MainActivity")
             continue
         for node in root.iter("node"):
-            if node.get("text") == text:
+            if node.get("text") == text or node.get("content-desc") == text:
                 return node
         time.sleep(1)
     (out/"failure-ui.xml").write_text(ET.tostring(root,encoding="unicode"))
@@ -41,11 +41,21 @@ def tap(text):
     adb("shell", "input", "tap", str((x1+x2)//2), str((y1+y2)//2))
 
 adb("install", "-r", str(out/"karenangelis-curriculo.apk"))
+adb("logcat", "-c")
 adb("shell","input","keyevent","KEYCODE_WAKEUP")
 adb("shell","wm","dismiss-keyguard")
 adb("shell", "am", "start", "-W", "-n", package+"/.MainActivity")
 find("Karen Denich de Angelis")
-find("Currículo atualizado pela API Go")
+for _ in range(20):
+    if "Resume profile refreshed from Go API" in adb("logcat", "-d", "-t", "500"):
+        break
+    time.sleep(1)
+else:
+    raise AssertionError("Native app did not refresh its profile from the Go API")
+root = snapshot()
+assert not any(node.get("text", "").startswith("Currículo atualizado") or node.get("text") == "Vamos conversar" for node in root.iter("node"))
+for label in ("Habilidades", "Experiência", "Formação", "Idiomas", "Projetos", "Contato"):
+    find(label)
 adb("shell", "screencap", "-p", "/sdcard/karen-native.png")
 adb("pull", "/sdcard/karen-native.png", str(out/"android-native.png"))
 tap("Experiência")

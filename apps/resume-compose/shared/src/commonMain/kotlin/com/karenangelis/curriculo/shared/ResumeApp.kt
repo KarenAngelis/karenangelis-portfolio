@@ -3,14 +3,14 @@ package com.karenangelis.curriculo.shared
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.selected
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -41,7 +41,6 @@ fun ResumeApp() {
         val profile=appState.profile
         val selected=appState.selected
         val query=appState.query
-        val status=appState.status
         val busy=appState.busy
         val scope=rememberCoroutineScope()
         val open=LocalUriHandler.current
@@ -52,6 +51,7 @@ fun ResumeApp() {
                 try {
                     val updated=withTimeout(12000) { fetchProfile() }
                     appState=appState.copy(profile=updated,status="Currículo atualizado pela API Go",busy=false)
+                    println("Resume profile refreshed from Go API")
                 } catch(_: TimeoutCancellationException) {
                     appState=appState.copy(status="Sem conexão · usando currículo incluído no app",busy=false)
                 } catch(e: CancellationException) { throw e }
@@ -76,13 +76,24 @@ fun ResumeApp() {
             } },
             bottomBar={ Surface(color=Panel) {
                 Column(Modifier.navigationBarsPadding()) {
-                    Text(status,fontSize=10.sp,color=Muted,modifier=Modifier.padding(horizontal=18.dp,vertical=4.dp))
-                    Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(horizontal=8.dp,vertical=4.dp)) {
+                    Row(Modifier.fillMaxWidth().padding(horizontal=8.dp,vertical=8.dp)) {
                         labels.forEachIndexed { index,label ->
-                            TextButton(onClick={appState=appState.copy(selected=index)},colors=ButtonDefaults.textButtonColors(contentColor=if(selected==index) Lime else Muted)) { Text(label,fontSize=11.sp) }
+                            val active=selected==index
+                            IconButton(
+                                onClick={appState=appState.copy(selected=index)},
+                                modifier=Modifier.weight(1f).height(48.dp).semantics {
+                                    contentDescription=label
+                                    this.selected=active
+                                },
+                                colors=IconButtonDefaults.iconButtonColors(
+                                    containerColor=if(active) Lime.copy(alpha=.12f) else Color.Transparent,
+                                    contentColor=if(active) Lime else Muted
+                                )
+                            ) {
+                                Icon(NavigationIcons[index],contentDescription=null,modifier=Modifier.size(23.dp))
+                            }
                         }
                     }
-                    TextButton(onClick={visit(profile.text("whatsapp"))},modifier=Modifier.fillMaxWidth()) { Text("Vamos conversar") }
                 }
             } }
         ) { padding ->
