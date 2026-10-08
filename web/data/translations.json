@@ -4318,5 +4318,25 @@
     "en-US": "Oct 2025 — Jun 2026",
     "it-IT": "ott 2025 — giu 2026",
     "pt-PT": "out/2025 — jun/2026"
+  },
+  "Seções do currículo": {
+    "en-US": "Résumé sections",
+    "it-IT": "Sezioni del curriculum",
+    "pt-PT": "Secções do currículo"
+  },
+  "Como trabalho": {
+    "en-US": "How I work",
+    "it-IT": "Come lavoro",
+    "pt-PT": "Como trabalho"
+  },
+  "Carregando currículo…": {
+    "en-US": "Loading résumé…",
+    "it-IT": "Caricamento del curriculum…",
+    "pt-PT": "A carregar currículo…"
+  },
+  "Experimentar a versão Kotlin + Go": {
+    "en-US": "Try the Kotlin + Go version",
+    "it-IT": "Prova la versione Kotlin + Go",
+    "pt-PT": "Experimentar a versão Kotlin + Go"
   }
 }
