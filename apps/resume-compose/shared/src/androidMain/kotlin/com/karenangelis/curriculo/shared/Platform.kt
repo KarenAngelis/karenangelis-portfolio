@@ -3,6 +3,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.net.HttpURLConnection
 import java.net.URL
+internal actual fun platformLocale(): String = "pt-BR"
 internal actual suspend fun loadProfileBody(): String = withContext(Dispatchers.IO) {
     val connection=URL("https://karenangelis.com/api/profile").openConnection() as HttpURLConnection
     try {

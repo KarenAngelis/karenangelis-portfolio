@@ -74,6 +74,16 @@ class TrendsTests(unittest.TestCase):
             result = self.client.get("/api/trends", params={"q": "unusual topic"}).json()
         self.assertEqual(result["items"], [])
 
+    def test_italian_news_uses_italian_source(self):
+        async def get(url, **kwargs):
+            return httpx.Response(200, content=b'<rss><channel/></rss>', request=httpx.Request("GET", url, params=kwargs["params"]))
+        with patch.object(httpx.AsyncClient, "get", side_effect=get) as upstream:
+            result = self.client.get("/api/news", params={"q": "tecnologia", "geo": "IT"})
+        self.assertEqual(result.status_code, 200)
+        self.assertEqual(upstream.call_args.kwargs["params"]["hl"], "it-IT")
+        self.assertEqual(upstream.call_args.kwargs["params"]["gl"], "IT")
+        self.assertEqual(upstream.call_args.kwargs["params"]["ceid"], "IT:it")
+
 
 if __name__ == "__main__":
     unittest.main()

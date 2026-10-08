@@ -1,0 +1,4322 @@
+{
+  "Karen Angelis · ideias em prática": {
+    "en-US": "Karen Angelis · ideas in practice",
+    "it-IT": "Karen Angelis · idee in pratica",
+    "pt-PT": "Karen Angelis · ideias em prática"
+  },
+  "Ir para o conteúdo": {
+    "en-US": "Skip to content",
+    "it-IT": "Vai al contenuto",
+    "pt-PT": "Ir para o conteúdo"
+  },
+  "ka": {
+    "en-US": "ka",
+    "it-IT": "ka",
+    "pt-PT": "ka"
+  },
+  "✳": {
+    "en-US": "✳",
+    "it-IT": "✳",
+    "pt-PT": "✳"
+  },
+  "Navegação principal": {
+    "en-US": "Main navigation",
+    "it-IT": "Navigazione principale",
+    "pt-PT": "Navegação principal"
+  },
+  "Habilidades": {
+    "en-US": "Skills",
+    "it-IT": "Competenze",
+    "pt-PT": "Habilidades"
+  },
+  "Laboratório": {
+    "en-US": "Lab",
+    "it-IT": "Laboratorio",
+    "pt-PT": "Laboratório"
+  },
+  "Projetos": {
+    "en-US": "Projects",
+    "it-IT": "Progetti",
+    "pt-PT": "Projetos"
+  },
+  "Sobre": {
+    "en-US": "About",
+    "it-IT": "Chi sono",
+    "pt-PT": "Sobre"
+  },
+  "Vamos conversar": {
+    "en-US": "Let's talk",
+    "it-IT": "Parliamone",
+    "pt-PT": "Vamos conversar"
+  },
+  "KAREN ANGELIS / DESENVOLVIMENTO FULL STACK": {
+    "en-US": "KAREN ANGELIS / FULL STACK DEVELOPMENT",
+    "it-IT": "KAREN ANGELIS / SVILUPPO FULL STACK",
+    "pt-PT": "KAREN ANGELIS / DESENVOLVIMENTO FULL STACK"
+  },
+  "Ideias ganham": {
+    "en-US": "Ideas come",
+    "it-IT": "Le idee prendono",
+    "pt-PT": "Ideias ganham"
+  },
+  "vida quando": {
+    "en-US": "to life when",
+    "it-IT": "vita quando",
+    "pt-PT": "vida quando"
+  },
+  "viram prática.": {
+    "en-US": "put into practice.",
+    "it-IT": "diventano realtà.",
+    "pt-PT": "viram prática."
+  },
+  "Um portfólio para explorar, clicar e experimentar.": {
+    "en-US": "A portfolio to explore, click and try.",
+    "it-IT": "Un portfolio da esplorare, cliccare e provare.",
+    "pt-PT": "Um portfólio para explorar, clicar e experimentar."
+  },
+  "Conheça meu trabalho usando o que eu construo.": {
+    "en-US": "Get to know my work by using what I build.",
+    "it-IT": "Scopri il mio lavoro usando ciò che creo.",
+    "pt-PT": "Conheça meu trabalho usando o que eu construo."
+  },
+  "Experimente minhas habilidades": {
+    "en-US": "Try my skills",
+    "it-IT": "Prova le mie competenze",
+    "pt-PT": "Experimente minhas habilidades"
+  },
+  "ideia → código → experiência": {
+    "en-US": "idea → code → experience",
+    "it-IT": "idea → codice → esperienza",
+    "pt-PT": "ideia → código → experiência"
+  },
+  "karen / laboratório": {
+    "en-US": "karen / lab",
+    "it-IT": "karen / laboratorio",
+    "pt-PT": "karen / laboratório"
+  },
+  "01": {
+    "en-US": "01",
+    "it-IT": "01",
+    "pt-PT": "01"
+  },
+  "const": {
+    "en-US": "const",
+    "it-IT": "const",
+    "pt-PT": "const"
+  },
+  "habilidade = {": {
+    "en-US": "skill = {",
+    "it-IT": "competenza = {",
+    "pt-PT": "habilidade = {"
+  },
+  "02": {
+    "en-US": "02",
+    "it-IT": "02",
+    "pt-PT": "02"
+  },
+  "interface:": {
+    "en-US": "interface:",
+    "it-IT": "interface:",
+    "pt-PT": "interface:"
+  },
+  "intuitiva": {
+    "en-US": "intuitive",
+    "it-IT": "intuitiva",
+    "pt-PT": "intuitiva"
+  },
+  ",": {
+    "en-US": ",",
+    "it-IT": ",",
+    "pt-PT": ","
+  },
+  "03": {
+    "en-US": "03",
+    "it-IT": "03",
+    "pt-PT": "03"
+  },
+  "api:": {
+    "en-US": "api:",
+    "it-IT": "api:",
+    "pt-PT": "api:"
+  },
+  "conectada": {
+    "en-US": "connected",
+    "it-IT": "connessa",
+    "pt-PT": "conectada"
+  },
+  "04": {
+    "en-US": "04",
+    "it-IT": "04",
+    "pt-PT": "04"
+  },
+  "ideia:": {
+    "en-US": "idea:",
+    "it-IT": "idea:",
+    "pt-PT": "ideia:"
+  },
+  "em movimento": {
+    "en-US": "in motion",
+    "it-IT": "in movimento",
+    "pt-PT": "em movimento"
+  },
+  "05": {
+    "en-US": "05",
+    "it-IT": "05",
+    "pt-PT": "05"
+  },
+  "};": {
+    "en-US": "};",
+    "it-IT": "};",
+    "pt-PT": "};"
+  },
+  "✓ Pronta para experimentar.": {
+    "en-US": "✓ Ready to try.",
+    "it-IT": "✓ Pronto da provare.",
+    "pt-PT": "✓ Pronta para experimentar."
+  },
+  "</> construir é meu jeito de explicar.": {
+    "en-US": "</> building is how I explain.",
+    "it-IT": "</> costruire è il mio modo di spiegare.",
+    "pt-PT": "</> construir é meu jeito de explicar."
+  },
+  "INTERAÇÃO É A MELHOR APRESENTAÇÃO": {
+    "en-US": "INTERACTION IS THE BEST INTRODUCTION",
+    "it-IT": "L'INTERAZIONE È LA MIGLIORE PRESENTAZIONE",
+    "pt-PT": "INTERAÇÃO É A MELHOR APRESENTAÇÃO"
+  },
+  "Tecnologias": {
+    "en-US": "Technologies",
+    "it-IT": "Tecnologie",
+    "pt-PT": "Tecnologias"
+  },
+  "Passe o mouse ou toque para conhecer cada área.": {
+    "en-US": "Hover or tap to discover each area.",
+    "it-IT": "Passa il mouse o tocca per scoprire ogni area.",
+    "pt-PT": "Passe o mouse ou toque para conhecer cada área."
+  },
+  "Pausar movimento": {
+    "en-US": "Pause motion",
+    "it-IT": "Metti in pausa",
+    "pt-PT": "Pausar movimento"
+  },
+  "Tecnologias, faixa 1": {
+    "en-US": "Technologies, row 1",
+    "it-IT": "Tecnologie, riga 1",
+    "pt-PT": "Tecnologias, faixa 1"
+  },
+  "Estudos complementares": {
+    "en-US": "Additional studies",
+    "it-IT": "Studi complementari",
+    "pt-PT": "Estudos complementares"
+  },
+  "ASP.NET — Estudos complementares": {
+    "en-US": "ASP.NET — Estudos complementares",
+    "it-IT": "ASP.NET — Estudos complementares",
+    "pt-PT": "ASP.NET — Estudos complementares"
+  },
+  "ASP.NET": {
+    "en-US": "ASP.NET",
+    "it-IT": "ASP.NET",
+    "pt-PT": "ASP.NET"
+  },
+  "UX e produto": {
+    "en-US": "UX and product",
+    "it-IT": "UX e prodotto",
+    "pt-PT": "UX e produto"
+  },
+  "UX — UX e produto": {
+    "en-US": "UX — UX e produto",
+    "it-IT": "UX — UX e produto",
+    "pt-PT": "UX — UX e produto"
+  },
+  "UX": {
+    "en-US": "UX",
+    "it-IT": "UX",
+    "pt-PT": "UX"
+  },
+  "QA e testes": {
+    "en-US": "QA and testing",
+    "it-IT": "QA e test",
+    "pt-PT": "QA e testes"
+  },
+  "Jest — QA e testes": {
+    "en-US": "Jest — QA e testes",
+    "it-IT": "Jest — QA e testes",
+    "pt-PT": "Jest — QA e testes"
+  },
+  "Jest": {
+    "en-US": "Jest",
+    "it-IT": "Jest",
+    "pt-PT": "Jest"
+  },
+  "QA — QA e testes": {
+    "en-US": "QA — QA e testes",
+    "it-IT": "QA — QA e testes",
+    "pt-PT": "QA — QA e testes"
+  },
+  "QA": {
+    "en-US": "QA",
+    "it-IT": "QA",
+    "pt-PT": "QA"
+  },
+  "Negócio e colaboração": {
+    "en-US": "Business and collaboration",
+    "it-IT": "Business e collaborazione",
+    "pt-PT": "Negócio e colaboração"
+  },
+  "NPS — Negócio e colaboração": {
+    "en-US": "NPS — Negócio e colaboração",
+    "it-IT": "NPS — Negócio e colaboração",
+    "pt-PT": "NPS — Negócio e colaboração"
+  },
+  "NPS": {
+    "en-US": "NPS",
+    "it-IT": "NPS",
+    "pt-PT": "NPS"
+  },
+  "Bancos e persistência": {
+    "en-US": "Databases and persistence",
+    "it-IT": "Database e persistenza",
+    "pt-PT": "Bancos e persistência"
+  },
+  "SQLModel — Bancos e persistência": {
+    "en-US": "SQLModel — Bancos e persistência",
+    "it-IT": "SQLModel — Bancos e persistência",
+    "pt-PT": "SQLModel — Bancos e persistência"
+  },
+  "SQLModel": {
+    "en-US": "SQLModel",
+    "it-IT": "SQLModel",
+    "pt-PT": "SQLModel"
+  },
+  "Cypress — Estudos complementares": {
+    "en-US": "Cypress — Estudos complementares",
+    "it-IT": "Cypress — Estudos complementares",
+    "pt-PT": "Cypress — Estudos complementares"
+  },
+  "Cypress": {
+    "en-US": "Cypress",
+    "it-IT": "Cypress",
+    "pt-PT": "Cypress"
+  },
+  "Infraestrutura e entrega": {
+    "en-US": "Infrastructure and delivery",
+    "it-IT": "Infrastruttura e distribuzione",
+    "pt-PT": "Infraestrutura e entrega"
+  },
+  "Git — Infraestrutura e entrega": {
+    "en-US": "Git — Infraestrutura e entrega",
+    "it-IT": "Git — Infraestrutura e entrega",
+    "pt-PT": "Git — Infraestrutura e entrega"
+  },
+  "Git": {
+    "en-US": "Git",
+    "it-IT": "Git",
+    "pt-PT": "Git"
+  },
+  "Ruby — Estudos complementares": {
+    "en-US": "Ruby — Estudos complementares",
+    "it-IT": "Ruby — Estudos complementares",
+    "pt-PT": "Ruby — Estudos complementares"
+  },
+  "Ruby": {
+    "en-US": "Ruby",
+    "it-IT": "Ruby",
+    "pt-PT": "Ruby"
+  },
+  "Transações e rollback — Bancos e persistência": {
+    "en-US": "Transações e rollback — Bancos e persistência",
+    "it-IT": "Transações e rollback — Bancos e persistência",
+    "pt-PT": "Transações e rollback — Bancos e persistência"
+  },
+  "Transações e rollback": {
+    "en-US": "Transactions and rollback",
+    "it-IT": "Transazioni e rollback",
+    "pt-PT": "Transações e rollback"
+  },
+  "Tailwind CSS — UX e produto": {
+    "en-US": "Tailwind CSS — UX e produto",
+    "it-IT": "Tailwind CSS — UX e produto",
+    "pt-PT": "Tailwind CSS — UX e produto"
+  },
+  "Tailwind CSS": {
+    "en-US": "Tailwind CSS",
+    "it-IT": "Tailwind CSS",
+    "pt-PT": "Tailwind CSS"
+  },
+  "C# — Estudos complementares": {
+    "en-US": "C# — Estudos complementares",
+    "it-IT": "C# — Estudos complementares",
+    "pt-PT": "C# — Estudos complementares"
+  },
+  "C#": {
+    "en-US": "C#",
+    "it-IT": "C#",
+    "pt-PT": "C#"
+  },
+  "IA, dados e integrações": {
+    "en-US": "AI, data and integrations",
+    "it-IT": "IA, dati e integrazioni",
+    "pt-PT": "IA, dados e integrações"
+  },
+  "OAuth / PKCE — IA, dados e integrações": {
+    "en-US": "OAuth / PKCE — IA, dados e integrações",
+    "it-IT": "OAuth / PKCE — IA, dados e integrações",
+    "pt-PT": "OAuth / PKCE — IA, dados e integrações"
+  },
+  "OAuth / PKCE": {
+    "en-US": "OAuth / PKCE",
+    "it-IT": "OAuth / PKCE",
+    "pt-PT": "OAuth / PKCE"
+  },
+  "Build e deploy — Infraestrutura e entrega": {
+    "en-US": "Build e deploy — Infraestrutura e entrega",
+    "it-IT": "Build e deploy — Infraestrutura e entrega",
+    "pt-PT": "Build e deploy — Infraestrutura e entrega"
+  },
+  "Build e deploy": {
+    "en-US": "Build and deployment",
+    "it-IT": "Build e distribuzione",
+    "pt-PT": "Build e deploy"
+  },
+  "Linguagens e bases": {
+    "en-US": "Languages and fundamentals",
+    "it-IT": "Linguaggi e fondamenti",
+    "pt-PT": "Linguagens e bases"
+  },
+  "Go — Linguagens e bases": {
+    "en-US": "Go — Linguagens e bases",
+    "it-IT": "Go — Linguagens e bases",
+    "pt-PT": "Go — Linguagens e bases"
+  },
+  "Go": {
+    "en-US": "Go",
+    "it-IT": "Go",
+    "pt-PT": "Go"
+  },
+  "pytest — QA e testes": {
+    "en-US": "pytest — QA e testes",
+    "it-IT": "pytest — QA e testes",
+    "pt-PT": "pytest — QA e testes"
+  },
+  "pytest": {
+    "en-US": "pytest",
+    "it-IT": "pytest",
+    "pt-PT": "pytest"
+  },
+  "Vue — Estudos complementares": {
+    "en-US": "Vue — Estudos complementares",
+    "it-IT": "Vue — Estudos complementares",
+    "pt-PT": "Vue — Estudos complementares"
+  },
+  "Vue": {
+    "en-US": "Vue",
+    "it-IT": "Vue",
+    "pt-PT": "Vue"
+  },
+  "Workers — IA, dados e integrações": {
+    "en-US": "Workers — IA, dados e integrações",
+    "it-IT": "Workers — IA, dados e integrações",
+    "pt-PT": "Workers — IA, dados e integrações"
+  },
+  "Workers": {
+    "en-US": "Workers",
+    "it-IT": "Workers",
+    "pt-PT": "Workers"
+  },
+  "pandas — IA, dados e integrações": {
+    "en-US": "pandas — IA, dados e integrações",
+    "it-IT": "pandas — IA, dados e integrações",
+    "pt-PT": "pandas — IA, dados e integrações"
+  },
+  "pandas": {
+    "en-US": "pandas",
+    "it-IT": "pandas",
+    "pt-PT": "pandas"
+  },
+  "Kotlin — Linguagens e bases": {
+    "en-US": "Kotlin — Linguagens e bases",
+    "it-IT": "Kotlin — Linguagens e bases",
+    "pt-PT": "Kotlin — Linguagens e bases"
+  },
+  "Kotlin": {
+    "en-US": "Kotlin",
+    "it-IT": "Kotlin",
+    "pt-PT": "Kotlin"
+  },
+  "Acessibilidade — UX e produto": {
+    "en-US": "Acessibilidade — UX e produto",
+    "it-IT": "Acessibilidade — UX e produto",
+    "pt-PT": "Acessibilidade — UX e produto"
+  },
+  "Acessibilidade": {
+    "en-US": "Accessibility",
+    "it-IT": "Accessibilità",
+    "pt-PT": "Acessibilidade"
+  },
+  "Playwright — QA e testes": {
+    "en-US": "Playwright — QA e testes",
+    "it-IT": "Playwright — QA e testes",
+    "pt-PT": "Playwright — QA e testes"
+  },
+  "Playwright": {
+    "en-US": "Playwright",
+    "it-IT": "Playwright",
+    "pt-PT": "Playwright"
+  },
+  "Angular — Estudos complementares": {
+    "en-US": "Angular — Estudos complementares",
+    "it-IT": "Angular — Estudos complementares",
+    "pt-PT": "Angular — Estudos complementares"
+  },
+  "Angular": {
+    "en-US": "Angular",
+    "it-IT": "Angular",
+    "pt-PT": "Angular"
+  },
+  "Frameworks e runtimes": {
+    "en-US": "Frameworks and runtimes",
+    "it-IT": "Framework e runtime",
+    "pt-PT": "Frameworks e runtimes"
+  },
+  "Node.js — Frameworks e runtimes": {
+    "en-US": "Node.js — Frameworks e runtimes",
+    "it-IT": "Node.js — Frameworks e runtimes",
+    "pt-PT": "Node.js — Frameworks e runtimes"
+  },
+  "Node.js": {
+    "en-US": "Node.js",
+    "it-IT": "Node.js",
+    "pt-PT": "Node.js"
+  },
+  "Confluence — Negócio e colaboração": {
+    "en-US": "Confluence — Negócio e colaboração",
+    "it-IT": "Confluence — Negócio e colaboração",
+    "pt-PT": "Confluence — Negócio e colaboração"
+  },
+  "Confluence": {
+    "en-US": "Confluence",
+    "it-IT": "Confluence",
+    "pt-PT": "Confluence"
+  },
+  "Express — Frameworks e runtimes": {
+    "en-US": "Express — Frameworks e runtimes",
+    "it-IT": "Express — Frameworks e runtimes",
+    "pt-PT": "Express — Frameworks e runtimes"
+  },
+  "Express": {
+    "en-US": "Express",
+    "it-IT": "Express",
+    "pt-PT": "Express"
+  },
+  "Docker — Infraestrutura e entrega": {
+    "en-US": "Docker — Infraestrutura e entrega",
+    "it-IT": "Docker — Infraestrutura e entrega",
+    "pt-PT": "Docker — Infraestrutura e entrega"
+  },
+  "Docker": {
+    "en-US": "Docker",
+    "it-IT": "Docker",
+    "pt-PT": "Docker"
+  },
+  "ERP / SaaS — Negócio e colaboração": {
+    "en-US": "ERP / SaaS — Negócio e colaboração",
+    "it-IT": "ERP / SaaS — Negócio e colaboração",
+    "pt-PT": "ERP / SaaS — Negócio e colaboração"
+  },
+  "ERP / SaaS": {
+    "en-US": "ERP / SaaS",
+    "it-IT": "ERP / SaaS",
+    "pt-PT": "ERP / SaaS"
+  },
+  "Spring Boot — Frameworks e runtimes": {
+    "en-US": "Spring Boot — Frameworks e runtimes",
+    "it-IT": "Spring Boot — Frameworks e runtimes",
+    "pt-PT": "Spring Boot — Frameworks e runtimes"
+  },
+  "Spring Boot": {
+    "en-US": "Spring Boot",
+    "it-IT": "Spring Boot",
+    "pt-PT": "Spring Boot"
+  },
+  "Tecnologias, faixa 2": {
+    "en-US": "Technologies, row 2",
+    "it-IT": "Tecnologie, riga 2",
+    "pt-PT": "Tecnologias, faixa 2"
+  },
+  "Fiscal / NFS-e — Negócio e colaboração": {
+    "en-US": "Fiscal / NFS-e — Negócio e colaboração",
+    "it-IT": "Fiscal / NFS-e — Negócio e colaboração",
+    "pt-PT": "Fiscal / NFS-e — Negócio e colaboração"
+  },
+  "Fiscal / NFS-e": {
+    "en-US": "Tax / NFS-e",
+    "it-IT": "Fiscalità / NFS-e",
+    "pt-PT": "Fiscal / NFS-e"
+  },
+  "Next.js — Frameworks e runtimes": {
+    "en-US": "Next.js — Frameworks e runtimes",
+    "it-IT": "Next.js — Frameworks e runtimes",
+    "pt-PT": "Next.js — Frameworks e runtimes"
+  },
+  "Next.js": {
+    "en-US": "Next.js",
+    "it-IT": "Next.js",
+    "pt-PT": "Next.js"
+  },
+  "JWT — IA, dados e integrações": {
+    "en-US": "JWT — IA, dados e integrações",
+    "it-IT": "JWT — IA, dados e integrações",
+    "pt-PT": "JWT — IA, dados e integrações"
+  },
+  "JWT": {
+    "en-US": "JWT",
+    "it-IT": "JWT",
+    "pt-PT": "JWT"
+  },
+  "SQL — Linguagens e bases": {
+    "en-US": "SQL — Linguagens e bases",
+    "it-IT": "SQL — Linguagens e bases",
+    "pt-PT": "SQL — Linguagens e bases"
+  },
+  "SQL": {
+    "en-US": "SQL",
+    "it-IT": "SQL",
+    "pt-PT": "SQL"
+  },
+  "Postman — QA e testes": {
+    "en-US": "Postman — QA e testes",
+    "it-IT": "Postman — QA e testes",
+    "pt-PT": "Postman — QA e testes"
+  },
+  "Postman": {
+    "en-US": "Postman",
+    "it-IT": "Postman",
+    "pt-PT": "Postman"
+  },
+  "NestJS — Estudos complementares": {
+    "en-US": "NestJS — Estudos complementares",
+    "it-IT": "NestJS — Estudos complementares",
+    "pt-PT": "NestJS — Estudos complementares"
+  },
+  "NestJS": {
+    "en-US": "NestJS",
+    "it-IT": "NestJS",
+    "pt-PT": "NestJS"
+  },
+  "Kubernetes / Rancher — Infraestrutura e entrega": {
+    "en-US": "Kubernetes / Rancher — Infraestrutura e entrega",
+    "it-IT": "Kubernetes / Rancher — Infraestrutura e entrega",
+    "pt-PT": "Kubernetes / Rancher — Infraestrutura e entrega"
+  },
+  "Kubernetes / Rancher": {
+    "en-US": "Kubernetes / Rancher",
+    "it-IT": "Kubernetes / Rancher",
+    "pt-PT": "Kubernetes / Rancher"
+  },
+  "Processos — Negócio e colaboração": {
+    "en-US": "Processos — Negócio e colaboração",
+    "it-IT": "Processos — Negócio e colaboração",
+    "pt-PT": "Processos — Negócio e colaboração"
+  },
+  "Processos": {
+    "en-US": "Processes",
+    "it-IT": "Processi",
+    "pt-PT": "Processos"
+  },
+  "Bootstrap — UX e produto": {
+    "en-US": "Bootstrap — UX e produto",
+    "it-IT": "Bootstrap — UX e produto",
+    "pt-PT": "Bootstrap — UX e produto"
+  },
+  "Bootstrap": {
+    "en-US": "Bootstrap",
+    "it-IT": "Bootstrap",
+    "pt-PT": "Bootstrap"
+  },
+  "APIs de IA — IA, dados e integrações": {
+    "en-US": "APIs de IA — IA, dados e integrações",
+    "it-IT": "APIs de IA — IA, dados e integrações",
+    "pt-PT": "APIs de IA — IA, dados e integrações"
+  },
+  "APIs de IA": {
+    "en-US": "AI APIs",
+    "it-IT": "API di IA",
+    "pt-PT": "APIs de IA"
+  },
+  "CI/CD — Infraestrutura e entrega": {
+    "en-US": "CI/CD — Infraestrutura e entrega",
+    "it-IT": "CI/CD — Infraestrutura e entrega",
+    "pt-PT": "CI/CD — Infraestrutura e entrega"
+  },
+  "CI/CD": {
+    "en-US": "CI/CD",
+    "it-IT": "CI/CD",
+    "pt-PT": "CI/CD"
+  },
+  "Flutter — Frameworks e runtimes": {
+    "en-US": "Flutter — Frameworks e runtimes",
+    "it-IT": "Flutter — Frameworks e runtimes",
+    "pt-PT": "Flutter — Frameworks e runtimes"
+  },
+  "Flutter": {
+    "en-US": "Flutter",
+    "it-IT": "Flutter",
+    "pt-PT": "Flutter"
+  },
+  "Testes E2E — QA e testes": {
+    "en-US": "Testes E2E — QA e testes",
+    "it-IT": "Testes E2E — QA e testes",
+    "pt-PT": "Testes E2E — QA e testes"
+  },
+  "Testes E2E": {
+    "en-US": "E2E tests",
+    "it-IT": "Test E2E",
+    "pt-PT": "Testes E2E"
+  },
+  "GitLab — Infraestrutura e entrega": {
+    "en-US": "GitLab — Infraestrutura e entrega",
+    "it-IT": "GitLab — Infraestrutura e entrega",
+    "pt-PT": "GitLab — Infraestrutura e entrega"
+  },
+  "GitLab": {
+    "en-US": "GitLab",
+    "it-IT": "GitLab",
+    "pt-PT": "GitLab"
+  },
+  "Zendesk — Negócio e colaboração": {
+    "en-US": "Zendesk — Negócio e colaboração",
+    "it-IT": "Zendesk — Negócio e colaboração",
+    "pt-PT": "Zendesk — Negócio e colaboração"
+  },
+  "Zendesk": {
+    "en-US": "Zendesk",
+    "it-IT": "Zendesk",
+    "pt-PT": "Zendesk"
+  },
+  "CSS — Linguagens e bases": {
+    "en-US": "CSS — Linguagens e bases",
+    "it-IT": "CSS — Linguagens e bases",
+    "pt-PT": "CSS — Linguagens e bases"
+  },
+  "CSS": {
+    "en-US": "CSS",
+    "it-IT": "CSS",
+    "pt-PT": "CSS"
+  },
+  "Agentes — IA, dados e integrações": {
+    "en-US": "Agentes — IA, dados e integrações",
+    "it-IT": "Agentes — IA, dados e integrações",
+    "pt-PT": "Agentes — IA, dados e integrações"
+  },
+  "Agentes": {
+    "en-US": "Agents",
+    "it-IT": "Agenti",
+    "pt-PT": "Agentes"
+  },
+  "TypeScript — Linguagens e bases": {
+    "en-US": "TypeScript — Linguagens e bases",
+    "it-IT": "TypeScript — Linguagens e bases",
+    "pt-PT": "TypeScript — Linguagens e bases"
+  },
+  "TypeScript": {
+    "en-US": "TypeScript",
+    "it-IT": "TypeScript",
+    "pt-PT": "TypeScript"
+  },
+  "Scrum — Negócio e colaboração": {
+    "en-US": "Scrum — Negócio e colaboração",
+    "it-IT": "Scrum — Negócio e colaboração",
+    "pt-PT": "Scrum — Negócio e colaboração"
+  },
+  "Scrum": {
+    "en-US": "Scrum",
+    "it-IT": "Scrum",
+    "pt-PT": "Scrum"
+  },
+  "SQLAlchemy — Bancos e persistência": {
+    "en-US": "SQLAlchemy — Bancos e persistência",
+    "it-IT": "SQLAlchemy — Bancos e persistência",
+    "pt-PT": "SQLAlchemy — Bancos e persistência"
+  },
+  "SQLAlchemy": {
+    "en-US": "SQLAlchemy",
+    "it-IT": "SQLAlchemy",
+    "pt-PT": "SQLAlchemy"
+  },
+  "AWS — Estudos complementares": {
+    "en-US": "AWS — Estudos complementares",
+    "it-IT": "AWS — Estudos complementares",
+    "pt-PT": "AWS — Estudos complementares"
+  },
+  "AWS": {
+    "en-US": "AWS",
+    "it-IT": "AWS",
+    "pt-PT": "AWS"
+  },
+  "Dart — Linguagens e bases": {
+    "en-US": "Dart — Linguagens e bases",
+    "it-IT": "Dart — Linguagens e bases",
+    "pt-PT": "Dart — Linguagens e bases"
+  },
+  "Dart": {
+    "en-US": "Dart",
+    "it-IT": "Dart",
+    "pt-PT": "Dart"
+  },
+  "UX Writing — UX e produto": {
+    "en-US": "UX Writing — UX e produto",
+    "it-IT": "UX Writing — UX e produto",
+    "pt-PT": "UX Writing — UX e produto"
+  },
+  "UX Writing": {
+    "en-US": "UX Writing",
+    "it-IT": "UX Writing",
+    "pt-PT": "UX Writing"
+  },
+  "HTML — Linguagens e bases": {
+    "en-US": "HTML — Linguagens e bases",
+    "it-IT": "HTML — Linguagens e bases",
+    "pt-PT": "HTML — Linguagens e bases"
+  },
+  "HTML": {
+    "en-US": "HTML",
+    "it-IT": "HTML",
+    "pt-PT": "HTML"
+  },
+  "Responsividade — UX e produto": {
+    "en-US": "Responsividade — UX e produto",
+    "it-IT": "Responsividade — UX e produto",
+    "pt-PT": "Responsividade — UX e produto"
+  },
+  "Responsividade": {
+    "en-US": "Responsive design",
+    "it-IT": "Design responsivo",
+    "pt-PT": "Responsividade"
+  },
+  "Spring Data JPA — Frameworks e runtimes": {
+    "en-US": "Spring Data JPA — Frameworks e runtimes",
+    "it-IT": "Spring Data JPA — Frameworks e runtimes",
+    "pt-PT": "Spring Data JPA — Frameworks e runtimes"
+  },
+  "Spring Data JPA": {
+    "en-US": "Spring Data JPA",
+    "it-IT": "Spring Data JPA",
+    "pt-PT": "Spring Data JPA"
+  },
+  "VPS — Infraestrutura e entrega": {
+    "en-US": "VPS — Infraestrutura e entrega",
+    "it-IT": "VPS — Infraestrutura e entrega",
+    "pt-PT": "VPS — Infraestrutura e entrega"
+  },
+  "VPS": {
+    "en-US": "VPS",
+    "it-IT": "VPS",
+    "pt-PT": "VPS"
+  },
+  "SQLite — Bancos e persistência": {
+    "en-US": "SQLite — Bancos e persistência",
+    "it-IT": "SQLite — Bancos e persistência",
+    "pt-PT": "SQLite — Bancos e persistência"
+  },
+  "SQLite": {
+    "en-US": "SQLite",
+    "it-IT": "SQLite",
+    "pt-PT": "SQLite"
+  },
+  "Tecnologias, faixa 3": {
+    "en-US": "Technologies, row 3",
+    "it-IT": "Tecnologie, riga 3",
+    "pt-PT": "Tecnologias, faixa 3"
+  },
+  "Debugging — QA e testes": {
+    "en-US": "Debugging — QA e testes",
+    "it-IT": "Debugging — QA e testes",
+    "pt-PT": "Debugging — QA e testes"
+  },
+  "Debugging": {
+    "en-US": "Debugging",
+    "it-IT": "Debugging",
+    "pt-PT": "Debugging"
+  },
+  "Python — Linguagens e bases": {
+    "en-US": "Python — Linguagens e bases",
+    "it-IT": "Python — Linguagens e bases",
+    "pt-PT": "Python — Linguagens e bases"
+  },
+  "Python": {
+    "en-US": "Python",
+    "it-IT": "Python",
+    "pt-PT": "Python"
+  },
+  "Vercel — Infraestrutura e entrega": {
+    "en-US": "Vercel — Infraestrutura e entrega",
+    "it-IT": "Vercel — Infraestrutura e entrega",
+    "pt-PT": "Vercel — Infraestrutura e entrega"
+  },
+  "Vercel": {
+    "en-US": "Vercel",
+    "it-IT": "Vercel",
+    "pt-PT": "Vercel"
+  },
+  "Code review — QA e testes": {
+    "en-US": "Code review — QA e testes",
+    "it-IT": "Code review — QA e testes",
+    "pt-PT": "Code review — QA e testes"
+  },
+  "Code review": {
+    "en-US": "Code review",
+    "it-IT": "Code review",
+    "pt-PT": "Code review"
+  },
+  "MinIO — Bancos e persistência": {
+    "en-US": "MinIO — Bancos e persistência",
+    "it-IT": "MinIO — Bancos e persistência",
+    "pt-PT": "MinIO — Bancos e persistência"
+  },
+  "MinIO": {
+    "en-US": "MinIO",
+    "it-IT": "MinIO",
+    "pt-PT": "MinIO"
+  },
+  "Requisitos — Negócio e colaboração": {
+    "en-US": "Requisitos — Negócio e colaboração",
+    "it-IT": "Requisitos — Negócio e colaboração",
+    "pt-PT": "Requisitos — Negócio e colaboração"
+  },
+  "Requisitos": {
+    "en-US": "Requirements",
+    "it-IT": "Requisiti",
+    "pt-PT": "Requisitos"
+  },
+  "PostgreSQL — Bancos e persistência": {
+    "en-US": "PostgreSQL — Bancos e persistência",
+    "it-IT": "PostgreSQL — Bancos e persistência",
+    "pt-PT": "PostgreSQL — Bancos e persistência"
+  },
+  "PostgreSQL": {
+    "en-US": "PostgreSQL",
+    "it-IT": "PostgreSQL",
+    "pt-PT": "PostgreSQL"
+  },
+  "Styled Components — UX e produto": {
+    "en-US": "Styled Components — UX e produto",
+    "it-IT": "Styled Components — UX e produto",
+    "pt-PT": "Styled Components — UX e produto"
+  },
+  "Styled Components": {
+    "en-US": "Styled Components",
+    "it-IT": "Styled Components",
+    "pt-PT": "Styled Components"
+  },
+  "Migrations — Bancos e persistência": {
+    "en-US": "Migrations — Bancos e persistência",
+    "it-IT": "Migrations — Bancos e persistência",
+    "pt-PT": "Migrations — Bancos e persistência"
+  },
+  "Migrations": {
+    "en-US": "Migrations",
+    "it-IT": "Migrations",
+    "pt-PT": "Migrations"
+  },
+  "Pagamentos — IA, dados e integrações": {
+    "en-US": "Pagamentos — IA, dados e integrações",
+    "it-IT": "Pagamentos — IA, dados e integrações",
+    "pt-PT": "Pagamentos — IA, dados e integrações"
+  },
+  "Pagamentos": {
+    "en-US": "Payments",
+    "it-IT": "Pagamenti",
+    "pt-PT": "Pagamentos"
+  },
+  "Knex — Bancos e persistência": {
+    "en-US": "Knex — Bancos e persistência",
+    "it-IT": "Knex — Bancos e persistência",
+    "pt-PT": "Knex — Bancos e persistência"
+  },
+  "Knex": {
+    "en-US": "Knex",
+    "it-IT": "Knex",
+    "pt-PT": "Knex"
+  },
+  "Design Systems — UX e produto": {
+    "en-US": "Design Systems — UX e produto",
+    "it-IT": "Design Systems — UX e produto",
+    "pt-PT": "Design Systems — UX e produto"
+  },
+  "Design Systems": {
+    "en-US": "Design Systems",
+    "it-IT": "Design Systems",
+    "pt-PT": "Design Systems"
+  },
+  "React — Frameworks e runtimes": {
+    "en-US": "React — Frameworks e runtimes",
+    "it-IT": "React — Frameworks e runtimes",
+    "pt-PT": "React — Frameworks e runtimes"
+  },
+  "React": {
+    "en-US": "React",
+    "it-IT": "React",
+    "pt-PT": "React"
+  },
+  "Jira — Negócio e colaboração": {
+    "en-US": "Jira — Negócio e colaboração",
+    "it-IT": "Jira — Negócio e colaboração",
+    "pt-PT": "Jira — Negócio e colaboração"
+  },
+  "Jira": {
+    "en-US": "Jira",
+    "it-IT": "Jira",
+    "pt-PT": "Jira"
+  },
+  "Supabase — Bancos e persistência": {
+    "en-US": "Supabase — Bancos e persistência",
+    "it-IT": "Supabase — Bancos e persistência",
+    "pt-PT": "Supabase — Bancos e persistência"
+  },
+  "Supabase": {
+    "en-US": "Supabase",
+    "it-IT": "Supabase",
+    "pt-PT": "Supabase"
+  },
+  "Selenium — Estudos complementares": {
+    "en-US": "Selenium — Estudos complementares",
+    "it-IT": "Selenium — Estudos complementares",
+    "pt-PT": "Selenium — Estudos complementares"
+  },
+  "Selenium": {
+    "en-US": "Selenium",
+    "it-IT": "Selenium",
+    "pt-PT": "Selenium"
+  },
+  "Docker Compose — Infraestrutura e entrega": {
+    "en-US": "Docker Compose — Infraestrutura e entrega",
+    "it-IT": "Docker Compose — Infraestrutura e entrega",
+    "pt-PT": "Docker Compose — Infraestrutura e entrega"
+  },
+  "Docker Compose": {
+    "en-US": "Docker Compose",
+    "it-IT": "Docker Compose",
+    "pt-PT": "Docker Compose"
+  },
+  "Kanban — Negócio e colaboração": {
+    "en-US": "Kanban — Negócio e colaboração",
+    "it-IT": "Kanban — Negócio e colaboração",
+    "pt-PT": "Kanban — Negócio e colaboração"
+  },
+  "Kanban": {
+    "en-US": "Kanban",
+    "it-IT": "Kanban",
+    "pt-PT": "Kanban"
+  },
+  "NumPy — IA, dados e integrações": {
+    "en-US": "NumPy — IA, dados e integrações",
+    "it-IT": "NumPy — IA, dados e integrações",
+    "pt-PT": "NumPy — IA, dados e integrações"
+  },
+  "NumPy": {
+    "en-US": "NumPy",
+    "it-IT": "NumPy",
+    "pt-PT": "NumPy"
+  },
+  "Alembic — Bancos e persistência": {
+    "en-US": "Alembic — Bancos e persistência",
+    "it-IT": "Alembic — Bancos e persistência",
+    "pt-PT": "Alembic — Bancos e persistência"
+  },
+  "Alembic": {
+    "en-US": "Alembic",
+    "it-IT": "Alembic",
+    "pt-PT": "Alembic"
+  },
+  "Linux Ubuntu — Infraestrutura e entrega": {
+    "en-US": "Linux Ubuntu — Infraestrutura e entrega",
+    "it-IT": "Linux Ubuntu — Infraestrutura e entrega",
+    "pt-PT": "Linux Ubuntu — Infraestrutura e entrega"
+  },
+  "Linux Ubuntu": {
+    "en-US": "Linux Ubuntu",
+    "it-IT": "Linux Ubuntu",
+    "pt-PT": "Linux Ubuntu"
+  },
+  "Webhooks — IA, dados e integrações": {
+    "en-US": "Webhooks — IA, dados e integrações",
+    "it-IT": "Webhooks — IA, dados e integrações",
+    "pt-PT": "Webhooks — IA, dados e integrações"
+  },
+  "Webhooks": {
+    "en-US": "Webhooks",
+    "it-IT": "Webhooks",
+    "pt-PT": "Webhooks"
+  },
+  "Marketing — Negócio e colaboração": {
+    "en-US": "Marketing — Negócio e colaboração",
+    "it-IT": "Marketing — Negócio e colaboração",
+    "pt-PT": "Marketing — Negócio e colaboração"
+  },
+  "Marketing": {
+    "en-US": "Marketing",
+    "it-IT": "Marketing",
+    "pt-PT": "Marketing"
+  },
+  "Compliance — Negócio e colaboração": {
+    "en-US": "Compliance — Negócio e colaboração",
+    "it-IT": "Compliance — Negócio e colaboração",
+    "pt-PT": "Compliance — Negócio e colaboração"
+  },
+  "Compliance": {
+    "en-US": "Compliance",
+    "it-IT": "Compliance",
+    "pt-PT": "Compliance"
+  },
+  "FastAPI — Frameworks e runtimes": {
+    "en-US": "FastAPI — Frameworks e runtimes",
+    "it-IT": "FastAPI — Frameworks e runtimes",
+    "pt-PT": "FastAPI — Frameworks e runtimes"
+  },
+  "FastAPI": {
+    "en-US": "FastAPI",
+    "it-IT": "FastAPI",
+    "pt-PT": "FastAPI"
+  },
+  "JavaScript — Linguagens e bases": {
+    "en-US": "JavaScript — Linguagens e bases",
+    "it-IT": "JavaScript — Linguagens e bases",
+    "pt-PT": "JavaScript — Linguagens e bases"
+  },
+  "JavaScript": {
+    "en-US": "JavaScript",
+    "it-IT": "JavaScript",
+    "pt-PT": "JavaScript"
+  },
+  "Dashboards — IA, dados e integrações": {
+    "en-US": "Dashboards — IA, dados e integrações",
+    "it-IT": "Dashboards — IA, dados e integrações",
+    "pt-PT": "Dashboards — IA, dados e integrações"
+  },
+  "Dashboards": {
+    "en-US": "Dashboards",
+    "it-IT": "Dashboards",
+    "pt-PT": "Dashboards"
+  },
+  "GitHub — Infraestrutura e entrega": {
+    "en-US": "GitHub — Infraestrutura e entrega",
+    "it-IT": "GitHub — Infraestrutura e entrega",
+    "pt-PT": "GitHub — Infraestrutura e entrega"
+  },
+  "GitHub": {
+    "en-US": "GitHub",
+    "it-IT": "GitHub",
+    "pt-PT": "GitHub"
+  },
+  "Explorar todas as áreas e suas aplicações": {
+    "en-US": "Explore all areas and their applications",
+    "it-IT": "Esplora tutte le aree e le loro applicazioni",
+    "pt-PT": "Explorar todas as áreas e suas aplicações"
+  },
+  "01 / LABORATÓRIO ABERTO": {
+    "en-US": "01 / OPEN LAB",
+    "it-IT": "01 / LABORATORIO APERTO",
+    "pt-PT": "01 / LABORATÓRIO ABERTO"
+  },
+  "Não só habilidades.": {
+    "en-US": "Skills you can",
+    "it-IT": "Competenze da",
+    "pt-PT": "Não só habilidades."
+  },
+  "Experiências.": {
+    "en-US": "experience.",
+    "it-IT": "provare.",
+    "pt-PT": "Experiências."
+  },
+  "Cada habilidade abre uma porta.": {
+    "en-US": "Each skill opens a door.",
+    "it-IT": "Ogni competenza apre una porta.",
+    "pt-PT": "Cada habilidade abre uma porta."
+  },
+  "Escolha uma e veja o código ganhar forma.": {
+    "en-US": "Choose one and see the code take shape.",
+    "it-IT": "Scegline una e guarda il codice prendere forma.",
+    "pt-PT": "Escolha uma e veja o código ganhar forma."
+  },
+  "Testar currículo interativo no navegador": {
+    "en-US": "Try the interactive résumé in your browser",
+    "it-IT": "Prova il curriculum interattivo nel browser",
+    "pt-PT": "Testar currículo interativo no navegador"
+  },
+  "APLICAÇÕES": {
+    "en-US": "APPLICATIONS",
+    "it-IT": "APPLICAZIONI",
+    "pt-PT": "APLICAÇÕES"
+  },
+  "Meu currículo,": {
+    "en-US": "My résumé,",
+    "it-IT": "Il mio curriculum,",
+    "pt-PT": "Meu currículo,"
+  },
+  "em forma de app.": {
+    "en-US": "as an app.",
+    "it-IT": "in un'app.",
+    "pt-PT": "em forma de app."
+  },
+  "Explore habilidades, experiências e formação. Teste diretamente no navegador, no computador ou no celular.": {
+    "en-US": "Explore skills, experience and education. Try it in your browser, on your computer or phone.",
+    "it-IT": "Esplora competenze, esperienze e formazione. Provalo nel browser, sul computer o sul cellulare.",
+    "pt-PT": "Explore habilidades, experiências e formação. Teste diretamente no navegador, no computador ou no telemóvel."
+  },
+  "App web / Kotlin / Go": {
+    "en-US": "Web app / Kotlin / Go",
+    "it-IT": "App web / Kotlin / Go",
+    "pt-PT": "App web / Kotlin / Go"
+  },
+  "Testar no navegador": {
+    "en-US": "Try in browser",
+    "it-IT": "Prova nel browser",
+    "pt-PT": "Testar no navegador"
+  },
+  "APIs & DADOS": {
+    "en-US": "APIs & DATA",
+    "it-IT": "API E DATI",
+    "pt-PT": "APIs & DADOS"
+  },
+  "Seu assunto.": {
+    "en-US": "Your topic.",
+    "it-IT": "Il tuo argomento.",
+    "pt-PT": "Seu assunto."
+  },
+  "As últimas notícias.": {
+    "en-US": "The latest news.",
+    "it-IT": "Le ultime notizie.",
+    "pt-PT": "As últimas notícias."
+  },
+  "Busque notícias sobre um assunto por uma API feita com FastAPI.": {
+    "en-US": "Find news about a topic through an API built with FastAPI.",
+    "it-IT": "Cerca notizie su un argomento tramite un'API realizzata con FastAPI.",
+    "pt-PT": "Pesquise notícias sobre um assunto por uma API feita com FastAPI."
+  },
+  "Python / FastAPI / RSS": {
+    "en-US": "Python / FastAPI / RSS",
+    "it-IT": "Python / FastAPI / RSS",
+    "pt-PT": "Python / FastAPI / RSS"
+  },
+  "Buscar notícias": {
+    "en-US": "Search news",
+    "it-IT": "Cerca notizie",
+    "pt-PT": "Pesquisar notícias"
+  },
+  "ESCOLHA UM CAMINHO": {
+    "en-US": "CHOOSE A PATH",
+    "it-IT": "SCEGLI UN PERCORSO",
+    "pt-PT": "ESCOLHA UM CAMINHO"
+  },
+  "O que você quer": {
+    "en-US": "What would you like",
+    "it-IT": "Cosa vuoi",
+    "pt-PT": "O que você quer"
+  },
+  "ver acontecer?": {
+    "en-US": "to see happen?",
+    "it-IT": "vedere in azione?",
+    "pt-PT": "ver acontecer?"
+  },
+  "Um clique muda a perspectiva.": {
+    "en-US": "A click changes your perspective.",
+    "it-IT": "Un clic cambia la prospettiva.",
+    "pt-PT": "Um clique muda a perspectiva."
+  },
+  "Uma experiência mostra a habilidade.": {
+    "en-US": "An experience shows the skill.",
+    "it-IT": "Un'esperienza mostra la competenza.",
+    "pt-PT": "Uma experiência mostra a habilidade."
+  },
+  "Escolher objetivo": {
+    "en-US": "Choose a goal",
+    "it-IT": "Scegli un obiettivo",
+    "pt-PT": "Escolher objetivo"
+  },
+  "Criar um app": {
+    "en-US": "Build an app",
+    "it-IT": "Creare un'app",
+    "pt-PT": "Criar um app"
+  },
+  "Conectar uma API": {
+    "en-US": "Connect an API",
+    "it-IT": "Collegare un'API",
+    "pt-PT": "Conectar uma API"
+  },
+  "Automatizar um fluxo": {
+    "en-US": "Automate a workflow",
+    "it-IT": "Automatizzare un flusso",
+    "pt-PT": "Automatizar um fluxo"
+  },
+  "Explorar dados": {
+    "en-US": "Explore data",
+    "it-IT": "Esplorare i dati",
+    "pt-PT": "Explorar dados"
+  },
+  "Melhorar uma experiência": {
+    "en-US": "Improve an experience",
+    "it-IT": "Migliorare un'esperienza",
+    "pt-PT": "Melhorar uma experiência"
+  },
+  "HABILIDADE → APLICAÇÃO": {
+    "en-US": "SKILL → APPLICATION",
+    "it-IT": "COMPETENZA → APPLICAZIONE",
+    "pt-PT": "HABILIDADE → APLICAÇÃO"
+  },
+  "Uma ideia vira um aplicativo.": {
+    "en-US": "An idea becomes an app.",
+    "it-IT": "Un'idea diventa un'app.",
+    "pt-PT": "Uma ideia vira um aplicação."
+  },
+  "Ver demonstração": {
+    "en-US": "View demo",
+    "it-IT": "Vedi la demo",
+    "pt-PT": "Ver demonstração"
+  },
+  "Ver habilidades deste objetivo": {
+    "en-US": "View skills for this goal",
+    "it-IT": "Vedi le competenze per questo obiettivo",
+    "pt-PT": "Ver habilidades deste objetivo"
+  },
+  "EXPERIMENTE A INTERFACE": {
+    "en-US": "TRY THE INTERFACE",
+    "it-IT": "PROVA L'INTERFACCIA",
+    "pt-PT": "EXPERIMENTE A INTERFACE"
+  },
+  "Recomeçar": {
+    "en-US": "Start again",
+    "it-IT": "Ricomincia",
+    "pt-PT": "Recomeçar"
+  },
+  "Arraste. Solte. Veja acontecer.": {
+    "en-US": "Drag. Drop. Watch it happen.",
+    "it-IT": "Trascina. Rilascia. Guarda il risultato.",
+    "pt-PT": "Arraste. Solte. Veja acontecer."
+  },
+  "Arraste as tarefas entre as colunas e acompanhe o resultado. No teclado, use as setas esquerda e direita. Esta demonstração funciona nesta tela.": {
+    "en-US": "Drag tasks between columns and follow the results. With a keyboard, use the left and right arrows. This demo works on this screen.",
+    "it-IT": "Trascina le attività tra le colonne e segui il risultato. Con la tastiera, usa le frecce destra e sinistra. Questa demo funziona su questa schermata.",
+    "pt-PT": "Arraste as tarefas entre as colunas e acompanhe o resultado. No teclado, use as setas esquerda e direita. Esta demonstração funciona nesta ecrã."
+  },
+  "REPERTÓRIO / NA PRÁTICA": {
+    "en-US": "SKILLS / IN PRACTICE",
+    "it-IT": "COMPETENZE / IN PRATICA",
+    "pt-PT": "REPERTÓRIO / NA PRÁTICA"
+  },
+  "Mais caminhos.": {
+    "en-US": "More paths.",
+    "it-IT": "Più percorsi.",
+    "pt-PT": "Mais caminhos."
+  },
+  "Mais possibilidades.": {
+    "en-US": "More possibilities.",
+    "it-IT": "Più possibilità.",
+    "pt-PT": "Mais possibilidades."
+  },
+  "Web, apps, dados, UX, integrações e negócio.": {
+    "en-US": "Web, apps, data, UX, integrations and business.",
+    "it-IT": "Web, app, dati, UX, integrazioni e business.",
+    "pt-PT": "Web, apps, dados, UX, integrações e negócio."
+  },
+  "Abra uma área ou busque uma habilidade.": {
+    "en-US": "Open an area or search for a skill.",
+    "it-IT": "Apri un'area o cerca una competenza.",
+    "pt-PT": "Abra uma área ou pesquise uma habilidade."
+  },
+  "Buscar habilidade": {
+    "en-US": "Search skills",
+    "it-IT": "Cerca competenze",
+    "pt-PT": "Pesquisar habilidade"
+  },
+  "Ex.: Flutter, QA, OAuth, compliance": {
+    "en-US": "E.g. Flutter, QA, OAuth, compliance",
+    "it-IT": "Es.: Flutter, QA, OAuth, compliance",
+    "pt-PT": "Ex.: Flutter, QA, OAuth, compliance"
+  },
+  "Área": {
+    "en-US": "Area",
+    "it-IT": "Area",
+    "pt-PT": "Área"
+  },
+  "Todas as áreas": {
+    "en-US": "All areas",
+    "it-IT": "Tutte le aree",
+    "pt-PT": "Todas as áreas"
+  },
+  "Ver repertório completo": {
+    "en-US": "View all skills",
+    "it-IT": "Vedi tutte le competenze",
+    "pt-PT": "Ver repertório completo"
+  },
+  "02 / NA WEB": {
+    "en-US": "02 / ON THE WEB",
+    "it-IT": "02 / SUL WEB",
+    "pt-PT": "02 / NA WEB"
+  },
+  "Ideias que já": {
+    "en-US": "Ideas that already",
+    "it-IT": "Idee che hanno già",
+    "pt-PT": "Ideias que já"
+  },
+  "têm endereço.": {
+    "en-US": "have an address.",
+    "it-IT": "un indirizzo.",
+    "pt-PT": "têm endereço."
+  },
+  "Projetos para conhecer em outra aba.": {
+    "en-US": "Projects to explore in a new tab.",
+    "it-IT": "Progetti da scoprire in una nuova scheda.",
+    "pt-PT": "Projetos para conhecer noutro separador."
+  },
+  "SITE / APLICAÇÃO": {
+    "en-US": "WEBSITE / APPLICATION",
+    "it-IT": "SITO / APPLICAZIONE",
+    "pt-PT": "SITE / APLICAÇÃO"
+  },
+  "Luniay": {
+    "en-US": "Luniay",
+    "it-IT": "Luniay",
+    "pt-PT": "Luniay"
+  },
+  "Visitar Luniay em outra aba": {
+    "en-US": "Visitar Luniay em outra aba",
+    "it-IT": "Visitar Luniay em outra aba",
+    "pt-PT": "Visitar Luniay noutro separador"
+  },
+  "Visitar site": {
+    "en-US": "Visit website",
+    "it-IT": "Visita il sito",
+    "pt-PT": "Visitar site"
+  },
+  "Clycka": {
+    "en-US": "Clycka",
+    "it-IT": "Clycka",
+    "pt-PT": "Clycka"
+  },
+  "Visitar Clycka em outra aba": {
+    "en-US": "Visitar Clycka em outra aba",
+    "it-IT": "Visitar Clycka em outra aba",
+    "pt-PT": "Visitar Clycka noutro separador"
+  },
+  "Platina": {
+    "en-US": "Platina",
+    "it-IT": "Platina",
+    "pt-PT": "Platina"
+  },
+  "Logtec": {
+    "en-US": "Logtec",
+    "it-IT": "Logtec",
+    "pt-PT": "Logtec"
+  },
+  "SITE / DESENVOLVIDO POR MIM": {
+    "en-US": "WEBSITE / BUILT BY ME",
+    "it-IT": "SITO / REALIZZATO DA ME",
+    "pt-PT": "SITE / DESENVOLVIDO POR MIM"
+  },
+  "Platina Logtec": {
+    "en-US": "Platina Logtec",
+    "it-IT": "Platina Logtec",
+    "pt-PT": "Platina Logtec"
+  },
+  "Visitar Platina Logtec em outra aba": {
+    "en-US": "Visitar Platina Logtec em outra aba",
+    "it-IT": "Visitar Platina Logtec em outra aba",
+    "pt-PT": "Visitar Platina Logtec noutro separador"
+  },
+  "Quanta": {
+    "en-US": "Quanta",
+    "it-IT": "Quanta",
+    "pt-PT": "Quanta"
+  },
+  "Aulas": {
+    "en-US": "Aulas",
+    "it-IT": "Aulas",
+    "pt-PT": "Aulas"
+  },
+  "SITE / EDUCAÇÃO": {
+    "en-US": "WEBSITE / EDUCATION",
+    "it-IT": "SITO / FORMAZIONE",
+    "pt-PT": "SITE / EDUCAÇÃO"
+  },
+  "Quanta Aulas": {
+    "en-US": "Quanta Aulas",
+    "it-IT": "Quanta Aulas",
+    "pt-PT": "Quanta Aulas"
+  },
+  "Visitar Quanta Aulas em outra aba": {
+    "en-US": "Visitar Quanta Aulas em outra aba",
+    "it-IT": "Visitar Quanta Aulas em outra aba",
+    "pt-PT": "Visitar Quanta Aulas noutro separador"
+  },
+  "Isidoro Preparatório": {
+    "en-US": "Isidoro Preparatório",
+    "it-IT": "Isidoro Preparatório",
+    "pt-PT": "Isidoro Preparatório"
+  },
+  "Visitar Isidoro Preparatório em outra aba": {
+    "en-US": "Visitar Isidoro Preparatório em outra aba",
+    "it-IT": "Visitar Isidoro Preparatório em outra aba",
+    "pt-PT": "Visitar Isidoro Preparatório noutro separador"
+  },
+  "03 / POR DENTRO DO CÓDIGO": {
+    "en-US": "03 / INSIDE THE CODE",
+    "it-IT": "03 / DENTRO IL CODICE",
+    "pt-PT": "03 / POR DENTRO DO CÓDIGO"
+  },
+  "Projetos em": {
+    "en-US": "Projects in",
+    "it-IT": "Progetti in",
+    "pt-PT": "Projetos em"
+  },
+  "foco.": {
+    "en-US": "focus.",
+    "it-IT": "primo piano.",
+    "pt-PT": "foco."
+  },
+  "Meu GitHub": {
+    "en-US": "My GitHub",
+    "it-IT": "Il mio GitHub",
+    "pt-PT": "Meu GitHub"
+  },
+  "Filtrar projetos": {
+    "en-US": "Filter projects",
+    "it-IT": "Filtra i progetti",
+    "pt-PT": "Filtrar projetos"
+  },
+  "Todos": {
+    "en-US": "All",
+    "it-IT": "Tutti",
+    "pt-PT": "Todos"
+  },
+  "Full Stack": {
+    "en-US": "Full Stack",
+    "it-IT": "Full Stack",
+    "pt-PT": "Full Stack"
+  },
+  "Backend": {
+    "en-US": "Backend",
+    "it-IT": "Backend",
+    "pt-PT": "Backend"
+  },
+  "Frontend": {
+    "en-US": "Frontend",
+    "it-IT": "Frontend",
+    "pt-PT": "Frontend"
+  },
+  "Dados": {
+    "en-US": "Data",
+    "it-IT": "Dati",
+    "pt-PT": "Dados"
+  },
+  "04 / QUEM CONSTRÓI": {
+    "en-US": "04 / WHO BUILDS",
+    "it-IT": "04 / CHI CREA",
+    "pt-PT": "04 / QUEM CONSTRÓI"
+  },
+  "Olá, sou a Karen.": {
+    "en-US": "Hi, I'm Karen.",
+    "it-IT": "Ciao, sono Karen.",
+    "pt-PT": "Olá, sou a Karen."
+  },
+  "Prazer em criar.": {
+    "en-US": "I love building.",
+    "it-IT": "Mi piace creare.",
+    "pt-PT": "Prazer em criar."
+  },
+  "Sou desenvolvedora Full Stack. Trabalho com interfaces, APIs e regras de negócio, conectando decisões técnicas às necessidades de quem usa o produto.": {
+    "en-US": "I'm a Full Stack developer. I work with interfaces, APIs and business rules, connecting technical decisions to the needs of the people using the product.",
+    "it-IT": "Sono una sviluppatrice Full Stack. Lavoro con interfacce, API e regole di business, collegando le decisioni tecniche alle esigenze di chi usa il prodotto.",
+    "pt-PT": "Sou desenvolvedora Full Stack. Trabalho com interfaces, APIs e regras de negócio, conectando decisões técnicas às necessidades de quem usa o produto."
+  },
+  "Minha trajetória também passa por suporte SaaS, compliance, processos, qualidade, Marketing e experiência do cliente. Levo essa visão para o código: entender o problema, construir a solução e conferir se funciona.": {
+    "en-US": "My background also includes SaaS support, compliance, processes, quality, marketing and customer experience. I bring this perspective to code: understand the problem, build the solution and check that it works.",
+    "it-IT": "Il mio percorso comprende anche supporto SaaS, compliance, processi, qualità, marketing ed esperienza del cliente. Porto questa visione nel codice: capire il problema, costruire la soluzione e verificare che funzioni.",
+    "pt-PT": "Minha trajetória também passa por suporte SaaS, compliance, processos, qualidade, Marketing e experiência do cliente. Levo essa visão para o código: entender o problema, construir a solução e conferir se funciona."
+  },
+  "Conheça minha trajetória": {
+    "en-US": "Explore my career",
+    "it-IT": "Scopri il mio percorso",
+    "pt-PT": "Conheça minha trajetória"
+  },
+  "TRAJETÓRIA / CONTEXTO QUE VIRA SOLUÇÃO": {
+    "en-US": "CAREER / CONTEXT INTO SOLUTIONS",
+    "it-IT": "PERCORSO / DAL CONTESTO ALLA SOLUZIONE",
+    "pt-PT": "TRAJETÓRIA / CONTEXTO QUE VIRA SOLUÇÃO"
+  },
+  "Experiência além": {
+    "en-US": "Experience beyond",
+    "it-IT": "Esperienza oltre",
+    "pt-PT": "Experiência além"
+  },
+  "da stack.": {
+    "en-US": "the stack.",
+    "it-IT": "lo stack.",
+    "pt-PT": "da stack."
+  },
+  "Escolha uma marca e conheça minha trajetória.": {
+    "en-US": "Choose a brand and explore my career.",
+    "it-IT": "Scegli un marchio e scopri il mio percorso.",
+    "pt-PT": "Escolha uma marca e conheça minha trajetória."
+  },
+  "Atividades, hard skills e soft skills em cada experiência.": {
+    "en-US": "Activities, hard skills and soft skills in each role.",
+    "it-IT": "Attività, competenze tecniche e trasversali in ogni esperienza.",
+    "pt-PT": "Atividades, hard skills e soft skills em cada experiência."
+  },
+  "Empresas anteriores": {
+    "en-US": "Previous companies",
+    "it-IT": "Aziende precedenti",
+    "pt-PT": "Empresas anteriores"
+  },
+  "‹": {
+    "en-US": "‹",
+    "it-IT": "‹",
+    "pt-PT": "‹"
+  },
+  "Empresas da minha trajetória": {
+    "en-US": "Companies in my career",
+    "it-IT": "Aziende del mio percorso",
+    "pt-PT": "Empresas da minha trajetória"
+  },
+  "Empresas e projetos da minha trajetória": {
+    "en-US": "Companies and projects in my career",
+    "it-IT": "Aziende e progetti del mio percorso",
+    "pt-PT": "Empresas e projetos da minha trajetória"
+  },
+  "WEG · IEL / Inova Talentos — conhecer minha trajetória": {
+    "en-US": "WEG · IEL / Inova Talentos — conhecer minha trajetória",
+    "it-IT": "WEG · IEL / Inova Talentos — conhecer minha trajetória",
+    "pt-PT": "WEG · IEL / Inova Talentos — conhecer minha trajetória"
+  },
+  "Conhecer minha trajetória na WEG · IEL / Inova Talentos em nova aba": {
+    "en-US": "Conhecer minha trajetória na WEG · IEL / Inova Talentos em nova aba",
+    "it-IT": "Conhecer minha trajetória na WEG · IEL / Inova Talentos em nova aba",
+    "pt-PT": "Conhecer minha trajetória na WEG · IEL / Inova Talentos num novo separador"
+  },
+  "Ambiental — conhecer minha trajetória": {
+    "en-US": "Ambiental — conhecer minha trajetória",
+    "it-IT": "Ambiental — conhecer minha trajetória",
+    "pt-PT": "Ambiental — conhecer minha trajetória"
+  },
+  "Conhecer minha trajetória na Ambiental em nova aba": {
+    "en-US": "Conhecer minha trajetória na Ambiental em nova aba",
+    "it-IT": "Conhecer minha trajetória na Ambiental em nova aba",
+    "pt-PT": "Conhecer minha trajetória na Ambiental num novo separador"
+  },
+  "Quanta Educação / Isidoro Preparatório — conhecer minha trajetória": {
+    "en-US": "Quanta Educação / Isidoro Preparatório — conhecer minha trajetória",
+    "it-IT": "Quanta Educação / Isidoro Preparatório — conhecer minha trajetória",
+    "pt-PT": "Quanta Educação / Isidoro Preparatório — conhecer minha trajetória"
+  },
+  "Conhecer minha trajetória na Quanta Educação / Isidoro Preparatório em nova aba": {
+    "en-US": "Conhecer minha trajetória na Quanta Educação / Isidoro Preparatório em nova aba",
+    "it-IT": "Conhecer minha trajetória na Quanta Educação / Isidoro Preparatório em nova aba",
+    "pt-PT": "Conhecer minha trajetória na Quanta Educação / Isidoro Preparatório num novo separador"
+  },
+  "JIP / Raws Podcast — conhecer minha trajetória": {
+    "en-US": "JIP / Raws Podcast — conhecer minha trajetória",
+    "it-IT": "JIP / Raws Podcast — conhecer minha trajetória",
+    "pt-PT": "JIP / Raws Podcast — conhecer minha trajetória"
+  },
+  "Conhecer minha trajetória na JIP / Raws Podcast em nova aba": {
+    "en-US": "Conhecer minha trajetória na JIP / Raws Podcast em nova aba",
+    "it-IT": "Conhecer minha trajetória na JIP / Raws Podcast em nova aba",
+    "pt-PT": "Conhecer minha trajetória na JIP / Raws Podcast num novo separador"
+  },
+  "JIP / Raws": {
+    "en-US": "JIP / Raws",
+    "it-IT": "JIP / Raws",
+    "pt-PT": "JIP / Raws"
+  },
+  "Zenvia — conhecer minha trajetória": {
+    "en-US": "Zenvia — conhecer minha trajetória",
+    "it-IT": "Zenvia — conhecer minha trajetória",
+    "pt-PT": "Zenvia — conhecer minha trajetória"
+  },
+  "Conhecer minha trajetória na Zenvia em nova aba": {
+    "en-US": "Conhecer minha trajetória na Zenvia em nova aba",
+    "it-IT": "Conhecer minha trajetória na Zenvia em nova aba",
+    "pt-PT": "Conhecer minha trajetória na Zenvia num novo separador"
+  },
+  "Conta Azul — conhecer minha trajetória": {
+    "en-US": "Conta Azul — conhecer minha trajetória",
+    "it-IT": "Conta Azul — conhecer minha trajetória",
+    "pt-PT": "Conta Azul — conhecer minha trajetória"
+  },
+  "Conhecer minha trajetória na Conta Azul em nova aba": {
+    "en-US": "Conhecer minha trajetória na Conta Azul em nova aba",
+    "it-IT": "Conhecer minha trajetória na Conta Azul em nova aba",
+    "pt-PT": "Conhecer minha trajetória na Conta Azul num novo separador"
+  },
+  "O Boticário — conhecer minha trajetória": {
+    "en-US": "O Boticário — conhecer minha trajetória",
+    "it-IT": "O Boticário — conhecer minha trajetória",
+    "pt-PT": "O Boticário — conhecer minha trajetória"
+  },
+  "Conhecer minha trajetória na O Boticário em nova aba": {
+    "en-US": "Conhecer minha trajetória na O Boticário em nova aba",
+    "it-IT": "Conhecer minha trajetória na O Boticário em nova aba",
+    "pt-PT": "Conhecer minha trajetória na O Boticário num novo separador"
+  },
+  "Schulze — conhecer minha trajetória": {
+    "en-US": "Schulze — conhecer minha trajetória",
+    "it-IT": "Schulze — conhecer minha trajetória",
+    "pt-PT": "Schulze — conhecer minha trajetória"
+  },
+  "Conhecer minha trajetória na Schulze em nova aba": {
+    "en-US": "Conhecer minha trajetória na Schulze em nova aba",
+    "it-IT": "Conhecer minha trajetória na Schulze em nova aba",
+    "pt-PT": "Conhecer minha trajetória na Schulze num novo separador"
+  },
+  "Próximas empresas": {
+    "en-US": "Next companies",
+    "it-IT": "Aziende successive",
+    "pt-PT": "Próximas empresas"
+  },
+  "›": {
+    "en-US": "›",
+    "it-IT": "›",
+    "pt-PT": "›"
+  },
+  "COMO EU TRABALHO": {
+    "en-US": "HOW I WORK",
+    "it-IT": "COME LAVORO",
+    "pt-PT": "COMO EU TRABALHO"
+  },
+  "Pessoas, contexto": {
+    "en-US": "People, context",
+    "it-IT": "Persone, contesto",
+    "pt-PT": "Pessoas, contexto"
+  },
+  "e colaboração.": {
+    "en-US": "and collaboration.",
+    "it-IT": "e collaborazione.",
+    "pt-PT": "e colaboração."
+  },
+  "VAMOS CONSTRUIR ALGO?": {
+    "en-US": "SHALL WE BUILD SOMETHING?",
+    "it-IT": "CREIAMO QUALCOSA INSIEME?",
+    "pt-PT": "VAMOS CONSTRUIR ALGO?"
+  },
+  "A próxima ideia": {
+    "en-US": "The next idea",
+    "it-IT": "La prossima idea",
+    "pt-PT": "A próxima ideia"
+  },
+  "pode ser": {
+    "en-US": "could be",
+    "it-IT": "potrebbe essere",
+    "pt-PT": "pode ser"
+  },
+  "a sua.": {
+    "en-US": "yours.",
+    "it-IT": "la tua.",
+    "pt-PT": "a sua."
+  },
+  "Vamos conversar pelo WhatsApp": {
+    "en-US": "Let's talk on WhatsApp",
+    "it-IT": "Parliamone su WhatsApp",
+    "pt-PT": "Vamos conversar pelo WhatsApp"
+  },
+  "Ou fale comigo no LinkedIn": {
+    "en-US": "Or contact me on LinkedIn",
+    "it-IT": "Oppure contattami su LinkedIn",
+    "pt-PT": "Ou fale comigo no LinkedIn"
+  },
+  "Karen Angelis ·": {
+    "en-US": "Karen Angelis ·",
+    "it-IT": "Karen Angelis ·",
+    "pt-PT": "Karen Angelis ·"
+  },
+  "Buscar notícias · Karen Angelis": {
+    "en-US": "Search news · Karen Angelis",
+    "it-IT": "Cerca notizie · Karen Angelis",
+    "pt-PT": "Pesquisar notícias · Karen Angelis"
+  },
+  "Voltar ao portfólio": {
+    "en-US": "Back to portfolio",
+    "it-IT": "Torna al portfolio",
+    "pt-PT": "Voltar ao portfólio"
+  },
+  "LAB 02 / PYTHON + FASTAPI": {
+    "en-US": "LAB 02 / PYTHON + FASTAPI",
+    "it-IT": "LAB 02 / PYTHON + FASTAPI",
+    "pt-PT": "LAB 02 / PYTHON + FASTAPI"
+  },
+  "Um assunto.": {
+    "en-US": "One topic.",
+    "it-IT": "Un argomento.",
+    "pt-PT": "Um assunto."
+  },
+  "Digite um assunto ou escolha uma sugestão para encontrar notícias recentes.": {
+    "en-US": "Enter a topic or choose a suggestion to find recent news.",
+    "it-IT": "Scrivi un argomento o scegli un suggerimento per trovare notizie recenti.",
+    "pt-PT": "Digite um assunto ou escolha uma sugestão para encontrar notícias recentes."
+  },
+  "Assunto": {
+    "en-US": "Topic",
+    "it-IT": "Argomento",
+    "pt-PT": "Assunto"
+  },
+  "Ex.: inteligência artificial, música, Python": {
+    "en-US": "E.g. artificial intelligence, music, Python",
+    "it-IT": "Es.: intelligenza artificiale, musica, Python",
+    "pt-PT": "Ex.: inteligência artificial, música, Python"
+  },
+  "País": {
+    "en-US": "Country",
+    "it-IT": "Paese",
+    "pt-PT": "País"
+  },
+  "Brasil": {
+    "en-US": "Brazil",
+    "it-IT": "Brasile",
+    "pt-PT": "Brasil"
+  },
+  "Estados Unidos": {
+    "en-US": "United States",
+    "it-IT": "Stati Uniti",
+    "pt-PT": "Estados Unidos"
+  },
+  "Portugal": {
+    "en-US": "Portugal",
+    "it-IT": "Portogallo",
+    "pt-PT": "Portugal"
+  },
+  "Sugestões de assuntos": {
+    "en-US": "Suggested topics",
+    "it-IT": "Argomenti suggeriti",
+    "pt-PT": "Sugestões de assuntos"
+  },
+  "Sugestões": {
+    "en-US": "Suggestions",
+    "it-IT": "Suggerimenti",
+    "pt-PT": "Sugestões"
+  },
+  "Inteligência artificial": {
+    "en-US": "Artificial intelligence",
+    "it-IT": "Intelligenza artificiale",
+    "pt-PT": "Inteligência artificial"
+  },
+  "Tecnologia": {
+    "en-US": "Technology",
+    "it-IT": "Tecnologia",
+    "pt-PT": "Tecnologia"
+  },
+  "Economia": {
+    "en-US": "Economy",
+    "it-IT": "Economia",
+    "pt-PT": "Economia"
+  },
+  "Música": {
+    "en-US": "Music",
+    "it-IT": "Musica",
+    "pt-PT": "Música"
+  },
+  "Futebol": {
+    "en-US": "Football",
+    "it-IT": "Calcio",
+    "pt-PT": "Futebol"
+  },
+  "Como esta busca funciona": {
+    "en-US": "How this search works",
+    "it-IT": "Come funziona questa ricerca",
+    "pt-PT": "Como esta pesquisa funciona"
+  },
+  "Notícias do Google Notícias, consultadas por uma API em Python com FastAPI.": {
+    "en-US": "Google News stories retrieved through a Python API with FastAPI.",
+    "it-IT": "Notizie di Google News recuperate tramite un'API in Python con FastAPI.",
+    "pt-PT": "Notícias do Google Notícias, consultadas por uma API em Python com FastAPI."
+  },
+  "Ver resposta JSON": {
+    "en-US": "View JSON response",
+    "it-IT": "Vedi la risposta JSON",
+    "pt-PT": "Ver resposta JSON"
+  },
+  "Documentação da API": {
+    "en-US": "API documentation",
+    "it-IT": "Documentazione dell'API",
+    "pt-PT": "Documentação da API"
+  },
+  "Ambiental · Minha trajetória | Karen Angelis": {
+    "en-US": "Ambiental · Minha trajetória | Karen Angelis",
+    "it-IT": "Ambiental · Minha trajetória | Karen Angelis",
+    "pt-PT": "Ambiental · Minha trajetória | Karen Angelis"
+  },
+  "Ambiental": {
+    "en-US": "Ambiental",
+    "it-IT": "Ambiental",
+    "pt-PT": "Ambiental"
+  },
+  "Analista de Processos e Melhoria Contínua": {
+    "en-US": "Process and Continuous Improvement Analyst",
+    "it-IT": "Analista dei processi e del miglioramento continuo",
+    "pt-PT": "Analista de Processos e Melhoria Contínua"
+  },
+  "Mapeamento AS-IS/TO-BE, requisitos, gargalos, indicadores e documentação de melhorias.": {
+    "en-US": "AS-IS/TO-BE mapping, requirements, bottlenecks, metrics and improvement documentation.",
+    "it-IT": "Mappatura AS-IS/TO-BE, requisiti, colli di bottiglia, indicatori e documentazione dei miglioramenti.",
+    "pt-PT": "Mapeamento AS-IS/TO-BE, requisitos, gargalos, indicadores e documentação de melhorias."
+  },
+  "Experiência em análise de processos e melhoria contínua.": {
+    "en-US": "Experience in process analysis and continuous improvement.",
+    "it-IT": "Esperienza nell'analisi dei processi e nel miglioramento continuo.",
+    "pt-PT": "Experiência em análise de processos e melhoria contínua."
+  },
+  "ATUAÇÃO / NA PRÁTICA": {
+    "en-US": "MY WORK / IN PRACTICE",
+    "it-IT": "ATTIVITÀ / IN PRATICA",
+    "pt-PT": "ATUAÇÃO / NA PRÁTICA"
+  },
+  "O que fez parte do meu trabalho.": {
+    "en-US": "What my work involved.",
+    "it-IT": "Cosa comprendeva il mio lavoro.",
+    "pt-PT": "O que fez parte do meu trabalho."
+  },
+  "Mapeamento de processos AS-IS e TO-BE para compreender a operação atual e organizar possibilidades de melhoria.": {
+    "en-US": "Mapping AS-IS and TO-BE processes to understand current operations and identify opportunities for improvement.",
+    "it-IT": "Mappatura dei processi AS-IS e TO-BE per comprendere l'operatività attuale e organizzare le opportunità di miglioramento.",
+    "pt-PT": "Mapeamento de processos AS-IS e TO-BE para compreender a operação atual e organizar possibilidades de melhoria."
+  },
+  "Levantamento de requisitos e tradução de necessidades das áreas em documentação e especificações.": {
+    "en-US": "Gathering requirements and translating teams' needs into documentation and specifications.",
+    "it-IT": "Raccolta dei requisiti e traduzione delle esigenze dei reparti in documentazione e specifiche.",
+    "pt-PT": "Levantamento de requisitos e tradução de necessidades das áreas em documentação e especificações."
+  },
+  "Identificação de gargalos e acompanhamento de indicadores para apoiar a análise dos processos.": {
+    "en-US": "Identifying bottlenecks and tracking metrics to support process analysis.",
+    "it-IT": "Individuazione dei colli di bottiglia e monitoraggio degli indicatori a supporto dell'analisi dei processi.",
+    "pt-PT": "Identificação de gargalos e acompanhamento de indicadores para apoiar a análise dos processos."
+  },
+  "Elaboração de relatórios e documentação de melhorias, conectando o contexto operacional às necessidades de evolução.": {
+    "en-US": "Preparing reports and improvement documentation, connecting operational context to development needs.",
+    "it-IT": "Preparazione di report e documentazione dei miglioramenti, collegando il contesto operativo alle esigenze di evoluzione.",
+    "pt-PT": "Elaboração de relatórios e documentação de melhorias, conectando o contexto operacional às necessidades de evolução."
+  },
+  "HARD SKILLS": {
+    "en-US": "HARD SKILLS",
+    "it-IT": "COMPETENZE TECNICHE",
+    "pt-PT": "HARD SKILLS"
+  },
+  "Conhecimentos aplicados.": {
+    "en-US": "Applied knowledge.",
+    "it-IT": "Conoscenze applicate.",
+    "pt-PT": "Conhecimentos aplicados."
+  },
+  "Mapeamento de processos": {
+    "en-US": "Process mapping",
+    "it-IT": "Mappatura dei processi",
+    "pt-PT": "Mapeamento de processos"
+  },
+  "AS-IS / TO-BE": {
+    "en-US": "AS-IS / TO-BE",
+    "it-IT": "AS-IS / TO-BE",
+    "pt-PT": "AS-IS / TO-BE"
+  },
+  "Levantamento de requisitos": {
+    "en-US": "Requirements gathering",
+    "it-IT": "Raccolta dei requisiti",
+    "pt-PT": "Levantamento de requisitos"
+  },
+  "Indicadores": {
+    "en-US": "Metrics",
+    "it-IT": "Indicatori",
+    "pt-PT": "Indicadores"
+  },
+  "Relatórios": {
+    "en-US": "Reports",
+    "it-IT": "Report",
+    "pt-PT": "Relatórios"
+  },
+  "Documentação": {
+    "en-US": "Documentation",
+    "it-IT": "Documentazione",
+    "pt-PT": "Documentação"
+  },
+  "Melhoria contínua": {
+    "en-US": "Continuous improvement",
+    "it-IT": "Miglioramento continuo",
+    "pt-PT": "Melhoria contínua"
+  },
+  "Análise funcional": {
+    "en-US": "Functional analysis",
+    "it-IT": "Analisi funzionale",
+    "pt-PT": "Análise funcional"
+  },
+  "SOFT SKILLS": {
+    "en-US": "SOFT SKILLS",
+    "it-IT": "COMPETENZE TRASVERSALI",
+    "pt-PT": "SOFT SKILLS"
+  },
+  "Como essas habilidades aparecem.": {
+    "en-US": "How these skills show up.",
+    "it-IT": "Come si esprimono queste competenze.",
+    "pt-PT": "Como essas habilidades aparecem."
+  },
+  "Escuta e análise": {
+    "en-US": "Listening and analysis",
+    "it-IT": "Ascolto e analisi",
+    "pt-PT": "Escuta e análise"
+  },
+  "Compreender as necessidades das áreas antes de propor uma mudança no processo.": {
+    "en-US": "Understanding teams' needs before proposing a process change.",
+    "it-IT": "Comprendere le esigenze dei reparti prima di proporre un cambiamento nel processo.",
+    "pt-PT": "Compreender as necessidades das áreas antes de propor uma mudança no processo."
+  },
+  "Organização": {
+    "en-US": "Organisation",
+    "it-IT": "Organizzazione",
+    "pt-PT": "Organização"
+  },
+  "Estruturar informações, requisitos e documentação para dar clareza ao trabalho.": {
+    "en-US": "Structuring information, requirements and documentation to make the work clear.",
+    "it-IT": "Strutturare informazioni, requisiti e documentazione per rendere chiaro il lavoro.",
+    "pt-PT": "Estruturar informações, requisitos e documentação para dar clareza ao trabalho."
+  },
+  "Visão de negócio": {
+    "en-US": "Business perspective",
+    "it-IT": "Visione di business",
+    "pt-PT": "Visão de negócio"
+  },
+  "Relacionar gargalos e necessidades operacionais às oportunidades de melhoria.": {
+    "en-US": "Connecting bottlenecks and operational needs to opportunities for improvement.",
+    "it-IT": "Collegare colli di bottiglia ed esigenze operative alle opportunità di miglioramento.",
+    "pt-PT": "Relacionar gargalos e necessidades operacionais às oportunidades de melhoria."
+  },
+  "CONEXÕES / APRENDIZADO": {
+    "en-US": "CONNECTIONS / LEARNING",
+    "it-IT": "COLLEGAMENTI / APPRENDIMENTO",
+    "pt-PT": "CONEXÕES / APRENDIZADO"
+  },
+  "O que levo dessa experiência.": {
+    "en-US": "What I take from this experience.",
+    "it-IT": "Cosa porto con me da questa esperienza.",
+    "pt-PT": "O que levo dessa experiência."
+  },
+  "Levo essa experiência para o desenvolvimento de software: antes de implementar uma tela ou uma regra, procuro entender o processo que ela precisa atender.": {
+    "en-US": "I bring this experience to software development: before implementing a screen or a rule, I seek to understand the process it needs to support.",
+    "it-IT": "Porto questa esperienza nello sviluppo software: prima di implementare una schermata o una regola, cerco di capire il processo che deve supportare.",
+    "pt-PT": "Levo essa experiência para o desenvolvimento de software: antes de implementar uma ecrã ou uma regra, procuro entender o processo que ela precisa atender."
+  },
+  "Voltar à minha trajetória": {
+    "en-US": "Back to my career",
+    "it-IT": "Torna al mio percorso",
+    "pt-PT": "Voltar à minha trajetória"
+  },
+  "OUTRAS EXPERIÊNCIAS": {
+    "en-US": "OTHER EXPERIENCE",
+    "it-IT": "ALTRE ESPERIENZE",
+    "pt-PT": "OUTRAS EXPERIÊNCIAS"
+  },
+  "Explorar minha trajetória": {
+    "en-US": "Explore my career",
+    "it-IT": "Esplora il mio percorso",
+    "pt-PT": "Explorar minha trajetória"
+  },
+  "WEG · IEL / Inova Talentos": {
+    "en-US": "WEG · IEL / Inova Talentos",
+    "it-IT": "WEG · IEL / Inova Talentos",
+    "pt-PT": "WEG · IEL / Inova Talentos"
+  },
+  "Quanta Educação / Isidoro Preparatório": {
+    "en-US": "Quanta Educação / Isidoro Preparatório",
+    "it-IT": "Quanta Educação / Isidoro Preparatório",
+    "pt-PT": "Quanta Educação / Isidoro Preparatório"
+  },
+  "JIP / Raws Podcast": {
+    "en-US": "JIP / Raws Podcast",
+    "it-IT": "JIP / Raws Podcast",
+    "pt-PT": "JIP / Raws Podcast"
+  },
+  "Zenvia": {
+    "en-US": "Zenvia",
+    "it-IT": "Zenvia",
+    "pt-PT": "Zenvia"
+  },
+  "Conta Azul": {
+    "en-US": "Conta Azul",
+    "it-IT": "Conta Azul",
+    "pt-PT": "Conta Azul"
+  },
+  "O Boticário": {
+    "en-US": "O Boticário",
+    "it-IT": "O Boticário",
+    "pt-PT": "O Boticário"
+  },
+  "Schulze": {
+    "en-US": "Schulze",
+    "it-IT": "Schulze",
+    "pt-PT": "Schulze"
+  },
+  "Karen Angelis": {
+    "en-US": "Karen Angelis",
+    "it-IT": "Karen Angelis",
+    "pt-PT": "Karen Angelis"
+  },
+  "O Boticário · Minha trajetória | Karen Angelis": {
+    "en-US": "O Boticário · Minha trajetória | Karen Angelis",
+    "it-IT": "O Boticário · Minha trajetória | Karen Angelis",
+    "pt-PT": "O Boticário · Minha trajetória | Karen Angelis"
+  },
+  "Assistente de loja": {
+    "en-US": "Shop assistant",
+    "it-IT": "Addetta alle vendite",
+    "pt-PT": "Assistente de loja"
+  },
+  "Atendimento, relacionamento com clientes e organização.": {
+    "en-US": "Customer service, customer relationships and organisation.",
+    "it-IT": "Assistenza clienti, relazioni con i clienti e organizzazione.",
+    "pt-PT": "Atendimento, relacionamento com clientes e organização."
+  },
+  "Experiência de atendimento e relacionamento no varejo.": {
+    "en-US": "Experience in retail customer service and relationships.",
+    "it-IT": "Esperienza nell'assistenza e nelle relazioni con i clienti nel commercio al dettaglio.",
+    "pt-PT": "Experiência de atendimento e relacionamento no varejo."
+  },
+  "Atendimento a clientes e apoio à experiência na loja.": {
+    "en-US": "Serving customers and supporting the in-store experience.",
+    "it-IT": "Assistenza ai clienti e supporto all'esperienza in negozio.",
+    "pt-PT": "Atendimento a clientes e apoio à experiência na loja."
+  },
+  "Relacionamento com clientes, considerando suas necessidades e dúvidas.": {
+    "en-US": "Building customer relationships, considering their needs and questions.",
+    "it-IT": "Relazioni con i clienti, tenendo conto delle loro esigenze e domande.",
+    "pt-PT": "Relacionamento com clientes, considerando suas necessidades e dúvidas."
+  },
+  "Organização da rotina e apoio às atividades da loja.": {
+    "en-US": "Organising daily routines and supporting shop activities.",
+    "it-IT": "Organizzazione delle attività quotidiane e supporto alle attività del negozio.",
+    "pt-PT": "Organização da rotina e apoio às atividades da loja."
+  },
+  "Atendimento no varejo": {
+    "en-US": "Retail customer service",
+    "it-IT": "Assistenza clienti nel commercio al dettaglio",
+    "pt-PT": "Atendimento no varejo"
+  },
+  "Relacionamento com clientes": {
+    "en-US": "Customer relationships",
+    "it-IT": "Relazioni con i clienti",
+    "pt-PT": "Relacionamento com clientes"
+  },
+  "Organização de loja": {
+    "en-US": "Shop organisation",
+    "it-IT": "Organizzazione del negozio",
+    "pt-PT": "Organização de loja"
+  },
+  "Rotinas operacionais": {
+    "en-US": "Operational routines",
+    "it-IT": "Attività operative",
+    "pt-PT": "Rotinas operacionais"
+  },
+  "Empatia": {
+    "en-US": "Empathy",
+    "it-IT": "Empatia",
+    "pt-PT": "Empatia"
+  },
+  "Ouvir e compreender o que cada pessoa precisa durante o atendimento.": {
+    "en-US": "Listening to and understanding what each person needs during customer service.",
+    "it-IT": "Ascoltare e comprendere ciò di cui ogni persona ha bisogno durante l'assistenza.",
+    "pt-PT": "Ouvir e compreender o que cada pessoa precisa durante o atendimento."
+  },
+  "Comunicação": {
+    "en-US": "Communication",
+    "it-IT": "Comunicazione",
+    "pt-PT": "Comunicação"
+  },
+  "Apresentar informações com clareza e construir um bom relacionamento.": {
+    "en-US": "Presenting information clearly and building good relationships.",
+    "it-IT": "Presentare informazioni con chiarezza e costruire buone relazioni.",
+    "pt-PT": "Apresentar informações com clareza e construir um bom relacionamento."
+  },
+  "Organização e colaboração": {
+    "en-US": "Organisation and collaboration",
+    "it-IT": "Organizzazione e collaborazione",
+    "pt-PT": "Organização e colaboração"
+  },
+  "Manter a rotina organizada e contribuir com as atividades da equipe.": {
+    "en-US": "Keeping daily work organised and contributing to the team's activities.",
+    "it-IT": "Mantenere organizzate le attività quotidiane e contribuire al lavoro del team.",
+    "pt-PT": "Manter a rotina organizada e contribuir com as atividades da equipa."
+  },
+  "A experiência no varejo reforçou minha atenção ao atendimento e à jornada do cliente, aspectos que hoje também considero ao construir uma interface.": {
+    "en-US": "Retail experience strengthened my attention to customer service and the customer journey, aspects I now also consider when building an interface.",
+    "it-IT": "L'esperienza nel commercio ha rafforzato la mia attenzione all'assistenza e al percorso del cliente, aspetti che oggi considero anche quando costruisco un'interfaccia.",
+    "pt-PT": "A experiência no varejo reforçou minha atenção ao atendimento e à jornada do cliente, aspectos que hoje também considero ao construir uma interface."
+  },
+  "Conta Azul · Minha trajetória | Karen Angelis": {
+    "en-US": "Conta Azul · Minha trajetória | Karen Angelis",
+    "it-IT": "Conta Azul · Minha trajetória | Karen Angelis",
+    "pt-PT": "Conta Azul · Minha trajetória | Karen Angelis"
+  },
+  "Compliance, qualidade, produto e atendimento": {
+    "en-US": "Compliance, quality, product and customer service",
+    "it-IT": "Compliance, qualità, prodotto e assistenza clienti",
+    "pt-PT": "Compliance, qualidade, produto e atendimento"
+  },
+  "Suporte SaaS, ouvidoria, voz do cliente, compliance fiscal, testes e integrações com prefeituras; tutoriais e treinamentos.": {
+    "en-US": "SaaS support, customer advocacy, voice of the customer, tax compliance, testing and municipal integrations; tutorials and training.",
+    "it-IT": "Supporto SaaS, gestione dei reclami, voce del cliente, compliance fiscale, test e integrazioni con i comuni; tutorial e formazione.",
+    "pt-PT": "Suporte SaaS, ouvidoria, voz do cliente, compliance fiscal, testes e integrações com prefeituras; tutoriais e formação."
+  },
+  "Trajetória em atendimento, compliance, qualidade e produto em ambiente ERP / SaaS.": {
+    "en-US": "Career in customer service, compliance, quality and product in an ERP / SaaS environment.",
+    "it-IT": "Percorso nell'assistenza clienti, nella compliance, nella qualità e nel prodotto in ambiente ERP / SaaS.",
+    "pt-PT": "Trajetória em atendimento, compliance, qualidade e produto em ambiente ERP / SaaS."
+  },
+  "Atendimento por chat, e-mail e telefone, com organização de demandas e utilização de Zendesk.": {
+    "en-US": "Support through chat, email and phone, organising requests and using Zendesk.",
+    "it-IT": "Assistenza tramite chat, email e telefono, con organizzazione delle richieste e uso di Zendesk.",
+    "pt-PT": "Atendimento por chat, e-mail e telefone, com organização de demandas e utilização de Zendesk."
+  },
+  "Atuação em ouvidoria e canais de reclamação, acompanhando a voz do cliente e necessidades de melhoria.": {
+    "en-US": "Handling customer complaints and escalation channels, following customer feedback and improvement needs.",
+    "it-IT": "Gestione dei reclami e dei canali di segnalazione, seguendo la voce del cliente e le esigenze di miglioramento.",
+    "pt-PT": "Atuação em ouvidoria e canais de reclamação, acompanhando a voz do cliente e necessidades de melhoria."
+  },
+  "Contato com NPS e Portal de Ideias como fontes de percepção sobre a experiência e o produto.": {
+    "en-US": "Using NPS and the Ideas Portal as sources of insight into the experience and product.",
+    "it-IT": "Utilizzo di NPS e del Portale delle Idee come fonti di informazioni sull'esperienza e sul prodotto.",
+    "pt-PT": "Contato com NPS e Portal de Ideias como fontes de percepção sobre a experiência e o produto."
+  },
+  "Atuação em compliance fiscal, testes e integrações relacionadas à emissão fiscal e a prefeituras.": {
+    "en-US": "Working on tax compliance, testing and integrations related to tax documents and municipalities.",
+    "it-IT": "Attività di compliance fiscale, test e integrazioni relative ai documenti fiscali e ai comuni.",
+    "pt-PT": "Atuação em compliance fiscal, testes e integrações relacionadas à emissão fiscal e a prefeituras."
+  },
+  "Investigação de causas e colaboração com produto, suporte e qualidade na melhoria de processos.": {
+    "en-US": "Investigating causes and collaborating with product, support and quality teams to improve processes.",
+    "it-IT": "Indagine sulle cause e collaborazione con prodotto, supporto e qualità per migliorare i processi.",
+    "pt-PT": "Investigação de causas e colaboração com produto, suporte e qualidade na melhoria de processos."
+  },
+  "Produção de tutoriais e treinamentos para tornar informações e orientações mais claras.": {
+    "en-US": "Producing tutorials and training to make information and guidance clearer.",
+    "it-IT": "Creazione di tutorial e formazione per rendere più chiare informazioni e indicazioni.",
+    "pt-PT": "Produção de tutoriais e formação para tornar informações e orientações mais claras."
+  },
+  "Compliance fiscal": {
+    "en-US": "Tax compliance",
+    "it-IT": "Compliance fiscale",
+    "pt-PT": "Compliance fiscal"
+  },
+  "NFS-e": {
+    "en-US": "NFS-e",
+    "it-IT": "NFS-e",
+    "pt-PT": "NFS-e"
+  },
+  "Integrações com prefeituras": {
+    "en-US": "Municipal integrations",
+    "it-IT": "Integrazioni con i comuni",
+    "pt-PT": "Integrações com prefeituras"
+  },
+  "Testes funcionais": {
+    "en-US": "Functional tests",
+    "it-IT": "Test funzionali",
+    "pt-PT": "Testes funcionais"
+  },
+  "Investigação de causas": {
+    "en-US": "Root cause investigation",
+    "it-IT": "Indagine sulle cause",
+    "pt-PT": "Investigação de causas"
+  },
+  "Ouvidoria": {
+    "en-US": "Customer advocacy",
+    "it-IT": "Gestione dei reclami",
+    "pt-PT": "Ouvidoria"
+  },
+  "Voz do cliente": {
+    "en-US": "Voice of the customer",
+    "it-IT": "Voce del cliente",
+    "pt-PT": "Voz do cliente"
+  },
+  "Tutoriais e treinamentos": {
+    "en-US": "Tutorials and training",
+    "it-IT": "Tutorial e formazione",
+    "pt-PT": "Tutoriais e formação"
+  },
+  "Melhoria de processos": {
+    "en-US": "Process improvement",
+    "it-IT": "Miglioramento dei processi",
+    "pt-PT": "Melhoria de processos"
+  },
+  "Comunicação clara": {
+    "en-US": "Clear communication",
+    "it-IT": "Comunicazione chiara",
+    "pt-PT": "Comunicação clara"
+  },
+  "Transformar dúvidas e informações do produto em orientações, tutoriais e treinamentos.": {
+    "en-US": "Turning product questions and information into guidance, tutorials and training.",
+    "it-IT": "Trasformare domande e informazioni sul prodotto in indicazioni, tutorial e formazione.",
+    "pt-PT": "Transformar dúvidas e informações do produto em orientações, tutoriais e formação."
+  },
+  "Escuta e relacionamento": {
+    "en-US": "Listening and relationships",
+    "it-IT": "Ascolto e relazioni",
+    "pt-PT": "Escuta e relacionamento"
+  },
+  "Considerar reclamações e feedbacks para compreender a experiência do cliente.": {
+    "en-US": "Considering complaints and feedback to understand the customer experience.",
+    "it-IT": "Considerare reclami e feedback per comprendere l'esperienza del cliente.",
+    "pt-PT": "Considerar reclamações e feedbacks para compreender a experiência do cliente."
+  },
+  "Colaboração entre áreas": {
+    "en-US": "Cross-team collaboration",
+    "it-IT": "Collaborazione tra reparti",
+    "pt-PT": "Colaboração entre áreas"
+  },
+  "Conectar atendimento, produto, qualidade e contexto fiscal na investigação de problemas.": {
+    "en-US": "Connecting customer service, product, quality and tax context when investigating problems.",
+    "it-IT": "Collegare assistenza, prodotto, qualità e contesto fiscale nell'analisi dei problemi.",
+    "pt-PT": "Conectar atendimento, produto, qualidade e contexto fiscal na investigação de problemas."
+  },
+  "Essa trajetória trouxe uma base que uso no código até hoje: compreender regras de negócio, investigar causas e olhar para a experiência de quem utiliza o sistema.": {
+    "en-US": "This career gave me a foundation I still use in code: understanding business rules, investigating causes and considering the experience of the people using the system.",
+    "it-IT": "Questo percorso mi ha dato una base che uso ancora nel codice: comprendere le regole di business, indagare le cause e considerare l'esperienza di chi usa il sistema.",
+    "pt-PT": "Essa trajetória trouxe uma base que uso no código até hoje: compreender regras de negócio, investigar causas e olhar para a experiência de quem utiliza o sistema."
+  },
+  "JIP / Raws Podcast · Minha trajetória | Karen Angelis": {
+    "en-US": "JIP / Raws Podcast · Minha trajetória | Karen Angelis",
+    "it-IT": "JIP / Raws Podcast · Minha trajetória | Karen Angelis",
+    "pt-PT": "JIP / Raws Podcast · Minha trajetória | Karen Angelis"
+  },
+  "Desenvolvimento Full Stack · projeto freelance": {
+    "en-US": "Full Stack development · freelance project",
+    "it-IT": "Sviluppo Full Stack · progetto freelance",
+    "pt-PT": "Desenvolvimento Full Stack · projeto freelance"
+  },
+  "Aplicação de conteúdo para podcasts com Next.js/React, FastAPI, PostgreSQL, autenticação, IA, dashboards e relatórios.": {
+    "en-US": "Podcast content application with Next.js/React, FastAPI, PostgreSQL, authentication, AI, dashboards and reports.",
+    "it-IT": "Applicazione per contenuti podcast con Next.js/React, FastAPI, PostgreSQL, autenticazione, IA, dashboard e report.",
+    "pt-PT": "Aplicação de conteúdo para podcasts com Next.js/React, FastAPI, PostgreSQL, autenticação, IA, dashboards e relatórios."
+  },
+  "Projeto PJ / freelance de desenvolvimento Full Stack para pesquisa e produção de conteúdo de podcasts.": {
+    "en-US": "Freelance Full Stack development project for podcast research and content production.",
+    "it-IT": "Progetto freelance di sviluppo Full Stack per la ricerca e la produzione di contenuti podcast.",
+    "pt-PT": "Projeto PJ / freelance de desenvolvimento Full Stack para pesquisa e produção de conteúdo de podcasts."
+  },
+  "Desenvolvimento de interfaces e dashboards com Next.js, React e TypeScript.": {
+    "en-US": "Building interfaces and dashboards with Next.js, React and TypeScript.",
+    "it-IT": "Sviluppo di interfacce e dashboard con Next.js, React e TypeScript.",
+    "pt-PT": "Desenvolvimento de interfaces e dashboards com Next.js, React e TypeScript."
+  },
+  "Construção de APIs Python/FastAPI conectadas à persistência em PostgreSQL.": {
+    "en-US": "Building Python/FastAPI APIs connected to PostgreSQL persistence.",
+    "it-IT": "Creazione di API Python/FastAPI collegate alla persistenza in PostgreSQL.",
+    "pt-PT": "Construção de APIs Python/FastAPI conectadas à persistência em PostgreSQL."
+  },
+  "Implementação de autenticação e validações de tokens, considerando expiração e informações de identificação.": {
+    "en-US": "Implementing authentication and token validation, considering expiry and identification information.",
+    "it-IT": "Implementazione di autenticazione e validazione dei token, considerando scadenza e informazioni identificative.",
+    "pt-PT": "Implementação de autenticação e validações de tokens, considerando expiração e informações de identificação."
+  },
+  "Integração de serviços de IA para apoiar pesquisa, pautas, roteiros e produção de conteúdo.": {
+    "en-US": "Integrating AI services to support research, topics, scripts and content production.",
+    "it-IT": "Integrazione di servizi di IA per supportare ricerca, argomenti, copioni e produzione di contenuti.",
+    "pt-PT": "Integração de serviços de IA para apoiar pesquisa, pautas, roteiros e produção de conteúdo."
+  },
+  "Organização de respostas estruturadas, relatórios e exportação de conteúdo em PDF.": {
+    "en-US": "Organising structured responses, reports and PDF content exports.",
+    "it-IT": "Organizzazione di risposte strutturate, report ed esportazione dei contenuti in PDF.",
+    "pt-PT": "Organização de respostas estruturadas, relatórios e exportação de conteúdo em PDF."
+  },
+  "Autenticação / JWT": {
+    "en-US": "Authentication / JWT",
+    "it-IT": "Autenticazione / JWT",
+    "pt-PT": "Autenticação / JWT"
+  },
+  "Dados estruturados": {
+    "en-US": "Structured data",
+    "it-IT": "Dati strutturati",
+    "pt-PT": "Dados estruturados"
+  },
+  "PDF": {
+    "en-US": "PDF",
+    "it-IT": "PDF",
+    "pt-PT": "PDF"
+  },
+  "Autonomia": {
+    "en-US": "Independence",
+    "it-IT": "Autonomia",
+    "pt-PT": "Autonomia"
+  },
+  "Organizar o desenvolvimento de um projeto freelance e conectar as partes necessárias à entrega.": {
+    "en-US": "Organising freelance project development and connecting the parts needed for delivery.",
+    "it-IT": "Organizzare lo sviluppo di un progetto freelance e collegare le parti necessarie alla consegna.",
+    "pt-PT": "Organizar o desenvolvimento de um projeto freelance e conectar as partes necessárias à entrega."
+  },
+  "Criatividade aplicada": {
+    "en-US": "Applied creativity",
+    "it-IT": "Creatività applicata",
+    "pt-PT": "Criatividade aplicada"
+  },
+  "Transformar necessidades de pesquisa e produção de conteúdo em ferramentas de uso prático.": {
+    "en-US": "Turning research and content production needs into practical tools.",
+    "it-IT": "Trasformare le esigenze di ricerca e produzione di contenuti in strumenti pratici.",
+    "pt-PT": "Transformar necessidades de pesquisa e produção de conteúdo em ferramentas de uso prático."
+  },
+  "Visão do fluxo completo": {
+    "en-US": "End-to-end perspective",
+    "it-IT": "Visione del flusso completo",
+    "pt-PT": "Visão do fluxo completo"
+  },
+  "Pensar na relação entre interface, autenticação, API, dados e geração de conteúdo.": {
+    "en-US": "Considering the relationship between interface, authentication, API, data and content generation.",
+    "it-IT": "Considerare la relazione tra interfaccia, autenticazione, API, dati e generazione dei contenuti.",
+    "pt-PT": "Pensar na relação entre interface, autenticação, API, dados e geração de conteúdo."
+  },
+  "Nesse projeto, a habilidade técnica ganhou uma aplicação ligada à comunicação: reunir dados e serviços para apoiar quem pesquisa e produz conteúdo. O serviço original está inativo; o código permanece disponível no GitHub.": {
+    "en-US": "In this project, technical skills served communication: bringing data and services together to support research and content production. The original service is inactive; the code remains available on GitHub.",
+    "it-IT": "In questo progetto le competenze tecniche hanno supportato la comunicazione: riunire dati e servizi per aiutare chi ricerca e produce contenuti. Il servizio originale è inattivo; il codice resta disponibile su GitHub.",
+    "pt-PT": "Nesse projeto, a habilidade técnica ganhou uma aplicação ligada à comunicação: reunir dados e serviços para apoiar quem pesquisa e produz conteúdo. O serviço original está inativo; o código permanece disponível no GitHub."
+  },
+  "Explorar o código do projeto": {
+    "en-US": "Explore the project's code",
+    "it-IT": "Esplora il codice del progetto",
+    "pt-PT": "Explorar o código do projeto"
+  },
+  "Quanta Educação / Isidoro Preparatório · Minha trajetória | Karen Angelis": {
+    "en-US": "Quanta Educação / Isidoro Preparatório · Minha trajetória | Karen Angelis",
+    "it-IT": "Quanta Educação / Isidoro Preparatório · Minha trajetória | Karen Angelis",
+    "pt-PT": "Quanta Educação / Isidoro Preparatório · Minha trajetória | Karen Angelis"
+  },
+  "Colaboração em desenvolvimento Full Stack": {
+    "en-US": "Collaboration in Full Stack development",
+    "it-IT": "Collaborazione nello sviluppo Full Stack",
+    "pt-PT": "Colaboração em desenvolvimento Full Stack"
+  },
+  "Plataforma educacional com React/Next.js/TypeScript, Python/FastAPI, autenticação, matrículas, pagamentos e agendamento.": {
+    "en-US": "Educational platform with React/Next.js/TypeScript, Python/FastAPI, authentication, enrolments, payments and scheduling.",
+    "it-IT": "Piattaforma educativa con React/Next.js/TypeScript, Python/FastAPI, autenticazione, iscrizioni, pagamenti e prenotazioni.",
+    "pt-PT": "Plataforma educacional com React/Next.js/TypeScript, Python/FastAPI, autenticação, inscrições, pagamentos e marcação."
+  },
+  "Colaboração no desenvolvimento da plataforma educacional Quanta Educação / Isidoro Preparatório.": {
+    "en-US": "Collaboration on the development of the Quanta Educação / Isidoro Preparatório educational platform.",
+    "it-IT": "Collaborazione allo sviluppo della piattaforma educativa Quanta Educação / Isidoro Preparatório.",
+    "pt-PT": "Colaboração no desenvolvimento da plataforma educacional Quanta Educação / Isidoro Preparatório."
+  },
+  "Participação no desenvolvimento de interfaces com React, Next.js e TypeScript para a experiência de alunos e professores.": {
+    "en-US": "Contributing to interface development with React, Next.js and TypeScript for the student and teacher experience.",
+    "it-IT": "Partecipazione allo sviluppo di interfacce con React, Next.js e TypeScript per l'esperienza di studenti e docenti.",
+    "pt-PT": "Participação no desenvolvimento de interfaces com React, Next.js e TypeScript para a experiência de alunos e professores."
+  },
+  "Desenvolvimento e integração de serviços Python/FastAPI para cursos, matrículas, pagamentos e agendamento de aulas.": {
+    "en-US": "Developing and integrating Python/FastAPI services for courses, enrolments, payments and lesson scheduling.",
+    "it-IT": "Sviluppo e integrazione di servizi Python/FastAPI per corsi, iscrizioni, pagamenti e prenotazione delle lezioni.",
+    "pt-PT": "Desenvolvimento e integração de serviços Python/FastAPI para cursos, inscrições, pagamentos e marcação de aulas."
+  },
+  "Integração de autenticação e papéis de acesso aos fluxos da plataforma.": {
+    "en-US": "Integrating authentication and access roles into platform workflows.",
+    "it-IT": "Integrazione di autenticazione e ruoli di accesso nei flussi della piattaforma.",
+    "pt-PT": "Integração de autenticação e papéis de acesso aos fluxos da plataforma."
+  },
+  "Integração de checkout e confirmações de pagamento, com validação das informações recebidas do provedor.": {
+    "en-US": "Integrating checkout and payment confirmations, validating information received from the provider.",
+    "it-IT": "Integrazione del checkout e delle conferme di pagamento, con validazione delle informazioni ricevute dal fornitore.",
+    "pt-PT": "Integração de checkout e confirmações de pagamento, com validação das informações recebidas do provedor."
+  },
+  "Tratamento de reservas e matrículas, considerando expiração, disponibilidade e prevenção de duplicações.": {
+    "en-US": "Handling bookings and enrolments, considering expiry, availability and duplicate prevention.",
+    "it-IT": "Gestione di prenotazioni e iscrizioni, considerando scadenza, disponibilità e prevenzione dei duplicati.",
+    "pt-PT": "Tratamento de reservas e inscrições, considerando expiração, disponibilidade e prevenção de duplicações."
+  },
+  "APIs REST": {
+    "en-US": "APIs REST",
+    "it-IT": "APIs REST",
+    "pt-PT": "APIs REST"
+  },
+  "Autenticação": {
+    "en-US": "Authentication",
+    "it-IT": "Autenticazione",
+    "pt-PT": "Autenticação"
+  },
+  "Mercado Pago": {
+    "en-US": "Mercado Pago",
+    "it-IT": "Mercado Pago",
+    "pt-PT": "Mercado Pago"
+  },
+  "Matrículas e reservas": {
+    "en-US": "Enrolments and bookings",
+    "it-IT": "Iscrizioni e prenotazioni",
+    "pt-PT": "Matrículas e reservas"
+  },
+  "Transações": {
+    "en-US": "Transactions",
+    "it-IT": "Transazioni",
+    "pt-PT": "Transações"
+  },
+  "Validação de pagamentos": {
+    "en-US": "Payment validation",
+    "it-IT": "Validazione dei pagamenti",
+    "pt-PT": "Validação de pagamentos"
+  },
+  "Colaboração": {
+    "en-US": "Collaboration",
+    "it-IT": "Collaborazione",
+    "pt-PT": "Colaboração"
+  },
+  "Desenvolver em um projeto compartilhado, conectando as entregas técnicas à experiência educacional.": {
+    "en-US": "Developing a shared project, connecting technical deliveries to the educational experience.",
+    "it-IT": "Sviluppare un progetto condiviso, collegando le consegne tecniche all'esperienza educativa.",
+    "pt-PT": "Desenvolver em um projeto compartilhado, conectando as entregas técnicas à experiência educacional."
+  },
+  "Atenção aos detalhes": {
+    "en-US": "Attention to detail",
+    "it-IT": "Attenzione ai dettagli",
+    "pt-PT": "Atenção aos detalhes"
+  },
+  "Considerar confirmações de pagamento, disponibilidade e estados dos fluxos para manter consistência.": {
+    "en-US": "Considering payment confirmations, availability and workflow states to maintain consistency.",
+    "it-IT": "Considerare conferme di pagamento, disponibilità e stati dei flussi per mantenere la coerenza.",
+    "pt-PT": "Considerar confirmações de pagamento, disponibilidade e estados dos fluxos para manter consistência."
+  },
+  "Pensamento de produto": {
+    "en-US": "Product thinking",
+    "it-IT": "Pensiero di prodotto",
+    "pt-PT": "Pensamento de produto"
+  },
+  "Relacionar os componentes e as regras às jornadas de alunos e professores.": {
+    "en-US": "Connecting components and rules to student and teacher journeys.",
+    "it-IT": "Collegare componenti e regole ai percorsi di studenti e docenti.",
+    "pt-PT": "Relacionar os componentes e as regras às jornadas de alunos e professores."
+  },
+  "Uma plataforma educacional exige mais que páginas: matrícula, pagamento e reserva precisam conversar. Essa experiência reúne interface, backend e regras de negócio em um fluxo completo.": {
+    "en-US": "An educational platform requires more than pages: enrolment, payment and booking need to work together. This experience brings interface, backend and business rules into a complete workflow.",
+    "it-IT": "Una piattaforma educativa richiede più delle pagine: iscrizioni, pagamenti e prenotazioni devono comunicare. Questa esperienza riunisce interfaccia, backend e regole di business in un flusso completo.",
+    "pt-PT": "Uma plataforma educacional exige mais que páginas: inscrição, pagamento e reserva precisam conversar. Essa experiência reúne interface, backend e regras de negócio em um fluxo completo."
+  },
+  "Schulze · Minha trajetória | Karen Angelis": {
+    "en-US": "Schulze · Minha trajetória | Karen Angelis",
+    "it-IT": "Schulze · Minha trajetória | Karen Angelis",
+    "pt-PT": "Schulze · Minha trajetória | Karen Angelis"
+  },
+  "Suporte de cobrança": {
+    "en-US": "Collections support",
+    "it-IT": "Supporto al recupero crediti",
+    "pt-PT": "Suporte de cobrança"
+  },
+  "Atendimento, negociação, acompanhamento de demandas e relacionamento.": {
+    "en-US": "Customer service, negotiation, request tracking and relationships.",
+    "it-IT": "Assistenza clienti, negoziazione, monitoraggio delle richieste e relazioni.",
+    "pt-PT": "Atendimento, negociação, acompanhamento de demandas e relacionamento."
+  },
+  "Experiência em suporte de cobrança, atendimento e negociação.": {
+    "en-US": "Experience in collections support, customer service and negotiation.",
+    "it-IT": "Esperienza nel supporto al recupero crediti, nell'assistenza clienti e nella negoziazione.",
+    "pt-PT": "Experiência em suporte de cobrança, atendimento e negociação."
+  },
+  "Atendimento e suporte a demandas relacionadas à cobrança.": {
+    "en-US": "Handling requests related to collections.",
+    "it-IT": "Assistenza e supporto alle richieste relative al recupero crediti.",
+    "pt-PT": "Atendimento e suporte a demandas relacionadas à cobrança."
+  },
+  "Negociação e comunicação com clientes durante o acompanhamento das situações.": {
+    "en-US": "Negotiating and communicating with customers while following up on cases.",
+    "it-IT": "Negoziazione e comunicazione con i clienti durante il monitoraggio delle situazioni.",
+    "pt-PT": "Negociação e comunicação com clientes durante o acompanhamento das situações."
+  },
+  "Acompanhamento das demandas e organização das informações necessárias à continuidade do atendimento.": {
+    "en-US": "Tracking requests and organising the information needed for continued support.",
+    "it-IT": "Monitoraggio delle richieste e organizzazione delle informazioni necessarie alla continuità dell'assistenza.",
+    "pt-PT": "Acompanhamento das demandas e organização das informações necessárias à continuidade do atendimento."
+  },
+  "Relacionamento com clientes, considerando clareza e respeito no contato.": {
+    "en-US": "Building customer relationships with clear, respectful communication.",
+    "it-IT": "Relazioni con i clienti, con chiarezza e rispetto nel contatto.",
+    "pt-PT": "Relacionamento com clientes, considerando clareza e respeito no contato."
+  },
+  "Atendimento": {
+    "en-US": "Customer service",
+    "it-IT": "Assistenza clienti",
+    "pt-PT": "Atendimento"
+  },
+  "Negociação": {
+    "en-US": "Negotiation",
+    "it-IT": "Negoziazione",
+    "pt-PT": "Negociação"
+  },
+  "Acompanhamento de demandas": {
+    "en-US": "Request tracking",
+    "it-IT": "Monitoraggio delle richieste",
+    "pt-PT": "Acompanhamento de demandas"
+  },
+  "Organização de informações": {
+    "en-US": "Information organisation",
+    "it-IT": "Organizzazione delle informazioni",
+    "pt-PT": "Organização de informações"
+  },
+  "Buscar entendimento durante o atendimento e conduzir conversas com objetividade.": {
+    "en-US": "Seeking understanding during customer service and keeping conversations focused.",
+    "it-IT": "Cercare comprensione durante l'assistenza e condurre conversazioni mirate.",
+    "pt-PT": "Pesquisar entendimento durante o atendimento e conduzir conversas com objetividade."
+  },
+  "Relacionamento": {
+    "en-US": "Relationships",
+    "it-IT": "Relazioni",
+    "pt-PT": "Relacionamento"
+  },
+  "Manter clareza e respeito em situações que exigem atenção ao contexto do cliente.": {
+    "en-US": "Maintaining clarity and respect in situations that require attention to the customer's context.",
+    "it-IT": "Mantenere chiarezza e rispetto nelle situazioni che richiedono attenzione al contesto del cliente.",
+    "pt-PT": "Manter clareza e respeito em situações que exigem atenção ao contexto do cliente."
+  },
+  "Acompanhar demandas e informações para manter continuidade no trabalho.": {
+    "en-US": "Tracking requests and information to maintain continuity of work.",
+    "it-IT": "Seguire richieste e informazioni per mantenere la continuità del lavoro.",
+    "pt-PT": "Acompanhar demandas e informações para manter continuidade no trabalho."
+  },
+  "Essa experiência ajudou a desenvolver comunicação, negociação e acompanhamento de problemas, competências que atravessam minha trajetória profissional.": {
+    "en-US": "This experience helped develop communication, negotiation and problem tracking, skills that run throughout my career.",
+    "it-IT": "Questa esperienza ha contribuito a sviluppare comunicazione, negoziazione e monitoraggio dei problemi, competenze presenti in tutto il mio percorso professionale.",
+    "pt-PT": "Essa experiência ajudou a desenvolver comunicação, negociação e acompanhamento de problemas, competências que atravessam minha trajetória profissional."
+  },
+  "WEG · IEL / Inova Talentos · Minha trajetória | Karen Angelis": {
+    "en-US": "WEG · IEL / Inova Talentos · Minha trajetória | Karen Angelis",
+    "it-IT": "WEG · IEL / Inova Talentos · Minha trajetória | Karen Angelis",
+    "pt-PT": "WEG · IEL / Inova Talentos · Minha trajetória | Karen Angelis"
+  },
+  "Desenvolvimento Frontend / Full Stack": {
+    "en-US": "Frontend / Full Stack development",
+    "it-IT": "Sviluppo Frontend / Full Stack",
+    "pt-PT": "Desenvolvimento Frontend / Full Stack"
+  },
+  "Interfaces React/Next.js/TypeScript e backend Python/FastAPI em plataforma corporativa de qualidade. Integração de APIs, autenticação, permissões, persistência, testes, code review e entrega com GitLab CI/CD. Atuação por bolsa do programa IEL/Inova Talentos; código e telas internos são confidenciais.": {
+    "en-US": "React/Next.js/TypeScript interfaces and Python/FastAPI backend for a corporate quality platform. API integration, authentication, permissions, persistence, testing, code review and delivery with GitLab CI/CD. Scholarship role through the IEL/Inova Talentos programme; internal code and screens are confidential.",
+    "it-IT": "Interfacce React/Next.js/TypeScript e backend Python/FastAPI in una piattaforma aziendale per la qualità. Integrazione di API, autenticazione, permessi, persistenza, test, code review e distribuzione con GitLab CI/CD. Attività tramite borsa del programma IEL/Inova Talentos; codice e schermate interni sono riservati.",
+    "pt-PT": "Interfaces React/Next.js/TypeScript e backend Python/FastAPI em plataforma corporativa de qualidade. Integração de APIs, autenticação, permissões, persistência, testes, code review e entrega com GitLab CI/CD. Atuação por bolsa do programa IEL/Inova Talentos; código e ecrãs internos são confidenciais."
+  },
+  "Atuação por bolsa do programa IEL / Inova Talentos em uma plataforma corporativa de qualidade e melhoria contínua.": {
+    "en-US": "Scholarship role through the IEL / Inova Talentos programme on a corporate quality and continuous improvement platform.",
+    "it-IT": "Attività tramite borsa del programma IEL / Inova Talentos in una piattaforma aziendale per la qualità e il miglioramento continuo.",
+    "pt-PT": "Atuação por bolsa do programa IEL / Inova Talentos em uma plataforma corporativa de qualidade e melhoria contínua."
+  },
+  "Desenvolvimento e refatoração de interfaces com React, Next.js e TypeScript, conectadas a serviços backend e módulos existentes.": {
+    "en-US": "Developing and refactoring interfaces with React, Next.js and TypeScript, connected to backend services and existing modules.",
+    "it-IT": "Sviluppo e refactoring di interfacce con React, Next.js e TypeScript, collegate a servizi backend e moduli esistenti.",
+    "pt-PT": "Desenvolvimento e refatoração de interfaces com React, Next.js e TypeScript, conectadas a serviços backend e módulos existentes."
+  },
+  "Criação de componentes, formulários, filtros, dashboards e fluxos reutilizáveis, considerando manutenção e experiência do usuário.": {
+    "en-US": "Creating reusable components, forms, filters, dashboards and workflows with maintenance and user experience in mind.",
+    "it-IT": "Creazione di componenti, moduli, filtri, dashboard e flussi riutilizzabili, considerando manutenzione ed esperienza dell'utente.",
+    "pt-PT": "Criação de componentes, formulários, filtros, dashboards e fluxos reutilizáveis, considerando manutenção e experiência do utilizador."
+  },
+  "Integração de APIs REST, autenticação, renovação de tokens, permissões contextuais e tratamento de erros.": {
+    "en-US": "Integrating REST APIs, authentication, token renewal, contextual permissions and error handling.",
+    "it-IT": "Integrazione di API REST, autenticazione, rinnovo dei token, permessi contestuali e gestione degli errori.",
+    "pt-PT": "Integração de APIs REST, autenticação, renovação de tokens, permissões contextuais e tratamento de erros."
+  },
+  "Participação no backend Python/FastAPI, na persistência e na validação das regras que conectam interface, API e dados.": {
+    "en-US": "Contributing to the Python/FastAPI backend, persistence and validation of rules connecting interface, API and data.",
+    "it-IT": "Partecipazione al backend Python/FastAPI, alla persistenza e alla validazione delle regole che collegano interfaccia, API e dati.",
+    "pt-PT": "Participação no backend Python/FastAPI, na persistência e na validação das regras que conectam interface, API e dados."
+  },
+  "Investigação de bugs e regressões, code review, testes e participação no ciclo de entrega com Git, GitLab e CI/CD.": {
+    "en-US": "Investigating bugs and regressions, reviewing code, testing and participating in delivery with Git, GitLab and CI/CD.",
+    "it-IT": "Indagine su bug e regressioni, code review, test e partecipazione alla distribuzione con Git, GitLab e CI/CD.",
+    "pt-PT": "Investigação de bugs e regressões, code review, testes e participação no ciclo de entrega com Git, GitLab e CI/CD."
+  },
+  "Colaboração com backend, produto e áreas de negócio para compreender requisitos, discutir decisões técnicas e resolver problemas.": {
+    "en-US": "Collaborating with backend, product and business teams to understand requirements, discuss technical decisions and solve problems.",
+    "it-IT": "Collaborazione con backend, prodotto e reparti aziendali per comprendere i requisiti, discutere le decisioni tecniche e risolvere i problemi.",
+    "pt-PT": "Colaboração com backend, produto e áreas de negócio para compreender requisitos, discutir decisões técnicas e resolver problemas."
+  },
+  "Autenticação e permissões": {
+    "en-US": "Authentication and permissions",
+    "it-IT": "Autenticazione e permessi",
+    "pt-PT": "Autenticação e permissões"
+  },
+  "SQL e persistência": {
+    "en-US": "SQL and persistence",
+    "it-IT": "SQL e persistenza",
+    "pt-PT": "SQL e persistência"
+  },
+  "Testes": {
+    "en-US": "Testing",
+    "it-IT": "Test",
+    "pt-PT": "Testes"
+  },
+  "Git / GitLab": {
+    "en-US": "Git / GitLab",
+    "it-IT": "Git / GitLab",
+    "pt-PT": "Git / GitLab"
+  },
+  "Colaboração técnica": {
+    "en-US": "Technical collaboration",
+    "it-IT": "Collaborazione tecnica",
+    "pt-PT": "Colaboração técnica"
+  },
+  "Construir junto com backend, produto e áreas de negócio, alinhando o comportamento da interface às regras do sistema.": {
+    "en-US": "Building with backend, product and business teams, aligning interface behaviour with system rules.",
+    "it-IT": "Costruire insieme a backend, prodotto e reparti aziendali, allineando il comportamento dell'interfaccia alle regole del sistema.",
+    "pt-PT": "Construir junto com backend, produto e áreas de negócio, alinhando o comportamento da interface às regras do sistema."
+  },
+  "Resolução de problemas": {
+    "en-US": "Problem solving",
+    "it-IT": "Risoluzione dei problemi",
+    "pt-PT": "Resolução de problemas"
+  },
+  "Investigar causas, reproduzir falhas e acompanhar regressões para chegar a uma correção consistente.": {
+    "en-US": "Investigating causes, reproducing failures and tracking regressions to reach a consistent fix.",
+    "it-IT": "Indagare le cause, riprodurre gli errori e seguire le regressioni per ottenere una correzione coerente.",
+    "pt-PT": "Investigar causas, reproduzir falhas e acompanhar regressões para chegar a uma correção consistente."
+  },
+  "Comunicação e contexto": {
+    "en-US": "Communication and context",
+    "it-IT": "Comunicazione e contesto",
+    "pt-PT": "Comunicação e contexto"
+  },
+  "Traduzir requisitos em fluxos de uso e explicar decisões técnicas considerando as necessidades de quem utiliza a plataforma.": {
+    "en-US": "Translating requirements into user flows and explaining technical decisions considering the needs of platform users.",
+    "it-IT": "Tradurre i requisiti in flussi di utilizzo e spiegare le decisioni tecniche considerando le esigenze di chi usa la piattaforma.",
+    "pt-PT": "Traduzir requisitos em fluxos de uso e explicar decisões técnicas considerando as necessidades de quem utiliza a plataforma."
+  },
+  "Esta experiência conecta minha visão de processos e qualidade ao desenvolvimento: entender a operação, transformar necessidades em interfaces e conferir o fluxo completo até os dados.": {
+    "en-US": "This experience connects my process and quality perspective to development: understanding operations, turning needs into interfaces and checking the complete flow through to the data.",
+    "it-IT": "Questa esperienza collega la mia visione dei processi e della qualità allo sviluppo: capire l'operatività, trasformare le esigenze in interfacce e verificare il flusso completo fino ai dati.",
+    "pt-PT": "Esta experiência conecta minha visão de processos e qualidade ao desenvolvimento: entender a operação, transformar necessidades em interfaces e conferir o fluxo completo até os dados."
+  },
+  "Zenvia · Minha trajetória | Karen Angelis": {
+    "en-US": "Zenvia · Minha trajetória | Karen Angelis",
+    "it-IT": "Zenvia · Minha trajetória | Karen Angelis",
+    "pt-PT": "Zenvia · Minha trajetória | Karen Angelis"
+  },
+  "Suporte técnico": {
+    "en-US": "Technical support",
+    "it-IT": "Supporto tecnico",
+    "pt-PT": "Suporte técnico"
+  },
+  "Reprodução de erros, atendimento técnico, documentação e escalonamento para nível 2.": {
+    "en-US": "Reproducing errors, technical customer service, documentation and escalation to level 2.",
+    "it-IT": "Riproduzione degli errori, assistenza tecnica, documentazione ed escalation al secondo livello.",
+    "pt-PT": "Reprodução de erros, atendimento técnico, documentação e escalonamento para nível 2."
+  },
+  "Atuação em suporte técnico, atendimento e investigação de falhas.": {
+    "en-US": "Work in technical support, customer service and failure investigation.",
+    "it-IT": "Attività nel supporto tecnico, nell'assistenza clienti e nell'analisi degli errori.",
+    "pt-PT": "Atuação em suporte técnico, atendimento e investigação de falhas."
+  },
+  "Atendimento técnico e compreensão das dificuldades relatadas por clientes.": {
+    "en-US": "Providing technical support and understanding difficulties reported by customers.",
+    "it-IT": "Assistenza tecnica e comprensione delle difficoltà segnalate dai clienti.",
+    "pt-PT": "Atendimento técnico e compreensão das dificuldades relatadas por clientes."
+  },
+  "Reprodução de erros para identificar o comportamento observado e organizar o diagnóstico.": {
+    "en-US": "Reproducing errors to identify observed behaviour and organise the diagnosis.",
+    "it-IT": "Riproduzione degli errori per identificare il comportamento osservato e organizzare la diagnosi.",
+    "pt-PT": "Reprodução de erros para identificar o comportamento observado e organizar o diagnóstico."
+  },
+  "Documentação das ocorrências e dos passos necessários para investigação.": {
+    "en-US": "Documenting incidents and the steps needed for investigation.",
+    "it-IT": "Documentazione degli incidenti e dei passaggi necessari all'indagine.",
+    "pt-PT": "Documentação das ocorrências e dos passos necessários para investigação."
+  },
+  "Escalonamento de demandas para nível 2, com informações que ajudam a dar continuidade ao atendimento.": {
+    "en-US": "Escalating requests to level 2 with information that supports continued customer service.",
+    "it-IT": "Escalation delle richieste al secondo livello, con informazioni utili alla continuità dell'assistenza.",
+    "pt-PT": "Escalonamento de demandas para nível 2, com informações que ajudam a dar continuidade ao atendimento."
+  },
+  "Reprodução de erros": {
+    "en-US": "Error reproduction",
+    "it-IT": "Riproduzione degli errori",
+    "pt-PT": "Reprodução de erros"
+  },
+  "Diagnóstico": {
+    "en-US": "Diagnosis",
+    "it-IT": "Diagnosi",
+    "pt-PT": "Diagnóstico"
+  },
+  "Documentação técnica": {
+    "en-US": "Technical documentation",
+    "it-IT": "Documentazione tecnica",
+    "pt-PT": "Documentação técnica"
+  },
+  "Escalonamento N2": {
+    "en-US": "Level 2 escalation",
+    "it-IT": "Escalation al secondo livello",
+    "pt-PT": "Escalonamento N2"
+  },
+  "SaaS": {
+    "en-US": "SaaS",
+    "it-IT": "SaaS",
+    "pt-PT": "SaaS"
+  },
+  "Compreender a dificuldade do cliente e conduzir o atendimento com clareza.": {
+    "en-US": "Understanding the customer's difficulty and providing clear support.",
+    "it-IT": "Comprendere la difficoltà del cliente e offrire assistenza con chiarezza.",
+    "pt-PT": "Compreender a dificuldade do cliente e conduzir o atendimento com clareza."
+  },
+  "Comunicação técnica": {
+    "en-US": "Technical communication",
+    "it-IT": "Comunicazione tecnica",
+    "pt-PT": "Comunicação técnica"
+  },
+  "Explicar o problema em linguagem acessível e registrar informações úteis para outros níveis de suporte.": {
+    "en-US": "Explaining problems in accessible language and recording useful information for other support levels.",
+    "it-IT": "Spiegare i problemi con un linguaggio accessibile e registrare informazioni utili agli altri livelli di supporto.",
+    "pt-PT": "Explicar o problema em linguagem acessível e registrar informações úteis para outros níveis de suporte."
+  },
+  "Investigação": {
+    "en-US": "Investigation",
+    "it-IT": "Indagine",
+    "pt-PT": "Investigação"
+  },
+  "Organizar sintomas e passos de reprodução para apoiar a resolução do problema.": {
+    "en-US": "Organising symptoms and reproduction steps to support problem resolution.",
+    "it-IT": "Organizzare sintomi e passaggi di riproduzione per supportare la risoluzione del problema.",
+    "pt-PT": "Organizar sintomas e passos de reprodução para apoiar a resolução do problema."
+  },
+  "O suporte fortaleceu meu olhar para software em uso: uma boa solução precisa funcionar e também ser compreensível para quem depende dela.": {
+    "en-US": "Support strengthened my perspective on software in use: a good solution must work and be understandable to those who depend on it.",
+    "it-IT": "Il supporto ha rafforzato la mia visione del software in uso: una buona soluzione deve funzionare ed essere comprensibile a chi ne dipende.",
+    "pt-PT": "O suporte fortaleceu meu olhar para software em uso: uma boa solução precisa funcionar e também ser compreensível para quem depende dela."
+  },
+  "Karen Denich de Angelis": {
+    "en-US": "Karen Denich de Angelis",
+    "it-IT": "Karen Denich de Angelis",
+    "pt-PT": "Karen Denich de Angelis"
+  },
+  "Desenvolvedora Full Stack · Web, apps e integrações": {
+    "en-US": "Full Stack developer · Web, apps and integrations",
+    "it-IT": "Sviluppatrice Full Stack · Web, app e integrazioni",
+    "pt-PT": "Desenvolvedora Full Stack · Web, apps e integrações"
+  },
+  "Desenvolvo interfaces, aplicativos e serviços conectados a regras de negócio. Trabalho com React, Next.js, TypeScript e Python/FastAPI, além de Flutter/Dart, integrações, automações e aplicações com IA. Minha trajetória em suporte SaaS, qualidade, compliance, processos e Marketing me ajuda a construir soluções com atenção à experiência de quem usa.": {
+    "en-US": "I build interfaces, apps and services connected to business rules. I work with React, Next.js, TypeScript and Python/FastAPI, as well as Flutter/Dart, integrations, automation and AI applications. My background in SaaS support, quality, compliance, processes and marketing helps me build solutions with the user experience in mind.",
+    "it-IT": "Sviluppo interfacce, app e servizi collegati alle regole di business. Lavoro con React, Next.js, TypeScript e Python/FastAPI, oltre a Flutter/Dart, integrazioni, automazioni e applicazioni con IA. Il mio percorso nel supporto SaaS, nella qualità, nella compliance, nei processi e nel marketing mi aiuta a creare soluzioni attente all'esperienza di chi le usa.",
+    "pt-PT": "Desenvolvo interfaces, aplicações e serviços conectados a regras de negócio. Trabalho com React, Next.js, TypeScript e Python/FastAPI, além de Flutter/Dart, integrações, automações e aplicações com IA. Minha trajetória em suporte SaaS, qualidade, compliance, processos e Marketing me ajuda a construir soluções com atenção à experiência de quem usa."
+  },
+  "Frontend e interfaces": {
+    "en-US": "Frontend and interfaces",
+    "it-IT": "Frontend e interfacce",
+    "pt-PT": "Frontend e interfaces"
+  },
+  "Componentes, formulários, dashboards e fluxos conectados ao backend.": {
+    "en-US": "Components, forms, dashboards and workflows connected to the backend.",
+    "it-IT": "Componenti, moduli, dashboard e flussi collegati al backend.",
+    "pt-PT": "Componentes, formulários, dashboards e fluxos conectados ao backend."
+  },
+  "Componentização": {
+    "en-US": "Component architecture",
+    "it-IT": "Architettura a componenti",
+    "pt-PT": "Componentização"
+  },
+  "Formulários e validação": {
+    "en-US": "Forms and validation",
+    "it-IT": "Moduli e validazione",
+    "pt-PT": "Formulários e validação"
+  },
+  "Filtros e paginação": {
+    "en-US": "Filters and pagination",
+    "it-IT": "Filtri e paginazione",
+    "pt-PT": "Filtros e paginação"
+  },
+  "Debounce": {
+    "en-US": "Debounce",
+    "it-IT": "Debounce",
+    "pt-PT": "Debounce"
+  },
+  "Estados de carregamento e erro": {
+    "en-US": "Loading and error states",
+    "it-IT": "Stati di caricamento ed errore",
+    "pt-PT": "Estados de carregamento e erro"
+  },
+  "Internacionalização": {
+    "en-US": "Internationalisation",
+    "it-IT": "Internazionalizzazione",
+    "pt-PT": "Internacionalização"
+  },
+  "Frontend de Luniay e Clycka; interfaces corporativas e educacionais.": {
+    "en-US": "Luniay and Clycka frontend; corporate and educational interfaces.",
+    "it-IT": "Frontend di Luniay e Clycka; interfacce aziendali ed educative.",
+    "pt-PT": "Frontend de Luniay e Clycka; interfaces corporativas e educacionais."
+  },
+  "Explorar Luniay": {
+    "en-US": "Explore Luniay",
+    "it-IT": "Esplora Luniay",
+    "pt-PT": "Explorar Luniay"
+  },
+  "Apps e desenvolvimento mobile": {
+    "en-US": "Apps and mobile development",
+    "it-IT": "App e sviluppo mobile",
+    "pt-PT": "Apps e desenvolvimento mobile"
+  },
+  "Aplicativos com telas, navegação, estado, serviços e persistência.": {
+    "en-US": "Apps with screens, navigation, state, services and persistence.",
+    "it-IT": "App con schermate, navigazione, stato, servizi e persistenza.",
+    "pt-PT": "Aplicações com ecrãs, navegação, estado, serviços e persistência."
+  },
+  "Apps Android": {
+    "en-US": "Android apps",
+    "it-IT": "App Android",
+    "pt-PT": "Apps Android"
+  },
+  "Navegação e estado": {
+    "en-US": "Navigation and state",
+    "it-IT": "Navigazione e stato",
+    "pt-PT": "Navegação e estado"
+  },
+  "Integração com serviços": {
+    "en-US": "Service integration",
+    "it-IT": "Integrazione con i servizi",
+    "pt-PT": "Integração com serviços"
+  },
+  "Persistência no app": {
+    "en-US": "In-app persistence",
+    "it-IT": "Persistenza nell'app",
+    "pt-PT": "Persistência no app"
+  },
+  "Configuração e build Android": {
+    "en-US": "Android configuration and build",
+    "it-IT": "Configurazione e build Android",
+    "pt-PT": "Configuração e build Android"
+  },
+  "Kotlin DSL": {
+    "en-US": "Kotlin DSL",
+    "it-IT": "Kotlin DSL",
+    "pt-PT": "Kotlin DSL"
+  },
+  "Luniay é um app Flutter/Dart e também tem uma versão web. Kotlin aparece na integração Android e em projetos de estudo com Spring Boot.": {
+    "en-US": "Luniay is a Flutter/Dart app with a web version. Kotlin is used in Android integration and learning projects with Spring Boot.",
+    "it-IT": "Luniay è un'app Flutter/Dart con una versione web. Kotlin è usato nell'integrazione Android e nei progetti di studio con Spring Boot.",
+    "pt-PT": "Luniay é um app Flutter/Dart e também tem uma versão web. Kotlin aparece na integração Android e em projetos de estudo com Spring Boot."
+  },
+  "Experimentar Kotlin + Go": {
+    "en-US": "Try Kotlin + Go",
+    "it-IT": "Prova Kotlin + Go",
+    "pt-PT": "Experimentar Kotlin + Go"
+  },
+  "Backend e APIs": {
+    "en-US": "Backend and APIs",
+    "it-IT": "Backend e API",
+    "pt-PT": "Backend e APIs"
+  },
+  "Contratos, validações, serviços e regras de negócio.": {
+    "en-US": "Contracts, validation, services and business rules.",
+    "it-IT": "Contratti, validazione, servizi e regole di business.",
+    "pt-PT": "Contratos, validações, serviços e regras de negócio."
+  },
+  "Pydantic": {
+    "en-US": "Pydantic",
+    "it-IT": "Pydantic",
+    "pt-PT": "Pydantic"
+  },
+  "Controllers e serviços": {
+    "en-US": "Controllers and services",
+    "it-IT": "Controller e servizi",
+    "pt-PT": "Controllers e serviços"
+  },
+  "DTOs e schemas": {
+    "en-US": "DTOs and schemas",
+    "it-IT": "DTO e schemi",
+    "pt-PT": "DTOs e schemas"
+  },
+  "Tratamento de erros": {
+    "en-US": "Error handling",
+    "it-IT": "Gestione degli errori",
+    "pt-PT": "Tratamento de erros"
+  },
+  "Integração frontend/backend": {
+    "en-US": "Frontend/backend integration",
+    "it-IT": "Integrazione frontend/backend",
+    "pt-PT": "Integração frontend/backend"
+  },
+  "Refatoração de legado": {
+    "en-US": "Legacy refactoring",
+    "it-IT": "Refactoring del codice legacy",
+    "pt-PT": "Refatoração de legado"
+  },
+  "APIs em projetos de educação, conteúdo, estoque e atendimento. O laboratório consulta o Google Trends com FastAPI.": {
+    "en-US": "APIs for education, content, inventory and customer service projects. The lab retrieves Google Trends data with FastAPI.",
+    "it-IT": "API per progetti di formazione, contenuti, inventario e assistenza. Il laboratorio consulta Google Trends con FastAPI.",
+    "pt-PT": "APIs em projetos de educação, conteúdo, stock e atendimento. O laboratório consulta o Google Trends com FastAPI."
+  },
+  "Consultar API de tendências": {
+    "en-US": "Query trends API",
+    "it-IT": "Consulta l'API delle tendenze",
+    "pt-PT": "Consultar API de tendências"
+  },
+  "Integrações, pagamentos e automação": {
+    "en-US": "Integrations, payments and automation",
+    "it-IT": "Integrazioni, pagamenti e automazione",
+    "pt-PT": "Integrações, pagamentos e automação"
+  },
+  "Fluxos por eventos, comunicação entre sistemas e tratamento de falhas.": {
+    "en-US": "Event-driven workflows, communication between systems and failure handling.",
+    "it-IT": "Flussi basati su eventi, comunicazione tra sistemi e gestione degli errori.",
+    "pt-PT": "Fluxos por eventos, comunicação entre sistemas e tratamento de falhas."
+  },
+  "OAuth": {
+    "en-US": "OAuth",
+    "it-IT": "OAuth",
+    "pt-PT": "OAuth"
+  },
+  "PKCE S256": {
+    "en-US": "PKCE S256",
+    "it-IT": "PKCE S256",
+    "pt-PT": "PKCE S256"
+  },
+  "HMAC": {
+    "en-US": "HMAC",
+    "it-IT": "HMAC",
+    "pt-PT": "HMAC"
+  },
+  "Validação de assinaturas": {
+    "en-US": "Signature validation",
+    "it-IT": "Validazione delle firme",
+    "pt-PT": "Validação de assinaturas"
+  },
+  "Idempotência e deduplicação": {
+    "en-US": "Idempotency and deduplication",
+    "it-IT": "Idempotenza e deduplicazione",
+    "pt-PT": "Idempotência e deduplicação"
+  },
+  "Workers e tarefas em segundo plano": {
+    "en-US": "Workers and background tasks",
+    "it-IT": "Worker e attività in background",
+    "pt-PT": "Workers e tarefas em segundo plano"
+  },
+  "Integrações Google": {
+    "en-US": "Google integrations",
+    "it-IT": "Integrazioni Google",
+    "pt-PT": "Integrações Google"
+  },
+  "Atendimento via WhatsApp": {
+    "en-US": "WhatsApp customer service",
+    "it-IT": "Assistenza tramite WhatsApp",
+    "pt-PT": "Atendimento via WhatsApp"
+  },
+  "Checkout e pagamentos": {
+    "en-US": "Checkout and payments",
+    "it-IT": "Checkout e pagamenti",
+    "pt-PT": "Checkout e pagamentos"
+  },
+  "Assinaturas e cobrança": {
+    "en-US": "Subscriptions and billing",
+    "it-IT": "Abbonamenti e fatturazione",
+    "pt-PT": "Assinaturas e cobrança"
+  },
+  "Integração com consultas SAP": {
+    "en-US": "SAP query integration",
+    "it-IT": "Integrazione con le query SAP",
+    "pt-PT": "Integração com consultas SAP"
+  },
+  "Clycka reúne atendimento e integrações; Quanta/Isidoro conecta pagamentos e reservas. A ativação de cada conector depende da configuração do serviço.": {
+    "en-US": "Clycka brings together customer service and integrations; Quanta/Isidoro connects payments and bookings. Activating each connector depends on service configuration.",
+    "it-IT": "Clycka riunisce assistenza e integrazioni; Quanta/Isidoro collega pagamenti e prenotazioni. L'attivazione di ogni connettore dipende dalla configurazione del servizio.",
+    "pt-PT": "Clycka reúne atendimento e integrações; Quanta/Isidoro conecta pagamentos e reservas. A ativação de cada conector depende da configuração do serviço."
+  },
+  "Conhecer Clycka": {
+    "en-US": "Explore Clycka",
+    "it-IT": "Scopri Clycka",
+    "pt-PT": "Conhecer Clycka"
+  },
+  "Autenticação e segurança": {
+    "en-US": "Authentication and security",
+    "it-IT": "Autenticazione e sicurezza",
+    "pt-PT": "Autenticação e segurança"
+  },
+  "Identidade, sessões, permissões e proteção de integrações.": {
+    "en-US": "Identity, sessions, permissions and integration protection.",
+    "it-IT": "Identità, sessioni, permessi e protezione delle integrazioni.",
+    "pt-PT": "Identidade, sessões, permissões e proteção de integrações."
+  },
+  "Autenticação e autorização": {
+    "en-US": "Authentication and authorisation",
+    "it-IT": "Autenticazione e autorizzazione",
+    "pt-PT": "Autenticação e autorização"
+  },
+  "NextAuth": {
+    "en-US": "NextAuth",
+    "it-IT": "NextAuth",
+    "pt-PT": "NextAuth"
+  },
+  "Keycloak": {
+    "en-US": "Keycloak",
+    "it-IT": "Keycloak",
+    "pt-PT": "Keycloak"
+  },
+  "OpenID Connect": {
+    "en-US": "OpenID Connect",
+    "it-IT": "OpenID Connect",
+    "pt-PT": "OpenID Connect"
+  },
+  "Sessões e renovação de tokens": {
+    "en-US": "Sessions and token renewal",
+    "it-IT": "Sessioni e rinnovo dei token",
+    "pt-PT": "Sessões e renovação de tokens"
+  },
+  "Papéis e permissões": {
+    "en-US": "Roles and permissions",
+    "it-IT": "Ruoli e permessi",
+    "pt-PT": "Papéis e permissões"
+  },
+  "Escopo por usuário e organização": {
+    "en-US": "User and organisation scopes",
+    "it-IT": "Ambiti per utente e organizzazione",
+    "pt-PT": "Escopo por utilizador e organização"
+  },
+  "Hash bcrypt": {
+    "en-US": "bcrypt hashing",
+    "it-IT": "Hash bcrypt",
+    "pt-PT": "Hash bcrypt"
+  },
+  "Credenciais criptografadas": {
+    "en-US": "Encrypted credentials",
+    "it-IT": "Credenziali crittografate",
+    "pt-PT": "Credenciais criptografadas"
+  },
+  "Validação de valor, moeda e recebedor": {
+    "en-US": "Amount, currency and recipient validation",
+    "it-IT": "Validazione di importo, valuta e destinatario",
+    "pt-PT": "Validação de valor, moeda e destinatário"
+  },
+  "Login e dados por usuário em aplicações web; contratos, permissões e proteção das integrações em sistemas corporativos.": {
+    "en-US": "Login and user-specific data in web apps; contracts, permissions and integration protection in corporate systems.",
+    "it-IT": "Login e dati per utente nelle app web; contratti, permessi e protezione delle integrazioni nei sistemi aziendali.",
+    "pt-PT": "Login e dados por utilizador em aplicações web; contratos, permissões e proteção das integrações em sistemas corporativos."
+  },
+  "Ver autenticação no JIP": {
+    "en-US": "View authentication in JIP",
+    "it-IT": "Vedi l'autenticazione in JIP",
+    "pt-PT": "Ver autenticação no JIP"
+  },
+  "Banco de dados e integridade": {
+    "en-US": "Databases and integrity",
+    "it-IT": "Database e integrità",
+    "pt-PT": "Banco de dados e integridade"
+  },
+  "Persistência, consultas e consistência das operações.": {
+    "en-US": "Persistence, queries and operation consistency.",
+    "it-IT": "Persistenza, query e coerenza delle operazioni.",
+    "pt-PT": "Persistência, consultas e consistência das operações."
+  },
+  "JSONB": {
+    "en-US": "JSONB",
+    "it-IT": "JSONB",
+    "pt-PT": "JSONB"
+  },
+  "Locks e concorrência": {
+    "en-US": "Locks and concurrency",
+    "it-IT": "Lock e concorrenza",
+    "pt-PT": "Locks e concorrência"
+  },
+  "Auditoria e histórico de alterações": {
+    "en-US": "Auditing and change history",
+    "it-IT": "Audit e cronologia delle modifiche",
+    "pt-PT": "Auditoria e histórico de alterações"
+  },
+  "Consultas paginadas": {
+    "en-US": "Paginated queries",
+    "it-IT": "Query paginate",
+    "pt-PT": "Consultas paginadas"
+  },
+  "MinIO e object storage": {
+    "en-US": "MinIO and object storage",
+    "it-IT": "MinIO e object storage",
+    "pt-PT": "MinIO e object storage"
+  },
+  "StockMaster aplica regras de saldo e transações. Projetos educacionais tratam reservas concorrentes; Luniay usa dados e serviços Supabase.": {
+    "en-US": "StockMaster applies stock balance and transaction rules. Educational projects handle concurrent bookings; Luniay uses Supabase data and services.",
+    "it-IT": "StockMaster applica regole di saldo e transazioni. I progetti educativi gestiscono prenotazioni concorrenti; Luniay usa dati e servizi Supabase.",
+    "pt-PT": "StockMaster aplica regras de saldo e transações. Projetos educacionais tratam reservas concorrentes; Luniay usa dados e serviços Supabase."
+  },
+  "Ver regras de estoque": {
+    "en-US": "View inventory rules",
+    "it-IT": "Vedi le regole dell'inventario",
+    "pt-PT": "Ver regras de stock"
+  },
+  "IA, dados e relatórios": {
+    "en-US": "AI, data and reports",
+    "it-IT": "IA, dati e report",
+    "pt-PT": "IA, dados e relatórios"
+  },
+  "Integração de modelos, organização de dados e respostas úteis para o produto.": {
+    "en-US": "Model integration, data organisation and responses useful to the product.",
+    "it-IT": "Integrazione di modelli, organizzazione dei dati e risposte utili al prodotto.",
+    "pt-PT": "Integração de modelos, organização de dados e respostas úteis para o produto."
+  },
+  "Integrações com APIs de IA": {
+    "en-US": "AI API integrations",
+    "it-IT": "Integrazioni con API di IA",
+    "pt-PT": "Integrações com APIs de IA"
+  },
+  "Agentes de atendimento": {
+    "en-US": "Customer service agents",
+    "it-IT": "Agenti di assistenza",
+    "pt-PT": "Agentes de atendimento"
+  },
+  "JSON e contratos de resposta": {
+    "en-US": "JSON and response contracts",
+    "it-IT": "JSON e contratti di risposta",
+    "pt-PT": "JSON e contratos de resposta"
+  },
+  "Embeddings": {
+    "en-US": "Embeddings",
+    "it-IT": "Embeddings",
+    "pt-PT": "Embeddings"
+  },
+  "Fallback de serviços": {
+    "en-US": "Service fallbacks",
+    "it-IT": "Fallback dei servizi",
+    "pt-PT": "Fallback de serviços"
+  },
+  "Python aplicado a dados": {
+    "en-US": "Python for data",
+    "it-IT": "Python per i dati",
+    "pt-PT": "Python aplicado a dados"
+  },
+  "Agregação e validação temporal": {
+    "en-US": "Aggregation and temporal validation",
+    "it-IT": "Aggregazione e validazione temporale",
+    "pt-PT": "Agregação e validação temporal"
+  },
+  "MAE, RMSE e WMAPE": {
+    "en-US": "MAE, RMSE e WMAPE",
+    "it-IT": "MAE, RMSE e WMAPE",
+    "pt-PT": "MAE, RMSE e WMAPE"
+  },
+  "CSV e Excel": {
+    "en-US": "CSV and Excel",
+    "it-IT": "CSV ed Excel",
+    "pt-PT": "CSV e Excel"
+  },
+  "PDF e ReportLab": {
+    "en-US": "PDF and ReportLab",
+    "it-IT": "PDF e ReportLab",
+    "pt-PT": "PDF e ReportLab"
+  },
+  "OCR local com Tesseract": {
+    "en-US": "Local OCR with Tesseract",
+    "it-IT": "OCR locale con Tesseract",
+    "pt-PT": "OCR local com Tesseract"
+  },
+  "JIP integra geração de conteúdo e relatórios; Reinaldo trabalha com demanda e estoque; Luniay integra IA e OCR. Experimentos de projeto incluem Prophet/LSTM.": {
+    "en-US": "JIP integrates content generation and reporting; Reinaldo works with demand and inventory; Luniay integrates AI and OCR. Project experiments include Prophet/LSTM.",
+    "it-IT": "JIP integra generazione di contenuti e report; Reinaldo lavora con domanda e inventario; Luniay integra IA e OCR. Gli esperimenti di progetto includono Prophet/LSTM.",
+    "pt-PT": "JIP integra geração de conteúdo e relatórios; Reinaldo trabalha com demanda e stock; Luniay integra IA e OCR. Experimentos de projeto incluem Prophet/LSTM."
+  },
+  "Explorar projeto de dados": {
+    "en-US": "Explore data project",
+    "it-IT": "Esplora il progetto di dati",
+    "pt-PT": "Explorar projeto de dados"
+  },
+  "QA e qualidade de software": {
+    "en-US": "QA and software quality",
+    "it-IT": "QA e qualità del software",
+    "pt-PT": "QA e qualidade de software"
+  },
+  "Reproduzir falhas, definir cenários e validar interfaces, APIs e regras.": {
+    "en-US": "Reproduce failures, define scenarios and validate interfaces, APIs and rules.",
+    "it-IT": "Riprodurre gli errori, definire scenari e validare interfacce, API e regole.",
+    "pt-PT": "Reproduzir falhas, definir cenários e validar interfaces, APIs e regras."
+  },
+  "Planos de teste": {
+    "en-US": "Test plans",
+    "it-IT": "Piani di test",
+    "pt-PT": "Planos de teste"
+  },
+  "Testes funcionais e exploratórios": {
+    "en-US": "Functional and exploratory testing",
+    "it-IT": "Test funzionali ed esplorativi",
+    "pt-PT": "Testes funcionais e exploratórios"
+  },
+  "Gestão de bugs": {
+    "en-US": "Bug management",
+    "it-IT": "Gestione dei bug",
+    "pt-PT": "Gestão de bugs"
+  },
+  "Critérios de aceitação": {
+    "en-US": "Acceptance criteria",
+    "it-IT": "Criteri di accettazione",
+    "pt-PT": "Critérios de aceitação"
+  },
+  "Testes de contratos e falhas": {
+    "en-US": "Contract and failure tests",
+    "it-IT": "Test dei contratti e degli errori",
+    "pt-PT": "Testes de contratos e falhas"
+  },
+  "Testes de serviços JavaScript": {
+    "en-US": "JavaScript service tests",
+    "it-IT": "Test dei servizi JavaScript",
+    "pt-PT": "Testes de serviços JavaScript"
+  },
+  "Logs, curl e debugging": {
+    "en-US": "Logs, curl and debugging",
+    "it-IT": "Log, curl e debugging",
+    "pt-PT": "Logs, curl e debugging"
+  },
+  "Análise de regressões": {
+    "en-US": "Regression analysis",
+    "it-IT": "Analisi delle regressioni",
+    "pt-PT": "Análise de regressões"
+  },
+  "Curso de QA e prática em suporte e desenvolvimento. StockMaster possui testes de API, estoque e fluxo E2E documentados.": {
+    "en-US": "QA course and hands-on support and development experience. StockMaster has documented API, inventory and E2E workflow tests.",
+    "it-IT": "Corso di QA ed esperienza pratica nel supporto e nello sviluppo. StockMaster ha test documentati per API, inventario e flusso E2E.",
+    "pt-PT": "Curso de QA e prática em suporte e desenvolvimento. StockMaster possui testes de API, stock e fluxo E2E documentados."
+  },
+  "Ver testes do StockMaster": {
+    "en-US": "View StockMaster tests",
+    "it-IT": "Vedi i test di StockMaster",
+    "pt-PT": "Ver testes do StockMaster"
+  },
+  "Entrega, infraestrutura e colaboração": {
+    "en-US": "Delivery, infrastructure and collaboration",
+    "it-IT": "Distribuzione, infrastruttura e collaborazione",
+    "pt-PT": "Entrega, infraestrutura e colaboração"
+  },
+  "Versionamento, revisão, pipelines e publicação de aplicações.": {
+    "en-US": "Version control, reviews, pipelines and application deployment.",
+    "it-IT": "Controllo di versione, revisioni, pipeline e pubblicazione delle applicazioni.",
+    "pt-PT": "Versionamento, revisão, pipelines e publicação de aplicações."
+  },
+  "Branches e Merge Requests": {
+    "en-US": "Branches and merge requests",
+    "it-IT": "Branch e merge request",
+    "pt-PT": "Branches e Merge Requests"
+  },
+  "PowerShell": {
+    "en-US": "PowerShell",
+    "it-IT": "PowerShell",
+    "pt-PT": "PowerShell"
+  },
+  "Shell/Bash": {
+    "en-US": "Shell/Bash",
+    "it-IT": "Shell/Bash",
+    "pt-PT": "Shell/Bash"
+  },
+  "Diagnóstico entre QA e produção": {
+    "en-US": "QA/production diagnosis",
+    "it-IT": "Diagnosi tra QA e produzione",
+    "pt-PT": "Diagnóstico entre QA e produção"
+  },
+  "Colaboração com infraestrutura": {
+    "en-US": "Infrastructure collaboration",
+    "it-IT": "Collaborazione con l'infrastruttura",
+    "pt-PT": "Colaboração com infraestrutura"
+  },
+  "Vivência em Kubernetes/Rancher": {
+    "en-US": "Kubernetes/Rancher experience",
+    "it-IT": "Esperienza con Kubernetes/Rancher",
+    "pt-PT": "Vivência em Kubernetes/Rancher"
+  },
+  "Entrega com GitLab e pipelines corporativas; publicação dos projetos em VPS. No contexto Kubernetes/Rancher, atuação em diagnóstico e colaboração com infraestrutura.": {
+    "en-US": "Delivery with GitLab and corporate pipelines; project deployment on VPS. In Kubernetes/Rancher, diagnosis and collaboration with infrastructure teams.",
+    "it-IT": "Distribuzione con GitLab e pipeline aziendali; pubblicazione dei progetti su VPS. Nel contesto Kubernetes/Rancher, diagnosi e collaborazione con l'infrastruttura.",
+    "pt-PT": "Entrega com GitLab e pipelines corporativas; publicação dos projetos em VPS. No contexto Kubernetes/Rancher, atuação em diagnóstico e colaboração com infraestrutura."
+  },
+  "Explorar meu GitHub": {
+    "en-US": "Explore my GitHub",
+    "it-IT": "Esplora il mio GitHub",
+    "pt-PT": "Explorar meu GitHub"
+  },
+  "UX, conteúdo e design": {
+    "en-US": "UX, content and design",
+    "it-IT": "UX, contenuti e design",
+    "pt-PT": "UX, conteúdo e design"
+  },
+  "Jornadas, informação, mensagens e feedback para ajudar as pessoas.": {
+    "en-US": "Journeys, information, messages and feedback to help people.",
+    "it-IT": "Percorsi, informazioni, messaggi e feedback per aiutare le persone.",
+    "pt-PT": "Jornadas, informação, mensagens e feedback para ajudar as pessoas."
+  },
+  "UX aplicado a produto": {
+    "en-US": "Product UX",
+    "it-IT": "UX applicata al prodotto",
+    "pt-PT": "UX aplicado a produto"
+  },
+  "Jornada do usuário": {
+    "en-US": "User journey",
+    "it-IT": "Percorso dell'utente",
+    "pt-PT": "Jornada do utilizador"
+  },
+  "Arquitetura de informação": {
+    "en-US": "Information architecture",
+    "it-IT": "Architettura dell'informazione",
+    "pt-PT": "Arquitetura de informação"
+  },
+  "Navegação e hierarquia visual": {
+    "en-US": "Navigation and visual hierarchy",
+    "it-IT": "Navigazione e gerarchia visiva",
+    "pt-PT": "Navegação e hierarquia visual"
+  },
+  "Clareza de formulários e feedback": {
+    "en-US": "Clear forms and feedback",
+    "it-IT": "Chiarezza dei moduli e del feedback",
+    "pt-PT": "Clareza de formulários e feedback"
+  },
+  "Fluxos de login e checkout": {
+    "en-US": "Login and checkout flows",
+    "it-IT": "Flussi di login e checkout",
+    "pt-PT": "Fluxos de login e checkout"
+  },
+  "Identidade visual": {
+    "en-US": "Visual identity",
+    "it-IT": "Identità visiva",
+    "pt-PT": "Identidade visual"
+  },
+  "Produção criativa e cultural": {
+    "en-US": "Creative and cultural production",
+    "it-IT": "Produzione creativa e culturale",
+    "pt-PT": "Produção criativa e cultural"
+  },
+  "Escrita e conteúdo": {
+    "en-US": "Writing and content",
+    "it-IT": "Scrittura e contenuti",
+    "pt-PT": "Escrita e conteúdo"
+  },
+  "Autoria frontend em Luniay, Clycka e JIP; formação em UX Writing e experiência com orientações e treinamentos para usuários.": {
+    "en-US": "Frontend authorship in Luniay, Clycka and JIP; UX Writing training and experience in user guidance and training.",
+    "it-IT": "Realizzazione frontend in Luniay, Clycka e JIP; formazione in UX Writing ed esperienza nelle indicazioni e nella formazione per gli utenti.",
+    "pt-PT": "Autoria frontend em Luniay, Clycka e JIP; formação em UX Writing e experiência com orientações e formação para utilizadores."
+  },
+  "Explorar experiência do Luniay": {
+    "en-US": "Explore the Luniay experience",
+    "it-IT": "Esplora l'esperienza di Luniay",
+    "pt-PT": "Explorar experiência do Luniay"
+  },
+  "Processos, compliance e experiência do cliente": {
+    "en-US": "Processes, compliance and customer experience",
+    "it-IT": "Processi, compliance ed esperienza del cliente",
+    "pt-PT": "Processos, compliance e experiência do cliente"
+  },
+  "Traduzir contexto operacional em requisitos e soluções.": {
+    "en-US": "Turn operational context into requirements and solutions.",
+    "it-IT": "Tradurre il contesto operativo in requisiti e soluzioni.",
+    "pt-PT": "Traduzir contexto operacional em requisitos e soluções."
+  },
+  "Mapeamento AS-IS/TO-BE": {
+    "en-US": "AS-IS/TO-BE mapping",
+    "it-IT": "Mappatura AS-IS/TO-BE",
+    "pt-PT": "Mapeamento AS-IS/TO-BE"
+  },
+  "Requisitos e documentação": {
+    "en-US": "Requirements and documentation",
+    "it-IT": "Requisiti e documentazione",
+    "pt-PT": "Requisitos e documentação"
+  },
+  "Indicadores e relatórios": {
+    "en-US": "Metrics and reports",
+    "it-IT": "Indicatori e report",
+    "pt-PT": "Indicadores e relatórios"
+  },
+  "Visão de produto e negócio": {
+    "en-US": "Product and business perspective",
+    "it-IT": "Visione di prodotto e business",
+    "pt-PT": "Visão de produto e negócio"
+  },
+  "NFS-e e NFC-e": {
+    "en-US": "NFS-e and NFC-e",
+    "it-IT": "NFS-e e NFC-e",
+    "pt-PT": "NFS-e e NFC-e"
+  },
+  "Fiscal brasileiro e ERP/SaaS": {
+    "en-US": "Brazilian tax and ERP/SaaS",
+    "it-IT": "Fiscalità brasiliana ed ERP/SaaS",
+    "pt-PT": "Fiscal brasileiro e ERP/SaaS"
+  },
+  "Suporte técnico SaaS": {
+    "en-US": "SaaS technical support",
+    "it-IT": "Supporto tecnico SaaS",
+    "pt-PT": "Suporte técnico SaaS"
+  },
+  "Ouvidoria e Reclame Aqui": {
+    "en-US": "Customer advocacy and Reclame Aqui",
+    "it-IT": "Gestione dei reclami e Reclame Aqui",
+    "pt-PT": "Ouvidoria e Reclame Aqui"
+  },
+  "NPS e voz do cliente": {
+    "en-US": "NPS and voice of the customer",
+    "it-IT": "NPS e voce del cliente",
+    "pt-PT": "NPS e voz do cliente"
+  },
+  "Investigação e escalonamento de falhas": {
+    "en-US": "Failure investigation and escalation",
+    "it-IT": "Indagine ed escalation degli errori",
+    "pt-PT": "Investigação e escalonamento de falhas"
+  },
+  "Excel e Google Sheets": {
+    "en-US": "Excel and Google Sheets",
+    "it-IT": "Excel e Google Sheets",
+    "pt-PT": "Excel e Google Sheets"
+  },
+  "Office e Windows": {
+    "en-US": "Office and Windows",
+    "it-IT": "Office e Windows",
+    "pt-PT": "Office e Windows"
+  },
+  "Power BI": {
+    "en-US": "Power BI",
+    "it-IT": "Power BI",
+    "pt-PT": "Power BI"
+  },
+  "Trajetória em Conta Azul, Zenvia e Ambiental, conectando atendimento, qualidade, compliance, processos e desenvolvimento.": {
+    "en-US": "Career at Conta Azul, Zenvia and Ambiental, connecting support, quality, compliance, processes and development.",
+    "it-IT": "Percorso in Conta Azul, Zenvia e Ambiental, collegando assistenza, qualità, compliance, processi e sviluppo.",
+    "pt-PT": "Trajetória em Conta Azul, Zenvia e Ambiental, conectando atendimento, qualidade, compliance, processos e desenvolvimento."
+  },
+  "Conhecer minha trajetória": {
+    "en-US": "Explore my career",
+    "it-IT": "Scopri il mio percorso",
+    "pt-PT": "Conhecer minha trajetória"
+  },
+  "Estudos e prática complementar": {
+    "en-US": "Additional studies and practice",
+    "it-IT": "Studi e pratica complementari",
+    "pt-PT": "Estudos e prática complementar"
+  },
+  "Repertório de projetos didáticos, cursos e tecnologias complementares.": {
+    "en-US": "A range of learning projects, courses and additional technologies.",
+    "it-IT": "Un insieme di progetti didattici, corsi e tecnologie complementari.",
+    "pt-PT": "Repertório de projetos didáticos, cursos e tecnologias complementares."
+  },
+  "Go — laboratório do portfólio": {
+    "en-US": "Go — portfolio lab",
+    "it-IT": "Go — laboratorio del portfolio",
+    "pt-PT": "Go — laboratório do portfólio"
+  },
+  "ASP.NET / ASP.NET MVC": {
+    "en-US": "ASP.NET / ASP.NET MVC",
+    "it-IT": "ASP.NET / ASP.NET MVC",
+    "pt-PT": "ASP.NET / ASP.NET MVC"
+  },
+  "CRM Dynamics": {
+    "en-US": "CRM Dynamics",
+    "it-IT": "CRM Dynamics",
+    "pt-PT": "CRM Dynamics"
+  },
+  "Prophet e LSTM — experimentos de projeto": {
+    "en-US": "Prophet and LSTM — project experiments",
+    "it-IT": "Prophet e LSTM — esperimenti di progetto",
+    "pt-PT": "Prophet e LSTM — experimentos de projeto"
+  },
+  "Tecnologias registradas no inventário e em estudos/projetos. A profundidade varia por ferramenta e contexto de aplicação.": {
+    "en-US": "Technologies recorded in the inventory and in studies/projects. Depth varies by tool and application context.",
+    "it-IT": "Tecnologie registrate nell'inventario e in studi/progetti. Il livello di approfondimento varia secondo lo strumento e il contesto di utilizzo.",
+    "pt-PT": "Tecnologias registadas no inventário e em estudos/projetos. A profundidade varia por ferramenta e contexto de aplicação."
+  },
+  "Explorar repositórios": {
+    "en-US": "Explore repositories",
+    "it-IT": "Esplora i repository",
+    "pt-PT": "Explorar repositórios"
+  },
+  "Comunicação técnica e com clientes": {
+    "en-US": "Technical and customer communication",
+    "it-IT": "Comunicazione tecnica e con i clienti",
+    "pt-PT": "Comunicação técnica e com clientes"
+  },
+  "Tutoriais, treinamentos, suporte e documentação em linguagem acessível.": {
+    "en-US": "Tutorials, training, support and documentation in accessible language.",
+    "it-IT": "Tutorial, formazione, assistenza e documentazione con un linguaggio accessibile.",
+    "pt-PT": "Tutoriais, formação, suporte e documentação em linguagem acessível."
+  },
+  "Escuta e foco no usuário": {
+    "en-US": "Listening and user focus",
+    "it-IT": "Ascolto e attenzione all'utente",
+    "pt-PT": "Escuta e foco no utilizador"
+  },
+  "Ouvidoria, NPS e feedback para investigar problemas e propor melhorias.": {
+    "en-US": "Customer advocacy, NPS and feedback to investigate problems and suggest improvements.",
+    "it-IT": "Gestione dei reclami, NPS e feedback per analizzare i problemi e proporre miglioramenti.",
+    "pt-PT": "Ouvidoria, NPS e feedback para investigar problemas e propor melhorias."
+  },
+  "Pensamento crítico e resolução de problemas": {
+    "en-US": "Critical thinking and problem solving",
+    "it-IT": "Pensiero critico e risoluzione dei problemi",
+    "pt-PT": "Pensamento crítico e resolução de problemas"
+  },
+  "Investigar sintomas, testar hipóteses e validar correções.": {
+    "en-US": "Investigate symptoms, test hypotheses and validate fixes.",
+    "it-IT": "Indagare i sintomi, verificare le ipotesi e validare le correzioni.",
+    "pt-PT": "Investigar sintomas, testar hipóteses e validar correções."
+  },
+  "Alinhar soluções com desenvolvimento, produto, suporte e negócio.": {
+    "en-US": "Align solutions with development, product, support and business teams.",
+    "it-IT": "Allineare le soluzioni con sviluppo, prodotto, assistenza e business.",
+    "pt-PT": "Alinhar soluções com desenvolvimento, produto, suporte e negócio."
+  },
+  "Organização e documentação": {
+    "en-US": "Organisation and documentation",
+    "it-IT": "Organizzazione e documentazione",
+    "pt-PT": "Organização e documentação"
+  },
+  "Registrar contexto, prioridades, decisões e acompanhamento.": {
+    "en-US": "Record context, priorities, decisions and follow-up.",
+    "it-IT": "Registrare contesto, priorità, decisioni e monitoraggio.",
+    "pt-PT": "Registrar contexto, prioridades, decisões e acompanhamento."
+  },
+  "Aprendizado contínuo": {
+    "en-US": "Continuous learning",
+    "it-IT": "Apprendimento continuo",
+    "pt-PT": "Aprendizagem contínuo"
+  },
+  "Aplicar formação e estudos em projetos web, mobile, backend e qualidade.": {
+    "en-US": "Apply training and studies in web, mobile, backend and quality projects.",
+    "it-IT": "Applicare formazione e studi in progetti web, mobile, backend e qualità.",
+    "pt-PT": "Aplicar formação e estudos em projetos web, mobile, backend e qualidade."
+  },
+  "Adaptabilidade e flexibilidade cognitiva": {
+    "en-US": "Adaptability and cognitive flexibility",
+    "it-IT": "Adattabilità e flessibilità cognitiva",
+    "pt-PT": "Adaptabilidade e flexibilidade cognitiva"
+  },
+  "Atuação em suporte, processos, qualidade e desenvolvimento.": {
+    "en-US": "Work in support, processes, quality and development.",
+    "it-IT": "Attività nel supporto, nei processi, nella qualità e nello sviluppo.",
+    "pt-PT": "Atuação em suporte, processos, qualidade e desenvolvimento."
+  },
+  "Negociação e resolução de conflitos": {
+    "en-US": "Negotiation and conflict resolution",
+    "it-IT": "Negoziazione e risoluzione dei conflitti",
+    "pt-PT": "Negociação e resolução de conflitos"
+  },
+  "Alinhar expectativas em atendimento, ouvidoria e relacionamento.": {
+    "en-US": "Align expectations in customer service, advocacy and relationships.",
+    "it-IT": "Allineare le aspettative nell'assistenza, nella gestione dei reclami e nelle relazioni.",
+    "pt-PT": "Alinhar expectativas em atendimento, ouvidoria e relacionamento."
+  },
+  "Criatividade e escrita": {
+    "en-US": "Creativity and writing",
+    "it-IT": "Creatività e scrittura",
+    "pt-PT": "Criatividade e escrita"
+  },
+  "Combinar conteúdo, comunicação e soluções de produto.": {
+    "en-US": "Combine content, communication and product solutions.",
+    "it-IT": "Combinare contenuti, comunicazione e soluzioni di prodotto.",
+    "pt-PT": "Combinar conteúdo, comunicação e soluções de produto."
+  },
+  "Relacionar Marketing, fiscal, ERP/SaaS e processos às regras do sistema.": {
+    "en-US": "Connect marketing, tax, ERP/SaaS and processes to system rules.",
+    "it-IT": "Collegare marketing, fiscalità, ERP/SaaS e processi alle regole del sistema.",
+    "pt-PT": "Relacionar Marketing, fiscal, ERP/SaaS e processos às regras do sistema."
+  },
+  "Cuidado com qualidade": {
+    "en-US": "Attention to quality",
+    "it-IT": "Attenzione alla qualità",
+    "pt-PT": "Cuidado com qualidade"
+  },
+  "Critérios de aceitação, cenários de erro, contratos e testes.": {
+    "en-US": "Acceptance criteria, error scenarios, contracts and tests.",
+    "it-IT": "Criteri di accettazione, scenari di errore, contratti e test.",
+    "pt-PT": "Critérios de aceitação, cenários de erro, contratos e testes."
+  },
+  "Apresentação e argumentação": {
+    "en-US": "Presentation and reasoning",
+    "it-IT": "Presentazione e argomentazione",
+    "pt-PT": "Apresentação e argumentação"
+  },
+  "Explicar projetos e decisões para pessoas técnicas e não técnicas.": {
+    "en-US": "Explain projects and decisions to technical and non-technical audiences.",
+    "it-IT": "Spiegare progetti e decisioni a persone tecniche e non tecniche.",
+    "pt-PT": "Explicar projetos e decisões para pessoas técnicas e não técnicas."
+  },
+  "Análise e Desenvolvimento de Sistemas": {
+    "en-US": "Systems Analysis and Development",
+    "it-IT": "Analisi e sviluppo dei sistemi",
+    "pt-PT": "Análise e Desenvolvimento de Sistemas"
+  },
+  "Em andamento": {
+    "en-US": "In progress",
+    "it-IT": "In corso",
+    "pt-PT": "Em andamento"
+  },
+  "Formação atual registrada no inventário profissional.": {
+    "en-US": "Current education recorded in the professional inventory.",
+    "it-IT": "Formazione attuale registrata nell'inventario professionale.",
+    "pt-PT": "Formação atual registada no inventário profissional."
+  },
+  "Tecnólogo em Marketing": {
+    "en-US": "Technology degree in Marketing",
+    "it-IT": "Laurea tecnologica in Marketing",
+    "pt-PT": "Tecnólogo em Marketing"
+  },
+  "Concluído": {
+    "en-US": "Completed",
+    "it-IT": "Completato",
+    "pt-PT": "Concluído"
+  },
+  "Colação de grau em 2012.": {
+    "en-US": "Graduated in 2012.",
+    "it-IT": "Titolo conseguito nel 2012.",
+    "pt-PT": "Cerimónia de grau em 2012."
+  },
+  "Pós-graduação em Direito Tributário": {
+    "en-US": "Postgraduate qualification in Tax Law",
+    "it-IT": "Specializzazione post-laurea in Diritto tributario",
+    "pt-PT": "Pós-graduação em Direito Tributário"
+  },
+  "Concluída": {
+    "en-US": "Completed",
+    "it-IT": "Completata",
+    "pt-PT": "Concluída"
+  },
+  "360h; curso concluído em 2021.": {
+    "en-US": "360 hours; completed in 2021.",
+    "it-IT": "360 ore; corso completato nel 2021.",
+    "pt-PT": "360h; curso concluído em 2021."
+  },
+  "Bootcamp Programador(a) de Software Iniciante": {
+    "en-US": "Beginner Software Developer Bootcamp",
+    "it-IT": "Bootcamp per sviluppatori software principianti",
+    "pt-PT": "Bootcamp Programador(a) de Software Iniciante"
+  },
+  "2021 · 148h": {
+    "en-US": "2021 · 148h",
+    "it-IT": "2021 · 148h",
+    "pt-PT": "2021 · 148h"
+  },
+  "Basic Frontend": {
+    "en-US": "Basic Frontend",
+    "it-IT": "Basic Frontend",
+    "pt-PT": "Basic Frontend"
+  },
+  "2026 · 240h · módulo de ADS": {
+    "en-US": "2026 · 240 hours · Systems Analysis and Development module",
+    "it-IT": "2026 · 240 ore · modulo di Analisi e sviluppo dei sistemi",
+    "pt-PT": "2026 · 240h · módulo de ADS"
+  },
+  "Criando e Testando uma Aplicação com React e TypeScript": {
+    "en-US": "Building and Testing a React and TypeScript Application",
+    "it-IT": "Creare e testare un'applicazione con React e TypeScript",
+    "pt-PT": "Criando e Testando uma Aplicação com React e TypeScript"
+  },
+  "2026 · 4h": {
+    "en-US": "2026 · 4h",
+    "it-IT": "2026 · 4h",
+    "pt-PT": "2026 · 4h"
+  },
+  "Quality Assurance: plano de testes e gestão de bugs": {
+    "en-US": "Quality Assurance: test planning and bug management",
+    "it-IT": "Quality Assurance: piano di test e gestione dei bug",
+    "pt-PT": "Quality Assurance: plano de testes e gestão de bugs"
+  },
+  "2023 · 8h": {
+    "en-US": "2023 · 8h",
+    "it-IT": "2023 · 8h",
+    "pt-PT": "2023 · 8h"
+  },
+  "UX Writing: escrevendo textos para usuários": {
+    "en-US": "UX Writing: writing for users",
+    "it-IT": "UX Writing: scrivere per gli utenti",
+    "pt-PT": "UX Writing: escrevendo textos para utilizadores"
+  },
+  "Aprender a aprender: técnicas para seu autodesenvolvimento": {
+    "en-US": "Learning to learn: techniques for self-development",
+    "it-IT": "Imparare a imparare: tecniche per lo sviluppo personale",
+    "pt-PT": "Aprender a aprender: técnicas para seu autodesenvolvimento"
+  },
+  "2019 · 80h": {
+    "en-US": "2019 · 80h",
+    "it-IT": "2019 · 80h",
+    "pt-PT": "2019 · 80h"
+  },
+  "Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo": {
+    "en-US": "Anti-Money Laundering and Counter-Terrorism Financing",
+    "it-IT": "Prevenzione del riciclaggio e del finanziamento del terrorismo",
+    "pt-PT": "Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo"
+  },
+  "2022 · 20h": {
+    "en-US": "2022 · 20h",
+    "it-IT": "2022 · 20h",
+    "pt-PT": "2022 · 20h"
+  },
+  "Formação Analista Fiscal": {
+    "en-US": "Tax Analyst Training",
+    "it-IT": "Formazione per analista fiscale",
+    "pt-PT": "Formação Analista Fiscal"
+  },
+  "2020 · 3h40": {
+    "en-US": "2020 · 3h40",
+    "it-IT": "2020 · 3h40",
+    "pt-PT": "2020 · 3h40"
+  },
+  "ICMS ST": {
+    "en-US": "ICMS ST",
+    "it-IT": "ICMS ST",
+    "pt-PT": "ICMS ST"
+  },
+  "2020 · 50min": {
+    "en-US": "2020 · 50min",
+    "it-IT": "2020 · 50min",
+    "pt-PT": "2020 · 50min"
+  },
+  "NFC-e": {
+    "en-US": "NFC-e",
+    "it-IT": "NFC-e",
+    "pt-PT": "NFC-e"
+  },
+  "2020 · 4h20": {
+    "en-US": "2020 · 4h20",
+    "it-IT": "2020 · 4h20",
+    "pt-PT": "2020 · 4h20"
+  },
+  "Scrum Foundation Professional Certificate": {
+    "en-US": "Scrum Foundation Professional Certificate",
+    "it-IT": "Scrum Foundation Professional Certificate",
+    "pt-PT": "Scrum Foundation Professional Certificate"
+  },
+  "Obtido em 2020": {
+    "en-US": "Obtained in 2020",
+    "it-IT": "Conseguito nel 2020",
+    "pt-PT": "Obtido em 2020"
+  },
+  "Kanban Foundation": {
+    "en-US": "Kanban Foundation",
+    "it-IT": "Kanban Foundation",
+    "pt-PT": "Kanban Foundation"
+  },
+  "Obtido em 2020 · validade documental até 2022": {
+    "en-US": "Obtained in 2020 · documented validity until 2022",
+    "it-IT": "Conseguito nel 2020 · validità documentale fino al 2022",
+    "pt-PT": "Obtido em 2020 · validade documental até 2022"
+  },
+  "Trilhas de desenvolvimento profissional": {
+    "en-US": "Professional development pathways",
+    "it-IT": "Percorsi di sviluppo professionale",
+    "pt-PT": "Trilhas de desenvolvimento profissional"
+  },
+  "13 conclusões em 2026: Proatividade; Trabalho em Equipe; Pensamento Crítico; Criatividade; Negociação; Mudanças; Flexibilidade Cognitiva; Finanças Pessoais; Comunicação Assertiva; Tomada de Decisões; Reconhecimento; Oratória; Planejamento do Dia de Trabalho.": {
+    "en-US": "13 completions in 2026: Initiative; Teamwork; Critical Thinking; Creativity; Negotiation; Change; Cognitive Flexibility; Personal Finance; Assertive Communication; Decision Making; Recognition; Public Speaking; Workday Planning.",
+    "it-IT": "13 percorsi completati nel 2026: Proattività; Lavoro di squadra; Pensiero critico; Creatività; Negoziazione; Cambiamento; Flessibilità cognitiva; Finanza personale; Comunicazione assertiva; Decisioni; Riconoscimento; Parlare in pubblico; Pianificazione della giornata di lavoro.",
+    "pt-PT": "13 conclusões em 2026: Proatividade; Trabalho em Equipe; Pensamento Crítico; Criatividade; Negociação; Mudanças; Flexibilidade Cognitiva; Finanças Pessoais; Comunicação Assertiva; Tomada de Decisões; Reconhecimento; Oratória; Planeamento do Dia de Trabalho."
+  },
+  "DIO: Kotlin Back-end Developer, HTML Web Developer, Lógica de Programação, TypeScript Full Stack Developer, C# com CRM Dynamics, ASP.NET MVC, Python AI Backend Developer e Angular Developer": {
+    "en-US": "DIO: Kotlin Back-end Developer, HTML Web Developer, Programming Logic, TypeScript Full Stack Developer, C# with CRM Dynamics, ASP.NET MVC, Python AI Backend Developer and Angular Developer",
+    "it-IT": "DIO: Kotlin Back-end Developer, HTML Web Developer, Logica di programmazione, TypeScript Full Stack Developer, C# con CRM Dynamics, ASP.NET MVC, Python AI Backend Developer e Angular Developer",
+    "pt-PT": "DIO: Kotlin Back-end Developer, HTML Web Developer, Lógica de Programação, TypeScript Full Stack Developer, C# com CRM Dynamics, ASP.NET MVC, Python AI Backend Developer e Angular Developer"
+  },
+  "Rocketseat: Explorer/Full Stack, React Developer, Integração Backend com Frontend e Deploy": {
+    "en-US": "Rocketseat: Explorer/Full Stack, React Developer, Backend/Frontend Integration and Deployment",
+    "it-IT": "Rocketseat: Explorer/Full Stack, React Developer, Integrazione backend/frontend e distribuzione",
+    "pt-PT": "Rocketseat: Explorer/Full Stack, React Developer, Integração Backend com Frontend e Deploy"
+  },
+  "Danki Code: React.js": {
+    "en-US": "Danki Code: React.js",
+    "it-IT": "Danki Code: React.js",
+    "pt-PT": "Danki Code: React.js"
+  },
+  "Descomplica: Programming Basics e Ferramentas e Aplicações da Inteligência Artificial": {
+    "en-US": "Descomplica: Programming Basics and Artificial Intelligence Tools and Applications",
+    "it-IT": "Descomplica: Programming Basics e Strumenti e applicazioni dell'intelligenza artificiale",
+    "pt-PT": "Descomplica: Programming Basics e Ferramentas e Aplicações da Inteligência Artificial"
+  },
+  "E3: Mentalidade produtiva": {
+    "en-US": "E3: Productive mindset",
+    "it-IT": "E3: Mentalità produttiva",
+    "pt-PT": "E3: Mentalidade produtiva"
+  },
+  "FastAPI Testing e estudos de inglês pelo British Council": {
+    "en-US": "FastAPI Testing and English studies through the British Council",
+    "it-IT": "FastAPI Testing e studio dell'inglese con il British Council",
+    "pt-PT": "FastAPI Testing e estudos de inglês pelo British Council"
+  },
+  "Nativo": {
+    "en-US": "Native",
+    "it-IT": "Madrelingua",
+    "pt-PT": "Nativo"
+  },
+  "Fluente": {
+    "en-US": "Fluent",
+    "it-IT": "Fluente",
+    "pt-PT": "Fluente"
+  },
+  "Intermediário para leitura e escrita técnica; conversação em desenvolvimento": {
+    "en-US": "Intermediate technical reading and writing; speaking skills in development",
+    "it-IT": "Livello intermedio nella lettura e scrittura tecnica; conversazione in sviluppo",
+    "pt-PT": "Intermediário para leitura e escrita técnica; conversação em desenvolvimento"
+  },
+  "Conhecimento registrado no histórico; nível atual a atualizar": {
+    "en-US": "Knowledge recorded in past records; current level to be updated",
+    "it-IT": "Conoscenza registrata nello storico; livello attuale da aggiornare",
+    "pt-PT": "Conhecimento registado no histórico; nível atual a atualizar"
+  },
+  "Produto web e aplicativo Flutter/Dart, com autenticação, conteúdo por usuário, IA, assinaturas e testes de regras comerciais.": {
+    "en-US": "Web product and Flutter/Dart app with authentication, user-specific content, AI, subscriptions and business rule tests.",
+    "it-IT": "Prodotto web e app Flutter/Dart con autenticazione, contenuti per utente, IA, abbonamenti e test delle regole commerciali.",
+    "pt-PT": "Produto web e aplicação Flutter/Dart, com autenticação, conteúdo por utilizador, IA, assinaturas e testes de regras comerciais."
+  },
+  "Visitar aplicação": {
+    "en-US": "Visit application",
+    "it-IT": "Visita l'applicazione",
+    "pt-PT": "Visitar aplicação"
+  },
+  "Produto de atendimento e integrações com interface web, Python, dados persistentes, workers, OAuth e operação em VPS.": {
+    "en-US": "Customer service and integration product with a web interface, Python, persistent data, workers, OAuth and VPS operations.",
+    "it-IT": "Prodotto per assistenza e integrazioni con interfaccia web, Python, dati persistenti, worker, OAuth e operatività su VPS.",
+    "pt-PT": "Produto de atendimento e integrações com interface web, Python, dados persistentes, workers, OAuth e operação em VPS."
+  },
+  "Site desenvolvido por mim para a Platina Logtec, disponível em platinalogtec.com.br.": {
+    "en-US": "Website I developed for Platina Logtec, available at platinalogtec.com.br.",
+    "it-IT": "Sito realizzato da me per Platina Logtec, disponibile su platinalogtec.com.br.",
+    "pt-PT": "Site desenvolvido por mim para a Platina Logtec, disponível em platinalogtec.com.br."
+  },
+  "Site de aulas particulares online, com apresentação do professor, matérias e recursos educacionais.": {
+    "en-US": "Online private lesson website introducing the teacher, subjects and educational resources.",
+    "it-IT": "Sito di lezioni private online con presentazione del docente, materie e risorse educative.",
+    "pt-PT": "Site de aulas particulares online, com apresentação do professor, matérias e recursos educacionais."
+  },
+  "Plataforma de cursos de Matemática e Exatas, com videoaulas, exercícios e área do aluno.": {
+    "en-US": "Mathematics and science course platform with video lessons, exercises and a student area.",
+    "it-IT": "Piattaforma di corsi di matematica e scienze con videolezioni, esercizi e area studente.",
+    "pt-PT": "Plataforma de cursos de Matemática e Exatas, com videoaulas, exercícios e área do aluno."
+  },
+  "Gestão de estoque com React, FastAPI e PostgreSQL: saldo, transações, rollback e testes de API/E2E.": {
+    "en-US": "Inventory management with React, FastAPI and PostgreSQL: stock balance, transactions, rollback and API/E2E tests.",
+    "it-IT": "Gestione dell'inventario con React, FastAPI e PostgreSQL: saldo, transazioni, rollback e test API/E2E.",
+    "pt-PT": "Gestão de stock com React, FastAPI e PostgreSQL: saldo, transações, rollback e testes de API/E2E."
+  },
+  "Ver código": {
+    "en-US": "View code",
+    "it-IT": "Vedi il codice",
+    "pt-PT": "Ver código"
+  },
+  "Podcasts com Next.js, FastAPI, autenticação, IA e relatórios. Código disponível; serviço original inativo.": {
+    "en-US": "Podcasts with Next.js, FastAPI, authentication, AI and reports. Code available; original service inactive.",
+    "it-IT": "Podcast con Next.js, FastAPI, autenticazione, IA e report. Codice disponibile; servizio originale inattivo.",
+    "pt-PT": "Podcasts com Next.js, FastAPI, autenticação, IA e relatórios. Código disponível; serviço original inativo."
+  },
+  "Python aplicado a demanda e estoque, pandas/NumPy, validação temporal, métricas e saídas CSV/HTML.": {
+    "en-US": "Python for demand and inventory, pandas/NumPy, temporal validation, metrics and CSV/HTML outputs.",
+    "it-IT": "Python applicato a domanda e inventario, pandas/NumPy, validazione temporale, metriche e output CSV/HTML.",
+    "pt-PT": "Python aplicado a demanda e stock, pandas/NumPy, validação temporal, métricas e saídas CSV/HTML."
+  },
+  "Ver projeto": {
+    "en-US": "View project",
+    "it-IT": "Vedi il progetto",
+    "pt-PT": "Ver projeto"
+  },
+  "Node.js, Express, Knex/SQLite, controllers, rotas, hash de senha e testes de serviço.": {
+    "en-US": "Node.js, Express, Knex/SQLite, controllers, routes, password hashing and service tests.",
+    "it-IT": "Node.js, Express, Knex/SQLite, controller, rotte, hash delle password e test dei servizi.",
+    "pt-PT": "Node.js, Express, Knex/SQLite, controllers, rotas, hash de senha e testes de serviço."
+  },
+  "Estudo com Kotlin, Spring Boot e Spring Data JPA: DTOs, persistência, migrations e regras.": {
+    "en-US": "Learning project with Kotlin, Spring Boot and Spring Data JPA: DTOs, persistence, migrations and rules.",
+    "it-IT": "Progetto di studio con Kotlin, Spring Boot e Spring Data JPA: DTO, persistenza, migrazioni e regole.",
+    "pt-PT": "Estudo com Kotlin, Spring Boot e Spring Data JPA: DTOs, persistência, migrations e regras."
+  },
+  "Prática orientada de modelagem de domínio educacional proposta pela DIO.": {
+    "en-US": "Guided practice in educational domain modelling proposed by DIO.",
+    "it-IT": "Pratica guidata di modellazione del dominio educativo proposta da DIO.",
+    "pt-PT": "Prática orientada de modelagem de domínio educacional proposta pela DIO."
+  },
+  "Ver estudo": {
+    "en-US": "View learning project",
+    "it-IT": "Vedi il progetto di studio",
+    "pt-PT": "Ver estudo"
+  },
+  "React/JavaScript com preferências, pontuação, testes e backend mock.": {
+    "en-US": "React/JavaScript with preferences, scoring, tests and a mock backend.",
+    "it-IT": "React/JavaScript con preferenze, punteggio, test e backend simulato.",
+    "pt-PT": "React/JavaScript com preferências, pontuação, testes e backend mock."
+  },
+  "Retomar movimento": {
+    "en-US": "Resume motion",
+    "it-IT": "Riprendi il movimento",
+    "pt-PT": "Retomar movimento"
+  },
+  "Movimento reduzido": {
+    "en-US": "Reduced motion",
+    "it-IT": "Movimento ridotto",
+    "pt-PT": "Movimento reduzido"
+  },
+  "Da ideia à experiência de usar.": {
+    "en-US": "From idea to user experience.",
+    "it-IT": "Dall'idea all'esperienza d'uso.",
+    "pt-PT": "Da ideia à experiência de usar."
+  },
+  "Navegação, busca, persistência e integração com o backend. Explore as habilidades que uso para construir aplicativos.": {
+    "en-US": "Navigation, search, persistence and backend integration. Explore the skills I use to build apps.",
+    "it-IT": "Navigazione, ricerca, persistenza e integrazione con il backend. Esplora le competenze che uso per creare app.",
+    "pt-PT": "Navegação, pesquisa, persistência e integração com o backend. Explore as habilidades que uso para construir aplicações."
+  },
+  "Ir ao laboratório": {
+    "en-US": "Go to the lab",
+    "it-IT": "Vai al laboratorio",
+    "pt-PT": "Ir ao laboratório"
+  },
+  "Uma pergunta vira dados na tela.": {
+    "en-US": "A question becomes data on screen.",
+    "it-IT": "Una domanda diventa dati sullo schermo.",
+    "pt-PT": "Uma pergunta vira dados na ecrã."
+  },
+  "Digite um assunto e encontre notícias recentes. A API FastAPI consulta o Google Notícias e organiza os resultados por país.": {
+    "en-US": "Enter a topic and find recent news. The FastAPI API queries Google News and organises results by country.",
+    "it-IT": "Scrivi un argomento e trova notizie recenti. L'API FastAPI consulta Google News e organizza i risultati per paese.",
+    "pt-PT": "Digite um assunto e encontre notícias recentes. A API FastAPI consulta o Google Notícias e organiza os resultados por país."
+  },
+  "Contratos": {
+    "en-US": "Contracts",
+    "it-IT": "Contratti",
+    "pt-PT": "Contratos"
+  },
+  "Um processo vira um fluxo conectado.": {
+    "en-US": "A process becomes a connected workflow.",
+    "it-IT": "Un processo diventa un flusso connesso.",
+    "pt-PT": "Um processo vira um fluxo conectado."
+  },
+  "Atendimento, conectores, eventos e tarefas em segundo plano. Conheça o Clycka e as habilidades por trás de suas integrações.": {
+    "en-US": "Customer service, connectors, events and background tasks. Explore Clycka and the skills behind its integrations.",
+    "it-IT": "Assistenza, connettori, eventi e attività in background. Scopri Clycka e le competenze dietro le sue integrazioni.",
+    "pt-PT": "Atendimento, conectores, eventos e tarefas em segundo plano. Conheça o Clycka e as habilidades por trás de suas integrações."
+  },
+  "Idempotência": {
+    "en-US": "Idempotency",
+    "it-IT": "Idempotenza",
+    "pt-PT": "Idempotência"
+  },
+  "Dados viram uma decisão melhor.": {
+    "en-US": "Data leads to better decisions.",
+    "it-IT": "I dati portano a decisioni migliori.",
+    "pt-PT": "Dados viram uma decisão melhor."
+  },
+  "Explore o projeto de demanda e estoque, com Python, organização de dados, métricas e relatórios.": {
+    "en-US": "Explore the demand and inventory project with Python, data organisation, metrics and reports.",
+    "it-IT": "Esplora il progetto di domanda e inventario con Python, organizzazione dei dati, metriche e report.",
+    "pt-PT": "Explore o projeto de demanda e stock, com Python, organização de dados, métricas e relatórios."
+  },
+  "Validação temporal": {
+    "en-US": "Temporal validation",
+    "it-IT": "Validazione temporale",
+    "pt-PT": "Validação temporal"
+  },
+  "Uma interface vira uma experiência.": {
+    "en-US": "An interface becomes an experience.",
+    "it-IT": "Un'interfaccia diventa un'esperienza.",
+    "pt-PT": "Uma interface vira uma experiência."
+  },
+  "Jornada, navegação, feedback e clareza. Veja como frontend e UX se encontram no Luniay.": {
+    "en-US": "Journey, navigation, feedback and clarity. See how frontend and UX come together in Luniay.",
+    "it-IT": "Percorso, navigazione, feedback e chiarezza. Scopri come frontend e UX si incontrano in Luniay.",
+    "pt-PT": "Jornada, navegação, feedback e clareza. Veja como frontend e UX se encontram no Luniay."
+  },
+  "Criar a interface": {
+    "en-US": "Build the interface",
+    "it-IT": "Creare l'interfaccia",
+    "pt-PT": "Criar a interface"
+  },
+  "Conectar a API": {
+    "en-US": "Connect the API",
+    "it-IT": "Collegare l'API",
+    "pt-PT": "Conectar a API"
+  },
+  "Validar os testes": {
+    "en-US": "Validate the tests",
+    "it-IT": "Validare i test",
+    "pt-PT": "Validar os testes"
+  },
+  "A fazer": {
+    "en-US": "To do",
+    "it-IT": "Da fare",
+    "pt-PT": "A fazer"
+  },
+  "Arraste uma tarefa para experimentar.": {
+    "en-US": "Drag a task to try it.",
+    "it-IT": "Trascina un'attività per provare.",
+    "pt-PT": "Arraste uma tarefa para experimentar."
+  },
+  "Arraste para outra coluna ou use as setas esquerda e direita.": {
+    "en-US": "Drag to another column or use the left and right arrows.",
+    "it-IT": "Trascina in un'altra colonna o usa le frecce destra e sinistra.",
+    "pt-PT": "Arraste para outra coluna ou use as setas esquerda e direita."
+  },
+  "Nenhuma área encontrada. Tente outro termo.": {
+    "en-US": "No areas found. Try another term.",
+    "it-IT": "Nessuna area trovata. Prova un altro termine.",
+    "pt-PT": "Nenhuma área encontrada. Tente outro termo."
+  },
+  "Não foi possível carregar os projetos. Acesse meu GitHub pelo link acima.": {
+    "en-US": "Projects could not be loaded. Visit my GitHub using the link above.",
+    "it-IT": "Impossibile caricare i progetti. Visita il mio GitHub tramite il link qui sopra.",
+    "pt-PT": "Não foi possível carregar os projetos. Acesse meu GitHub pelo link acima."
+  },
+  "Digite um assunto para buscar notícias.": {
+    "en-US": "Enter a topic to search for news.",
+    "it-IT": "Scrivi un argomento per cercare notizie.",
+    "pt-PT": "Digite um assunto para buscar notícias."
+  },
+  "Buscando…": {
+    "en-US": "Searching…",
+    "it-IT": "Ricerca…",
+    "pt-PT": "A pesquisar…"
+  },
+  "Buscando notícias…": {
+    "en-US": "Searching for news…",
+    "it-IT": "Ricerca delle notizie…",
+    "pt-PT": "A pesquisar notícias…"
+  },
+  "Não foi possível buscar notícias agora.": {
+    "en-US": "News could not be retrieved right now.",
+    "it-IT": "Impossibile recuperare le notizie in questo momento.",
+    "pt-PT": "Não foi possível buscar notícias agora."
+  },
+  "Ler notícia": {
+    "en-US": "Read story",
+    "it-IT": "Leggi la notizia",
+    "pt-PT": "Ler notícia"
+  },
+  "Nenhuma notícia encontrada. Tente outro assunto.": {
+    "en-US": "No news found. Try another topic.",
+    "it-IT": "Nessuna notizia trovata. Prova un altro argomento.",
+    "pt-PT": "Nenhuma notícia encontrada. Tente outro assunto."
+  },
+  "A busca demorou mais que o esperado. Tente novamente.": {
+    "en-US": "The search took longer than expected. Try again.",
+    "it-IT": "La ricerca ha richiesto più tempo del previsto. Riprova.",
+    "pt-PT": "A pesquisa demorou mais que o esperado. Tente novamente."
+  },
+  "A fonte de dados está indisponível. Tente novamente mais tarde.": {
+    "en-US": "The data source is unavailable. Try again later.",
+    "it-IT": "La fonte dei dati non è disponibile. Riprova più tardi.",
+    "pt-PT": "A fonte de dados está indisponível. Tente novamente mais tarde."
+  },
+  "Use um assunto em texto, sem caracteres de controle.": {
+    "en-US": "Use a text topic without control characters.",
+    "it-IT": "Usa un argomento testuale senza caratteri di controllo.",
+    "pt-PT": "Use um assunto em texto, sem caracteres de controle."
+  },
+  "Idioma da página": {
+    "en-US": "Page language",
+    "it-IT": "Lingua della pagina",
+    "pt-PT": "Idioma da página"
+  },
+  "Português do Brasil": {
+    "en-US": "Brazilian Portuguese",
+    "it-IT": "Portoghese brasiliano",
+    "pt-PT": "Português do Brasil"
+  },
+  "Português de Portugal": {
+    "en-US": "European Portuguese",
+    "it-IT": "Portoghese europeo",
+    "pt-PT": "Português de Portugal"
+  },
+  "Inglês dos Estados Unidos": {
+    "en-US": "American English",
+    "it-IT": "Inglese americano",
+    "pt-PT": "Inglês dos Estados Unidos"
+  },
+  "Italiano": {
+    "en-US": "Italian",
+    "it-IT": "Italiano",
+    "pt-PT": "Italiano"
+  },
+  "Itália": {
+    "en-US": "Italy",
+    "it-IT": "Italia",
+    "pt-PT": "Itália"
+  },
+  "Logo oficial Luniay": {
+    "en-US": "Official Luniay logo",
+    "it-IT": "Logo ufficiale Luniay",
+    "pt-PT": "Logo oficial Luniay"
+  },
+  "Logo oficial Clycka": {
+    "en-US": "Official Clycka logo",
+    "it-IT": "Logo ufficiale Clycka",
+    "pt-PT": "Logo oficial Clycka"
+  },
+  "Logo oficial Isidoro Preparatório": {
+    "en-US": "Official Isidoro Preparatório logo",
+    "it-IT": "Logo ufficiale Isidoro Preparatório",
+    "pt-PT": "Logo oficial Isidoro Preparatório"
+  },
+  "Tela do app web de Karen Angelis, com menu inferior e busca de habilidades": {
+    "en-US": "Karen Angelis web app screen with bottom navigation and skill search",
+    "it-IT": "Schermata dell'app web di Karen Angelis con menu inferiore e ricerca delle competenze",
+    "pt-PT": "Tela do app web de Karen Angelis, com menu inferior e pesquisa de habilidades"
+  },
+  "Karen Angelis — portfólio interativo de desenvolvimento Full Stack. Experimente aplicações, explore APIs e conheça projetos.": {
+    "en-US": "Karen Angelis — interactive Full Stack development portfolio. Try apps, explore APIs and discover projects.",
+    "it-IT": "Karen Angelis — portfolio interattivo di sviluppo Full Stack. Prova le app, esplora le API e scopri i progetti.",
+    "pt-PT": "Karen Angelis — portfólio interativo de desenvolvimento Full Stack. Experimente aplicações, explore APIs e conheça projetos."
+  },
+  "Meu currículo": {
+    "en-US": "My résumé",
+    "it-IT": "Il mio curriculum",
+    "pt-PT": "Meu currículo"
+  },
+  "Atualizar": {
+    "en-US": "Refresh",
+    "it-IT": "Aggiorna",
+    "pt-PT": "Atualizar"
+  },
+  "Atualizando": {
+    "en-US": "Refreshing",
+    "it-IT": "Aggiornamento",
+    "pt-PT": "Atualizando"
+  },
+  "Sobre mim": {
+    "en-US": "About me",
+    "it-IT": "Chi sono",
+    "pt-PT": "Sobre mim"
+  },
+  "Nenhuma habilidade encontrada. Tente outro termo.": {
+    "en-US": "No skills found. Try another term.",
+    "it-IT": "Nessuna competenza trovata. Prova un altro termine.",
+    "pt-PT": "Nenhuma habilidade encontrada. Tente outro termo."
+  },
+  "Como eu trabalho": {
+    "en-US": "How I work",
+    "it-IT": "Come lavoro",
+    "pt-PT": "Como eu trabalho"
+  },
+  "Cursos e certificados": {
+    "en-US": "Courses and certificates",
+    "it-IT": "Corsi e certificati",
+    "pt-PT": "Cursos e certificados"
+  },
+  "Outros estudos registrados": {
+    "en-US": "Other recorded studies",
+    "it-IT": "Altri studi registrati",
+    "pt-PT": "Outros estudos registados"
+  },
+  "Vamos construir algo?": {
+    "en-US": "Shall we build something?",
+    "it-IT": "Creiamo qualcosa insieme?",
+    "pt-PT": "Vamos construir algo?"
+  },
+  "Portfólio": {
+    "en-US": "Portfolio",
+    "it-IT": "Portfolio",
+    "pt-PT": "Portfólio"
+  },
+  "Experiência": {
+    "en-US": "Experience",
+    "it-IT": "Esperienza",
+    "pt-PT": "Experiência"
+  },
+  "Formação": {
+    "en-US": "Education",
+    "it-IT": "Formazione",
+    "pt-PT": "Formação"
+  },
+  "Idiomas": {
+    "en-US": "Languages",
+    "it-IT": "Lingue",
+    "pt-PT": "Idiomas"
+  },
+  "Contato": {
+    "en-US": "Contact",
+    "it-IT": "Contatti",
+    "pt-PT": "Contato"
+  },
+  "Português": {
+    "en-US": "Portuguese",
+    "it-IT": "Portoghese",
+    "pt-PT": "Português"
+  },
+  "Inglês": {
+    "en-US": "English",
+    "it-IT": "Inglese",
+    "pt-PT": "Inglês"
+  },
+  "Espanhol": {
+    "en-US": "Spanish",
+    "it-IT": "Spagnolo",
+    "pt-PT": "Espanhol"
+  },
+  "Formação acadêmica": {
+    "en-US": "Academic education",
+    "it-IT": "Formazione accademica",
+    "pt-PT": "Formação académica"
+  },
+  "Outras formações e estudos registrados": {
+    "en-US": "Other recorded qualifications and studies",
+    "it-IT": "Altre qualifiche e studi registrati",
+    "pt-PT": "Outras formações e estudos registados"
+  },
+  "Registros de formação e estudo; conclusão e carga horária variam por curso.": {
+    "en-US": "Education and study records; completion and hours vary by course.",
+    "it-IT": "Registrazioni di formazione e studio; completamento e durata variano secondo il corso.",
+    "pt-PT": "Registros de formação e estudo; conclusão e carga horária variam por curso."
+  },
+  "Currículo interativo · Karen Angelis": {
+    "en-US": "Interactive résumé · Karen Angelis",
+    "it-IT": "Curriculum interattivo · Karen Angelis",
+    "pt-PT": "Currículo interativo · Karen Angelis"
+  },
+  "← Voltar ao portfólio": {
+    "en-US": "← Back to portfolio",
+    "it-IT": "← Torna al portfolio",
+    "pt-PT": "← Voltar ao portfólio"
+  },
+  "LAB 01 / APLICAÇÕES": {
+    "en-US": "LAB 01 / APPLICATIONS",
+    "it-IT": "LAB 01 / APPLICAZIONI",
+    "pt-PT": "LAB 01 / APLICAÇÕES"
+  },
+  "Um currículo para": {
+    "en-US": "A résumé to",
+    "it-IT": "Un curriculum da",
+    "pt-PT": "Um currículo para"
+  },
+  "explorar.": {
+    "en-US": "explore.",
+    "it-IT": "esplorare.",
+    "pt-PT": "explorar."
+  },
+  "Conheça minhas tecnologias e projetos e experimente as seções do currículo.": {
+    "en-US": "Explore my technologies and projects and try the résumé sections.",
+    "it-IT": "Scopri le mie tecnologie e i miei progetti ed esplora le sezioni del curriculum.",
+    "pt-PT": "Conheça minhas tecnologias e projetos e experimente as seções do currículo."
+  },
+  "Consultar API Go": {
+    "en-US": "Query Go API",
+    "it-IT": "Consulta l'API Go",
+    "pt-PT": "Consultar API Go"
+  },
+  "Fonte: dados locais do portfólio. Interface web em JavaScript.": {
+    "en-US": "Source: local portfolio data. JavaScript web interface.",
+    "it-IT": "Fonte: dati locali del portfolio. Interfaccia web in JavaScript.",
+    "pt-PT": "Fonte: dados locais do portfólio. Interface web em JavaScript."
+  },
+  "Não foi possível carregar o currículo.": {
+    "en-US": "The résumé could not be loaded.",
+    "it-IT": "Impossibile caricare il curriculum.",
+    "pt-PT": "Não foi possível carregar o currículo."
+  },
+  "Fonte: API Go · GET /api/profile": {
+    "en-US": "Source: Go API · GET /api/profile",
+    "it-IT": "Fonte: API Go · GET /api/profile",
+    "pt-PT": "Fonte: API Go · GET /api/profile"
+  },
+  "API Go indisponível. Os dados locais continuam visíveis; tente consultar novamente mais tarde.": {
+    "en-US": "Go API unavailable. Local data remains visible; try again later.",
+    "it-IT": "API Go non disponibile. I dati locali restano visibili; riprova più tardi.",
+    "pt-PT": "API Go indisponível. Os dados locais continuam visíveis; tente consultar novamente mais tarde."
+  },
+  "Soft skills": {
+    "en-US": "Soft skills",
+    "it-IT": "Competenze trasversali",
+    "pt-PT": "Soft skills"
+  },
+  "Carregando…": {
+    "en-US": "Loading…",
+    "it-IT": "Caricamento…",
+    "pt-PT": "Carregando…"
+  },
+  "Desde 2025": {
+    "en-US": "Since 2025",
+    "it-IT": "Dal 2025",
+    "pt-PT": "Desde 2025"
+  },
+  "out/2025–jun/2026": {
+    "en-US": "Oct 2025–Jun 2026",
+    "it-IT": "ott 2025–giu 2026",
+    "pt-PT": "out/2025–jun/2026"
+  },
+  "jul/2026–atual": {
+    "en-US": "Jul 2026–present",
+    "it-IT": "lug 2026–oggi",
+    "pt-PT": "jul/2026–atual"
+  },
+  "jul/2026 — atual": {
+    "en-US": "Jul 2026 — present",
+    "it-IT": "lug 2026 — oggi",
+    "pt-PT": "jul/2026 — atual"
+  },
+  "out/2025 — jun/2026": {
+    "en-US": "Oct 2025 — Jun 2026",
+    "it-IT": "ott 2025 — giu 2026",
+    "pt-PT": "out/2025 — jun/2026"
+  }
+}

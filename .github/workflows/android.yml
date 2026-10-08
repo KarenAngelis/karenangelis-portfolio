@@ -6,6 +6,7 @@ on:
       - 'apps/resume-android/**'
       - 'apps/resume-compose/**'
       - 'web/data/profile.json'
+      - 'web/data/translations.json'
       - '.github/workflows/android.yml'
       - 'scripts/check-android.py'
 jobs:

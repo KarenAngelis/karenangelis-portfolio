@@ -1,3 +1,4 @@
+import {t,locale} from './i18n.js';
 export function element(tag,text='',className=''){
   const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;
 }
@@ -6,8 +7,8 @@ export function link(text,url){
   if(!url.startsWith('/#')){node.target='_blank';node.rel='noopener noreferrer';}return node;
 }
 export function renderGroups(container,groups,{query='',area='all'}={}){
-  container.replaceChildren();const needle=query.trim().toLocaleLowerCase('pt-BR');
-  const selected=groups.filter(g=>(area==='all'||g.id===area)&&(!needle||[g.title,g.description,g.example,...g.items].join(' ').toLocaleLowerCase('pt-BR').includes(needle)));
+  container.replaceChildren();const needle=query.trim().toLocaleLowerCase(locale);
+  const selected=groups.filter(g=>(area==='all'||g.id===area)&&(!needle||[g.title,g.description,g.example,...g.items].flatMap(text=>[text,t(text)]).join(' ').toLocaleLowerCase(locale).includes(needle)));
   for(const group of selected){
     const card=element('details','','skill-card');if(needle)card.open=true;
     const summary=element('summary');summary.append(element('span',group.title),element('small',`${group.items.length} competências`));

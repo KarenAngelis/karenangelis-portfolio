@@ -6,6 +6,7 @@ on:
       - 'apps/resume-compose/**'
       - 'apps/resume-android/**'
       - 'web/data/profile.json'
+      - 'web/data/translations.json'
       - '.github/workflows/resume-multiplatform.yml'
 jobs:
   shared-app:

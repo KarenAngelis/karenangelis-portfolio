@@ -24,7 +24,7 @@ private val Lime=Color(0xffc5f16a)
 private val Ink=Color(0xff101211)
 private val Panel=Color(0xff1c211b)
 private val Muted=Color(0xffa6aaa2)
-private val labels=listOf("Habilidades","Experiência","Formação","Idiomas","Projetos","Contato")
+private val labels=listOf("Habilidades","Experiência","Formação","Idiomas","Projetos","Contato").map { tr(it) }
 
 private data class ResumeState(
     val profile: JsonObject=parseProfile(BundledProfile.json),
@@ -38,7 +38,7 @@ private data class ResumeState(
 fun ResumeApp() {
     MaterialTheme(colorScheme=darkColorScheme(primary=Lime,onPrimary=Ink,background=Ink,surface=Panel,onSurface=Color(0xfff1f0e9))) {
         var appState by remember { mutableStateOf(ResumeState()) }
-        val profile=appState.profile
+        val profile=remember(appState.profile) { localizeProfile(appState.profile) }
         val selected=appState.selected
         val query=appState.query
         val busy=appState.busy
@@ -70,8 +70,8 @@ fun ResumeApp() {
             containerColor=Ink,
             topBar={ Surface(color=Ink) {
                 Row(Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal=18.dp,vertical=12.dp),horizontalArrangement=Arrangement.SpaceBetween) {
-                    Column { Text("ka · Karen Angelis",color=Lime,fontSize=21.sp,fontWeight=FontWeight.Bold);Text("Meu currículo",fontSize=11.sp,color=Muted) }
-                    TextButton(onClick={update()},enabled=!busy) { Text(if(busy) "Atualizando" else "Atualizar") }
+                    Column { Text(tr("ka · Karen Angelis"),color=Lime,fontSize=21.sp,fontWeight=FontWeight.Bold);Text(tr("Meu currículo"),fontSize=11.sp,color=Muted) }
+                    TextButton(onClick={update()},enabled=!busy) { Text(tr(if(busy) "Atualizando" else "Atualizar")) }
                 }
             } },
             bottomBar={ Surface(color=Panel) {
@@ -103,11 +103,11 @@ fun ResumeApp() {
                     when(selected) {
                         0 -> {
                             item { Text(profile.text("fullName"),fontSize=20.sp,fontWeight=FontWeight.Bold);Text(profile.text("role"),fontSize=12.sp,color=Muted) }
-                            item { ExpandCard("Sobre mim") { Text(profile.text("summary"),fontSize=13.sp,color=Muted) } }
-                            item { OutlinedTextField(value=query,onValueChange={appState=appState.copy(query=it)},singleLine=true,label={Text("Buscar habilidade")},placeholder={Text("Python, Flutter, UX…")},modifier=Modifier.fillMaxWidth()) }
+                            item { ExpandCard(tr("Sobre mim")) { Text(profile.text("summary"),fontSize=13.sp,color=Muted) } }
+                            item { OutlinedTextField(value=query,onValueChange={appState=appState.copy(query=it)},singleLine=true,label={Text(tr("Buscar habilidade"))},placeholder={Text(tr("Python, Flutter, UX…"))},modifier=Modifier.fillMaxWidth()) }
                             val term=query.trim().lowercase()
                             val groups=profile.rows("skillGroups").filter { term.isEmpty() || (it.text("title")+" "+it.text("description")+" "+it.text("example")+" "+it.strings("items").joinToString(" ")).lowercase().contains(term) }
-                            if(groups.isEmpty()) item { Text("Nenhuma habilidade encontrada. Tente outro termo.",color=Muted) }
+                            if(groups.isEmpty()) item { Text(tr("Nenhuma habilidade encontrada. Tente outro termo."),color=Muted) }
                             items(groups,key={it.text("id")}) { group ->
                                 key(term) {
                                     ExpandCard(group.text("title")+" · "+group.strings("items").size,term.isNotEmpty()) {
@@ -118,15 +118,15 @@ fun ResumeApp() {
                                     }
                                 }
                             }
-                            item { Text("Como eu trabalho",fontSize=21.sp,color=Lime) }
+                            item { Text(tr("Como eu trabalho"),fontSize=21.sp,color=Lime) }
                             items(profile.rows("softSkills")) { EntryCard(it.text("title"),"",it.text("example")) }
                         }
                         1 -> items(profile.rows("experience")) { EntryCard(it.text("company"),it.text("role")+" · "+it.text("period"),it.text("description")) }
                         2 -> {
                             items(profile.rows("education")) { EntryCard(it.text("title"),it.text("institution")+" · "+it.text("status"),it.text("detail")) }
-                            item { Text("Cursos e certificados",fontSize=21.sp,color=Lime) }
+                            item { Text(tr("Cursos e certificados"),fontSize=21.sp,color=Lime) }
                             items(profile.rows("courses")) { EntryCard(it.text("title"),it.text("institution"),it.text("detail")) }
-                            item { ExpandCard("Outros estudos registrados") { profile.strings("additionalStudies").forEach { Text(it,fontSize=13.sp,color=Muted) } } }
+                            item { ExpandCard(tr("Outros estudos registrados")) { profile.strings("additionalStudies").forEach { Text(it,fontSize=13.sp,color=Muted) } } }
                         }
                         3 -> items(profile.rows("languages")) { EntryCard(it.text("name"),it.text("level"),"") }
                         4 -> items(profile.rows("projects")) { project ->
@@ -137,9 +137,9 @@ fun ResumeApp() {
                             } }
                         }
                         5 -> {
-                            item { Text("Karen Denich de Angelis",fontSize=21.sp);Text("Vamos construir algo?",color=Muted) }
+                            item { Text(tr("Karen Denich de Angelis"),fontSize=21.sp);Text(tr("Vamos construir algo?"),color=Muted) }
                             items(listOf("WhatsApp" to profile.text("whatsapp"),"LinkedIn" to profile.text("linkedin"),"GitHub" to profile.text("github"),"Portfólio" to "https://karenangelis.com")) { (label,url) ->
-                                OutlinedButton(onClick={visit(url)},modifier=Modifier.fillMaxWidth()) { Text(label) }
+                                OutlinedButton(onClick={visit(url)},modifier=Modifier.fillMaxWidth()) { Text(tr(label)) }
                             }
                         }
                     }

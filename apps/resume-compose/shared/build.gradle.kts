@@ -49,4 +49,16 @@ val prepareProfile by tasks.registering {
         output.get().asFile.apply { parentFile.mkdirs(); writeText("package com.karenangelis.curriculo.shared\ninternal object BundledProfile { val json = \"$escaped\" }\n") }
     }
 }
-tasks.configureEach { if(name.startsWith("compileKotlin") || name.startsWith("compileDebugKotlin") || name.startsWith("compileReleaseKotlin")) dependsOn(prepareProfile) }
+val prepareTranslations by tasks.registering {
+    val input=rootProject.file("../../web/data/translations.json")
+    val output=layout.buildDirectory.file("generated/profile/com/karenangelis/curriculo/shared/BundledTranslations.kt")
+    inputs.file(input);outputs.file(output)
+    doLast {
+        val chunks=input.readText().chunked(8000).joinToString("\n") {
+            val escaped=it.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n").replace("\r", "\\r").replace("$", "\\$")
+            "append(\"$escaped\")"
+        }
+        output.get().asFile.apply { parentFile.mkdirs();writeText("package com.karenangelis.curriculo.shared\ninternal object BundledTranslations { val json = buildString {\n$chunks\n} }\n") }
+    }
+}
+tasks.configureEach { if(name.startsWith("compileKotlin") || name.startsWith("compileDebugKotlin") || name.startsWith("compileReleaseKotlin")) dependsOn(prepareProfile,prepareTranslations) }

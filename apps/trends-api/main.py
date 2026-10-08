@@ -36,7 +36,7 @@ def health():
 
 
 @app.get("/api/news")
-async def news(q: str = Query(..., min_length=1, max_length=100), geo: Literal["BR", "US", "PT"] = "BR", limit: int = Query(10, ge=1, le=20)):
+async def news(q: str = Query(..., min_length=1, max_length=100), geo: Literal["BR", "US", "PT", "IT"] = "BR", limit: int = Query(10, ge=1, le=20)):
     if not q.strip():
         raise HTTPException(422, "Digite um assunto para buscar notícias.")
     result = await trends(geo=geo, limit=limit, q=q)
@@ -44,13 +44,13 @@ async def news(q: str = Query(..., min_length=1, max_length=100), geo: Literal["
 
 
 @app.get("/api/trends", include_in_schema=False)
-async def trends(geo: Literal["BR", "US", "PT"] = "BR", limit: int = Query(10, ge=1, le=20), q: str = Query("", max_length=100)):
+async def trends(geo: Literal["BR", "US", "PT", "IT"] = "BR", limit: int = Query(10, ge=1, le=20), q: str = Query("", max_length=100)):
     query = " ".join(q.split())
     if any(unicodedata.category(char).startswith("C") for char in query):
         raise HTTPException(422, "Use um assunto em texto, sem caracteres de controle.")
     key = (geo, query.casefold())
     mode = "news" if query else "trending"
-    language = {"BR": "pt-BR", "PT": "pt-PT", "US": "en-US"}[geo]
+    language = {"BR": "pt-BR", "PT": "pt-PT", "US": "en-US", "IT": "it-IT"}[geo]
     source = "https://news.google.com/rss/search" if query else "https://trends.google.com/trending/rss"
     params = {"q": query, "hl": language, "gl": geo, "ceid": f"{geo}:{language.split('-')[0]}"} if query else {"geo": geo}
     async with _lock:
