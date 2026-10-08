@@ -6,5 +6,10 @@
   "clycka": {
     "original": "https://drive.google.com/file/d/1CcYArZQWIHaec6iDo9b6PZrGRxJA81Pl/view",
     "note": "Lossless WebP conversion; original RGBA pixels preserved."
+  },
+  "platina-logtec": {
+    "website": "https://platinalogtec.com.br/",
+    "authorship": "Confirmed by Karen in the portfolio conversation.",
+    "note": "Text identification only; no official logo obtained because the current network blocks the website. No technology stack inferred."
   }
 }

@@ -698,6 +698,13 @@
       "linkLabel": "Visitar aplicação"
     },
     {
+      "name": "Platina Logtec",
+      "category": "frontend",
+      "description": "Site desenvolvido por mim para a Platina Logtec, disponível em platinalogtec.com.br.",
+      "url": "https://platinalogtec.com.br/",
+      "linkLabel": "Visitar site"
+    },
+    {
       "name": "StockMaster",
       "category": "fullstack",
       "description": "Gestão de estoque com React, FastAPI e PostgreSQL: saldo, transações, rollback e testes de API/E2E.",
