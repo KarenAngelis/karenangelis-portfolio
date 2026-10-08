@@ -705,6 +705,20 @@
       "linkLabel": "Visitar site"
     },
     {
+      "name": "Quanta Aulas",
+      "category": "frontend",
+      "description": "Site de aulas particulares online, com apresentação do professor, matérias e recursos educacionais.",
+      "url": "https://quantaaulas.com/",
+      "linkLabel": "Visitar site"
+    },
+    {
+      "name": "Isidoro Preparatório",
+      "category": "fullstack",
+      "description": "Plataforma de cursos de Matemática e Exatas, com videoaulas, exercícios e área do aluno.",
+      "url": "https://isidoropreparatorio.com.br/",
+      "linkLabel": "Visitar site"
+    },
+    {
       "name": "StockMaster",
       "category": "fullstack",
       "description": "Gestão de estoque com React, FastAPI e PostgreSQL: saldo, transações, rollback e testes de API/E2E.",

@@ -11,5 +11,15 @@
     "website": "https://platinalogtec.com.br/",
     "authorship": "Confirmed by Karen in the portfolio conversation.",
     "note": "Text identification only; no official logo obtained because the current network blocks the website. No technology stack inferred."
+  },
+  "quanta-aulas": {
+    "website": "https://quantaaulas.com/",
+    "note": "Text identification; site content verified via web. Current local network blocks the website."
+  },
+  "isidoro-preparatorio": {
+    "website": "https://isidoropreparatorio.com.br/",
+    "original": "https://isidoropreparatorio.com.br/ico.png",
+    "local": "web/assets/companies/quanta.png",
+    "note": "Existing official asset reused; current site header uses ico.png."
   }
 }

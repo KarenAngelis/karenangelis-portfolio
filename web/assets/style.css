@@ -16,3 +16,10 @@
 .platina-card .site-visual{background:radial-gradient(ellipse at bottom,#35423b,#18201c 75%)}
 .platina-card .project-name{font-family:Manrope,sans-serif;font-size:clamp(34px,3.5vw,48px);line-height:1.12;letter-spacing:-2px;text-align:center;color:var(--text)}
 @media(min-width:1100px){.sites-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.sites-grid .site-info{padding:22px 18px;gap:12px}.sites-grid .site-info h3{font-size:23px}.sites-grid .site-info .eyebrow{font-size:8px;letter-spacing:1px}}
+
+.quanta-card .site-visual{background:radial-gradient(ellipse at bottom,#243854,#111c2d 75%)}
+.quanta-card .project-name{font-family:Manrope,sans-serif;font-size:clamp(34px,3.5vw,48px);line-height:1.12;letter-spacing:-2px;text-align:center;color:var(--text)}
+.isidoro-card .site-visual{background:radial-gradient(ellipse at bottom,#35301b,#171a14 75%)}
+.site-visual .isidoro-brand{width:190px;height:190px;max-width:70%;max-height:75%}
+@media(min-width:1100px){.sites-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.sites-grid .site-card{grid-column:span 2}.sites-grid .site-card:nth-child(4){grid-column:2/span 2}.sites-grid .site-card:nth-child(5){grid-column:4/span 2}.isidoro-card .site-info h3{font-size:20px}}
+@media(min-width:561px) and (max-width:1099px){.sites-grid .site-card:last-child{grid-column:1/-1;justify-self:center;width:calc((100% - 22px)/2)}}
