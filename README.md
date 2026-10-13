@@ -24,6 +24,24 @@ infra/                Caddy e imagens Docker para a VPS
 compose.yaml          Serviços da publicação
 ```
 
+## Recursos para quem lê código
+
+A página inicial foi pensada para desenvolvedores: além de testar, dá para inspecionar.
+
+- **Terminal do topo** (`web/assets/terminal.js`): comandos reais sobre `profile.json` e as APIs (`help`, `skills fastapi`, `curl /api/profile`, `cat main.go`).
+- **Console de API** (`web/assets/api-console.js`, `api.js`): envia requisições a `/api/news`, `/api/profile` e `/openapi.json` e mostra status, tempo, tamanho, cabeçalhos, corpo e o `curl` equivalente. No PC usa a API local quando ela está ligada; senão, a API publicada.
+- **Visualizador de código** (`web/assets/code-viewer.js`): os botões "Ver código" e as abas "Testar | Código" mostram os arquivos reais do projeto, empacotados em `web/data/sources.json`. O repositório pode continuar privado.
+- **Arquitetura e sinais** (`web/assets/architecture.js`): decisões e trade-offs de cada peça, contagem de testes tirada do repositório e tempos medidos no navegador de quem visita.
+- **Evidências** (`web/data/evidence.json`): liga competências a arquivos em repositórios públicos ou ao visualizador, e projetos aos selos de CI do GitHub.
+
+Depois de alterar qualquer arquivo listado em `scripts/sources.mjs`, atualize o pacote de código:
+
+```powershell
+npm run sources
+```
+
+`npm run check` falha quando `sources.json` está diferente do código-fonte. Textos novos da página precisam de entrada em `web/data/translations.json` para os outros três idiomas.
+
 ## Rodar no PC
 
 Requisitos: Node.js 22+ e Python 3.12+. Go 1.26 para o serviço de currículo; JDK 21 e Gradle 8.14.3 para compilar Kotlin/JS.
@@ -92,6 +110,19 @@ Os blocos visuais de Luniay/Clycka são composições gráficas do portfólio, n
 
 ## Aplicativo compartilhado Android + Web
 
+O app tem cinco abas (Início, Habilidades, Experiência, Projetos, Contato) em `ResumeApp.kt`. Na web ele é instalável: `web/app/` traz manifesto, ícones, tela de abertura (`shell.js`, `shell.css`) e um service worker (`sw.js`) que permite abrir o currículo sem rede depois da primeira visita. Os mesmos arquivos ficam em `apps/resume-compose/shared/src/wasmJsMain/resources/`; mantenha as duas cópias iguais.
+
+Para recompilar a versão web (JDK 17, Gradle 8.14.3 e Android SDK 35) e publicar em `web/app/`:
+
+```sh
+gradle -p apps/resume-compose :shared:wasmJsBrowserDistribution
+rm web/app/*.wasm
+cp apps/resume-compose/shared/build/dist/wasmJs/productionExecutable/{*.wasm,resume-app.js,resume-app.js.map,resume-app.js.LICENSE.txt} web/app/
+npm run sources
+```
+
+A aba em segundo plano pausa o desenho do Compose; teste com a aba visível.
+
 `apps/resume-compose/shared` contém `ResumeApp()` e a camada de dados compartilhada. A Activity Android e o ponto de entrada WebAssembly chamam essa mesma função. O workflow `resume-multiplatform.yml` compila os dois alvos juntos.
 
 ```powershell
@@ -99,3 +130,16 @@ gradle -p apps/resume-android :shared:wasmJsBrowserDistribution :app:assemblePor
 ```
 
 O pacote web compilado fica em `apps/resume-compose/shared/build/dist/wasmJs/productionExecutable`. Publique os arquivos em `web/app/`. O currículo incluído no build permite usar a interface quando a API está indisponível; o botão Atualizar consulta a API Go.
+
+## Painel de visitas
+
+`apps/stats-api/` (FastAPI + SQLite) conta visitas e cliques sem cookies. O servidor guarda só totais por dia (`dia, tipo, chave, total`); IP e navegador não são gravados. `web/assets/track.js` envia os eventos e respeita Do Not Track. O painel público fica em `/painel/`, e os mesmos totais estão em `/api/stats/summary`. Os dados ficam no volume `stats_data`.
+
+No PC:
+
+```powershell
+$env:STATS_DB = "apps/stats-api/stats.sqlite3"
+.venv/Scripts/python.exe -m uvicorn main:app --app-dir apps/stats-api --host 127.0.0.1 --port 8001
+```
+
+Depois abra http://localhost:4173/painel/. Testes: `cd apps/stats-api; ../../.venv/Scripts/python.exe -m unittest -v`.

@@ -16,6 +16,7 @@ services:
     depends_on:
       - trends-api
       - resume-api
+      - stats-api
   trends-api:
     build:
       context: .
@@ -26,6 +27,14 @@ services:
       context: .
       dockerfile: apps/resume-api/Dockerfile
     restart: unless-stopped
+  stats-api:
+    build:
+      context: .
+      dockerfile: apps/stats-api/Dockerfile
+    restart: unless-stopped
+    volumes:
+      - stats_data:/data
 volumes:
+  stats_data:
   caddy_data:
   caddy_config:

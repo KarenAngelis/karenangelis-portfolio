@@ -6,14 +6,22 @@ export function link(text,url){
   const node=element('a',text,'text-link');node.href=new URL(url,new URL('../',import.meta.url));
   if(!url.startsWith('/#')){node.target='_blank';node.rel='noopener noreferrer';}return node;
 }
-export function renderGroups(container,groups,{query='',area='all'}={}){
+// Competência com evidência vira link para o repositório ou abre o arquivo no visualizador de código.
+function skillBadge(item,evidence){
+  const proof=evidence?.skills[item];if(!proof)return element('span',item);
+  const badge=element(proof.code?'button':'a',item,'evidence');badge.title='Ver onde usei no código';
+  if(proof.code){badge.type='button';badge.dataset.code=proof.code;if(proof.file)badge.dataset.file=proof.file;}
+  else{badge.href=evidence.repository+proof.url;badge.target='_blank';badge.rel='noopener noreferrer';}
+  return badge;
+}
+export function renderGroups(container,groups,{query='',area='all',evidence=null}={}){
   container.replaceChildren();const needle=query.trim().toLocaleLowerCase(locale);
   const selected=groups.filter(g=>(area==='all'||g.id===area)&&(!needle||[g.title,g.description,g.example,...g.items].flatMap(text=>[text,t(text)]).join(' ').toLocaleLowerCase(locale).includes(needle)));
   for(const group of selected){
     const card=element('details','','skill-card');if(needle)card.open=true;
     const summary=element('summary');summary.append(element('span',group.title),element('small',`${group.items.length} competências`));
     const body=element('div','','skill-body');body.append(element('p',group.description));
-    const badges=element('div','','skills');for(const item of group.items)badges.append(element('span',item));
+    const badges=element('div','','skills');for(const item of group.items)badges.append(skillBadge(item,evidence));
     body.append(badges,element('p',group.example,'skill-example'),link(group.demoLabel,group.demoUrl));card.append(summary,body);container.append(card);
   }
   if(!selected.length)container.append(element('p','Nenhuma área encontrada. Tente outro termo.','status'));

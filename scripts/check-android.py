@@ -54,12 +54,14 @@ else:
     raise AssertionError("Native app did not refresh its profile from the Go API")
 root = snapshot()
 assert not any(node.get("text", "").startswith("Currículo atualizado") or node.get("text") == "Vamos conversar" for node in root.iter("node"))
-for label in ("Habilidades", "Experiência", "Formação", "Idiomas", "Projetos", "Contato"):
+# Barra inferior (Início, Habilidades, Experiência, Projetos, Contato) e atalhos da tela inicial (Formação, Idiomas).
+for label in ("Início", "Habilidades", "Experiência", "Projetos", "Contato", "Formação", "Idiomas"):
     find(label)
 adb("shell", "screencap", "-p", "/sdcard/karen-native.png")
 adb("pull", "/sdcard/karen-native.png", str(out/"android-native.png"))
 tap("Experiência")
 find("WEG · IEL / Inova Talentos")
+tap("Início")
 tap("Formação")
 find("Análise e Desenvolvimento de Sistemas")
 root = snapshot()

@@ -1,3 +1,9 @@
+{
+    # Atrás do Caddy da VPS, confia no IP informado por proxies de rede privada (usado para limitar abuso nas estatísticas).
+    servers {
+        trusted_proxies static private_ranges
+    }
+}
 {$PORTFOLIO_DOMAIN} {
     encode zstd gzip
     @legacyResume path /demos/kotlin /demos/kotlin/
@@ -7,6 +13,9 @@
     @trends path /api/trends /api/news /docs /openapi.json
     handle @trends {
         reverse_proxy trends-api:8000
+    }
+    handle /api/stats/* {
+        reverse_proxy stats-api:8001
     }
     handle /api/profile {
         reverse_proxy resume-api:8080

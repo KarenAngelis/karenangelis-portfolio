@@ -4338,5 +4338,1015 @@
     "en-US": "Try the Kotlin + Go version",
     "it-IT": "Prova la versione Kotlin + Go",
     "pt-PT": "Experimentar a versão Kotlin + Go"
+  },
+  "Console": {
+    "en-US": "Console",
+    "it-IT": "Console",
+    "pt-PT": "Consola"
+  },
+  "Arquitetura": {
+    "en-US": "Architecture",
+    "it-IT": "Architettura",
+    "pt-PT": "Arquitetura"
+  },
+  "ou faça uma requisição real": {
+    "en-US": "or send a real request",
+    "it-IT": "oppure invia una richiesta reale",
+    "pt-PT": "ou faça um pedido real"
+  },
+  "Este terminal funciona. Digite help ou toque em um comando.": {
+    "en-US": "This terminal works. Type help or tap a command.",
+    "it-IT": "Questo terminale funziona. Digita help o tocca un comando.",
+    "pt-PT": "Este terminal funciona. Escreva help ou toque num comando."
+  },
+  "Saída do terminal": {
+    "en-US": "Terminal output",
+    "it-IT": "Output del terminale",
+    "pt-PT": "Saída do terminal"
+  },
+  "Comando do terminal": {
+    "en-US": "Terminal command",
+    "it-IT": "Comando del terminale",
+    "pt-PT": "Comando do terminal"
+  },
+  "Comandos sugeridos": {
+    "en-US": "Suggested commands",
+    "it-IT": "Comandi suggeriti",
+    "pt-PT": "Comandos sugeridos"
+  },
+  "lista os comandos": {
+    "en-US": "lists the commands",
+    "it-IT": "elenca i comandi",
+    "pt-PT": "lista os comandos"
+  },
+  "quem está por trás do código": {
+    "en-US": "who is behind the code",
+    "it-IT": "chi c’è dietro il codice",
+    "pt-PT": "quem está por trás do código"
+  },
+  "áreas e competências": {
+    "en-US": "areas and skills",
+    "it-IT": "aree e competenze",
+    "pt-PT": "áreas e competências"
+  },
+  "projetos e onde ver cada um": {
+    "en-US": "projects and where to see each one",
+    "it-IT": "progetti e dove vederli",
+    "pt-PT": "projetos e onde ver cada um"
+  },
+  "requisição real às minhas APIs": {
+    "en-US": "real request to my APIs",
+    "it-IT": "richiesta reale alle mie API",
+    "pt-PT": "pedido real às minhas APIs"
+  },
+  "código-fonte disponível nesta página": {
+    "en-US": "source code available on this page",
+    "it-IT": "codice sorgente disponibile in questa pagina",
+    "pt-PT": "código-fonte disponível nesta página"
+  },
+  "abre um arquivo no visualizador de código": {
+    "en-US": "opens a file in the code viewer",
+    "it-IT": "apre un file nel visualizzatore di codice",
+    "pt-PT": "abre um ficheiro no visualizador de código"
+  },
+  "testes automatizados deste repositório": {
+    "en-US": "automated tests in this repository",
+    "it-IT": "test automatici di questo repository",
+    "pt-PT": "testes automatizados deste repositório"
+  },
+  "como este site foi feito": {
+    "en-US": "how this site was built",
+    "it-IT": "come è stato fatto questo sito",
+    "pt-PT": "como este site foi feito"
+  },
+  "abre uma demonstração ou um contato": {
+    "en-US": "opens a demo or a contact link",
+    "it-IT": "apre una demo o un contatto",
+    "pt-PT": "abre uma demonstração ou um contacto"
+  },
+  "troca o idioma da página": {
+    "en-US": "switches the page language",
+    "it-IT": "cambia la lingua della pagina",
+    "pt-PT": "muda o idioma da página"
+  },
+  "como falar comigo": {
+    "en-US": "how to reach me",
+    "it-IT": "come contattarmi",
+    "pt-PT": "como falar comigo"
+  },
+  "comandos já digitados": {
+    "en-US": "commands typed so far",
+    "it-IT": "comandi già digitati",
+    "pt-PT": "comandos já escritos"
+  },
+  "limpa a tela": {
+    "en-US": "clears the screen",
+    "it-IT": "pulisce lo schermo",
+    "pt-PT": "limpa o ecrã"
+  },
+  "Filtre por termo. Exemplo:": {
+    "en-US": "Filter by term. Example:",
+    "it-IT": "Filtra per termine. Esempio:",
+    "pt-PT": "Filtre por termo. Exemplo:"
+  },
+  "Nenhuma competência com esse termo.": {
+    "en-US": "No skill matches that term.",
+    "it-IT": "Nessuna competenza con questo termine.",
+    "pt-PT": "Nenhuma competência com esse termo."
+  },
+  "Abrir o repertório completo": {
+    "en-US": "Open the full skill set",
+    "it-IT": "Apri tutte le competenze",
+    "pt-PT": "Abrir o repertório completo"
+  },
+  "Rota fora deste portfólio. Rotas disponíveis:": {
+    "en-US": "That route is not part of this portfolio. Available routes:",
+    "it-IT": "Questa rotta non fa parte del portfolio. Rotte disponibili:",
+    "pt-PT": "Rota fora deste portefólio. Rotas disponíveis:"
+  },
+  "Resposta cortada aqui.": {
+    "en-US": "Response trimmed here.",
+    "it-IT": "Risposta tagliata qui.",
+    "pt-PT": "Resposta cortada aqui."
+  },
+  "Ver completa no console de API": {
+    "en-US": "See all of it in the API console",
+    "it-IT": "Vedila completa nella console API",
+    "pt-PT": "Ver completa na consola de API"
+  },
+  "Abra um arquivo. Exemplo:": {
+    "en-US": "Open a file. Example:",
+    "it-IT": "Apri un file. Esempio:",
+    "pt-PT": "Abra um ficheiro. Exemplo:"
+  },
+  "Arquivo não encontrado. Use ls para ver a lista.": {
+    "en-US": "File not found. Use ls to see the list.",
+    "it-IT": "File non trovato. Usa ls per vedere l’elenco.",
+    "pt-PT": "Ficheiro não encontrado. Use ls para ver a lista."
+  },
+  "Aberto no visualizador de código.": {
+    "en-US": "Opened in the code viewer.",
+    "it-IT": "Aperto nel visualizzatore di codice.",
+    "pt-PT": "Aberto no visualizador de código."
+  },
+  "testes da API FastAPI": {
+    "en-US": "tests for the FastAPI service",
+    "it-IT": "test dell’API FastAPI",
+    "pt-PT": "testes da API FastAPI"
+  },
+  "teste de contrato da API Go": {
+    "en-US": "contract test for the Go API",
+    "it-IT": "test di contratto dell’API Go",
+    "pt-PT": "teste de contrato da API Go"
+  },
+  "Rodam no GitHub Actions a cada push.": {
+    "en-US": "They run on GitHub Actions on every push.",
+    "it-IT": "Girano su GitHub Actions a ogni push.",
+    "pt-PT": "Correm no GitHub Actions a cada push."
+  },
+  "HTML, CSS e módulos ES, sem framework": {
+    "en-US": "HTML, CSS and ES modules, no framework",
+    "it-IT": "HTML, CSS e moduli ES, senza framework",
+    "pt-PT": "HTML, CSS e módulos ES, sem framework"
+  },
+  "Kotlin e Compose Multiplatform em WebAssembly": {
+    "en-US": "Kotlin and Compose Multiplatform on WebAssembly",
+    "it-IT": "Kotlin e Compose Multiplatform in WebAssembly",
+    "pt-PT": "Kotlin e Compose Multiplatform em WebAssembly"
+  },
+  "FastAPI para notícias e Go para o currículo": {
+    "en-US": "FastAPI for news and Go for the résumé",
+    "it-IT": "FastAPI per le notizie e Go per il curriculum",
+    "pt-PT": "FastAPI para notícias e Go para o currículo"
+  },
+  "Caddy, Docker Compose e GitHub Actions em uma VPS": {
+    "en-US": "Caddy, Docker Compose and GitHub Actions on one VPS",
+    "it-IT": "Caddy, Docker Compose e GitHub Actions su una VPS",
+    "pt-PT": "Caddy, Docker Compose e GitHub Actions numa VPS"
+  },
+  "Ver a arquitetura e as decisões": {
+    "en-US": "See the architecture and the decisions",
+    "it-IT": "Vedi l’architettura e le decisioni",
+    "pt-PT": "Ver a arquitetura e as decisões"
+  },
+  "Abrindo:": {
+    "en-US": "Opening:",
+    "it-IT": "Apertura:",
+    "pt-PT": "A abrir:"
+  },
+  "Idioma alterado.": {
+    "en-US": "Language changed.",
+    "it-IT": "Lingua cambiata.",
+    "pt-PT": "Idioma alterado."
+  },
+  "Aqui não precisa de sudo: é só chamar.": {
+    "en-US": "No sudo needed here: just get in touch.",
+    "it-IT": "Qui non serve sudo: basta scrivermi.",
+    "pt-PT": "Aqui não é preciso sudo: basta chamar."
+  },
+  "Comando não encontrado.": {
+    "en-US": "Command not found.",
+    "it-IT": "Comando non trovato.",
+    "pt-PT": "Comando não encontrado."
+  },
+  "Digite help para ver a lista.": {
+    "en-US": "Type help to see the list.",
+    "it-IT": "Digita help per vedere l’elenco.",
+    "pt-PT": "Escreva help para ver a lista."
+  },
+  "Não foi possível concluir agora. Tente novamente.": {
+    "en-US": "That could not be completed right now. Try again.",
+    "it-IT": "Non è stato possibile completare ora. Riprova.",
+    "pt-PT": "Não foi possível concluir agora. Tente novamente."
+  },
+  "Currículo em app": {
+    "en-US": "Résumé as an app",
+    "it-IT": "Curriculum in forma di app",
+    "pt-PT": "Currículo em app"
+  },
+  "Busca de notícias": {
+    "en-US": "News search",
+    "it-IT": "Ricerca di notizie",
+    "pt-PT": "Pesquisa de notícias"
+  },
+  "Console de API": {
+    "en-US": "API console",
+    "it-IT": "Console API",
+    "pt-PT": "Consola de API"
+  },
+  "Como este site foi feito": {
+    "en-US": "How this site was built",
+    "it-IT": "Come è stato fatto questo sito",
+    "pt-PT": "Como este site foi feito"
+  },
+  "Ver código do app": {
+    "en-US": "View the app code",
+    "it-IT": "Vedi il codice dell’app",
+    "pt-PT": "Ver código da app"
+  },
+  "Ver código da API Go": {
+    "en-US": "View the Go API code",
+    "it-IT": "Vedi il codice dell’API Go",
+    "pt-PT": "Ver código da API Go"
+  },
+  "Ver código da API": {
+    "en-US": "View the API code",
+    "it-IT": "Vedi il codice dell’API",
+    "pt-PT": "Ver código da API"
+  },
+  "Testar no console": {
+    "en-US": "Try it in the console",
+    "it-IT": "Provala nella console",
+    "pt-PT": "Testar na consola"
+  },
+  "Demonstração ou código": {
+    "en-US": "Demo or code",
+    "it-IT": "Demo o codice",
+    "pt-PT": "Demonstração ou código"
+  },
+  "Testar": {
+    "en-US": "Try it",
+    "it-IT": "Prova",
+    "pt-PT": "Testar"
+  },
+  "Código": {
+    "en-US": "Code",
+    "it-IT": "Codice",
+    "pt-PT": "Código"
+  },
+  "Copiar": {
+    "en-US": "Copy",
+    "it-IT": "Copia",
+    "pt-PT": "Copiar"
+  },
+  "Copiado": {
+    "en-US": "Copied",
+    "it-IT": "Copiato",
+    "pt-PT": "Copiado"
+  },
+  "Selecione o código para copiar": {
+    "en-US": "Select the code to copy it",
+    "it-IT": "Seleziona il codice per copiarlo",
+    "pt-PT": "Selecione o código para copiar"
+  },
+  "linhas": {
+    "en-US": "lines",
+    "it-IT": "righe",
+    "pt-PT": "linhas"
+  },
+  "Arquivos": {
+    "en-US": "Files",
+    "it-IT": "File",
+    "pt-PT": "Ficheiros"
+  },
+  "Código-fonte": {
+    "en-US": "Source code",
+    "it-IT": "Codice sorgente",
+    "pt-PT": "Código-fonte"
+  },
+  "CÓDIGO REAL DESTE SITE": {
+    "en-US": "REAL CODE FROM THIS SITE",
+    "it-IT": "CODICE REALE DI QUESTO SITO",
+    "pt-PT": "CÓDIGO REAL DESTE SITE"
+  },
+  "Fechar código": {
+    "en-US": "Close code",
+    "it-IT": "Chiudi il codice",
+    "pt-PT": "Fechar código"
+  },
+  "Código indisponível": {
+    "en-US": "Code unavailable",
+    "it-IT": "Codice non disponibile",
+    "pt-PT": "Código indisponível"
+  },
+  "Não foi possível carregar o código.": {
+    "en-US": "The code could not be loaded.",
+    "it-IT": "Non è stato possibile caricare il codice.",
+    "pt-PT": "Não foi possível carregar o código."
+  },
+  "API do currículo": {
+    "en-US": "Résumé API",
+    "it-IT": "API del curriculum",
+    "pt-PT": "API do currículo"
+  },
+  "API de notícias": {
+    "en-US": "News API",
+    "it-IT": "API delle notizie",
+    "pt-PT": "API de notícias"
+  },
+  "Quadro de tarefas": {
+    "en-US": "Task board",
+    "it-IT": "Bacheca delle attività",
+    "pt-PT": "Quadro de tarefas"
+  },
+  "Terminal do topo": {
+    "en-US": "Hero terminal",
+    "it-IT": "Terminale in alto",
+    "pt-PT": "Terminal do topo"
+  },
+  "Este visualizador de código": {
+    "en-US": "This code viewer",
+    "it-IT": "Questo visualizzatore di codice",
+    "pt-PT": "Este visualizador de código"
+  },
+  "Idiomas da página": {
+    "en-US": "Page languages",
+    "it-IT": "Lingue della pagina",
+    "pt-PT": "Idiomas da página"
+  },
+  "Entrega e infraestrutura": {
+    "en-US": "Delivery and infrastructure",
+    "it-IT": "Consegna e infrastruttura",
+    "pt-PT": "Entrega e infraestrutura"
+  },
+  "CONSOLE DE API / EM PRODUÇÃO": {
+    "en-US": "API CONSOLE / IN PRODUCTION",
+    "it-IT": "CONSOLE API / IN PRODUZIONE",
+    "pt-PT": "CONSOLA DE API / EM PRODUÇÃO"
+  },
+  "Não acredite.": {
+    "en-US": "Don’t take my word.",
+    "it-IT": "Non fidarti.",
+    "pt-PT": "Não acredite."
+  },
+  "Faça a requisição.": {
+    "en-US": "Send the request.",
+    "it-IT": "Invia la richiesta.",
+    "pt-PT": "Faça o pedido."
+  },
+  "APIs reais, respondendo agora.": {
+    "en-US": "Real APIs, answering right now.",
+    "it-IT": "API reali, che rispondono adesso.",
+    "pt-PT": "APIs reais, a responder agora."
+  },
+  "Edite os parâmetros, envie e leia a resposta.": {
+    "en-US": "Edit the parameters, send and read the response.",
+    "it-IT": "Modifica i parametri, invia e leggi la risposta.",
+    "pt-PT": "Edite os parâmetros, envie e leia a resposta."
+  },
+  "Escolher rota": {
+    "en-US": "Choose a route",
+    "it-IT": "Scegli la rotta",
+    "pt-PT": "Escolher rota"
+  },
+  "FastAPI · notícias por assunto": {
+    "en-US": "FastAPI · news by topic",
+    "it-IT": "FastAPI · notizie per argomento",
+    "pt-PT": "FastAPI · notícias por assunto"
+  },
+  "Go · currículo em JSON": {
+    "en-US": "Go · résumé as JSON",
+    "it-IT": "Go · curriculum in JSON",
+    "pt-PT": "Go · currículo em JSON"
+  },
+  "Contrato gerado pelo FastAPI": {
+    "en-US": "Contract generated by FastAPI",
+    "it-IT": "Contratto generato da FastAPI",
+    "pt-PT": "Contrato gerado pelo FastAPI"
+  },
+  "Enviar requisição": {
+    "en-US": "Send request",
+    "it-IT": "Invia richiesta",
+    "pt-PT": "Enviar pedido"
+  },
+  "Ver código desta rota": {
+    "en-US": "View the code for this route",
+    "it-IT": "Vedi il codice di questa rotta",
+    "pt-PT": "Ver código desta rota"
+  },
+  "Tente quebrar:": {
+    "en-US": "Try to break it:",
+    "it-IT": "Prova a romperla:",
+    "pt-PT": "Tente partir:"
+  },
+  "assunto em branco": {
+    "en-US": "blank topic",
+    "it-IT": "argomento vuoto",
+    "pt-PT": "assunto em branco"
+  },
+  "POST em rota só de leitura": {
+    "en-US": "POST to a read-only route",
+    "it-IT": "POST su una rotta di sola lettura",
+    "pt-PT": "POST numa rota só de leitura"
+  },
+  "Envie a mesma busca duas vezes: a segunda resposta sai do cache da API.": {
+    "en-US": "Send the same search twice: the second response comes from the API cache.",
+    "it-IT": "Invia la stessa ricerca due volte: la seconda risposta arriva dalla cache dell’API.",
+    "pt-PT": "Envie a mesma pesquisa duas vezes: a segunda resposta sai da cache da API."
+  },
+  "Envie uma requisição para ver a resposta.": {
+    "en-US": "Send a request to see the response.",
+    "it-IT": "Invia una richiesta per vedere la risposta.",
+    "pt-PT": "Envie um pedido para ver a resposta."
+  },
+  "Copiar curl": {
+    "en-US": "Copy curl",
+    "it-IT": "Copia curl",
+    "pt-PT": "Copiar curl"
+  },
+  "Corpo da resposta": {
+    "en-US": "Response body",
+    "it-IT": "Corpo della risposta",
+    "pt-PT": "Corpo da resposta"
+  },
+  "Enviando…": {
+    "en-US": "Sending…",
+    "it-IT": "Invio…",
+    "pt-PT": "A enviar…"
+  },
+  "Resposta recebida.": {
+    "en-US": "Response received.",
+    "it-IT": "Risposta ricevuta.",
+    "pt-PT": "Resposta recebida."
+  },
+  "A API recusou a requisição e explicou o motivo.": {
+    "en-US": "The API rejected the request and explained why.",
+    "it-IT": "L’API ha rifiutato la richiesta e ha spiegato il motivo.",
+    "pt-PT": "A API recusou o pedido e explicou o motivo."
+  },
+  "A API respondeu com erro.": {
+    "en-US": "The API answered with an error.",
+    "it-IT": "L’API ha risposto con un errore.",
+    "pt-PT": "A API respondeu com erro."
+  },
+  "API local desligada: esta resposta veio da API publicada.": {
+    "en-US": "Local API is off: this response came from the published API.",
+    "it-IT": "API locale spenta: questa risposta arriva dall’API pubblicata.",
+    "pt-PT": "API local desligada: esta resposta veio da API publicada."
+  },
+  "A API demorou mais que o esperado. Tente novamente.": {
+    "en-US": "The API took longer than expected. Try again.",
+    "it-IT": "L’API ha impiegato più del previsto. Riprova.",
+    "pt-PT": "A API demorou mais do que o esperado. Tente novamente."
+  },
+  "Não foi possível falar com a API agora.": {
+    "en-US": "The API could not be reached right now.",
+    "it-IT": "Non è stato possibile contattare l’API ora.",
+    "pt-PT": "Não foi possível falar com a API agora."
+  },
+  "Selecione o comando para copiar": {
+    "en-US": "Select the command to copy it",
+    "it-IT": "Seleziona il comando per copiarlo",
+    "pt-PT": "Selecione o comando para copiar"
+  },
+  "Status": {
+    "en-US": "Status",
+    "it-IT": "Stato",
+    "pt-PT": "Estado"
+  },
+  "Tempo": {
+    "en-US": "Time",
+    "it-IT": "Tempo",
+    "pt-PT": "Tempo"
+  },
+  "Tamanho": {
+    "en-US": "Size",
+    "it-IT": "Dimensione",
+    "pt-PT": "Tamanho"
+  },
+  "Serviço": {
+    "en-US": "Service",
+    "it-IT": "Servizio",
+    "pt-PT": "Serviço"
+  },
+  "Cache da API": {
+    "en-US": "API cache",
+    "it-IT": "Cache dell’API",
+    "pt-PT": "Cache da API"
+  },
+  "BASTIDORES / COMO ESTE SITE FOI FEITO": {
+    "en-US": "BEHIND THE SCENES / HOW THIS SITE WAS BUILT",
+    "it-IT": "DIETRO LE QUINTE / COME È STATO FATTO QUESTO SITO",
+    "pt-PT": "BASTIDORES / COMO ESTE SITE FOI FEITO"
+  },
+  "Cada peça": {
+    "en-US": "Every piece",
+    "it-IT": "Ogni pezzo",
+    "pt-PT": "Cada peça"
+  },
+  "tem um porquê.": {
+    "en-US": "has a reason.",
+    "it-IT": "ha un perché.",
+    "pt-PT": "tem um porquê."
+  },
+  "Escolha uma peça e veja a decisão,": {
+    "en-US": "Pick a piece and see the decision,",
+    "it-IT": "Scegli un pezzo e guarda la decisione,",
+    "pt-PT": "Escolha uma peça e veja a decisão,"
+  },
+  "o que ela custa e o código.": {
+    "en-US": "what it costs and the code.",
+    "it-IT": "quanto costa e il codice.",
+    "pt-PT": "o que ela custa e o código."
+  },
+  "Peças da arquitetura": {
+    "en-US": "Architecture pieces",
+    "it-IT": "Pezzi dell’architettura",
+    "pt-PT": "Peças da arquitetura"
+  },
+  "NAVEGADOR": {
+    "en-US": "BROWSER",
+    "it-IT": "BROWSER",
+    "pt-PT": "NAVEGADOR"
+  },
+  "Site estático": {
+    "en-US": "Static site",
+    "it-IT": "Sito statico",
+    "pt-PT": "Site estático"
+  },
+  "HTML · CSS · módulos ES": {
+    "en-US": "HTML · CSS · ES modules",
+    "it-IT": "HTML · CSS · moduli ES",
+    "pt-PT": "HTML · CSS · módulos ES"
+  },
+  "BORDA": {
+    "en-US": "EDGE",
+    "it-IT": "EDGE",
+    "pt-PT": "BORDA"
+  },
+  "TLS · proxy · arquivos": {
+    "en-US": "TLS · proxy · files",
+    "it-IT": "TLS · proxy · file",
+    "pt-PT": "TLS · proxy · ficheiros"
+  },
+  "mesma origem": {
+    "en-US": "same origin",
+    "it-IT": "stessa origine",
+    "pt-PT": "mesma origem"
+  },
+  "App do currículo": {
+    "en-US": "Résumé app",
+    "it-IT": "App del curriculum",
+    "pt-PT": "App do currículo"
+  },
+  "DADOS": {
+    "en-US": "DATA",
+    "it-IT": "DATI",
+    "pt-PT": "DADOS"
+  },
+  "uma fonte, três consumidores": {
+    "en-US": "one source, three consumers",
+    "it-IT": "una fonte, tre consumatori",
+    "pt-PT": "uma fonte, três consumidores"
+  },
+  "ENTREGA": {
+    "en-US": "DELIVERY",
+    "it-IT": "CONSEGNA",
+    "pt-PT": "ENTREGA"
+  },
+  "CI e deploy": {
+    "en-US": "CI and deploy",
+    "it-IT": "CI e deploy",
+    "pt-PT": "CI e deploy"
+  },
+  "O que é": {
+    "en-US": "What it is",
+    "it-IT": "Che cos’è",
+    "pt-PT": "O que é"
+  },
+  "Por que assim": {
+    "en-US": "Why this way",
+    "it-IT": "Perché così",
+    "pt-PT": "Porquê assim"
+  },
+  "O que isso custa": {
+    "en-US": "What it costs",
+    "it-IT": "Quanto costa",
+    "pt-PT": "O que isso custa"
+  },
+  "Ver o código desta peça": {
+    "en-US": "View the code for this piece",
+    "it-IT": "Vedi il codice di questo pezzo",
+    "pt-PT": "Ver o código desta peça"
+  },
+  "Site estático, sem framework": {
+    "en-US": "Static site, no framework",
+    "it-IT": "Sito statico, senza framework",
+    "pt-PT": "Site estático, sem framework"
+  },
+  "HTML, CSS e módulos ES nativos. Não há bundler nem etapa de build para a página.": {
+    "en-US": "HTML, CSS and native ES modules. There is no bundler and no build step for the page.",
+    "it-IT": "HTML, CSS e moduli ES nativi. Non c’è bundler né fase di build per la pagina.",
+    "pt-PT": "HTML, CSS e módulos ES nativos. Não há bundler nem etapa de build para a página."
+  },
+  "A página é conteúdo com pontos de interação. Um framework custaria mais para carregar do que entregaria aqui.": {
+    "en-US": "The page is content with a few interactive spots. A framework would cost more to load than it would give back here.",
+    "it-IT": "La pagina è contenuto con alcuni punti di interazione. Un framework costerebbe più da caricare di quanto darebbe qui.",
+    "pt-PT": "A página é conteúdo com pontos de interação. Um framework custaria mais a carregar do que entregaria aqui."
+  },
+  "O DOM é atualizado à mão e a troca de idioma usa um catálogo próprio. Em uma aplicação com muito estado eu usaria React ou Next.js.": {
+    "en-US": "The DOM is updated by hand and language switching uses my own catalog. For an application with a lot of state I would use React or Next.js.",
+    "it-IT": "Il DOM viene aggiornato a mano e il cambio lingua usa un catalogo mio. In un’applicazione con molto stato userei React o Next.js.",
+    "pt-PT": "O DOM é atualizado à mão e a mudança de idioma usa um catálogo próprio. Numa aplicação com muito estado eu usaria React ou Next.js."
+  },
+  "Caddy na borda": {
+    "en-US": "Caddy at the edge",
+    "it-IT": "Caddy all’edge",
+    "pt-PT": "Caddy na borda"
+  },
+  "O Caddy emite o certificado, serve os arquivos e encaminha /api/news para o FastAPI e /api/profile para o Go.": {
+    "en-US": "Caddy issues the certificate, serves the files and routes /api/news to FastAPI and /api/profile to Go.",
+    "it-IT": "Caddy emette il certificato, serve i file e inoltra /api/news a FastAPI e /api/profile a Go.",
+    "pt-PT": "O Caddy emite o certificado, serve os ficheiros e encaminha /api/news para o FastAPI e /api/profile para o Go."
+  },
+  "Uma única origem para site e APIs: sem CORS em produção e com os mesmos cabeçalhos de segurança em tudo.": {
+    "en-US": "A single origin for the site and the APIs: no CORS in production and the same security headers everywhere.",
+    "it-IT": "Un’unica origine per sito e API: niente CORS in produzione e gli stessi header di sicurezza ovunque.",
+    "pt-PT": "Uma única origem para site e APIs: sem CORS em produção e com os mesmos cabeçalhos de segurança em tudo."
+  },
+  "Tudo roda em uma VPS. É simples e barato de operar, mas não tem redundância.": {
+    "en-US": "Everything runs on one VPS. It is simple and cheap to operate, but it has no redundancy.",
+    "it-IT": "Tutto gira su una VPS. È semplice ed economico da gestire, ma non ha ridondanza.",
+    "pt-PT": "Tudo corre numa VPS. É simples e barato de operar, mas não tem redundância."
+  },
+  "Um app, duas plataformas": {
+    "en-US": "One app, two platforms",
+    "it-IT": "Un’app, due piattaforme",
+    "pt-PT": "Uma app, duas plataformas"
+  },
+  "Telas, navegação, busca e cliente da API escritos uma vez em Compose Multiplatform e compilados para Android e WebAssembly.": {
+    "en-US": "Screens, navigation, search and the API client written once in Compose Multiplatform and compiled for Android and WebAssembly.",
+    "it-IT": "Schermate, navigazione, ricerca e client dell’API scritti una volta in Compose Multiplatform e compilati per Android e WebAssembly.",
+    "pt-PT": "Ecrãs, navegação, pesquisa e cliente da API escritos uma vez em Compose Multiplatform e compilados para Android e WebAssembly."
+  },
+  "Mostrar o mesmo código rodando no celular e no navegador, sem recriar as telas em HTML.": {
+    "en-US": "To show the same code running on a phone and in the browser, without rebuilding the screens in HTML.",
+    "it-IT": "Mostrare lo stesso codice in esecuzione sul telefono e nel browser, senza ricreare le schermate in HTML.",
+    "pt-PT": "Mostrar o mesmo código a correr no telemóvel e no navegador, sem recriar os ecrãs em HTML."
+  },
+  "O WebAssembly pesa: por isso o app abre em outra aba e só é baixado quando alguém pede. Ele traz o currículo embutido e continua funcionando sem rede.": {
+    "en-US": "WebAssembly is heavy, so the app opens in another tab and is only downloaded when someone asks for it. It ships with the résumé bundled and keeps working offline.",
+    "it-IT": "WebAssembly pesa: per questo l’app si apre in un’altra scheda e viene scaricata solo quando qualcuno la chiede. Include il curriculum e continua a funzionare senza rete.",
+    "pt-PT": "O WebAssembly pesa: por isso a app abre noutro separador e só é descarregada quando alguém pede. Traz o currículo embutido e continua a funcionar sem rede."
+  },
+  "FastAPI para notícias": {
+    "en-US": "FastAPI for news",
+    "it-IT": "FastAPI per le notizie",
+    "pt-PT": "FastAPI para notícias"
+  },
+  "Consulta o RSS do Google Notícias e devolve JSON. Parâmetros fora do contrato recebem 422, e falha da fonte vira 502 com explicação.": {
+    "en-US": "It queries the Google News RSS feed and returns JSON. Parameters outside the contract get a 422, and a source failure becomes a 502 with an explanation.",
+    "it-IT": "Interroga l’RSS di Google News e restituisce JSON. I parametri fuori contratto ricevono 422, e un errore della fonte diventa un 502 con spiegazione.",
+    "pt-PT": "Consulta o RSS do Google Notícias e devolve JSON. Parâmetros fora do contrato recebem 422, e a falha da fonte passa a 502 com explicação."
+  },
+  "O contrato fica no próprio código: a validação e a documentação em /docs saem dos tipos.": {
+    "en-US": "The contract lives in the code itself: validation and the documentation at /docs come from the types.",
+    "it-IT": "Il contratto sta nel codice stesso: la validazione e la documentazione in /docs derivano dai tipi.",
+    "pt-PT": "O contrato fica no próprio código: a validação e a documentação em /docs saem dos tipos."
+  },
+  "O cache de 5 minutos fica na memória do processo. Com mais de uma instância eu trocaria por Redis.": {
+    "en-US": "The 5-minute cache lives in the process memory. With more than one instance I would switch to Redis.",
+    "it-IT": "La cache di 5 minuti sta nella memoria del processo. Con più di un’istanza passerei a Redis.",
+    "pt-PT": "A cache de 5 minutos fica na memória do processo. Com mais de uma instância eu trocaria por Redis."
+  },
+  "Go só com a biblioteca padrão": {
+    "en-US": "Go with the standard library only",
+    "it-IT": "Go solo con la libreria standard",
+    "pt-PT": "Go só com a biblioteca padrão"
+  },
+  "Lê o currículo ao iniciar e responde GET /api/profile, com lista de origens permitidas e tempos limite. A imagem final parte de scratch e roda sem privilégios.": {
+    "en-US": "It reads the résumé at startup and answers GET /api/profile, with an origin allowlist and timeouts. The final image starts from scratch and runs unprivileged.",
+    "it-IT": "Legge il curriculum all’avvio e risponde a GET /api/profile, con elenco di origini consentite e timeout. L’immagine finale parte da scratch e gira senza privilegi.",
+    "pt-PT": "Lê o currículo ao iniciar e responde a GET /api/profile, com lista de origens permitidas e tempos limite. A imagem final parte de scratch e corre sem privilégios."
+  },
+  "Go entrou como laboratório deste portfólio: um serviço pequeno é o lugar certo para aprender a linguagem com teste e deploy de verdade.": {
+    "en-US": "Go came in as this portfolio’s lab: a small service is the right place to learn the language with real tests and a real deploy.",
+    "it-IT": "Go è entrato come laboratorio di questo portfolio: un servizio piccolo è il posto giusto per imparare il linguaggio con test e deploy veri.",
+    "pt-PT": "O Go entrou como laboratório deste portefólio: um serviço pequeno é o lugar certo para aprender a linguagem com testes e deploy a sério."
+  },
+  "Mudar o currículo exige novo deploy. Em troca, não há banco de dados nem estado para manter.": {
+    "en-US": "Changing the résumé requires a new deploy. In return, there is no database and no state to maintain.",
+    "it-IT": "Cambiare il curriculum richiede un nuovo deploy. In cambio, non c’è database né stato da mantenere.",
+    "pt-PT": "Mudar o currículo exige novo deploy. Em troca, não há base de dados nem estado para manter."
+  },
+  "Uma fonte para três consumidores": {
+    "en-US": "One source for three consumers",
+    "it-IT": "Una fonte per tre consumatori",
+    "pt-PT": "Uma fonte para três consumidores"
+  },
+  "O mesmo profile.json alimenta o site, a API Go e o app Kotlin.": {
+    "en-US": "The same profile.json feeds the site, the Go API and the Kotlin app.",
+    "it-IT": "Lo stesso profile.json alimenta il sito, l’API Go e l’app Kotlin.",
+    "pt-PT": "O mesmo profile.json alimenta o site, a API Go e a app Kotlin."
+  },
+  "O currículo é corrigido em um lugar e aparece igual em todos.": {
+    "en-US": "The résumé is fixed in one place and shows up the same everywhere.",
+    "it-IT": "Il curriculum si corregge in un punto e appare uguale ovunque.",
+    "pt-PT": "O currículo é corrigido num lugar e aparece igual em todos."
+  },
+  "Mudar o formato afeta três leitores. O teste de contrato da API e a validação feita pelo app seguram essa mudança.": {
+    "en-US": "Changing the format affects three readers. The API contract test and the validation done by the app guard that change.",
+    "it-IT": "Cambiare il formato tocca tre lettori. Il test di contratto dell’API e la validazione fatta dall’app proteggono questo cambiamento.",
+    "pt-PT": "Mudar o formato afeta três leitores. O teste de contrato da API e a validação feita pela app seguram essa mudança."
+  },
+  "Verificação a cada push": {
+    "en-US": "Checks on every push",
+    "it-IT": "Verifica a ogni push",
+    "pt-PT": "Verificação a cada push"
+  },
+  "O GitHub Actions confere o site, roda os testes do FastAPI e do Go e compila o Kotlin. Outro fluxo gera o APK e testa em um emulador.": {
+    "en-US": "GitHub Actions checks the site, runs the FastAPI and Go tests and compiles the Kotlin code. Another workflow builds the APK and tests it on an emulator.",
+    "it-IT": "GitHub Actions controlla il sito, esegue i test di FastAPI e di Go e compila il Kotlin. Un altro flusso genera l’APK e lo prova su un emulatore.",
+    "pt-PT": "O GitHub Actions verifica o site, corre os testes do FastAPI e do Go e compila o Kotlin. Outro fluxo gera o APK e testa num emulador."
+  },
+  "Cada serviço é pequeno, mas todos leem os mesmos dados. A verificação automática avisa quando um quebra o outro.": {
+    "en-US": "Each service is small, but they all read the same data. Automated checks tell me when one breaks another.",
+    "it-IT": "Ogni servizio è piccolo, ma tutti leggono gli stessi dati. La verifica automatica avvisa quando uno rompe l’altro.",
+    "pt-PT": "Cada serviço é pequeno, mas todos leem os mesmos dados. A verificação automática avisa quando um parte o outro."
+  },
+  "A publicação na VPS ainda é acionada manualmente, com Docker Compose.": {
+    "en-US": "Publishing to the VPS is still triggered by hand, with Docker Compose.",
+    "it-IT": "La pubblicazione sulla VPS viene ancora avviata a mano, con Docker Compose.",
+    "pt-PT": "A publicação na VPS ainda é acionada manualmente, com Docker Compose."
+  },
+  "testes automatizados": {
+    "en-US": "automated tests",
+    "it-IT": "test automatici",
+    "pt-PT": "testes automatizados"
+  },
+  "FastAPI e Go, executados a cada push.": {
+    "en-US": "FastAPI and Go, run on every push.",
+    "it-IT": "FastAPI e Go, eseguiti a ogni push.",
+    "pt-PT": "FastAPI e Go, executados a cada push."
+  },
+  "Ver os testes": {
+    "en-US": "View the tests",
+    "it-IT": "Vedi i test",
+    "pt-PT": "Ver os testes"
+  },
+  "dependências npm no site": {
+    "en-US": "npm dependencies on the site",
+    "it-IT": "dipendenze npm nel sito",
+    "pt-PT": "dependências npm no site"
+  },
+  "Sem framework e sem bundler: o que você inspeciona é o que eu escrevi.": {
+    "en-US": "No framework and no bundler: what you inspect is what I wrote.",
+    "it-IT": "Senza framework e senza bundler: quello che ispezioni è quello che ho scritto.",
+    "pt-PT": "Sem framework e sem bundler: o que inspeciona é o que eu escrevi."
+  },
+  "Ver este visualizador": {
+    "en-US": "View this viewer",
+    "it-IT": "Vedi questo visualizzatore",
+    "pt-PT": "Ver este visualizador"
+  },
+  "até a página ficar interativa": {
+    "en-US": "until the page is interactive",
+    "it-IT": "prima che la pagina sia interattiva",
+    "pt-PT": "até a página ficar interativa"
+  },
+  "requisições e": {
+    "en-US": "requests and",
+    "it-IT": "richieste e",
+    "pt-PT": "pedidos e"
+  },
+  "kB nesta visita. Medido agora, no seu navegador.": {
+    "en-US": "kB on this visit. Measured just now, in your browser.",
+    "it-IT": "kB in questa visita. Misurato adesso, nel tuo browser.",
+    "pt-PT": "kB nesta visita. Medido agora, no seu navegador."
+  },
+  "idiomas, um catálogo": {
+    "en-US": "languages, one catalog",
+    "it-IT": "lingue, un catalogo",
+    "pt-PT": "idiomas, um catálogo"
+  },
+  "Português do Brasil e de Portugal, inglês e italiano, no site e no app.": {
+    "en-US": "Brazilian and European Portuguese, English and Italian, on the site and in the app.",
+    "it-IT": "Portoghese del Brasile e del Portogallo, inglese e italiano, nel sito e nell’app.",
+    "pt-PT": "Português do Brasil e de Portugal, inglês e italiano, no site e na app."
+  },
+  "Ver como funciona": {
+    "en-US": "See how it works",
+    "it-IT": "Vedi come funziona",
+    "pt-PT": "Ver como funciona"
+  },
+  "Competências sublinhadas abrem o código onde usei cada uma.": {
+    "en-US": "Underlined skills open the code where I used each one.",
+    "it-IT": "Le competenze sottolineate aprono il codice in cui le ho usate.",
+    "pt-PT": "As competências sublinhadas abrem o código onde usei cada uma."
+  },
+  "Ver onde usei no código": {
+    "en-US": "See where I used it in code",
+    "it-IT": "Vedi dove l’ho usata nel codice",
+    "pt-PT": "Ver onde usei no código"
+  },
+  "Testes de API e E2E": {
+    "en-US": "API and end-to-end tests",
+    "it-IT": "Test di API ed E2E",
+    "pt-PT": "Testes de API e E2E"
+  },
+  "Build do frontend": {
+    "en-US": "Frontend build",
+    "it-IT": "Build del frontend",
+    "pt-PT": "Build do frontend"
+  },
+  "Testes de segurança do backend": {
+    "en-US": "Backend security tests",
+    "it-IT": "Test di sicurezza del backend",
+    "pt-PT": "Testes de segurança do backend"
+  },
+  "Qualidade do frontend": {
+    "en-US": "Frontend quality",
+    "it-IT": "Qualità del frontend",
+    "pt-PT": "Qualidade do frontend"
+  },
+  "FREELANCE / PARA O SEU TIME": {
+    "en-US": "FREELANCE / FOR YOUR TEAM",
+    "it-IT": "FREELANCE / PER IL TUO TEAM",
+    "pt-PT": "FREELANCE / PARA A SUA EQUIPA"
+  },
+  "Entro no seu fluxo.": {
+    "en-US": "I fit into your workflow.",
+    "it-IT": "Entro nel tuo flusso.",
+    "pt-PT": "Entro no seu fluxo."
+  },
+  "Entrego com contexto.": {
+    "en-US": "I deliver with context.",
+    "it-IT": "Consegno con contesto.",
+    "pt-PT": "Entrego com contexto."
+  },
+  "Para devs e times que precisam de reforço.": {
+    "en-US": "For devs and teams that need extra hands.",
+    "it-IT": "Per dev e team che hanno bisogno di rinforzi.",
+    "pt-PT": "Para devs e equipas que precisam de reforço."
+  },
+  "O combinado fica claro desde o início.": {
+    "en-US": "What we agree on is clear from the start.",
+    "it-IT": "Gli accordi sono chiari fin dall’inizio.",
+    "pt-PT": "O combinado fica claro desde o início."
+  },
+  "Trabalho no seu repositório": {
+    "en-US": "I work in your repository",
+    "it-IT": "Lavoro nel tuo repository",
+    "pt-PT": "Trabalho no seu repositório"
+  },
+  "Branches, pull requests pequenos e revisão. Sigo o padrão de código e de commits que o time já usa.": {
+    "en-US": "Branches, small pull requests and review. I follow the code and commit conventions the team already uses.",
+    "it-IT": "Branch, pull request piccole e revisione. Seguo le convenzioni di codice e di commit che il team usa già.",
+    "pt-PT": "Branches, pull requests pequenos e revisão. Sigo o padrão de código e de commits que a equipa já usa."
+  },
+  "Entrego com teste": {
+    "en-US": "I ship with tests",
+    "it-IT": "Consegno con i test",
+    "pt-PT": "Entrego com testes"
+  },
+  "Regra de negócio sai com teste automatizado: pytest, Jest ou Playwright, conforme a stack do projeto.": {
+    "en-US": "Business rules ship with automated tests: pytest, Jest or Playwright, depending on the project’s stack.",
+    "it-IT": "Le regole di business escono con test automatici: pytest, Jest o Playwright, secondo lo stack del progetto.",
+    "pt-PT": "A regra de negócio sai com teste automatizado: pytest, Jest ou Playwright, conforme a stack do projeto."
+  },
+  "Documento a passagem": {
+    "en-US": "I document the handoff",
+    "it-IT": "Documento il passaggio",
+    "pt-PT": "Documento a passagem"
+  },
+  "README, contrato da API e o que ficou pendente. Quem assumir depois consegue continuar sem me chamar.": {
+    "en-US": "README, API contract and what is still pending. Whoever takes over can keep going without calling me.",
+    "it-IT": "README, contratto dell’API e ciò che resta in sospeso. Chi subentra può proseguire senza chiamarmi.",
+    "pt-PT": "README, contrato da API e o que ficou pendente. Quem assumir depois consegue continuar sem me chamar."
+  },
+  "Investigo antes de escalar": {
+    "en-US": "I investigate before escalating",
+    "it-IT": "Indago prima di scalare",
+    "pt-PT": "Investigo antes de escalar"
+  },
+  "Reproduzo o erro, leio os logs e isolo a causa. Quando levo um problema, levo junto o que já descartei.": {
+    "en-US": "I reproduce the error, read the logs and isolate the cause. When I raise a problem, I bring what I have already ruled out.",
+    "it-IT": "Riproduco l’errore, leggo i log e isolo la causa. Quando segnalo un problema, porto anche ciò che ho già escluso.",
+    "pt-PT": "Reproduzo o erro, leio os logs e isolo a causa. Quando levo um problema, levo também o que já descartei."
+  },
+  "Entendo o negócio": {
+    "en-US": "I understand the business",
+    "it-IT": "Capisco il business",
+    "pt-PT": "Entendo o negócio"
+  },
+  "Vim de suporte SaaS, compliance e fiscal. Pergunto pelo usuário e pela regra antes de escrever código.": {
+    "en-US": "I come from SaaS support, compliance and tax. I ask about the user and the rule before writing code.",
+    "it-IT": "Vengo dal supporto SaaS, dalla compliance e dal fiscale. Chiedo dell’utente e della regola prima di scrivere codice.",
+    "pt-PT": "Vim de suporte SaaS, compliance e fiscal. Pergunto pelo utilizador e pela regra antes de escrever código."
+  },
+  "Contratação simples": {
+    "en-US": "Simple contracting",
+    "it-IT": "Contratto semplice",
+    "pt-PT": "Contratação simples"
+  },
+  "Atuo como pessoa jurídica: tenho CNPJ e emito nota fiscal pelo serviço.": {
+    "en-US": "I work as a registered company in Brazil (CNPJ) and issue an invoice for the service.",
+    "it-IT": "Lavoro come società registrata in Brasile (CNPJ) ed emetto fattura per il servizio.",
+    "pt-PT": "Atuo como pessoa coletiva: tenho CNPJ (registo empresarial brasileiro) e emito fatura pelo serviço."
+  },
+  "Falar sobre um projeto": {
+    "en-US": "Talk about a project",
+    "it-IT": "Parliamo di un progetto",
+    "pt-PT": "Falar sobre um projeto"
+  },
+  "Método HTTP": {
+    "en-US": "HTTP method",
+    "it-IT": "Metodo HTTP",
+    "pt-PT": "Método HTTP"
+  },
+  "Início": {
+    "en-US": "Home",
+    "it-IT": "Home",
+    "pt-PT": "Início"
+  },
+  "áreas": {
+    "en-US": "areas",
+    "it-IT": "aree",
+    "pt-PT": "áreas"
+  },
+  "competências": {
+    "en-US": "skills",
+    "it-IT": "competenze",
+    "pt-PT": "competências"
+  },
+  "projetos": {
+    "en-US": "projects",
+    "it-IT": "progetti",
+    "pt-PT": "projetos"
+  },
+  "Atualizado pela API Go": {
+    "en-US": "Updated from the Go API",
+    "it-IT": "Aggiornato dall’API Go",
+    "pt-PT": "Atualizado pela API Go"
+  },
+  "Sem conexão · usando currículo incluído no app": {
+    "en-US": "Offline · using the résumé bundled with the app",
+    "it-IT": "Senza connessione · uso il curriculum incluso nell’app",
+    "pt-PT": "Sem ligação · a usar o currículo incluído na app"
+  },
+  "Currículo incluído no app": {
+    "en-US": "Résumé bundled with the app",
+    "it-IT": "Curriculum incluso nell’app",
+    "pt-PT": "Currículo incluído na app"
+  },
+  "Atualizando currículo…": {
+    "en-US": "Refreshing résumé…",
+    "it-IT": "Aggiornamento del curriculum…",
+    "pt-PT": "A atualizar o currículo…"
+  },
+  "Todas": {
+    "en-US": "All",
+    "it-IT": "Tutte",
+    "pt-PT": "Todas"
+  },
+  "Limpar busca": {
+    "en-US": "Clear search",
+    "it-IT": "Cancella ricerca",
+    "pt-PT": "Limpar pesquisa"
+  },
+  "Tela inicial do app de Karen Angelis, com perfil, números e menu inferior": {
+    "en-US": "Home screen of Karen Angelis’s app, with profile, numbers and bottom menu",
+    "it-IT": "Schermata iniziale dell’app di Karen Angelis, con profilo, numeri e menu in basso",
+    "pt-PT": "Ecrã inicial da app de Karen Angelis, com perfil, números e menu inferior"
+  },
+  "Logo oficial Quanta Aulas": {
+    "en-US": "Official Quanta Aulas logo",
+    "it-IT": "Logo ufficiale Quanta Aulas",
+    "pt-PT": "Logótipo oficial Quanta Aulas"
+  },
+  "Contagem de visitas": {
+    "en-US": "Visit counting",
+    "it-IT": "Conteggio delle visite",
+    "pt-PT": "Contagem de visitas"
   }
 }

@@ -1,0 +1,185 @@
+/* Experiências para quem lê código: terminal, visualizador, console de API, arquitetura e sinais. */
+:root{--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--amber:#f0b77a;--sky:#8fc7e8;--violet:#c9a2ee;--rose:#ffc7b6}
+
+/* Topo */
+/* A órbita decorativa do topo passa da borda; sem isto a página ganha rolagem horizontal. */
+main{overflow-x:clip}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.hero-talk{justify-content:center;gap:10px;min-height:56px;padding:17px 27px;border:1px solid #c5f16a66;border-radius:999px;background:#c5f16a0f;color:var(--lime);font-size:14px;font-weight:700;transition:background .2s,border-color .2s,transform .2s}
+.hero-talk span{font-size:15px;transition:transform .2s}
+.hero-talk:hover{filter:none;background:#c5f16a1f;border-color:var(--lime)}
+.hero-talk:hover span{transform:translate(2px,-2px)}
+header.nav nav{flex-wrap:wrap;row-gap:8px}
+@media(max-width:1180px){header.nav nav{gap:16px;font-size:13px}}
+@media(max-width:560px){header.nav nav{gap:8px 15px;font-size:11px}.hero-actions .button{flex:1 1 100%}}
+
+/* Terminal */
+.hero-art .terminal{max-width:450px;transition:transform .35s}
+.hero-art .terminal.is-live{transform:none;animation:none}
+.terminal .terminal-body{padding:18px 18px 16px;font-family:var(--mono);font-size:13px}
+.terminal-log{height:236px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#46503f transparent}
+.terminal-log:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
+.terminal-log p{margin:0 0 5px}
+.terminal-log .terminal-result{margin-top:16px}
+.terminal-hint{color:var(--muted);font-family:var(--font);font-size:12px;line-height:1.6}
+.term-line{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12.5px;line-height:1.6}
+.term-prompt,.term-ok{color:var(--lime)}
+.term-key{color:var(--violet)}
+.term-muted{color:#8b9285}
+.term-warn{color:var(--rose)}
+.term-pre{display:block;white-space:pre;overflow-x:auto;color:#cfd4c8}
+.term-line a{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+.terminal-form{display:flex;align-items:center;gap:9px;border-top:1px solid #3b4334;margin-top:12px;padding-top:11px}
+.terminal-form:focus-within{border-color:var(--lime)}
+.terminal-form label{color:var(--lime);white-space:nowrap}
+.terminal-form input{flex:1;min-width:0;padding:5px 0;border:0;border-radius:0;background:transparent;color:var(--text);font-family:inherit;font-size:14px;caret-color:var(--lime)}
+.terminal-form input:focus-visible{outline:none}
+.terminal-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.terminal-chips button{border:1px solid #46503f;background:#151a14;color:var(--muted);border-radius:5px;padding:6px 10px;font-family:inherit;font-size:11.5px}
+.terminal-chips button:hover{color:var(--lime);border-color:var(--lime)}
+@media(max-width:560px){.terminal .terminal-body{font-size:12px}.terminal-form input{font-size:16px}.terminal-log{height:210px}.hero-art .art-caption,.hero-art .floating{display:none}}
+
+/* Botões de código e abas Testar | Código */
+.lab-item{display:flex;flex-direction:column;gap:12px;min-width:0}
+.lab-item>.lab-card{flex:1}
+.code-links{display:flex;flex-wrap:wrap;gap:10px}
+.code-links button,.code-links a{border:1px solid var(--line);background:transparent;color:var(--lime);border-radius:24px;padding:9px 15px;font-size:12px;line-height:1.3}
+.code-links button:hover,.code-links a:hover{border-color:var(--lime);background:#c5f16a12}
+.code-links [data-code]::before,.signals [data-code]::before,#console-code::before{content:'</>';font-family:var(--mono);margin-right:8px;opacity:.75}
+.try-tabs,.code-tabs{display:flex;flex-wrap:wrap;gap:6px}
+.try-tabs{margin-top:20px}
+.try-tabs button,.code-tabs button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:6px;padding:8px 14px;font-size:12px}
+.code-tabs button{font-family:var(--mono)}
+.try-tabs [aria-selected=true],.code-tabs [aria-selected=true]{background:var(--lime);border-color:var(--lime);color:var(--bg)}
+[data-try-panel=code]{margin-top:16px}
+/* Código não quebra linha: sem min-width:0 o cartão cresceria até a largura da maior linha. */
+.playground-grid>article,.code-viewer{min-width:0}
+
+/* Visualizador de código */
+.code-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:12px 0 8px;font-size:11px;color:var(--muted)}
+.code-path{font-family:var(--mono);color:var(--text);overflow-wrap:anywhere}
+.code-copy,.console-curl button{margin-left:auto;border:1px solid var(--line);background:transparent;color:var(--lime);border-radius:20px;padding:6px 12px;font-size:11px;white-space:nowrap}
+.code-view{margin:0;padding:14px 16px 14px 0;max-height:420px;white-space:pre;overflow:auto;overflow-wrap:normal;font-family:var(--mono);font-size:12.5px;line-height:1.65;tab-size:2;counter-reset:line;scrollbar-width:thin;scrollbar-color:#46503f transparent}
+.code-view:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.code-view code{font-family:inherit}
+.code-line{counter-increment:line}
+.code-line::before{content:counter(line);position:sticky;left:0;display:inline-block;width:3.4em;margin-right:1.1em;padding-right:.6em;text-align:right;color:#565d50;background:var(--bg);user-select:none}
+.tok-comment{color:#727a6b;font-style:italic}
+.tok-string{color:var(--lime)}
+.tok-keyword{color:var(--violet)}
+.tok-number,.tok-annotation{color:var(--amber)}
+.tok-call,.tok-property{color:var(--sky)}
+html:has(.code-dialog[open]){overflow:hidden}
+.code-dialog{width:min(980px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:0;border:1px solid #46503f;border-radius:14px;background:var(--panel);color:var(--text);overflow:hidden}
+.code-dialog[open]{display:flex;flex-direction:column}
+.code-dialog::backdrop{background:#000c}
+.code-header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:24px 26px 6px}
+.code-header .eyebrow{margin-bottom:8px;color:var(--lime)}
+.code-header h3{font-size:26px}
+.code-stack{margin:6px 0 0;font-size:12px;color:var(--muted)}
+.code-close{flex-shrink:0;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--text);font-size:22px;line-height:1}
+.code-close:hover{border-color:var(--lime);color:var(--lime)}
+.code-dialog .code-viewer{display:flex;flex-direction:column;min-height:0;padding:10px 26px 26px}
+.code-dialog .code-view{flex:1;min-height:120px;max-height:none}
+@media(max-width:560px){.code-header{padding:18px 16px 4px}.code-header h3{font-size:22px}.code-dialog .code-viewer{padding:8px 16px 16px}.code-view{font-size:11.5px}.code-line::before{width:2.4em;margin-right:.8em}}
+
+/* Console de API */
+.api-console{background:radial-gradient(ellipse at 92% 18%,#2f263a55,transparent 60%)}
+.console-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:22px;align-items:start}
+.console-request,.console-response{min-width:0;padding:26px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.console-endpoints{display:grid;gap:8px}
+.console-endpoints button{display:flex;flex-direction:column;gap:5px;text-align:left;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:#131613;color:var(--text)}
+.console-endpoints button span{font-family:var(--mono);font-size:14px}
+.console-endpoints button span::before{content:'GET';margin-right:9px;color:var(--lime);font-size:11px}
+.console-endpoints button small{font-size:11px;color:var(--muted)}
+.console-endpoints button:hover{border-color:#6c7f55}
+.console-endpoints [aria-pressed=true]{border-color:var(--lime);background:#20271b}
+.console-params{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin-top:16px}
+.console-params label{display:grid;gap:6px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.console-params input{width:100%;min-width:0;font-family:var(--mono);font-size:14px}
+.console-line{display:flex;align-items:stretch;gap:10px;margin-top:14px}
+.console-line select{padding:10px;font-family:var(--mono);font-size:13px}
+.console-line select:disabled{opacity:1;color:var(--lime)}
+.console-line output{flex:1;min-width:0;padding:10px 12px;border:1px dashed var(--line);border-radius:5px;font-family:var(--mono);font-size:12px;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}
+.console-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-top:18px}
+.console-actions .button{padding:14px 22px}
+#console-code,.signals button{border:0;background:none;color:var(--lime);font-size:12px;padding:0}
+#console-code:hover,.signals button:hover{text-decoration:underline;text-underline-offset:3px}
+.console-presets{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.console-presets p{margin:0 4px 0 0;font-size:12px;color:var(--muted)}
+.console-presets button{border:1px solid #5a4a3d;background:transparent;color:var(--rose);border-radius:20px;padding:7px 12px;font-size:11.5px}
+.console-presets button[data-no-translate]{font-family:var(--mono)}
+.console-presets button:hover{border-color:var(--rose)}
+.console-hint{margin:14px 0 0;font-size:12px;line-height:1.7;color:var(--muted)}
+.console-status{margin:0 0 14px;font-size:13px;line-height:1.6;color:var(--muted)}
+.console-facts{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0 0 16px;font-size:12px}
+.console-facts dt{color:var(--muted)}
+.console-facts dd{margin:0;font-family:var(--mono);overflow-wrap:anywhere}
+.status-ok{color:var(--lime)}
+.status-warn{color:var(--amber)}
+.status-fail{color:var(--rose)}
+.console-curl{display:flex;align-items:center;gap:10px;margin-bottom:12px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.console-curl code{flex:1;min-width:0;font-family:var(--mono);font-size:11.5px;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}
+#console-body{min-height:150px;max-height:380px}
+@media(max-width:900px){.console-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.console-request,.console-response{padding:20px}.console-params{grid-template-columns:1fr 1fr}.console-params label:first-child{grid-column:1/-1}.console-curl{flex-direction:column;align-items:flex-start}.console-curl button{margin-left:0}}
+
+/* Arquitetura */
+.arch-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:22px;align-items:start}
+.arch-map{display:flex;flex-direction:column}
+.arch-node{display:flex;flex-direction:column;gap:5px;min-width:0;padding:15px 16px;text-align:left;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);transition:border-color .2s,background .2s}
+.arch-node small{font-family:var(--mono);font-size:10px;letter-spacing:1.3px;color:var(--lime)}
+.arch-node b{font-family:Manrope,sans-serif;font-size:18px;font-weight:500;letter-spacing:-.4px}
+.arch-node span{font-size:11.5px;line-height:1.5;color:var(--muted)}
+.arch-node:hover{border-color:#6c7f55}
+.arch-node[aria-pressed=true]{border-color:var(--lime);background:#20271b}
+.arch-flow{margin:0;padding:9px 0;text-align:center;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#7d8576}
+.arch-flow::before{content:'↓';margin-right:8px;color:var(--lime)}
+.arch-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.arch-row+.arch-row{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:8px}
+.arch-detail{position:sticky;top:20px;padding:28px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.arch-detail .eyebrow{margin-bottom:10px;font-family:var(--mono);color:var(--lime)}
+.arch-detail h3{font-size:27px}
+.arch-detail dl{margin:20px 0 24px}
+.arch-detail dt{margin-top:16px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.arch-detail dd{margin:6px 0 0;font-size:14px;line-height:1.75;color:#d5d6cd}
+.arch-detail .button{padding:14px 20px}
+@media(max-width:900px){.arch-grid{grid-template-columns:1fr}.arch-detail{position:static}}
+@media(max-width:560px){.arch-row,.arch-row+.arch-row{grid-template-columns:1fr}.arch-detail{padding:21px}.arch-detail h3{font-size:23px}}
+
+/* Sinais de engenharia */
+.signals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}
+.signals article{display:flex;flex-direction:column;gap:8px;padding:22px;border:1px solid var(--line);border-radius:12px;background:#151815}
+.signals b{font-family:Manrope,sans-serif;font-size:44px;font-weight:500;letter-spacing:-2px;line-height:1;color:var(--lime)}
+.signals b small{margin-left:5px;font-size:16px;letter-spacing:0;color:var(--muted)}
+.signals h3{font-family:var(--font);font-size:14px;font-weight:600;letter-spacing:0;line-height:1.4}
+.signals p{margin:0;font-size:12px;line-height:1.7;color:var(--muted)}
+.signals button{align-self:flex-start;margin-top:auto;padding-top:8px}
+@media(max-width:1000px){.signals{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.signals{grid-template-columns:1fr}}
+
+/* Evidências de habilidades e selos de CI */
+.skills .evidence{padding:8px 10px;border:1px solid #526046;border-radius:7px;background:#1f261b;color:var(--text);font-size:11px;line-height:inherit;text-decoration:underline;text-decoration-color:var(--lime);text-underline-offset:3px}
+.skills .evidence:hover{border-color:var(--lime);color:var(--lime)}
+.evidence-note{margin:-6px 0 22px;font-size:12px;color:var(--muted)}
+.project-checks{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.project-checks img{display:block;height:20px}
+
+/* Para o time */
+.team-grid .eyebrow{margin-bottom:12px;font-family:var(--mono);color:var(--lime)}
+.team-cta{margin:28px 0 0}
+
+/* Ajustes de responsividade encontrados na auditoria de larguras (320px a 1920px). */
+.hero>*,.skill-toolbar>label,.site-info>div{min-width:0}
+.skill-toolbar input,.skill-toolbar select{width:100%;min-width:0}
+.site-info{gap:12px}
+.site-info .circle-link{flex-shrink:0}
+.sites-grid .site-info .eyebrow,.site-info .eyebrow,.art-caption{font-size:10px}
+@media(max-width:380px){.hero h1{font-size:40px}.hero-cta,.hero-talk{padding-inline:18px}}
+/* Áreas de toque maiores no celular. */
+@media(max-width:560px){
+  header.nav nav{row-gap:0}
+  header.nav nav a{padding:7px 2px}
+  .text-link,.scenario-actions button,#console-code,.signals button,footer a,.catalog-reset,.project-row>a{display:inline-block;padding-block:9px}
+  .code-copy,.console-curl button,.board-top button{min-height:34px}
+}

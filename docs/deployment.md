@@ -25,3 +25,17 @@ O DNS de `karenangelis.com` precisa resolver para a VPS; a publicação só term
 Publicação concluída em 7 de outubro de 2026: registro A do domínio atualizado para a VPS com TTL 300; CNAME www preservado. Caddy emitiu certificados Let's Encrypt para ambos os nomes. `scripts/check-live.py` passou na VPS, validando frontend, Kotlin compilado, currículo Go e tendências reais FastAPI via HTTPS. O Clycka retornou HTTP 200 antes e após a alteração de roteamento.
 
 Backup da configuração anterior: `/opt/karsuel/infra/vps/Caddyfile.clycka.before-karen-20261007T145810Z`. A regra do portfólio deve ser preservada ao atualizar a configuração do Clycka no futuro.
+
+## Painel público de visitas nesta VPS
+
+O proxy externo já encaminha todo o domínio para `127.0.0.1:4180`. O Caddy interno deste repositório encaminha `/api/stats/*` ao serviço, portanto o proxy externo não precisa de outra rota. Depois de enviar o código à VPS:
+
+1. Suba o serviço com `docker compose -p karenangelis-portfolio -f compose.vps.yaml up -d --build --no-deps stats-api`. Na inicialização, a tabela antiga `panel_auth` é removida; o backup do SQLite feito antes da migração preserva uma cópia.
+2. Suba o site com `docker compose -p karenangelis-portfolio -f compose.vps.yaml up -d --build --no-deps web`. O volume `stats_data` preserva os totais entre reinícios.
+3. Remova o antigo `STATS_TOKEN` do `.env` da VPS e do computador. Ele não é mais usado.
+4. Confirme que `https://karenangelis.com/api/stats/health` responde `{"status":"ok"}` e que `https://karenangelis.com/api/stats/summary` responde com os totais sem autenticação.
+5. Abra `https://karenangelis.com/painel/` e confira os números e o seletor de período. Os totais começam em zero em uma instalação nova.
+
+O serviço não grava IP ou navegador no SQLite e inicia o Uvicorn sem log de acesso. O controle de abuso usa identificadores temporários só na memória.
+
+Se a cópia na VPS tiver mudanças manuais que ainda não estão no Git, use `scripts/deploy-stats-vps.py` para acrescentar apenas a rota e o carregamento do script. Execute primeiro sem `--apply` para listar os arquivos; `--apply` cria um backup separado antes de escrever. Depois transfira somente `apps/stats-api/`, `web/painel/` e `web/assets/track.js`, valide `docker compose -f compose.vps.yaml config --quiet` e valide o Caddyfile antes de reconstruir os contêineres.

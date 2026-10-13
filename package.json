@@ -1,1 +1,1 @@
-{"name":"karenangelis-portfolio","version":"0.1.0","private":true,"scripts":{"dev":"node scripts/dev.mjs","check":"node scripts/check.mjs"},"engines":{"node":">=22"}}
+{"name":"karenangelis-portfolio","version":"0.1.0","private":true,"scripts":{"dev":"node scripts/dev.mjs","check":"node scripts/sources.mjs --check && node scripts/check.mjs","sources":"node scripts/sources.mjs"},"engines":{"node":">=22"}}
