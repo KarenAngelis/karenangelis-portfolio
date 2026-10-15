@@ -5,11 +5,21 @@ Portfólio para `karenangelis.com`, com habilidades demonstradas por experiênci
 Publicado na VPS Hostinger em 7 de outubro de 2026: https://karenangelis.com.
 
 - Currículo em app web Kotlin/JS + API Go: https://karenangelis.com/app/?version=kotlin
-- Alternativa de currículo web: https://karenangelis.com/demos/curriculo/
+- Currículo HTML, legível sem JavaScript e imprimível: `/curriculo/`
+- Demonstração histórica do currículo web: https://karenangelis.com/demos/curriculo/
 - Busca de notícias + FastAPI: https://karenangelis.com/demos/trends/
 - Documentação interativa da API: https://karenangelis.com/docs
 
-O currículo aparece uma única vez na página inicial, com um print real do app web. Em qualquer dispositivo, o card abre o app Compose Multiplatform compilado para WebAssembly em `/app/?version=kotlin`, conectada à API Go, sem instalação ou download. Os links de APK e abertura nativa foram retirados do fluxo público. No computador, o app fica centralizado com largura máxima de 420px, sem moldura de telefone, iframe ou apresentação externa. No celular, usa toda a largura e altura disponíveis. A interface é desenhada pelo Compose, com navegação interna e a mesma implementação usada no Android. Android e web executam as mesmas telas, navegação, busca e cliente da API, definidos em `apps/resume-compose/shared/src/commonMain`. A versão web é compilada do app para WebAssembly; ela não é uma página HTML recriando suas telas nem um emulador de APK. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
+A entrada da página inicial apresenta a stack, links para projetos e currículo HTML, seguida por três projetos selecionados com seu estado atual. O laboratório e todas as demonstrações continuam disponíveis. O card do currículo em app usa um print real e abre o app Compose Multiplatform compilado para WebAssembly em `/app/?version=kotlin`, conectada à API Go, sem instalação ou download. Os links de APK e abertura nativa foram retirados do fluxo público. No computador, o app fica centralizado com largura máxima de 420px, sem moldura de telefone, iframe ou apresentação externa. No celular, usa toda a largura e altura disponíveis. A interface é desenhada pelo Compose, com navegação interna e a mesma implementação usada no Android. Android e web executam as mesmas telas, navegação, busca e cliente da API, definidos em `apps/resume-compose/shared/src/commonMain`. A versão web é compilada do app para WebAssembly; ela não é uma página HTML recriando suas telas nem um emulador de APK. Interações web foram testadas no navegador local. A rede corporativa WEG bloqueou o domínio público por reputação ainda não verificada; a inspeção visual do endereço público nesse PC ficou limitada por esse filtro.
+
+## Entrada de recrutamento e currículo HTML
+
+- `/curriculo/` é gerado de `web/data/profile.json`; experiência, projetos, formação e idiomas são HTML estático e continuam legíveis sem JavaScript. O botão de impressão abre o diálogo nativo do navegador para imprimir ou salvar em PDF. Não há um PDF estático novo.
+- Após mudar os dados do perfil, rode `npm run resume`. O comando `npm run check` verifica se o HTML gerado está atualizado.
+- `web/assets/resume.css` contém o layout responsivo e as regras de impressão. O seletor existente mantém os quatro idiomas; novos textos ficam em `web/data/translations.json`.
+- `/app/` mantém o aplicativo Kotlin/WebAssembly e um link permanente para o currículo HTML. Falhas de carregamento, exceções após a criação do canvas e perda do contexto gráfico exibem recuperação; a existência do canvas não é tratada como prova de renderização.
+- Os arquivos `index.html`, `shell.css` e `shell.js` de `web/app/` devem continuar idênticos aos de `apps/resume-compose/shared/src/wasmJsMain/resources/`, para que um novo build não remova a recuperação.
+- `npm run check` executa também os testes de entrada/currículo e os cenários de falha do shell. Esses testes usam DOM simulado; não substituem uma inspeção visual em desktop/mobile nem um smoke test do bundle real antes de publicar.
 
 ## Estrutura
 

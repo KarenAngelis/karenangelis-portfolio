@@ -25,3 +25,20 @@
 .site-visual .isidoro-brand{width:190px;height:190px;max-width:70%;max-height:75%}
 @media(min-width:1100px){.sites-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.sites-grid .site-card{grid-column:span 2}.sites-grid .site-card:nth-child(4){grid-column:2/span 2}.sites-grid .site-card:nth-child(5){grid-column:4/span 2}.isidoro-card .site-info h3{font-size:20px}}
 @media(min-width:561px) and (max-width:1099px){.sites-grid .site-card:last-child{grid-column:1/-1;justify-self:center;width:calc((100% - 22px)/2)}}
+
+/* Entrada para recrutamento: preserva o laboratório abaixo dos projetos selecionados. */
+.hero-stack{color:var(--lime);font-size:16px;font-weight:600;line-height:1.8;margin:24px 0 0;letter-spacing:.2px}
+.hero-contact{font-size:13px;line-height:2;margin:22px 0 0;color:var(--muted)}
+.hero-contact a{display:inline-block}.hero-copy{min-width:0}
+.featured-projects{border-top:1px solid var(--line)}
+.featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.featured-card{min-width:0;display:flex;flex-direction:column;align-items:flex-start;padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.featured-card .eyebrow{letter-spacing:1.4px;font-size:10px;margin-bottom:20px}
+.featured-card h3{font-size:30px;letter-spacing:-1px}
+.featured-card p{line-height:1.7;color:var(--muted)}
+.featured-card .featured-stack{font-size:12px;font-weight:600;color:var(--lime)}
+.featured-card .project-state{font-size:13px;border-top:1px solid var(--line);padding-top:18px}
+.featured-links{display:grid;gap:14px;margin-top:auto;padding-top:14px;font-size:13px}
+.featured-more{margin:26px 0 0;font-size:14px;line-height:2;color:var(--muted)}
+@media(max-width:900px){.featured-grid{grid-template-columns:1fr}.featured-card{padding:24px}.nav nav{flex-wrap:wrap;row-gap:14px}.hero-stack{font-size:15px}}
+@media(max-width:560px){.hero h1{font-size:clamp(36px,10vw,47px)}.hero-actions{align-items:stretch}.hero-actions .button{justify-content:center}.hero-contact span,.featured-more span{display:none}.hero-contact a,.featured-more a{display:block}.hero-stack{font-size:14px}.nav nav a{padding-block:7px}.featured-card h3{font-size:27px}}

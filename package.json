@@ -1,1 +1,14 @@
-{"name":"karenangelis-portfolio","version":"0.1.0","private":true,"scripts":{"dev":"node scripts/dev.mjs","check":"node scripts/sources.mjs --check && node scripts/check.mjs","sources":"node scripts/sources.mjs"},"engines":{"node":">=22"}}
+{
+  "name": "karenangelis-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "check": "node scripts/resume.mjs --check && node scripts/sources.mjs --check && node scripts/check.mjs && node --test scripts/test-career-entry.mjs scripts/test-resume-shell.mjs",
+    "sources": "node scripts/sources.mjs",
+    "resume": "node scripts/resume.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
