@@ -1737,7 +1737,7 @@
   "Voltar ao portfólio": {
     "en-US": "Back to portfolio",
     "it-IT": "Torna al portfolio",
-    "pt-PT": "Voltar ao portfólio"
+    "pt-PT": "Voltar ao portefólio"
   },
   "LAB 02 / PYTHON + FASTAPI": {
     "en-US": "LAB 02 / PYTHON + FASTAPI",
@@ -5348,5 +5348,220 @@
     "en-US": "Visit counting",
     "it-IT": "Conteggio delle visite",
     "pt-PT": "Contagem de visitas"
+  },
+  "Karen Angelis · Desenvolvedora Full Stack": {
+    "en-US": "Karen Angelis · Full Stack Developer",
+    "it-IT": "Karen Angelis · Sviluppatrice Full Stack",
+    "pt-PT": "Karen Angelis · Programadora Full Stack"
+  },
+  "Karen Angelis, desenvolvedora Full Stack. React, TypeScript, Python, FastAPI e NestJS. Projetos, código, experiência e currículo.": {
+    "en-US": "Karen Angelis, Full Stack Developer. React, TypeScript, Python, FastAPI and NestJS. Projects, code, experience and résumé.",
+    "it-IT": "Karen Angelis, sviluppatrice Full Stack. React, TypeScript, Python, FastAPI e NestJS. Progetti, codice, esperienza e curriculum.",
+    "pt-PT": "Karen Angelis, programadora Full Stack. React, TypeScript, Python, FastAPI e NestJS. Projetos, código, experiência e currículo."
+  },
+  "Desenvolvedora": {
+    "en-US": "Developer",
+    "it-IT": "Sviluppatrice",
+    "pt-PT": "Programadora"
+  },
+  "Full Stack.": {
+    "en-US": "Full Stack.",
+    "it-IT": "Full Stack.",
+    "pt-PT": "Full Stack."
+  },
+  "Construo interfaces, APIs e integrações conectadas às regras de negócio. Conheça os projetos, o código e minha trajetória.": {
+    "en-US": "I build interfaces, APIs and integrations around business rules. Explore my projects, code and experience.",
+    "it-IT": "Sviluppo interfacce, API e integrazioni collegate alle regole di business. Scopri i progetti, il codice e il mio percorso.",
+    "pt-PT": "Desenvolvo interfaces, APIs e integrações ligadas às regras de negócio. Conheça os projetos, o código e o meu percurso."
+  },
+  "Ver projetos": {
+    "en-US": "View projects",
+    "it-IT": "Vedi i progetti",
+    "pt-PT": "Ver projetos"
+  },
+  "Ler currículo": {
+    "en-US": "Read résumé",
+    "it-IT": "Leggi il curriculum",
+    "pt-PT": "Ler currículo"
+  },
+  "Currículo": {
+    "en-US": "Résumé",
+    "it-IT": "Curriculum",
+    "pt-PT": "Currículo"
+  },
+  "Conversar sobre uma oportunidade": {
+    "en-US": "Discuss an opportunity",
+    "it-IT": "Parliamo di un’opportunità",
+    "pt-PT": "Conversar sobre uma oportunidade"
+  },
+  "Explorar o laboratório": {
+    "en-US": "Explore the lab",
+    "it-IT": "Esplora il laboratorio",
+    "pt-PT": "Explorar o laboratório"
+  },
+  "PROJETOS / CÓDIGO E CONTEXTO": {
+    "en-US": "PROJECTS / CODE AND CONTEXT",
+    "it-IT": "PROGETTI / CODICE E CONTESTO",
+    "pt-PT": "PROJETOS / CÓDIGO E CONTEXTO"
+  },
+  "Da interface": {
+    "en-US": "From the interface",
+    "it-IT": "Dall’interfaccia",
+    "pt-PT": "Da interface"
+  },
+  "às regras de negócio.": {
+    "en-US": "to business rules.",
+    "it-IT": "alle regole di business.",
+    "pt-PT": "às regras de negócio."
+  },
+  "Três caminhos para conhecer meu trabalho.": {
+    "en-US": "Three ways to explore my work.",
+    "it-IT": "Tre percorsi per conoscere il mio lavoro.",
+    "pt-PT": "Três caminhos para conhecer o meu trabalho."
+  },
+  "Código público e estado de cada projeto, com clareza.": {
+    "en-US": "Public code and a clear view of each project’s status.",
+    "it-IT": "Codice pubblico e stato di ogni progetto, con chiarezza.",
+    "pt-PT": "Código público e estado de cada projeto, com clareza."
+  },
+  "PROJETO PÚBLICO / ESTOQUE": {
+    "en-US": "PUBLIC PROJECT / INVENTORY",
+    "it-IT": "PROGETTO PUBBLICO / MAGAZZINO",
+    "pt-PT": "PROJETO PÚBLICO / STOCK"
+  },
+  "Gestão de estoque com saldo, movimentações, transações e rollback. Reúne interface React, API FastAPI e PostgreSQL.": {
+    "en-US": "Inventory management with balances, movements, transactions and rollback. Combines a React interface, FastAPI API and PostgreSQL.",
+    "it-IT": "Gestione del magazzino con disponibilità, movimenti, transazioni e rollback. Integra un’interfaccia React, API FastAPI e PostgreSQL.",
+    "pt-PT": "Gestão de stock com saldos, movimentos, transações e rollback. Reúne interface React, API FastAPI e PostgreSQL."
+  },
+  "Código e testes públicos. A demonstração visual usa dados locais no navegador.": {
+    "en-US": "Public code and tests. The visual demo uses local browser data.",
+    "it-IT": "Codice e test pubblici. La demo visiva usa dati locali nel browser.",
+    "pt-PT": "Código e testes públicos. A demonstração visual usa dados locais no navegador."
+  },
+  "Ver código do StockMaster": {
+    "en-US": "View StockMaster code",
+    "it-IT": "Vedi il codice di StockMaster",
+    "pt-PT": "Ver código do StockMaster"
+  },
+  "Ver testes de API e E2E": {
+    "en-US": "View API and E2E tests",
+    "it-IT": "Vedi i test API ed E2E",
+    "pt-PT": "Ver testes de API e E2E"
+  },
+  "PRODUTO WEB / APLICATIVO": {
+    "en-US": "WEB PRODUCT / APP",
+    "it-IT": "PRODOTTO WEB / APP",
+    "pt-PT": "PRODUTO WEB / APLICAÇÃO"
+  },
+  "Autenticação, conteúdo por usuário, IA e assinaturas. Desenvolvimento de interfaces e fluxos para web e aplicativo Flutter/Dart.": {
+    "en-US": "Authentication, user-specific content, AI and subscriptions. Interface and flow development for the web and a Flutter/Dart app.",
+    "it-IT": "Autenticazione, contenuti per utente, IA e abbonamenti. Sviluppo di interfacce e flussi per web e app Flutter/Dart.",
+    "pt-PT": "Autenticação, conteúdo por utilizador, IA e subscrições. Desenvolvimento de interfaces e fluxos para web e aplicação Flutter/Dart."
+  },
+  "Versão web disponível. O aplicativo nativo ainda não foi lançado.": {
+    "en-US": "Web version available. The native app has not been launched yet.",
+    "it-IT": "Versione web disponibile. L’app nativa non è ancora stata lanciata.",
+    "pt-PT": "Versão web disponível. A aplicação nativa ainda não foi lançada."
+  },
+  "Conhecer Luniay": {
+    "en-US": "Explore Luniay",
+    "it-IT": "Scopri Luniay",
+    "pt-PT": "Conhecer Luniay"
+  },
+  "ATENDIMENTO / INTEGRAÇÕES": {
+    "en-US": "CUSTOMER SERVICE / INTEGRATIONS",
+    "it-IT": "ASSISTENZA / INTEGRAZIONI",
+    "pt-PT": "ATENDIMENTO / INTEGRAÇÕES"
+  },
+  "Interface web, backend Python, persistência, workers e OAuth em um projeto de atendimento e integrações.": {
+    "en-US": "Web interface, Python backend, persistence, workers and OAuth in a customer service and integration project.",
+    "it-IT": "Interfaccia web, backend Python, persistenza, worker e OAuth in un progetto di assistenza e integrazioni.",
+    "pt-PT": "Interface web, backend Python, persistência, workers e OAuth num projeto de atendimento e integrações."
+  },
+  "Página pública disponível. A ativação dos conectores depende da configuração do serviço.": {
+    "en-US": "Public website available. Connector activation depends on service configuration.",
+    "it-IT": "Pagina pubblica disponibile. L’attivazione dei connettori dipende dalla configurazione del servizio.",
+    "pt-PT": "Página pública disponível. A ativação dos conectores depende da configuração do serviço."
+  },
+  "Ver todos os projetos e estudos": {
+    "en-US": "View all projects and learning work",
+    "it-IT": "Vedi tutti i progetti e gli studi",
+    "pt-PT": "Ver todos os projetos e estudos"
+  },
+  "Ler experiência e formação": {
+    "en-US": "Read experience and education",
+    "it-IT": "Leggi esperienza e formazione",
+    "pt-PT": "Ler experiência e formação"
+  },
+  "Currículo · Karen Angelis": {
+    "en-US": "Résumé · Karen Angelis",
+    "it-IT": "Curriculum · Karen Angelis",
+    "pt-PT": "Currículo · Karen Angelis"
+  },
+  "Currículo de Karen Angelis: desenvolvimento Full Stack, React, TypeScript, Python, FastAPI e NestJS. Experiência, projetos e formação.": {
+    "en-US": "Karen Angelis’s résumé: Full Stack development, React, TypeScript, Python, FastAPI and NestJS. Experience, projects and education.",
+    "it-IT": "Curriculum di Karen Angelis: sviluppo Full Stack, React, TypeScript, Python, FastAPI e NestJS. Esperienza, progetti e formazione.",
+    "pt-PT": "Currículo de Karen Angelis: desenvolvimento Full Stack, React, TypeScript, Python, FastAPI e NestJS. Experiência, projetos e formação."
+  },
+  "CURRÍCULO / DESENVOLVIMENTO": {
+    "en-US": "RÉSUMÉ / DEVELOPMENT",
+    "it-IT": "CURRICULUM / SVILUPPO",
+    "pt-PT": "CURRÍCULO / DESENVOLVIMENTO"
+  },
+  "Desenvolvedora Full Stack": {
+    "en-US": "Full Stack Developer",
+    "it-IT": "Sviluppatrice Full Stack",
+    "pt-PT": "Programadora Full Stack"
+  },
+  "Contatos profissionais": {
+    "en-US": "Professional contacts",
+    "it-IT": "Contatti professionali",
+    "pt-PT": "Contactos profissionais"
+  },
+  "Imprimir ou salvar em PDF": {
+    "en-US": "Print or save as PDF",
+    "it-IT": "Stampa o salva in PDF",
+    "pt-PT": "Imprimir ou guardar em PDF"
+  },
+  "Experimentar o currículo em app": {
+    "en-US": "Try the résumé app",
+    "it-IT": "Prova il curriculum in app",
+    "pt-PT": "Experimentar o currículo em app"
+  },
+  "Você também pode imprimir esta página pelo menu do navegador.": {
+    "en-US": "You can also print this page from your browser menu.",
+    "it-IT": "Puoi anche stampare questa pagina dal menu del browser.",
+    "pt-PT": "Também pode imprimir esta página pelo menu do navegador."
+  },
+  "Competências principais": {
+    "en-US": "Core skills",
+    "it-IT": "Competenze principali",
+    "pt-PT": "Competências principais"
+  },
+  "Experiência profissional": {
+    "en-US": "Professional experience",
+    "it-IT": "Esperienza professionale",
+    "pt-PT": "Experiência profissional"
+  },
+  "Projetos selecionados": {
+    "en-US": "Selected projects",
+    "it-IT": "Progetti selezionati",
+    "pt-PT": "Projetos selecionados"
+  },
+  "Luniay: versão web disponível; aplicativo nativo ainda não lançado. Clycka: ativação de conectores depende da configuração do serviço.": {
+    "en-US": "Luniay: web version available; native app not yet launched. Clycka: connector activation depends on service configuration.",
+    "it-IT": "Luniay: versione web disponibile; app nativa non ancora lanciata. Clycka: l’attivazione dei connettori dipende dalla configurazione del servizio.",
+    "pt-PT": "Luniay: versão web disponível; aplicação nativa ainda não lançada. Clycka: a ativação dos conectores depende da configuração do serviço."
+  },
+  "Currículo disponível em HTML, sem instalação.": {
+    "en-US": "Résumé available in HTML, no installation needed.",
+    "it-IT": "Curriculum disponibile in HTML, senza installazione.",
+    "pt-PT": "Currículo disponível em HTML, sem instalação."
+  },
+  "Desenvolvo interfaces, aplicativos e serviços conectados a regras de negócio. Trabalho com React, Next.js, TypeScript, Python/FastAPI e NestJS, além de Flutter/Dart, integrações, automações e aplicações com IA. Minha trajetória em suporte SaaS, qualidade, compliance, processos e Marketing me ajuda a construir soluções com atenção à experiência de quem usa.": {
+    "en-US": "I build interfaces, apps and services connected to business rules. I work with React, Next.js, TypeScript, Python/FastAPI and NestJS, as well as Flutter/Dart, integrations, automation and AI applications. My background in SaaS support, quality, compliance, processes and marketing helps me build solutions with the user experience in mind.",
+    "it-IT": "Sviluppo interfacce, app e servizi collegati alle regole di business. Lavoro con React, Next.js, TypeScript, Python/FastAPI e NestJS, oltre a Flutter/Dart, integrazioni, automazioni e applicazioni con IA. Il mio percorso nel supporto SaaS, nella qualità, nella compliance, nei processi e nel marketing mi aiuta a creare soluzioni attente all'esperienza di chi le usa.",
+    "pt-PT": "Desenvolvo interfaces, aplicações e serviços conectados a regras de negócio. Trabalho com React, Next.js, TypeScript, Python/FastAPI e NestJS, além de Flutter/Dart, integrações, automações e aplicações com IA. Minha trajetória em suporte SaaS, qualidade, compliance, processos e Marketing me ajuda a construir soluções com atenção à experiência de quem usa."
   }
 }

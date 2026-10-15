@@ -1,1 +1,37 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101211"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="Karen Angelis"><title>App · Karen Angelis</title><link rel="manifest" href="manifest.json"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png"><link rel="stylesheet" href="shell.css"><script type="module" src="/assets/track.js"></script></head><body><div id="app-root"></div><div id="splash" role="status"><div class="splash-icon" aria-hidden="true">ka</div><h1>Karen Angelis</h1><p id="splash-subtitle">Meu currículo</p><div class="splash-bar" aria-hidden="true"></div><p id="splash-status">Carregando o app…</p></div><script src="shell.js"></script><script src="resume-app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101211">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Karen Angelis">
+  <title>App · Karen Angelis</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="shell.css">
+  <script type="module" src="/assets/track.js"></script>
+</head>
+<body>
+  <header id="app-access">
+    <a id="resume-link" href="/curriculo/?lang=pt-BR">Ler currículo em HTML</a>
+    <p id="app-hint" role="status">Currículo em HTML disponível a qualquer momento.</p>
+  </header>
+  <main id="app-container">
+    <div id="app-root"></div>
+    <section id="splash" aria-labelledby="splash-title">
+      <div class="splash-icon" aria-hidden="true">ka</div>
+      <h1 id="splash-title">Karen Angelis</h1>
+      <p id="splash-subtitle">Meu currículo</p>
+      <div class="splash-bar" aria-hidden="true"></div>
+      <p id="splash-status" role="status">App Kotlin · WebAssembly</p>
+      <button id="app-retry" type="button" hidden>Tentar novamente</button>
+      <noscript><p>Ative o JavaScript para usar o app ou leia o currículo em HTML pelo link acima.</p></noscript>
+    </section>
+  </main>
+  <script src="shell.js"></script>
+</body>
+</html>
