@@ -20,9 +20,14 @@ apps/trends-api/      FastAPI: Google Trends RSS → JSON
 apps/resume-api/      Go: endpoint de currículo
 apps/resume-kotlin/   Interface Kotlin/JS que consome a API Go
 apps/resume-android/  Aplicativo Android nativo com Kotlin, dados offline e API Go
+apps/career-api/      Gestor privado: perfil, vagas, Gmail, entrevistas e Codex
+web/carreira/         Área pessoal de carreira, com autenticação Google
 infra/                Caddy e imagens Docker para a VPS
 compose.yaml          Serviços da publicação
 ```
+
+O piloto do gestor está documentado em [apps/career-api/README.md](apps/career-api/README.md).
+Ele precisa das conexões Google e ChatGPT próprias antes do primeiro teste real.
 
 ## Recursos para quem lê código
 

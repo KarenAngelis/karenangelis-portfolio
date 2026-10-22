@@ -13,6 +13,7 @@ services:
       - trends-api
       - resume-api
       - stats-api
+      - career-api
   trends-api:
     build:
       context: .
@@ -30,5 +31,22 @@ services:
     restart: unless-stopped
     volumes:
       - stats_data:/data
+  career-api:
+    build:
+      context: .
+      dockerfile: apps/career-api/Dockerfile
+    restart: unless-stopped
+    environment:
+      CAREER_PUBLIC_URL: "https://karenangelis.com"
+      CAREER_OWNER_EMAIL: "${CAREER_OWNER_EMAIL:-karen.denich@gmail.com}"
+      GOOGLE_CLIENT_ID: "${GOOGLE_CLIENT_ID:-}"
+      GOOGLE_CLIENT_SECRET: "${GOOGLE_CLIENT_SECRET:-}"
+      CAREER_ENCRYPTION_KEY: "${CAREER_ENCRYPTION_KEY:-}"
+      CAREER_CODEX_MODEL: "${CAREER_CODEX_MODEL:-}"
+      CAREER_WORKER_ENABLED: "${CAREER_WORKER_ENABLED:-true}"
+      CAREER_WORKER_INTERVAL: "${CAREER_WORKER_INTERVAL:-600}"
+    volumes:
+      - career_data:/data
 volumes:
   stats_data:
+  career_data:
