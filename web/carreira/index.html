@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="same-origin">
+  <meta name="theme-color" content="#101211">
+  <meta name="description" content="Área pessoal de carreira de Karen Angelis: perfil, oportunidades, candidaturas e entrevistas em um só lugar.">
+  <title>Gestor de Carreira · Karen Angelis</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/carreira/styles.css">
+  <script type="module" src="/carreira/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <div id="boot" class="boot" role="status"><span class="brand">ka<span>✳</span></span><p>Abrindo seu espaço de carreira…</p></div>
+
+  <main id="login" class="login" hidden>
+    <header class="login-nav"><a class="brand" href="/" aria-label="Voltar ao portfólio de Karen Angelis">ka<span>✳</span></a><a class="subtle-link" href="/">Voltar ao portfólio <span aria-hidden="true">↗</span></a></header>
+    <div class="login-grid">
+      <section class="login-copy">
+        <p class="eyebrow"><span class="live-dot"></span> SEU ESPAÇO PESSOAL DE CARREIRA</p>
+        <h1>Mais caminhos.<br><em>Uma direção.</em></h1>
+        <p class="login-intro">Seu repertório, suas oportunidades e cada próximo passo. Um lugar para cuidar da carreira que você está construindo.</p>
+        <div class="login-access">
+          <a id="google-login" class="button primary" href="/api/career/auth/google/start?connect=0"><span class="google-mark" aria-hidden="true">G</span> Entrar com Google <span aria-hidden="true">↗</span></a>
+          <p>Área privada. O acesso do piloto é restrito à conta da Karen.</p>
+        </div>
+        <p id="login-message" class="notice" role="status" hidden></p>
+        <button id="retry-login" class="button quiet" type="button" hidden>Tentar novamente</button>
+      </section>
+      <aside class="login-preview" aria-label="Como funciona o gestor">
+        <div class="preview-top"><span class="tiny-label">GESTOR DE CARREIRA</span><span class="pill">PILOTO PESSOAL</span></div>
+        <div class="preview-emblem" aria-hidden="true">✳</div>
+        <h2>Seu próximo passo<br>começa com <em>contexto.</em></h2>
+        <ol class="login-steps">
+          <li><span>01</span><div><strong>Seu perfil como ponto de partida</strong><p>Currículo, experiências e evidências dos seus projetos.</p></div></li>
+          <li><span>02</span><div><strong>Oportunidades que fazem sentido</strong><p>Compatibilidade explicada e preferências respeitadas.</p></div></li>
+          <li><span>03</span><div><strong>Cada candidatura acompanhada</strong><p>Respostas, próximos passos e entrevistas na sua agenda.</p></div></li>
+        </ol>
+        <p class="preview-note">Você conecta suas contas e define suas preferências. O histórico fica neste espaço privado.</p>
+      </aside>
+    </div>
+    <footer class="login-footer"><span>Karen Angelis · ideias em prática</span><span>Gestor de Carreira / versão piloto</span></footer>
+  </main>
+
+  <div id="workspace" class="workspace" hidden>
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Portfólio de Karen Angelis">ka<span>✳</span></a>
+      <div class="sidebar-title"><strong>Gestor de Carreira</strong><span>Seu próximo capítulo.</span></div>
+      <nav class="navigation" aria-label="Gestor de carreira">
+        <button type="button" data-view="overview" class="nav-item active" aria-current="page"><span aria-hidden="true">◈</span> Visão geral</button>
+        <button type="button" data-view="jobs" class="nav-item"><span aria-hidden="true">⌕</span> Radar de vagas <span class="nav-count" id="nav-jobs">0</span></button>
+        <button type="button" data-view="applications" class="nav-item"><span aria-hidden="true">▤</span> Candidaturas <span class="nav-count" id="nav-applications">0</span></button>
+        <button type="button" data-view="interviews" class="nav-item"><span aria-hidden="true">▦</span> Entrevistas</button>
+        <span class="nav-divider">SUA BASE</span>
+        <button type="button" data-view="profile" class="nav-item"><span aria-hidden="true">◉</span> Perfil profissional</button>
+        <button type="button" data-view="answers" class="nav-item"><span aria-hidden="true">≋</span> Banco de respostas</button>
+        <button type="button" data-view="connections" class="nav-item"><span aria-hidden="true">⌁</span> Conexões e busca</button>
+      </nav>
+      <div class="sidebar-bottom"><span class="pilot-label">PILOTO / PRIMEIRA USUÁRIA</span><div class="account-row"><span class="avatar" id="user-initials">KA</span><div><strong id="user-name">Karen Angelis</strong><span id="user-email"></span></div></div><a class="subtle-link" href="/">Meu portfólio <span aria-hidden="true">↗</span></a></div>
+    </aside>
+    <div class="content-shell">
+      <header class="topbar"><div><span class="breadcrumb">MEU ESPAÇO</span><span class="breadcrumb-divider">/</span><span id="view-name">Visão geral</span></div><div class="top-actions"><span id="agent-indicator" class="agent-indicator"><span class="status-dot"></span> Verificando agente</span><button id="refresh" class="icon-button" type="button" aria-label="Atualizar informações">↻</button><button id="logout" class="text-button" type="button">Sair</button></div></header>
+      <main id="main" class="main-content" tabindex="-1">
+        <div id="global-error" class="notice error" role="alert" hidden></div>
+
+        <section id="view-overview" class="view" aria-labelledby="overview-title">
+          <div class="page-heading overview-heading"><div><p class="eyebrow">CARREIRA EM MOVIMENTO</p><h1 id="overview-title">Seu próximo<br><em>capítulo.</em></h1><p>Seu repertório encontra novas possibilidades. Acompanhe o que está acontecendo.</p></div><div class="heading-action"><button id="run-agent" class="button primary" type="button"><span aria-hidden="true">✳</span> Buscar oportunidades <span aria-hidden="true">↗</span></button><span id="last-run">Nenhuma rodada registrada</span></div></div>
+          <div id="setup-banner" class="setup-banner" hidden><div class="setup-icon" aria-hidden="true">⌁</div><div><strong>Vamos conectar as peças.</strong><p id="setup-description">Complete seu perfil e conecte suas contas para iniciar o acompanhamento.</p></div><button class="button secondary" type="button" data-go="connections">Configurar meu gestor <span aria-hidden="true">→</span></button></div>
+          <div class="stats-grid" aria-label="Resumo da carreira">
+            <article class="stat-card"><span>NO SEU RADAR</span><strong id="stat-jobs">0</strong><p>oportunidades encontradas</p><span class="stat-symbol" aria-hidden="true">⌕</span></article>
+            <article class="stat-card"><span>EM MOVIMENTO</span><strong id="stat-applications">0</strong><p>candidaturas registradas</p><span class="stat-symbol" aria-hidden="true">↗</span></article>
+            <article class="stat-card"><span>PRÓXIMAS CONVERSAS</span><strong id="stat-interviews">0</strong><p>entrevistas registradas</p><span class="stat-symbol" aria-hidden="true">▦</span></article>
+            <article class="stat-card accent"><span>SUA BASE</span><strong id="stat-answers">0</strong><p>respostas para reutilizar</p><span class="stat-symbol" aria-hidden="true">≋</span></article>
+          </div>
+          <div class="overview-columns">
+            <section class="panel"><div class="panel-heading"><div><p class="eyebrow">PRIORIDADES</p><h2>Próximos passos</h2></div><button class="subtle-link" type="button" data-go="applications">Ver candidaturas ↗</button></div><div id="next-actions"></div></section>
+            <section class="panel"><div class="panel-heading"><div><p class="eyebrow">SEU AGENTE</p><h2>Tudo conectado</h2></div><span class="small-asterisk" aria-hidden="true">✳</span></div><div id="overview-connections"></div><button class="wide-link" type="button" data-go="connections">Gerenciar conexões <span aria-hidden="true">→</span></button></section>
+          </div>
+          <section class="panel activity-panel"><div class="panel-heading"><div><p class="eyebrow">ACOMPANHAMENTO</p><h2>Últimos movimentos</h2></div><span class="muted small">Histórico confirmado</span></div><div id="recent-events"></div></section>
+        </section>
+
+        <section id="view-jobs" class="view" aria-labelledby="jobs-title" hidden>
+          <div class="page-heading"><div><p class="eyebrow">OPORTUNIDADES / COM CONTEXTO</p><h1 id="jobs-title">No seu <em>radar.</em></h1><p>Veja o encaixe, as evidências e o que ainda precisa ser esclarecido.</p></div><button class="button primary" type="button" data-open="job-dialog">Adicionar vaga <span aria-hidden="true">+</span></button></div>
+          <div class="filter-bar"><label class="search-field"><span class="sr-only">Buscar vagas</span><span aria-hidden="true">⌕</span><input id="job-search" type="search" placeholder="Buscar empresa, cargo ou tecnologia"></label><label class="select-field"><span class="sr-only">Filtrar compatibilidade</span><select id="job-filter"><option value="all">Todas as vagas</option><option value="eligible">Elegíveis para candidatura</option><option value="pending">Com pendências</option></select></label><span id="job-count" class="result-count"></span></div>
+          <div id="jobs-list" class="jobs-grid"></div>
+        </section>
+
+        <section id="view-applications" class="view" aria-labelledby="applications-title" hidden>
+          <div class="page-heading"><div><p class="eyebrow">PROCESSOS / PONTA A PONTA</p><h1 id="applications-title">Cada passo<br><em>registrado.</em></h1><p>O conteúdo enviado, o retorno recebido e a próxima ação em cada oportunidade.</p></div><span class="outline-note">Um histórico por candidatura</span></div>
+          <div class="filter-bar"><label class="search-field"><span class="sr-only">Buscar candidaturas</span><span aria-hidden="true">⌕</span><input id="application-search" type="search" placeholder="Buscar empresa ou candidatura"></label><label class="select-field"><span class="sr-only">Filtrar status</span><select id="application-filter"><option value="all">Todos os status</option><option value="active">Em andamento</option><option value="pending">Precisam de atenção</option><option value="closed">Encerradas</option></select></label><span id="application-count" class="result-count"></span></div>
+          <div id="applications-list" class="applications-list"></div>
+        </section>
+
+        <section id="view-interviews" class="view" aria-labelledby="interviews-title" hidden>
+          <div class="page-heading"><div><p class="eyebrow">AGENDA / PRÓXIMAS CONVERSAS</p><h1 id="interviews-title">Hora de<br><em>se conectar.</em></h1><p>Entrevistas com data, horário e contexto. Eventos confirmados na sua agenda.</p></div><button class="button primary" type="button" data-open="interview-dialog">Registrar entrevista <span aria-hidden="true">+</span></button></div>
+          <div id="calendar-note" class="notice" hidden></div><div id="interviews-list" class="interviews-list"></div>
+        </section>
+
+        <section id="view-profile" class="view" aria-labelledby="profile-title" hidden>
+          <div class="page-heading"><div><p class="eyebrow">PERFIL / UMA FONTE DE VERDADE</p><h1 id="profile-title">Seu repertório.<br><em>Seu caminho.</em></h1><p>Informações que fundamentam as respostas e orientam suas candidaturas.</p></div><button id="import-profile" class="button secondary" type="button">Importar meu portfólio <span aria-hidden="true">↓</span></button></div>
+          <form id="profile-form" class="profile-form">
+            <section class="panel"><div class="panel-heading"><div><p class="eyebrow">01 / QUEM É VOCÊ</p><h2>Perfil e currículo</h2></div><span id="profile-revision" class="muted small"></span></div><div class="form-grid"><label>Nome profissional<input name="name" autocomplete="name" maxlength="180"></label><label>E-mail profissional<input name="email" type="email" autocomplete="email" maxlength="254"></label><label>Localização<input name="location" placeholder="Cidade, estado e país" maxlength="180"></label><label>País onde você reside<select name="residence_country"><option value="">Não informado</option><option value="BR">Brasil</option><option value="IT">Itália</option><option value="PT">Portugal</option><option value="ES">Espanha</option><option value="DE">Alemanha</option><option value="FR">França</option><option value="GB">Reino Unido</option><option value="US">Estados Unidos</option><option value="CA">Canadá</option></select><span class="field-hint">Usado para conferir se a vaga aceita trabalho a partir do seu país.</span></label><label>Idiomas<input name="languages" placeholder="Ex.: italiano fluente, inglês intermediário" maxlength="500"></label></div><label>Seu currículo em texto<textarea name="resume_text" rows="12" placeholder="Cole seu currículo: experiências, formação, projetos e resultados." maxlength="80000"></textarea><span class="field-hint">Esta versão fica na sua área privada. O histórico preserva as versões usadas nas candidaturas anteriores.</span></label><label>Habilidades e tecnologias<textarea name="skills" rows="3" placeholder="Separe por vírgulas: Python, React, SQL, comunicação…" maxlength="15000"></textarea><span class="field-hint">Inclua competências que você consegue relacionar a experiências ou projetos.</span></label></section>
+            <section class="panel"><div class="panel-heading"><div><p class="eyebrow">02 / PARA ONDE VOCÊ QUER IR</p><h2>Preferências de busca</h2></div></div><div class="form-grid"><label>Cargos e áreas desejadas<input name="roles" placeholder="Ex.: Desenvolvedora Python, Full Stack" maxlength="1500"></label><label>Países de interesse<input name="countries" placeholder="Ex.: Brasil, Itália, Portugal" maxlength="1000"></label><label>Remuneração e condições<input name="compensation" placeholder="Suas condições ou a combinar" maxlength="1000"></label><label>Disponibilidade<input name="availability" placeholder="Carga horária e início disponíveis" maxlength="1000"></label><label>Compatibilidade mínima para envio<input name="min_score" type="number" min="0" max="100" value="80"><span class="field-hint">Índice de aderência aos requisitos, de 0 a 100. Não é uma chance de contratação.</span></label></div><label class="checkbox-label"><input name="remote_only" type="checkbox"><span>Buscar apenas oportunidades remotas</span></label><div class="autonomy-option"><label class="checkbox-label"><input name="auto_apply" type="checkbox"><span><strong>Permitir candidaturas automáticas dentro das minhas preferências</strong><small>O agente utiliza seu perfil e registra os envios. Informações indispensáveis ausentes ficam como pendência.</small></span></label></div></section>
+            <div class="form-footer"><p id="profile-save-status" role="status" class="muted small">Alterações valem para as próximas candidaturas.</p><button class="button primary" type="submit">Salvar meu perfil <span aria-hidden="true">→</span></button></div>
+          </form>
+        </section>
+
+        <section id="view-answers" class="view" aria-labelledby="answers-title" hidden>
+          <div class="page-heading"><div><p class="eyebrow">MEMÓRIA / RESPOSTAS COM FUNDAMENTO</p><h1 id="answers-title">Uma resposta.<br><em>Novos caminhos.</em></h1><p>Reutilize informações confirmadas e acompanhe a origem de cada resposta.</p></div><button class="button primary" type="button" data-open="answer-dialog">Adicionar resposta <span aria-hidden="true">+</span></button></div>
+          <div class="filter-bar"><label class="search-field"><span class="sr-only">Buscar respostas</span><span aria-hidden="true">⌕</span><input id="answer-search" type="search" placeholder="Buscar pergunta ou resposta"></label><span id="answer-count" class="result-count"></span></div><div id="answers-list" class="answers-grid"></div>
+        </section>
+
+        <section id="view-connections" class="view" aria-labelledby="connections-title" hidden>
+          <div class="page-heading"><div><p class="eyebrow">CONEXÕES / CADA PEÇA NO SEU LUGAR</p><h1 id="connections-title">Seu gestor.<br><em>Em movimento.</em></h1><p>Conecte suas contas e escolha onde o agente procura oportunidades.</p></div><span class="outline-note">Acesso pessoal</span></div>
+          <div id="connection-cards" class="connection-cards"></div>
+          <section class="panel"><div class="panel-heading"><div><p class="eyebrow">PROJETOS / EVIDÊNCIAS</p><h2>Seu GitHub, no seu perfil</h2></div><span class="small-asterisk" aria-hidden="true">↗</span></div><p class="section-intro">Sincronize seus repositórios públicos para relacionar os projetos ao seu repertório profissional.</p><form id="github-form" class="github-form"><label>Usuária do GitHub<input id="github-username" name="username" required pattern="[A-Za-z0-9-]+" maxlength="39" value="KarenAngelis" autocomplete="off"></label><button class="button secondary" type="submit">Sincronizar projetos <span aria-hidden="true">↓</span></button></form></section>
+          <section class="panel"><div class="panel-heading"><div><p class="eyebrow">FONTES DIRETAS</p><h2>Onde procurar</h2></div><button class="button secondary" type="button" data-open="source-dialog">Adicionar fonte <span aria-hidden="true">+</span></button></div><p class="section-intro">Acompanhe os quadros de vagas de empresas que usam Greenhouse ou Lever. Cada fonte é consultada pelo serviço do gestor.</p><div id="sources-list"></div></section>
+          <section class="panel autonomy-panel"><div class="autonomy-symbol" aria-hidden="true">✳</div><div><p class="eyebrow">AUTONOMIA COM CONTEXTO</p><h2>Suas preferências orientam o agente.</h2><p>Perfil, condições de trabalho e compatibilidade fazem parte de cada decisão. Você acompanha os registros e as pendências neste espaço.</p><button class="subtle-link" type="button" data-go="profile">Revisar minhas preferências →</button></div></section>
+        </section>
+      </main>
+      <footer class="workspace-footer"><span>Karen Angelis · Gestor de Carreira</span><span id="updated-at">Seus dados ficam na área privada.</span></footer>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <dialog id="job-dialog" aria-labelledby="job-dialog-title"><form id="job-form"><div class="dialog-heading"><div><p class="eyebrow">RADAR DE OPORTUNIDADES</p><h2 id="job-dialog-title">Adicionar uma vaga</h2></div><button class="icon-button" type="button" data-close aria-label="Fechar">×</button></div><p class="dialog-intro">Guarde a descrição completa para avaliar requisitos e condições.</p><div class="form-grid"><label>Empresa<input name="company" required maxlength="180"></label><label>Cargo<input name="title" required maxlength="200"></label></div><label>Link original<input name="url" type="url" required placeholder="https://" maxlength="2000"></label><label>Localização e modalidade<input name="location" placeholder="Ex.: remoto do Brasil" maxlength="500"></label><label>Descrição da vaga<textarea name="description" required rows="8" maxlength="40000"></textarea></label><label>E-mail indicado para candidatura <span class="optional">opcional</span><input name="apply_email" type="email" maxlength="254"><span class="field-hint">Use o endereço publicado no anúncio ou no canal oficial.</span></label><p class="form-error" role="alert" hidden></p><div class="dialog-footer"><button class="button quiet" type="button" data-close>Cancelar</button><button class="button primary" type="submit">Adicionar ao radar →</button></div></form></dialog>
+  <dialog id="answer-dialog" aria-labelledby="answer-dialog-title"><form id="answer-form"><div class="dialog-heading"><div><p class="eyebrow">BANCO DE RESPOSTAS</p><h2 id="answer-dialog-title">Guardar uma resposta</h2></div><button class="icon-button" type="button" data-close aria-label="Fechar">×</button></div><label>Pergunta ou assunto<input name="intent" required placeholder="Ex.: disponibilidade para início" maxlength="200"></label><label>Resposta confirmada<textarea name="text" required rows="6" maxlength="12000"></textarea></label><label>Fonte<input name="source" required placeholder="Ex.: currículo atualizado ou confirmação pessoal" maxlength="500"></label><p class="form-error" role="alert" hidden></p><div class="dialog-footer"><button class="button quiet" type="button" data-close>Cancelar</button><button class="button primary" type="submit">Guardar resposta →</button></div></form></dialog>
+  <dialog id="source-dialog" aria-labelledby="source-dialog-title"><form id="source-form"><div class="dialog-heading"><div><p class="eyebrow">FONTES DE OPORTUNIDADES</p><h2 id="source-dialog-title">Conectar uma fonte</h2></div><button class="icon-button" type="button" data-close aria-label="Fechar">×</button></div><label>Plataforma<select name="kind"><option value="greenhouse">Greenhouse</option><option value="lever">Lever</option></select></label><label>Identificador da empresa<input name="identifier" required pattern="[A-Za-z0-9_-]+" maxlength="100" placeholder="Identificador no endereço do quadro de vagas"><span class="field-hint">Ex.: em jobs.lever.co/empresa, o identificador é empresa. Informe apenas esse nome.</span></label><p class="form-error" role="alert" hidden></p><div class="dialog-footer"><button class="button quiet" type="button" data-close>Cancelar</button><button class="button primary" type="submit">Adicionar fonte →</button></div></form></dialog>
+  <dialog id="interview-dialog" aria-labelledby="interview-dialog-title"><form id="interview-form"><div class="dialog-heading"><div><p class="eyebrow">AGENDA DE ENTREVISTAS</p><h2 id="interview-dialog-title">Registrar entrevista</h2></div><button class="icon-button" type="button" data-close aria-label="Fechar">×</button></div><p class="dialog-intro">Registre uma conversa com horário já combinado. O evento é criado na sua agenda, sem enviar convites.</p><label>Candidatura<select name="application_id" required id="interview-application"></select></label><label>Título<input name="title" required maxlength="200" placeholder="Entrevista técnica · Empresa"></label><div class="form-grid"><label>Início<input name="start" type="datetime-local" required></label><label>Fim<input name="end" type="datetime-local" required></label></div><label>Fuso horário<input name="time_zone" value="America/Sao_Paulo" required maxlength="100"><span class="field-hint">As datas acima correspondem ao fuso informado.</span></label><label>Link da reunião <span class="optional">opcional</span><input name="meeting_url" type="url" placeholder="https://" maxlength="2000"></label><p class="form-error" role="alert" hidden></p><div class="dialog-footer"><button class="button quiet" type="button" data-close>Cancelar</button><button class="button primary" type="submit">Criar na minha agenda →</button></div></form></dialog>
+  <dialog id="application-dialog" class="wide-dialog" aria-labelledby="application-dialog-title"><div class="dialog-heading"><div><p id="application-dialog-company" class="eyebrow"></p><h2 id="application-dialog-title">Candidatura</h2></div><button class="icon-button" type="button" data-close aria-label="Fechar">×</button></div><div id="application-detail"></div></dialog>
+  <dialog id="codex-dialog" aria-labelledby="codex-dialog-title"><div class="dialog-heading"><div><p class="eyebrow">CONEXÃO COM SUA CONTA</p><h2 id="codex-dialog-title">Conectar Codex</h2></div><button class="icon-button" type="button" data-close aria-label="Fechar">×</button></div><p class="dialog-intro">Abra a página oficial de autenticação e informe este código na sua conta.</p><div class="device-code"><span>SEU CÓDIGO DE CONEXÃO</span><strong id="codex-code"></strong><button id="copy-code" class="subtle-link" type="button">Copiar código</button></div><a id="codex-verification" class="button primary full-width" target="_blank" rel="noopener noreferrer">Abrir autenticação oficial ↗</a><p id="codex-login-status" class="field-hint" role="status">Depois de concluir, atualize as conexões para verificar o resultado.</p><div class="dialog-footer"><button id="check-codex" class="button secondary" type="button">Já conectei · verificar</button></div></dialog>
+  <dialog id="codex-setup-dialog" aria-labelledby="codex-setup-title"><div class="dialog-heading"><div><p class="eyebrow">CONEXÃO INICIAL / CODEX</p><h2 id="codex-setup-title">Preparar a conexão</h2></div><button class="icon-button" type="button" data-close aria-label="Fechar">×</button></div><p id="codex-setup-reason" class="dialog-intro"></p><div class="notice">Esta etapa conecta sua conta ao serviço do gestor. Depois de configurada, a aplicação verifica a conexão pelo servidor.</div><p class="field-hint">Credenciais e arquivos de autenticação ficam no servidor. Não cole senhas ou tokens neste painel.</p><a id="codex-setup-documentation" class="subtle-link" href="https://developers.openai.com/siwc/token-sharing-open-source" target="_blank" rel="noopener noreferrer">Orientação oficial de conexão ↗</a><div class="dialog-footer"><button id="check-codex-setup" class="button secondary" type="button">Verificar conexão</button></div></dialog>
+</body>
+</html>
