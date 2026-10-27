@@ -66,4 +66,6 @@ def send_one(transport=None):
     except Exception as exc:
         with db() as c:
             c.execute("UPDATE messages SET status='unknown',error=? WHERE id=?",(type(exc).__name__,row['id']))
+            # Stop the queue on provider/auth/network failure instead of consuming more contacts.
+            c.execute("INSERT OR REPLACE INTO settings VALUES('paused','true')")
         return False

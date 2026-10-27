@@ -68,6 +68,36 @@ class ProspectTests(unittest.TestCase):
         with patch.dict(os.environ,{'SEND_ENABLED':'true'}):self.assertFalse(send_one(lambda m:self.fail()))
         self.client.post('/api/prospect/control',headers=self.headers,json={'paused':False})
         with patch.dict(os.environ,{'SEND_ENABLED':'true','SEND_DAILY_LIMIT':'0'}):self.assertFalse(send_one(lambda m:self.fail()))
+    def test_transport_failure_pauses_remaining_queue(self):
+        self.queued()
+        c=self.company('69777657000166');self.contact(c,'other@example.com')
+        self.client.post('/api/prospect/companies/'+c+'/queue',headers=self.headers)
+        def fail(message):raise TimeoutError()
+        with patch.dict(os.environ,{'SEND_ENABLED':'true'}):
+            self.assertFalse(send_one(fail))
+            self.assertTrue(self.client.get('/api/prospect/summary',headers=self.headers).json()['paused'])
+            with core.db() as db:
+                db.execute("UPDATE messages SET attempted='2000-01-01T00:00:00+00:00' WHERE status='unknown'")
+            self.assertFalse(send_one(lambda m:self.fail('Queue must remain paused')))
+        with core.db() as db:
+            self.assertEqual(db.execute("SELECT count(*) FROM messages WHERE status='queued'").fetchone()[0],1)
+
+    def test_1500_ceiling_and_rolling_expiry(self):
+        self.queued()
+        stamp=(core.datetime.now(core.timezone.utc)-timedelta(hours=1)).isoformat()
+        with core.db() as db:
+            for i in range(1500):
+                key=f'{i:014d}'
+                db.execute("INSERT INTO companies(cnpj,name,opened,source,updated) VALUES(?,?,?,?,?)",(key,'Test',self.day,'fixture',stamp))
+                db.execute("INSERT INTO messages(cnpj,email,status,created,attempted,html,subject) VALUES(?,?,?,?,?,?,?)",(key,f'test{i}@example.com','accepted',stamp,stamp,'test','test'))
+        sent=[]
+        with patch.dict(os.environ,{'SEND_ENABLED':'true','SEND_DAILY_LIMIT':'1500'}):
+            self.assertFalse(send_one(sent.append))
+            with core.db() as db:
+                db.execute("UPDATE messages SET attempted='2000-01-01T00:00:00+00:00' WHERE cnpj='00000000000000'")
+            self.assertTrue(send_one(sent.append))
+        self.assertEqual(len(sent),1)
+
     def test_paginated_collection_resume_dedup_and_no_email_invention(self):
         pages=[]
         def source(request):

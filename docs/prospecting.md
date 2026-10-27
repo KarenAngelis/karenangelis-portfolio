@@ -97,3 +97,34 @@ Testes usam HTTP mock e transporte de e-mail em memória. Nenhuma consulta paga 
 Referências do contrato consultado em 27/10/2026:
 - https://docs.casadosdados.com.br/pesquisa-avan%C3%A7ada-de-empresas-16579062e0
 - https://docs.casadosdados.com.br/informa%C3%A7%C3%B5es-b%C3%A1sicas-1278846m0
+
+## Google Workspace — contato@karenangelis.com
+
+O arquivo `.env.example` agora prepara SMTP `smtp.gmail.com:587` com STARTTLS,
+remetente e usuário `contato@karenangelis.com`, teto de **1.500 tentativas em
+24 horas móveis**, intervalo mínimo de 55 segundos e worker a cada 5 segundos.
+É um teto, não uma garantia de volume ou entrega. O banco preserva a contagem
+entre reinícios; os envios manuais e de outros sistemas não entram nessa contagem.
+
+`SEND_ENABLED=false` continua até a conexão e publicação reais. No servidor,
+usar uma senha de app Google em `SMTP_PASSWORD` (quando permitida pela política
+da conta e com verificação em duas etapas); nunca a senha normal e nunca no Git.
+A conexão Gmail do ChatGPT não fornece essa credencial ao backend.
+
+Contas de teste têm limite de 500. A documentação do Google informa que o aumento
+após o teste depende de pagamentos acumulados equivalentes a USD 100 e pode levar
+até 75 dias após esse patamar. Ajustar temporariamente `SEND_DAILY_LIMIT` à cota
+efetivamente disponível, descontando outros usos da caixa; contratar não comprova
+liberação imediata dos 1.500. O aplicativo não contorna limites do provedor.
+
+Qualquer falha no transporte pausa a fila persistentemente. A tentativa fica
+`unknown` para reconciliação, e os demais contatos permanecem `queued`. Depois de
+resolver credenciais/cota/conectividade, retomar pelo painel. Não há retry automático.
+
+Antes da ativação: credencial no servidor, domínio e autenticação de e-mail
+verificados, histórico importado, teste para a própria caixa e implantação com
+banco persistente. Nenhum desses passos é comprovado apenas por abrir o Gmail.
+
+Referências:
+- https://knowledge.workspace.google.com/admin/gmail/send-email-from-a-printer-scanner-or-app
+- https://knowledge.workspace.google.com/admin/gmail/gmail-sending-limits-in-google-workspace
