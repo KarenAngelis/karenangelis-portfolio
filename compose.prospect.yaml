@@ -1,0 +1,23 @@
+# Optional standalone stack; integrate the localhost port into the EXISTING proxy.
+services:
+  prospect-api:
+    build:
+      context: .
+      dockerfile: apps/prospect-api/Dockerfile
+    restart: unless-stopped
+    env_file: .env.prospect
+    ports:
+      - "127.0.0.1:4182:8002"
+    volumes:
+      - prospect_data:/data
+  prospect-worker:
+    build:
+      context: .
+      dockerfile: apps/prospect-api/Dockerfile
+    command: ["python", "worker.py"]
+    restart: unless-stopped
+    env_file: .env.prospect
+    volumes:
+      - prospect_data:/data
+volumes:
+  prospect_data:
