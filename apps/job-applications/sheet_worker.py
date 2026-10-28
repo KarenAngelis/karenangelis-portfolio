@@ -109,9 +109,12 @@ def collect(sheet):
             continue
         sheet.append_history(timestamp(),marker,'SEARCH_ATTEMPT','','','Uma página; intervalo mínimo de 12h')
         # Use a separate client: never send a Google bearer token to the job source.
-        with httpx.Client(timeout=45) as source:
+        params=dict(search['params'])
+        if search.get('queries'):
+            params['q']=search['queries'][len(starts)%len(search['queries'])]
+        with httpx.Client(timeout=httpx.Timeout(120,connect=15)) as source:
             response=source.get('https://serpapi.com/search',params={
-                'engine':'google_jobs','api_key':key,**search['params']})
+                'engine':'google_jobs','api_key':key,**params})
         if response.status_code!=200:
             raise RuntimeError('Job source request failed')
         result=response.json()
