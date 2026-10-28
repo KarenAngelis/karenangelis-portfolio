@@ -1,5 +1,5 @@
 [
- {"country":"BR","params":{"gl":"br","hl":"pt"},"queries":["desenvolvedor fullstack pleno remoto","desenvolvedor frontend pleno remoto freelance","analista banco de dados pleno remoto"]},
- {"country":"PT","params":{"gl":"pt","hl":"pt"},"queries":["fullstack developer remoto","frontend developer freelance remoto","database developer remoto"]},
- {"country":"IT","params":{"gl":"it","hl":"it"},"queries":["sviluppatore full stack remoto","frontend developer freelance remoto","database developer remoto"]}
+ {"country":"BR","params":{"gl":"br","hl":"pt","location":"Brazil","google_domain":"google.com.br"},"queries":["desenvolvedor fullstack pleno remoto","desenvolvedor frontend pleno remoto freelance","analista banco de dados pleno remoto"]},
+ {"country":"PT","params":{"gl":"pt","hl":"pt","location":"Portugal","google_domain":"google.pt"},"queries":["fullstack developer remoto","frontend developer freelance remoto","database developer remoto"]},
+ {"country":"IT","params":{"gl":"it","hl":"it","location":"Italy","google_domain":"google.it"},"queries":["sviluppatore full stack remoto","frontend developer freelance remoto","database developer remoto"]}
 ]

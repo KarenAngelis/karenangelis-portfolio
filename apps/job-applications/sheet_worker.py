@@ -118,7 +118,7 @@ def collect(sheet):
         if response.status_code!=200:
             raise RuntimeError('Job source request failed')
         result=response.json()
-        if result.get('error'):
+        if result.get('error') and result['error'] != "Google hasn't returned any results for this query.":
             raise RuntimeError('Job source returned an error')
         rows=[]
         for job in result.get('jobs_results',[]):
