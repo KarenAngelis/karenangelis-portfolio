@@ -1,7 +1,7 @@
 """One-time, operator-initiated OAuth connection on the portfolio's HTTPS host.
 
 No public authorization-start endpoint: an operator runs `authorize` in the VPS.
-Only the callback and a non-sensitive health response are public.
+Only the callback, privacy notice and a non-sensitive health response are public.
 """
 import base64
 import hashlib
@@ -91,6 +91,26 @@ def complete(query, client=None):
             session.close()
 
 
+PRIVACY_NOTICE = """Karen Angelis Candidaturas — Privacidade
+Atualizado em 28 de outubro de 2026.
+
+Aplicativo de uso pessoal de Karen Angelis para organizar vagas e candidaturas.
+Contato: karen.denich@gmail.com. Site: https://karenangelis.com/.
+
+Dados e finalidade
+O aplicativo consulta o endereço de e-mail da conta Google para confirmar a titularidade. Usa a API Google Sheets para registrar vagas, contatos profissionais publicados nas vagas, etapas, datas e comprovantes de candidatura em uma planilha escolhida pela titular. Usa a API Gmail para enviar candidaturas autorizadas, com apresentação profissional e links de projetos. A permissão Gmail concedida é apenas de envio; o aplicativo não lê a caixa de entrada.
+
+Acesso e armazenamento
+Embora a permissão de planilhas permita acesso amplo, o código desta automação trabalha com a planilha de candidaturas configurada. Credenciais OAuth ficam no servidor da titular, em arquivos com acesso restrito, e não são publicadas no GitHub nem incluídas na planilha. Vagas e histórico permanecem no Google Sheets até exclusão pela titular. O histórico evita envios duplicados; sua exclusão exige pausar o serviço e revisar a fila.
+
+Serviços e compartilhamento
+Google processa autenticação, planilhas e envio de e-mail. A VPS Hostinger executa o aplicativo. A SerpApi recebe consultas de vagas; o código não envia a ela tokens Google, conteúdo da planilha ou conteúdo da caixa postal. As empresas destinatárias recebem somente as candidaturas enviadas a seus contatos. Pessoas e agentes que tenham acesso concedido pela titular à planilha podem consultar seu conteúdo. O aplicativo não vende dados e não os usa para publicidade ou treinamento de modelos de IA.
+
+Controle da titular
+O acesso pode ser revogado na Conta Google, em Segurança e conexões com aplicativos de terceiros. Para interromper envios, desative o serviço na VPS. Para eliminar os dados, pause primeiro o serviço, remova os registros da planilha e exclua as credenciais do servidor. Dúvidas e pedidos podem ser enviados ao contato acima.
+"""
+
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, *args):
         pass  # Authorization codes must never be written to access logs.
@@ -99,6 +119,8 @@ class Handler(BaseHTTPRequestHandler):
         parts = urlsplit(self.path)
         if parts.path == '/api/jobs/oauth/health':
             self.respond(200, 'Serviço de conexão disponível.')
+        elif parts.path == '/api/jobs/oauth/privacy':
+            self.respond(200, PRIVACY_NOTICE)
         elif parts.path == '/api/jobs/oauth/callback':
             try:
                 complete(parse_qs(parts.query))
