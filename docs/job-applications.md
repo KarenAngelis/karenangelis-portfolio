@@ -1,77 +1,67 @@
-# Candidaturas por e-mail — implementação inicial, não ativada
+# Candidaturas com Google Sheets e Gmail
 
-Conta exclusiva: karen.denich@gmail.com. Independente da campanha comercial,
-com banco, volume, variáveis e serviço próprios. Não altera a coleta RFB.
-
-## Implementado
-
-- Consulta SerpApi Google Jobs para BR/PT/IT a cada 12h (3 consultas/ciclo,
-  primeira página apenas). Fonte requer chave e plano; nenhuma compra realizada.
-- Preserva descrição, empresa, links, candidatos a e-mail e data de descoberta.
-- Deduplica anúncios por ID da fonte. Resultados entram em `review`.
-- HTML com currículo online, GitHub e três projetos. Idiomas pt-BR/pt-PT/it/en;
-  nome da empresa escapado e saudação alternativa quando não informado.
-- Worker para registros preparados, SMTP Gmail TLS, teto móvel de 24h,
-  intervalo mínimo de 180s, bloqueio de concorrência e supressão.
-- Teto solicitado 500, reserva padrão 50: no máximo 450 tentativas/24h.
-  Não mede outros envios da conta. Limites do Google continuam prevalecendo.
-- Só uma tentativa por endereço; erros ambíguos pausam toda a fila e não
-  são reenviados. `accepted` significa aceito pelo SMTP, não entregue.
-
-## Pendências antes de ativar
-
-### Google Sheets — conexão preparada, migração ainda pendente
-
+Conta: karen.denich@gmail.com. Projeto Google: subtle-hangar-513017-p2.
 Planilha: https://docs.google.com/spreadsheets/d/1XaS_gJ_gp7V3NHFInpx4qrQNecz3ApmBWr4maHugt8o/edit
 
-`sheets.py` implementa autenticação por refresh token do servidor, leitura com
-validação de colunas/IDs e escrita RAW no histórico. `python sheets.py` testa
-somente a conexão/leitura; não envia e-mails. Os testes usam transporte simulado.
-Ainda é necessário autorizar OAuth, integrar descoberta/fila/status à planilha
-e validar na VPS. O worker existente continua com SQLite; não afirmar migração
-concluída. Alterar um status na planilha ainda não dispara envio.
+## Operação
 
-O HTML pt-BR usa agora o arquivo original aprovado, preservando layout, cartões,
-cores e os dois botões de mesma largura. Os outros idiomas ainda usam o template
-traduzido anterior; antes da ativação, aplicar as traduções ao layout aprovado.
+`compose.jobs.yaml` executa `sheet_worker.py`. As vagas e o registro durável de
+cada tentativa ficam na planilha. Não usa o SQLite da implementação anterior.
+`jobs.py` preserva os comandos antigos apenas para compatibilidade/testes e
+fornece o renderizador; não iniciar seu comando `run` em paralelo.
 
-Hostinger pediu login em 28/10/2026; nenhum deploy desta integração foi realizado.
+Um único coordenador na VPS mantém lock no volume jobs_data. O histórico impede
+reenvios por ID e por endereço, inclusive se alguém redefinir o status. Uma
+reserva sem confirmação do Gmail bloqueia toda a fila para conciliação manual.
+Não apagar nem editar IDs, Histórico ou os campos de envio. Usar visualizações
+com filtro; não reordenar fisicamente linhas durante processamento. Uma planilha
+não oferece transações entre vários escritores; só o coordenador envia.
 
-### Demais requisitos
+A cada 12h são feitas até três consultas SerpApi (BR/PT/IT), primeira página.
+O início de cada consulta é persistido antes da chamada; reinícios não gastam
+novamente a cota. Plano observado: 250 buscas/mês; agenda usa até186/mês.
+A consulta de vagas não faz candidatura em sites nem triagem automática por IA.
 
-1. SERPAPI_API_KEY para conta/plano escolhido pelo usuário.
-2. Autenticação de servidor do Gmail solicitado (senha de app, quando disponível).
-   A conexão Gmail do ChatGPT não exporta tokens para a VPS.
-3. Currículo PDF aprovado e anexação para anúncios que o exigem (não implementada).
-4. Triagem de compatibilidade: vaga ainda ativa, nível pleno/intermédio/middle,
-   fullstack/frontend/SQL/DBA; freelance ou emprego, idioma e elegibilidade para
-   trabalho a partir do Brasil. Não confundir inglês da mensagem com fluência.
-5. Confirmar que cada e-mail é canal de candidatura, não suporte ou privacidade;
-   seguir assunto e documentação pedidos pelo anúncio. A extração não prova isso.
-6. Teste para a própria conta e conciliação de respostas/devoluções antes de escala.
+Para liberar e-mail, um agente deve conferir vigência, nível/stack, elegibilidade
+para trabalhar do Brasil, idioma e instruções/anexos. Depois, preencher descrição
+original contendo o e-mail, fonte, link, idioma e observação `TRIAGEM APROVADA`,
+e mudar Status para `Pronto para e-mail`, Canal `E-mail`. Vagas que exigem anexos
+ou assunto específico não devem ser liberadas: suporte ainda pendente.
 
-A triagem automática de compatibilidade e o processamento de devoluções ainda
-não estão implementados. Não é uma automação de candidatura ponta a ponta.
-O idioma é selecionado na preparação; priorizar idioma solicitado no anúncio,
-depois idioma do anúncio e só então país. Não enviar com variáveis pendentes.
+O coordenador verifica a fila a cada60s. Máximo configurado:500 menos50 de reserva
+para uso pessoal=450 tentativas/24h; mínimo180s entre tentativas. Isso não garante
+cota do Google nem mede outros envios da conta. Vagas por link permanecem na
+planilha para os agentes. `Candidatura concluída` indica aceite pela API Gmail,
+não leitura/entrega ao destinatário. ID e link da mensagem são guardados.
+Respostas/devoluções não são sincronizadas automaticamente (escopo gmail.send).
 
-## Operação após configurar segredos e concluir validação
+## Credenciais e implantação
 
-Copiar .env.example para .env.jobs na raiz; restringir permissões a 600.
-Nunca versionar .env.jobs. Iniciar com JOBS_SEND_ENABLED=false.
+Pasta dedicada VPS: /opt/karen-jobs. Segredos em secrets/client.json,
+secrets/token.json e secrets/serpapi.txt, fora do Git e do contexto Docker.
+OAuth pede identificação de e-mail, Google Sheets e Gmail send. O escopo Sheets
+é amplo; o cliente do backend fixa a planilha acima. A autorização do usuário foi
+concedida em28/10/2026. Leitura de8 registros e testeHTML para a própria conta
+confirmados; Gmail ID1a183aa26387d64f, registrado no Histórico.
 
-    docker compose -p karen-jobs -f compose.jobs.yaml up -d --build
-    docker compose -p karen-jobs -f compose.jobs.yaml exec job-applications python jobs.py status
+`compose.jobs-oauth.yaml` executa callback na porta local4183. Caddy encaminha
+somente /api/jobs/oauth/*, com backup antes da alteração. Não há logs de códigos.
+PKCE, state de uso único e validação do e-mail protegem a conexão. Para reconectar:
 
-Preparar somente após triagem, e somente se não houver exigência de anexos ou
-instruções ainda não atendidas (suporte a isso pendente):
+    docker compose -p karen-jobs-oauth -f compose.jobs-oauth.yaml exec -T jobs-oauth python oauth_service.py authorize
 
-    python jobs.py prepare --id ID --email EMAIL_DO_ANUNCIO --language pt-BR
+O projeto Google ainda está em modo Testando. A autorização offline pode expirar
+em7dias; concluir o branding/publicação OAuth antes de prometer operação contínua.
 
-Não limpar pausa/status `unknown` sem conciliar a caixa de enviados. Caso o
-processo morra em `sending`, ele bloqueia a fila para investigação, sem repetir.
+## HTML e testes
 
-## Testes
+Todos os idiomas usam a estrutura do HTML aprovado: currículo e GitHub com mesma
+largura, cards Luniay/Clycka/StockMaster, cores, espaçamento e botões. Idiomas
+pt-BR, pt-PT, italiano e inglês. Sem anexação automática de currículo.
 
     cd apps/job-applications
-    python -m unittest -v
+    python -m unittest -q
+
+26 testes: OAuth/PKCE, schema, duplicação, reserva antes do envio, falhas ambíguas,
+link-only, limite, destinatário presente na fonte e corpo HTML. Testes de rede
+simulados, exceto a leitura e o envio real de teste mencionados acima.

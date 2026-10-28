@@ -66,18 +66,37 @@ def collect():
 def render(company, title, language):
     texts = json.loads((ROOT / 'translations.json').read_text())[language]
     greeting = texts['greeting'].format(company=company) if company else texts['fallback']
-    if language == 'pt-BR':
-        template = (ROOT / 'template.approved.pt-BR.html').read_text()
-        # Remove authoring comments containing examples of the placeholder.
-        template = re.sub(r'<!--(?!\[if).*?-->', '', template, flags=re.S)
-        template = template.replace('{{saudacao}}', html.escape(greeting))
-        if '{{' in template:
-            raise ValueError('Unresolved template variables')
-        return texts['subject'].format(title=title), template
-    template = (ROOT / 'template.html').read_text()
-    values = {**texts, 'greeting': greeting, 'language': language}
-    for key, value in values.items():
-        template = template.replace('{{' + key + '}}', html.escape(value))
+    template = (ROOT / 'template.approved.pt-BR.html').read_text()
+    template = re.sub(r'<!--(?!\[if).*?-->', '', template, flags=re.S)
+    template = template.replace('{{saudacao}}', html.escape(greeting))
+    if language != 'pt-BR':
+        # Keep every layout element/style of the approved HTML in all languages.
+        template = template.replace('lang="pt-BR"', 'lang="'+language+'"')
+        paragraphs = {
+            'Gostaria de apresentar meu trabalho':texts['intro']+' '+texts['data'],
+            'Minha experiência em suporte SaaS':texts['background'],
+            'Produto web e aplicativo Flutter/Dart':texts['luniay'],
+            'Produto de atendimento com interface web':texts['clycka'],
+            'Gestão de estoque com React':texts['stock'],
+            'Tenho interesse em oportunidades':texts['closing'],
+        }
+        for prefix,value in paragraphs.items():
+            template,n=re.subn('>'+re.escape(prefix)+r'.*?</p>',
+                lambda m:'>'+html.escape(value)+'</p>',template,count=1,flags=re.S)
+            if n!=1: raise ValueError('Approved template paragraph missing')
+        labels={'Currículo online':texts['cv'],'Ver meu GitHub':texts['github'],
+                'Um pouco do que construo.':texts['projects'],'Conhecer Luniay':texts['visit'],
+                'Conhecer Clycka':texts['visit'],'Explorar o código':texts['code'],
+                'Obrigada pela atenção,':texts['thanks'],'Desenvolvedora Full Stack':texts['role'],
+                'DESENVOLVIMENTO WEB &amp; APLICATIVOS':texts['role'].upper(),
+                'Interfaces, APIs e dados conectados<br>às necessidades de quem usa.':texts['role'],
+                'Conheça meu trabalho com interfaces, APIs e banco de dados — portfólio, aplicações e código.':texts['role'],
+                'PROJETOS SELECIONADOS':{'pt-PT':'PROJETOS SELECIONADOS','it':'PROGETTI SELEZIONATI','en':'SELECTED PROJECTS'}[language],
+                'Vamos conversar?':{'pt-PT':'Vamos conversar?','it':'Parliamone!','en':"Let’s talk!"}[language],
+                '/ INTEGRAÇÕES':{'pt-PT':'/ INTEGRAÇÕES','it':'/ INTEGRAZIONI','en':'/ INTEGRATIONS'}[language],
+                '/ API + DADOS':{'pt-PT':'/ API + DADOS','it':'/ API + DATI','en':'/ API + DATA'}[language]}
+        for before,after in labels.items():
+            template=template.replace(before,html.escape(after))
     if '{{' in template:
         raise ValueError('Unresolved template variables')
     return texts['subject'].format(title=title), template

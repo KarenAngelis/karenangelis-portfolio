@@ -76,6 +76,35 @@ class Sheets:
             json={'values': [[timestamp, job_id, 'Backend candidaturas', event,
                               previous, status, evidence]]})
 
+    def history(self):
+        data = self.request('GET', '/values/Historico!A1:G10000').get('values', [])
+        if len(data) >= 10000:
+            raise ValueError('History capacity reached; archive before resuming')
+        return [r + [''] * (7-len(r)) for r in data[1:] if r]
+
+    def append_jobs(self, rows):
+        if not rows:
+            return
+        existing = self.read_jobs()
+        if len(existing) + len(rows) > 999:
+            raise ValueError('Sheet capacity reached')
+        self.request('POST', '/values/Candidaturas!A:X:append',
+            params={'valueInputOption':'RAW','insertDataOption':'INSERT_ROWS'},
+            json={'values': [[row.get(h, '') for h in HEADERS] for row in rows]})
+
+    def update_system(self, job_id, values):
+        # Re-resolve ID each time; never keep row numbers across collection cycles.
+        raw = self.request('GET','/values/Candidaturas!A1:X1000').get('values',[])
+        positions = [i+1 for i,r in enumerate(raw) if r and r[0]==job_id]
+        if len(positions)!=1:
+            raise ValueError('Job ID missing or ambiguous')
+        row = positions[0]
+        allowed={'Status':'L','Tentativa em':'P','Enviado em':'Q',
+                 'Comprovante ou thread':'S','Atualizado em':'V','ID da mensagem':'X'}
+        data=[{'range':f'Candidaturas!{allowed[k]}{row}','values':[[v]]}
+              for k,v in values.items()]
+        self.request('POST','/values:batchUpdate',json={'valueInputOption':'RAW','data':data})
+
 
 if __name__ == '__main__':
     import json

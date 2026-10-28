@@ -4,8 +4,10 @@ services:
       context: .
       dockerfile: apps/job-applications/Dockerfile
     env_file: .env.jobs
+    command: [python, -u, sheet_worker.py]
     restart: unless-stopped
     volumes:
       - jobs_data:/data
+      - ./secrets:/secrets:ro
 volumes:
   jobs_data:
