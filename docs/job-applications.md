@@ -5,7 +5,7 @@ com banco, volume, variáveis e serviço próprios. Não altera a coleta RFB.
 
 ## Implementado
 
-- Consulta SerpApi Google Jobs para BR/PT/IT a cada 6h (3 consultas/ciclo,
+- Consulta SerpApi Google Jobs para BR/PT/IT a cada 12h (3 consultas/ciclo,
   primeira página apenas). Fonte requer chave e plano; nenhuma compra realizada.
 - Preserva descrição, empresa, links, candidatos a e-mail e data de descoberta.
 - Deduplica anúncios por ID da fonte. Resultados entram em `review`.
@@ -19,6 +19,25 @@ com banco, volume, variáveis e serviço próprios. Não altera a coleta RFB.
   são reenviados. `accepted` significa aceito pelo SMTP, não entregue.
 
 ## Pendências antes de ativar
+
+### Google Sheets — conexão preparada, migração ainda pendente
+
+Planilha: https://docs.google.com/spreadsheets/d/1XaS_gJ_gp7V3NHFInpx4qrQNecz3ApmBWr4maHugt8o/edit
+
+`sheets.py` implementa autenticação por refresh token do servidor, leitura com
+validação de colunas/IDs e escrita RAW no histórico. `python sheets.py` testa
+somente a conexão/leitura; não envia e-mails. Os testes usam transporte simulado.
+Ainda é necessário autorizar OAuth, integrar descoberta/fila/status à planilha
+e validar na VPS. O worker existente continua com SQLite; não afirmar migração
+concluída. Alterar um status na planilha ainda não dispara envio.
+
+O HTML pt-BR usa agora o arquivo original aprovado, preservando layout, cartões,
+cores e os dois botões de mesma largura. Os outros idiomas ainda usam o template
+traduzido anterior; antes da ativação, aplicar as traduções ao layout aprovado.
+
+Hostinger pediu login em 28/10/2026; nenhum deploy desta integração foi realizado.
+
+### Demais requisitos
 
 1. SERPAPI_API_KEY para conta/plano escolhido pelo usuário.
 2. Autenticação de servidor do Gmail solicitado (senha de app, quando disponível).

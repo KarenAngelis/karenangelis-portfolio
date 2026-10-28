@@ -66,6 +66,14 @@ def collect():
 def render(company, title, language):
     texts = json.loads((ROOT / 'translations.json').read_text())[language]
     greeting = texts['greeting'].format(company=company) if company else texts['fallback']
+    if language == 'pt-BR':
+        template = (ROOT / 'template.approved.pt-BR.html').read_text()
+        # Remove authoring comments containing examples of the placeholder.
+        template = re.sub(r'<!--(?!\[if).*?-->', '', template, flags=re.S)
+        template = template.replace('{{saudacao}}', html.escape(greeting))
+        if '{{' in template:
+            raise ValueError('Unresolved template variables')
+        return texts['subject'].format(title=title), template
     template = (ROOT / 'template.html').read_text()
     values = {**texts, 'greeting': greeting, 'language': language}
     for key, value in values.items():
@@ -159,7 +167,7 @@ def run():
                 collect()
             except Exception as exc:
                 print('Collection failed:', type(exc).__name__, flush=True)
-            next_collect = time.time() + max(3600,int(os.getenv('JOBS_SEARCH_INTERVAL_SECONDS','21600')))
+            next_collect = time.time() + max(43200,int(os.getenv('JOBS_SEARCH_INTERVAL_SECONDS','43200')))
         send_one()
         time.sleep(10)
 
