@@ -7,6 +7,7 @@ from pathlib import Path
 import httpx
 from core import init, db, daily_schedule, collect_page, queue
 from mailer import send_one
+from contact_validation import validate_batch
 
 logging.basicConfig(level=logging.INFO)
 
@@ -23,9 +24,10 @@ def run():
                     if os.getenv("COLLECT_PROVIDER", "rfb") == "casa_dados":
                         daily_schedule()
                         collect_page(client)
+                    validate_batch()
                     if os.getenv('AUTO_QUEUE_VERIFIED') == 'true':
                         with db() as c:
-                            for r in c.execute('SELECT cnpj FROM companies WHERE contact_verified=1 AND cnpj NOT IN (SELECT cnpj FROM messages) AND email NOT IN (SELECT email FROM suppression)').fetchall():
+                            for r in c.execute('SELECT cnpj FROM companies WHERE contact_verified=1 AND cnpj NOT IN (SELECT cnpj FROM messages) AND email NOT IN (SELECT email FROM suppression) LIMIT 500').fetchall():
                                 queue(c,r['cnpj'])
                     send_one()
                 except Exception as exc:

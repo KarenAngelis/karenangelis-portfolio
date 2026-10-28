@@ -17,3 +17,7 @@ Os arquivos oficiais são disponibilizados por competência: isso não garante a
 Catálogo oficial: https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj
 
 Nenhum arquivo de empresas, banco ou credencial deve ser publicado no GitHub.
+
+## Enfileiramento automático
+
+AUTO_VALIDATE_CONTACTS=true habilita checagem de formato e MX de contatos da RFB, em lotes de 10. AUTO_QUEUE_VERIFIED=true enfileira os elegíveis; SEND_ENABLED=true libera o worker respeitando limite e pausa. contact_checks registra a evidência: mx_ok significa apenas domínio com rota de e-mail, não caixa comprovada nem consentimento. Falhas temporárias de DNS são reavaliadas após uma hora; ausência de MX após sete dias. Remoções e contatos anteriores são excluídos antes da checagem e novamente no envio. Não há sondagem SMTP de destinatários.
