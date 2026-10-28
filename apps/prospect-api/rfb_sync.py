@@ -1,4 +1,4 @@
-"""Daily official RFB discovery/download/import, isolated from the SMTP worker."""
+"""Periodic official RFB discovery/download/import, isolated from the SMTP worker."""
 import fcntl
 import json
 import logging
@@ -92,6 +92,7 @@ def sync(client, cache):
 
 
 def run():
+    interval = max(300, int(os.getenv('RFB_CHECK_INTERVAL_SECONDS', '3600')))
     init()
     cache = Path(os.getenv('PROSPECT_DB','/data/prospect.sqlite3')).parent / 'rfb-cache'
     cache.mkdir(exist_ok=True)
@@ -109,7 +110,7 @@ def run():
                                   (json.dumps({'status':'error','error':type(exc).__name__,'updated':now()}),))
                     time.sleep(3600)
                     continue
-            time.sleep(86400)
+            time.sleep(interval)
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
