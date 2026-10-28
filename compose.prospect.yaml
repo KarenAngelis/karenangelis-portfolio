@@ -19,5 +19,16 @@ services:
     env_file: .env.prospect
     volumes:
       - prospect_data:/data
+  prospect-rfb-sync:
+    build:
+      context: .
+      dockerfile: apps/prospect-api/Dockerfile
+    command: ["python", "rfb_sync.py"]
+    restart: unless-stopped
+    env_file: .env.prospect
+    volumes:
+      - prospect_data:/data
+    mem_limit: 512m
+    cpus: 0.5
 volumes:
   prospect_data:
