@@ -4,6 +4,8 @@ Only the coordinator may write system columns. This transport deliberately does
 not treat spreadsheet edits as permission to send an application.
 """
 import os
+import json
+from pathlib import Path
 from urllib.parse import quote
 import httpx
 
@@ -21,11 +23,22 @@ class Sheets:
         self.base = 'https://sheets.googleapis.com/v4/spreadsheets/' + SHEET_ID
 
     def authenticate(self):
+        secret_dir = Path(os.getenv('JOBS_SECRETS_DIR', '/secrets'))
+        if (secret_dir / 'token.json').exists():
+            settings = json.loads((secret_dir / 'client.json').read_text())
+            token = json.loads((secret_dir / 'token.json').read_text())
+            if token.get('email') != 'karen.denich@gmail.com':
+                raise ValueError('Unexpected Google account')
+            settings['refresh_token'] = token['refresh_token']
+        else:
+            settings = {
+                'client_id': os.environ['JOBS_GOOGLE_CLIENT_ID'],
+                'client_secret': os.environ['JOBS_GOOGLE_CLIENT_SECRET'],
+                'refresh_token': os.environ['JOBS_GOOGLE_REFRESH_TOKEN'],
+            }
         response = self.client.post('https://oauth2.googleapis.com/token', data={
             'grant_type': 'refresh_token',
-            'client_id': os.environ['JOBS_GOOGLE_CLIENT_ID'],
-            'client_secret': os.environ['JOBS_GOOGLE_CLIENT_SECRET'],
-            'refresh_token': os.environ['JOBS_GOOGLE_REFRESH_TOKEN'],
+            **settings,
         })
         if response.status_code != 200:
             raise RuntimeError('Google authorization failed; reconnect the account')

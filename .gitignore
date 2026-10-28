@@ -21,3 +21,4 @@ stats.sqlite3
 
 # Job application sender credentials
 .env.jobs
+secrets/

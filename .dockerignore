@@ -12,3 +12,4 @@ node_modules
 **/*.worker.lock
 
 .env.jobs
+secrets/
