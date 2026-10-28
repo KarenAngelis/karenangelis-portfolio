@@ -20,8 +20,9 @@ def run():
         with httpx.Client(timeout=30,follow_redirects=False) as client:
             while True:
                 try:
-                    daily_schedule()
-                    collect_page(client)
+                    if os.getenv("COLLECT_PROVIDER", "rfb") == "casa_dados":
+                        daily_schedule()
+                        collect_page(client)
                     if os.getenv('AUTO_QUEUE_VERIFIED') == 'true':
                         with db() as c:
                             for r in c.execute('SELECT cnpj FROM companies WHERE contact_verified=1 AND cnpj NOT IN (SELECT cnpj FROM messages) AND email NOT IN (SELECT email FROM suppression)').fetchall():
