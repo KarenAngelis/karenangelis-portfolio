@@ -1,0 +1,11 @@
+services:
+  job-applications:
+    build:
+      context: .
+      dockerfile: apps/job-applications/Dockerfile
+    env_file: .env.jobs
+    restart: unless-stopped
+    volumes:
+      - jobs_data:/data
+volumes:
+  jobs_data:
