@@ -95,12 +95,13 @@ class Sheets:
         # No row sorting or rewriting of human edits.
         import re
         updated = appended.get('updates', {}).get('updatedRange', '')
-        end = re.search(r':X(\d+)$', updated)
-        if end:
-            self.expand_job_table(int(end.group(1)))
+        span = re.search(r'!A(\d+):X(\d+)$', updated)
+        if span:
+            self.expand_job_table(int(span.group(2)), int(span.group(1)))
 
-    def expand_job_table(self, end_row):
+    def expand_job_table(self, end_row, start_row=None):
         metadata = self.request('GET', '', params={'fields': 'sheets(properties(sheetId,title),tables(tableId,name,range))'})
+        requests = []
         for tab in metadata.get('sheets', []):
             if tab.get('properties', {}).get('title') != 'Candidaturas':
                 continue
@@ -108,12 +109,18 @@ class Sheets:
                 if table.get('name') != 'Candidaturas':
                     continue
                 span = table['range']
-                if span.get('endRowIndex', 0) >= end_row:
-                    return
-                self.request('POST', ':batchUpdate', json={'requests': [{'updateTable': {
-                    'table': {'tableId': table['tableId'], 'range': dict(span, endRowIndex=end_row)},
-                    'fields': 'range'}}]})
-                return
+                if span.get('endRowIndex', 0) < end_row:
+                    requests.append({'updateTable': {
+                        'table': {'tableId': table['tableId'], 'range': dict(span, endRowIndex=end_row)},
+                        'fields': 'range'}})
+            if start_row is not None:
+                # Long source descriptions must not expand a single row to screen height.
+                requests.append({'updateDimensionProperties': {
+                    'range': {'sheetId': tab['properties']['sheetId'], 'dimension': 'ROWS',
+                              'startIndex': start_row-1, 'endIndex': end_row},
+                    'properties': {'pixelSize': 84}, 'fields': 'pixelSize'}})
+        if requests:
+            self.request('POST', ':batchUpdate', json={'requests': requests})
 
 
     def update_system(self, job_id, values):

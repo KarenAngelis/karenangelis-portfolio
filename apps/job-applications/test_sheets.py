@@ -58,6 +58,7 @@ class SheetsTests(unittest.TestCase):
             table=body['requests'][0]['updateTable']
             self.assertEqual(table['fields'],'range')
             self.assertEqual(table['table']['range']['endRowIndex'],11)
+            self.assertEqual(body['requests'][1]['updateDimensionProperties']['range']['startIndex'],9)
             return httpx.Response(200,json={})
         sheet=sheets.Sheets(httpx.Client(transport=httpx.MockTransport(handle),trust_env=False))
         sheet.append_jobs([{'ID':'new','Empresa':'Demo','Vaga':'Frontend'}])
