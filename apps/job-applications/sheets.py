@@ -130,7 +130,7 @@ class Sheets:
         if len(positions)!=1:
             raise ValueError('Job ID missing or ambiguous')
         row = positions[0]
-        allowed={'Status':'L','Tentativa em':'P','Enviado em':'Q',
+        allowed={'Status':'L','Próxima ação':'N','Tentativa em':'P','Enviado em':'Q',
                  'Comprovante ou thread':'S','Atualizado em':'V','ID da mensagem':'X'}
         data=[{'range':f'Candidaturas!{allowed[k]}{row}','values':[[v]]}
               for k,v in values.items()]

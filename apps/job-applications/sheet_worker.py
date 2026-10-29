@@ -28,9 +28,37 @@ def timestamp():
     return datetime.now(timezone.utc).isoformat()
 
 
+def queue_email_jobs(sheet):
+    """Explicit opt-in by the owner: email rows no longer require manual review."""
+    rows = sheet.read_jobs()
+    history = sheet.history()
+    used = {json.loads(r[6])['email'].lower() for r in history if r[3] == START}
+    used.update(r['E-mail'].strip().lower() for r in rows
+                if r['Status'] == 'Candidatura concluída' and r['E-mail'])
+    for row in rows:
+        if row['Status'] not in ('Triagem', READY) or row['Canal'] != 'E-mail':
+            continue
+        email = row['E-mail'].strip().lower()
+        reason = ''
+        status = READY
+        if email in used:
+            status, reason = 'Descartada', 'Envio duplicado evitado: destinatário já contatado.'
+        elif (not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._%+\-]*@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', email)
+              or email not in [e.lower() for e in re.findall(r'[A-Za-z0-9._%+\-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', row['Descrição'])]
+              or not row['Fonte'] or not row['Link da candidatura']):
+            status, reason = 'Pendente por link', 'E-mail inválido ou sem evidência no anúncio; usar o link ou corrigir o endereço.'
+        else:
+            reason = 'Envio automático autorizado pela titular; aguardando intervalo/cota do Gmail.'
+        if row['Status'] == status:
+            continue
+        sheet.append_history(timestamp(), row['ID'], 'EMAIL_AUTO_QUEUE', row['Status'], status, reason)
+        sheet.update_system(row['ID'], {'Status': status, 'Próxima ação': reason, 'Atualizado em': timestamp()})
+
+
 def send_one(sheet, transport=None, now=None):
     if os.getenv('JOBS_SEND_ENABLED') != 'true':
         return False
+    queue_email_jobs(sheet)
     now = time.time() if now is None else now
     history = sheet.history()
     attempts = [r for r in history if r[3] == START]
@@ -55,9 +83,8 @@ def send_one(sheet, transport=None, now=None):
         if row['ID'] in used_ids or email in used_emails:
             continue
         candidates=re.findall(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}',row['Descrição'])
-        # Approval must attest to checking eligibility, channel, attachments and instructions.
+        # The owner's standing authorization replaces manual approval.
         if (email not in [e.lower() for e in candidates]
-                or 'TRIAGEM APROVADA' not in row['Observações']
                 or not row['Fonte'] or not row['Link da candidatura']):
             continue
         subject,body=render(row['Empresa'],row['Vaga'],row['Idioma'])
@@ -89,7 +116,7 @@ def send_one(sheet, transport=None, now=None):
         evidence='https://mail.google.com/mail/u/0/#sent/'+result['id']
         sheet.append_history(timestamp(),row['ID'],DONE,'Em andamento','Candidatura concluída',evidence)
         sheet.update_system(row['ID'],{'Status':'Candidatura concluída','Enviado em':timestamp(),
-            'Atualizado em':timestamp(),'ID da mensagem':result['id'],'Comprovante ou thread':evidence})
+            'Atualizado em':timestamp(),'Próxima ação':'Aguardar retorno da empresa.','ID da mensagem':result['id'],'Comprovante ou thread':evidence})
         return True
     return False
 

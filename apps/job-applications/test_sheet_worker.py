@@ -26,9 +26,10 @@ class WorkerTests(unittest.TestCase):
         self.env=patch.dict(os.environ,{'JOBS_SEND_ENABLED':'true'})
         self.env.start(); self.sheet=FakeSheet()
     def tearDown(self): self.env.stop()
-    def test_unreviewed_never_sent(self):
+    def test_unreviewed_email_is_automatically_sent(self):
         self.sheet.row['Status']='Triagem'
-        self.assertFalse(worker.send_one(self.sheet,lambda m:self.fail('sent')))
+        self.sheet.row['Observações']=''
+        self.assertTrue(worker.send_one(self.sheet,lambda m:{'id':'automatic'}))
     def test_email_must_occur_in_evidence(self):
         self.sheet.row['E-mail']='other@example.org'
         self.assertFalse(worker.send_one(self.sheet,lambda m:self.fail('sent')))
@@ -51,6 +52,18 @@ class WorkerTests(unittest.TestCase):
         with patch.object(self.sheet,'append_history',side_effect=TimeoutError()):
             with self.assertRaises(TimeoutError):
                 worker.send_one(self.sheet,lambda m:self.fail('sent without reservation'))
+    def test_bad_extraction_gets_actionable_status(self):
+        self.sheet.row['E-mail']='--jobs@example.org'
+        self.sheet.row['Descrição']='Candidaturas: --jobs@example.org'
+        self.assertFalse(worker.send_one(self.sheet,lambda m:self.fail('sent')))
+        self.assertEqual(self.sheet.row['Status'],'Pendente por link')
+
+    def test_duplicate_gets_final_status(self):
+        worker.send_one(self.sheet,lambda m:{'id':'first'})
+        self.sheet.row.update({'ID':'second','Status':'Triagem'})
+        self.assertFalse(worker.send_one(self.sheet,lambda m:self.fail('duplicate')))
+        self.assertEqual(self.sheet.row['Status'],'Descartada')
+
     def test_zero_limit(self):
         with patch.dict(os.environ,{'JOBS_DAILY_LIMIT':'0'}):
             self.assertFalse(worker.send_one(self.sheet,lambda m:self.fail('sent')))
