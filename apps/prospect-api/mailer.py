@@ -39,7 +39,7 @@ def send_one(transport=None):
         url = unsubscribe_url(row['email'])
         message['List-Unsubscribe'] = '<' + url + '>'
         message['List-Unsubscribe-Post'] = 'List-Unsubscribe=One-Click'
-        message.set_content('Olá! Sou Karen Angelis. Crio sites simples por R$ 1.000,00; domínio à parte. '
+        message.set_content('Olá! Sou Karen Angelis. Crio uma homepage simples (uma página) por R$ 500,00; domínio à parte. '
             'CRM e aplicativos sob orçamento. Conheça https://karenangelis.com e converse comigo: '
             'https://wa.me/5547997336808 . Para não receber novas propostas: ' + url)
         message.add_alternative(row['html'],subtype='html')
