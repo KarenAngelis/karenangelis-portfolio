@@ -1,0 +1,10 @@
+[
+  {"id":"brafton","type":"lever","board":"brafton","company":"Brafton","url":"https://jobs.lever.co/brafton","interval_seconds":21600},
+  {"id":"ciandt","type":"lever","board":"ciandt","company":"CI&T","url":"https://jobs.lever.co/ciandt","interval_seconds":21600},
+  {"id":"truv","type":"lever","board":"truv","company":"Truv","url":"https://jobs.lever.co/truv","interval_seconds":21600},
+  {"id":"salsify","type":"greenhouse","board":"salsify","company":"Salsify","url":"https://job-boards.greenhouse.io/salsify","interval_seconds":21600},
+  {"id":"amplemarket","type":"greenhouse","board":"amplemarket","company":"Amplemarket","url":"https://job-boards.greenhouse.io/amplemarket","interval_seconds":21600},
+  {"id":"sensor-tower","type":"ashby","board":"sensor-tower","company":"Sensor Tower","url":"https://jobs.ashbyhq.com/sensor-tower","interval_seconds":21600},
+  {"id":"apto","type":"html","company":"Apto","url":"https://apto.vc/carreiras","country":"BR","heading":"h3","title_tag":"b","interval_seconds":21600},
+  {"id":"devinterface","type":"html","company":"DevInterface","url":"https://www.devinterface.com/it/lavora-con-noi","country":"IT","heading":"h2","interval_seconds":21600}
+]

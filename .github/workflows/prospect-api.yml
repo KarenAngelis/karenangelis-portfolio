@@ -1,0 +1,18 @@
+name: Prospecting backend
+on:
+  push:
+    paths: ['apps/prospect-api/**', '.github/workflows/prospect-api.yml']
+  pull_request:
+    paths: ['apps/prospect-api/**', '.github/workflows/prospect-api.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r apps/prospect-api/requirements.txt
+      - run: python -m unittest discover -s apps/prospect-api -v

@@ -143,3 +143,12 @@ $env:STATS_DB = "apps/stats-api/stats.sqlite3"
 ```
 
 Depois abra http://localhost:4173/painel/. Testes: `cd apps/stats-api; ../../.venv/Scripts/python.exe -m unittest -v`.
+
+## Prospecção de empresas (serviço opcional)
+
+`apps/prospect-api/` adiciona coleta paginada de novos CNPJs, banco persistente,
+fila SMTP, descadastro e painel privado em `/prospeccao/`. Usa a infraestrutura
+própria do site, sem n8n. **Não está ativado por padrão**: exige chave da fonte,
+contatos verificados, histórico de abordagens, remetente e publicação na VPS.
+Veja [configuração, API e limitações](docs/prospecting.md). O Compose isolado
+`compose.prospect.yaml` não altera os serviços existentes.

@@ -12,3 +12,13 @@ local.properties
 *.jks
 kotlin-js-store/
 stats.sqlite3
+
+# Prospecting credentials and private operational data
+.env.prospect
+*.sqlite3
+*.sqlite3-*
+*.worker.lock
+
+# Job application sender credentials
+.env.jobs
+secrets/

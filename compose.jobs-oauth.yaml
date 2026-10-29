@@ -1,0 +1,14 @@
+services:
+  jobs-oauth:
+    build:
+      context: .
+      dockerfile: apps/job-applications/Dockerfile
+    command: [python, -u, oauth_service.py]
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4183:8003"
+    volumes:
+      - ./secrets:/secrets
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]

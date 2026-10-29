@@ -5,3 +5,11 @@ node_modules
 **/.gradle
 **/__pycache__
 .env
+.env.prospect
+.venv-prospect
+**/*.sqlite3
+**/*.sqlite3-*
+**/*.worker.lock
+
+.env.jobs
+secrets/
