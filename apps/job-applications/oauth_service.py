@@ -92,7 +92,7 @@ def complete(query, client=None):
 
 
 PRIVACY_NOTICE = """Karen Angelis Candidaturas — Privacidade
-Atualizado em 28 de outubro de 2026.
+Atualizado em 29 de outubro de 2026.
 
 Aplicativo de uso pessoal de Karen Angelis para organizar vagas e candidaturas.
 Contato: karen.denich@gmail.com. Site: https://karenangelis.com/.
@@ -104,7 +104,7 @@ Acesso e armazenamento
 Embora a permissão de planilhas permita acesso amplo, o código desta automação trabalha com a planilha de candidaturas configurada. Credenciais OAuth ficam no servidor da titular, em arquivos com acesso restrito, e não são publicadas no GitHub nem incluídas na planilha. Vagas e histórico permanecem no Google Sheets até exclusão pela titular. O histórico evita envios duplicados; sua exclusão exige pausar o serviço e revisar a fila.
 
 Serviços e compartilhamento
-Google processa autenticação, planilhas e envio de e-mail. A VPS Hostinger executa o aplicativo. A SerpApi recebe consultas de vagas; o código não envia a ela tokens Google, conteúdo da planilha ou conteúdo da caixa postal. As empresas destinatárias recebem somente as candidaturas enviadas a seus contatos. Pessoas e agentes que tenham acesso concedido pela titular à planilha podem consultar seu conteúdo. O aplicativo não vende dados e não os usa para publicidade ou treinamento de modelos de IA.
+Google processa autenticação, planilhas e envio de e-mail. A VPS Hostinger executa o aplicativo. A coleta consulta páginas de carreiras e feeds públicos dos sistemas de recrutamento das empresas. Esses serviços recebem apenas solicitações públicas de vagas, sem tokens Google, conteúdo da planilha ou conteúdo da caixa postal. A SerpApi não é usada pela coleta atual. As empresas destinatárias recebem somente as candidaturas enviadas a seus contatos. Pessoas e agentes que tenham acesso concedido pela titular à planilha podem consultar seu conteúdo. O aplicativo não vende dados e não os usa para publicidade ou treinamento de modelos de IA.
 
 Controle da titular
 O acesso pode ser revogado na Conta Google, em Segurança e conexões com aplicativos de terceiros. Para interromper envios, desative o serviço na VPS. Para eliminar os dados, pause primeiro o serviço, remova os registros da planilha e exclua as credenciais do servidor. Dúvidas e pedidos podem ser enviados ao contato acima.

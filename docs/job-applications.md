@@ -1,67 +1,96 @@
-# Candidaturas com Google Sheets e Gmail
+# Candidaturas com coleta direta, Google Sheets e Gmail
 
 Conta: karen.denich@gmail.com. Projeto Google: subtle-hangar-513017-p2.
 Planilha: https://docs.google.com/spreadsheets/d/1XaS_gJ_gp7V3NHFInpx4qrQNecz3ApmBWr4maHugt8o/edit
 
 ## Operação
 
-`compose.jobs.yaml` executa `sheet_worker.py`. As vagas e o registro durável de
-cada tentativa ficam na planilha. Não usa o SQLite da implementação anterior.
-`jobs.py` preserva os comandos antigos apenas para compatibilidade/testes e
-fornece o renderizador; não iniciar seu comando `run` em paralelo.
+`compose.jobs.yaml` executa `sheet_worker.py`. Vagas e histórico ficam na planilha.
+O volume local guarda apenas o lock do coordenador. `jobs.py` fornece o renderizador;
+seus comandos SQLite/SMTP são legados e não devem ser iniciados em paralelo.
+O coletor legado foi desativado para impedir consumo acidental da SerpApi.
+
+`direct_sources.py` consulta os feeds públicos dos empregadores em Lever,
+Greenhouse e Ashby e extrai seções de páginas de carreiras. A lista explícita em
+`sources.json` contém empresas, páginas de origem, tipos de integração e intervalos.
+Não usa SerpApi, chave de busca nem o catálogo do Google Empregos. Não há cota de
+250 pesquisas, mas há limites dos sites, capacidade da planilha e cobertura
+restrita às fontes cadastradas. Não descobre automaticamente todas as empresas
+existentes. A lista pode ser ampliada após validar o feed de cada empresa.
+
+Configuração inicial: Brafton, CI&T, Truv, Salsify, Amplemarket, Sensor Tower,
+Apto e DevInterface. Consulta a cada 6 horas por fonte. São preservados conteúdo,
+link, modalidade e localização original. Filtra fullstack, frontend, web e banco
+de dados; exclui títulos somente sênior/liderança/júnior e locais explicitamente
+presenciais ou híbridos. Nível/modalidade não informados e anúncios Mid/Senior
+ficam para revisão. País é classificação de mercado, nunca autorização de
+trabalho nem garantia de contratação a partir do Brasil.
+
+Paginação Lever: até 15 páginas de 200 itens, com erro explícito se exceder.
+Leituras por fonte são limitadas a 12 MB e têm timeout; não há repetição automática
+de 429, login ou CAPTCHA. Uma fonte com erro não impede as demais. O histórico
+registra DIRECT_ATTEMPT, DIRECT_COMPLETE (contagens) e DIRECT_ERROR. O intervalo
+é preservado entre reinícios; tentativas falhas voltam no próximo intervalo.
+Não se deve apagar o histórico. Novos registros usam valores RAW e entram sempre
+em Triagem. Deduplicação por ID estável e empresa/título, incluindo registros
+manuais anteriores. A tabela nativa é expandida quando novas linhas entram.
+Capacidade atual: 999 vagas e 9.999 linhas de histórico; o serviço falha de modo
+explícito ao atingir a capacidade, sem sobrescrever candidaturas.
+
+## Envio
 
 Um único coordenador na VPS mantém lock no volume jobs_data. O histórico impede
-reenvios por ID e por endereço, inclusive se alguém redefinir o status. Uma
-reserva sem confirmação do Gmail bloqueia toda a fila para conciliação manual.
-Não apagar nem editar IDs, Histórico ou os campos de envio. Usar visualizações
-com filtro; não reordenar fisicamente linhas durante processamento. Uma planilha
-não oferece transações entre vários escritores; só o coordenador envia.
+reenvios por ID e endereço, inclusive se alguém redefinir o status. Uma reserva
+sem confirmação do Gmail bloqueia a fila para conciliação manual. Não apagar nem
+editar IDs, Histórico ou campos de envio. Usar visualizações com filtro; não
+reordenar fisicamente linhas durante processamento. Uma planilha não oferece
+transações entre vários escritores; só o coordenador envia.
 
-A cada 12h são feitas até três consultas SerpApi (BR/PT/IT), primeira página.
-O início de cada consulta é persistido antes da chamada; reinícios não gastam
-novamente a cota. Plano observado: 250 buscas/mês; agenda usa até186/mês.
-A consulta de vagas não faz candidatura em sites nem triagem automática por IA.
+Para liberar e-mail, conferir vigência, nível/stack, elegibilidade para trabalhar
+do Brasil, idioma e instruções/anexos. Preencher descrição contendo o e-mail,
+fonte, link, idioma e observação `TRIAGEM APROVADA`; mudar Status para
+`Pronto para e-mail` e Canal para `E-mail`. O HTML e o assunto padrão incluem
+nome da empresa e título da vaga. Anexos e assuntos fora do padrão ainda não são
+suportados. A extração de um e-mail no anúncio não libera envio por si só.
 
-Para liberar e-mail, um agente deve conferir vigência, nível/stack, elegibilidade
-para trabalhar do Brasil, idioma e instruções/anexos. Depois, preencher descrição
-original contendo o e-mail, fonte, link, idioma e observação `TRIAGEM APROVADA`,
-e mudar Status para `Pronto para e-mail`, Canal `E-mail`. Vagas que exigem anexos
-ou assunto específico não devem ser liberadas: suporte ainda pendente.
-
-O coordenador verifica a fila a cada60s. Máximo configurado:500 menos50 de reserva
-para uso pessoal=450 tentativas/24h; mínimo180s entre tentativas. Isso não garante
-cota do Google nem mede outros envios da conta. Vagas por link permanecem na
-planilha para os agentes. `Candidatura concluída` indica aceite pela API Gmail,
-não leitura/entrega ao destinatário. ID e link da mensagem são guardados.
-Respostas/devoluções não são sincronizadas automaticamente (escopo gmail.send).
+Fila verificada a cada 60 segundos, exceto durante a coleta. Configuração:
+500 menos 50 de reserva = 450 tentativas/24h; mínimo de 180 segundos entre envios.
+Isso não garante cota do Google nem contabiliza outros envios da conta.
+Vagas por link ficam para candidatura por agentes. Candidatura concluída significa
+aceite pela API Gmail, não leitura/entrega. Guarda ID e link da mensagem.
+Respostas/devoluções ainda não são sincronizadas (escopo gmail.send).
 
 ## Credenciais e implantação
 
-Pasta dedicada VPS: /opt/karen-jobs. Segredos em secrets/client.json,
-secrets/token.json e secrets/serpapi.txt, fora do Git e do contexto Docker.
-OAuth pede identificação de e-mail, Google Sheets e Gmail send. O escopo Sheets
-é amplo; o cliente do backend fixa a planilha acima. A autorização do usuário foi
-concedida em28/10/2026. Leitura de8 registros e testeHTML para a própria conta
-confirmados; Gmail ID1a183aa26387d64f, registrado no Histórico.
+Pasta VPS: `/opt/karen-jobs`. Segredos Google em `secrets/client.json` e
+`secrets/token.json`, fora do Git e do contexto Docker. A chave antiga
+`secrets/serpapi.txt`, caso exista, não é lida pelo coletor atual.
 
-`compose.jobs-oauth.yaml` executa callback na porta local4183. Caddy encaminha
-somente /api/jobs/oauth/*, com backup antes da alteração. Não há logs de códigos.
-PKCE, state de uso único e validação do e-mail protegem a conexão. Para reconectar:
+OAuth pede identificação, Sheets e Gmail send. Sheets é um escopo amplo, mas o
+cliente fixa a planilha acima. Projeto publicado Em produção em 28/10/2026,
+autorização renovada depois da publicação. O app pessoal não tem selo de
+verificação Google. Envio HTML para a própria conta e candidaturas reais para
+Locus/Apto foram confirmados no Gmail e registrados na planilha em 28/10/2026.
+
+`compose.jobs-oauth.yaml` serve callback na porta local 4183. Caddy encaminha
+somente `/api/jobs/oauth/*`. Sem logs de códigos; PKCE, state de uso único e
+validação do e-mail protegem a conexão. Privacidade em `/api/jobs/oauth/privacy`.
+Para reconectar:
 
     docker compose -p karen-jobs-oauth -f compose.jobs-oauth.yaml exec -T jobs-oauth python oauth_service.py authorize
 
-O projeto Google ainda está em modo Testando. A autorização offline pode expirar
-em7dias; concluir o branding/publicação OAuth antes de prometer operação contínua.
-
-## HTML e testes
-
-Todos os idiomas usam a estrutura do HTML aprovado: currículo e GitHub com mesma
-largura, cards Luniay/Clycka/StockMaster, cores, espaçamento e botões. Idiomas
-pt-BR, pt-PT, italiano e inglês. Sem anexação automática de currículo.
+## Validação
 
     cd apps/job-applications
     python -m unittest -q
+    python direct_sources.py
 
-26 testes: OAuth/PKCE, schema, duplicação, reserva antes do envio, falhas ambíguas,
-link-only, limite, destinatário presente na fonte e corpo HTML. Testes de rede
-simulados, exceto a leitura e o envio real de teste mencionados acima.
+O segundo comando é uma consulta real de leitura, sem credenciais Google, sem
+alterar planilha e sem enviar e-mail. Produção escreve as vagas no ciclo normal
+sob o lock do coordenador; não executar uma segunda instância do worker.
+
+Os testes cobrem OAuth, HTML, reserva antes de envio, resultados incertos,
+duplicações, cotas, filtros, paginação, isolamento de erros, ausência de tokens
+Google nas fontes e preservação/expansão da tabela. Nenhuma nova dependência de
+produção foi acrescentada. Os quatro idiomas mantêm o HTML aprovado com os dois
+botões de mesma largura e os projetos Luniay, Clycka e StockMaster.

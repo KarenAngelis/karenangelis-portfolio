@@ -95,51 +95,8 @@ def send_one(sheet, transport=None, now=None):
 
 
 def collect(sheet):
-    key_path=Path(os.getenv('JOBS_SECRETS_DIR','/secrets'))/'serpapi.txt'
-    if not key_path.exists():
-        return
-    key=key_path.read_text().strip()
-    history=sheet.history()
-    existing={r['ID'] for r in sheet.read_jobs()}
-    for search in json.loads((ROOT/'searches.json').read_text()):
-        marker='serpapi-'+search['country']
-        starts=[datetime.fromisoformat(r[0]).timestamp() for r in history
-                if r[1]==marker and r[3]=='SEARCH_ATTEMPT']
-        if starts and max(starts)>time.time()-43200:
-            continue
-        sheet.append_history(timestamp(),marker,'SEARCH_ATTEMPT','','','Uma página; intervalo mínimo de 12h')
-        # Use a separate client: never send a Google bearer token to the job source.
-        params=dict(search['params'])
-        if search.get('queries'):
-            params['q']=search['queries'][len(starts)%len(search['queries'])]
-        with httpx.Client(timeout=httpx.Timeout(120,connect=15)) as source:
-            response=source.get('https://serpapi.com/search',params={
-                'engine':'google_jobs','api_key':key,**params})
-        if response.status_code!=200:
-            raise RuntimeError('Job source request failed')
-        result=response.json()
-        if result.get('error') and result['error'] != "Google hasn't returned any results for this query.":
-            raise RuntimeError('Job source returned an error')
-        rows=[]
-        for job in result.get('jobs_results',[]):
-            links=job.get('apply_options',[])
-            identity=str(job.get('job_id') or json.dumps([job.get('company_name'),job.get('title'),links],sort_keys=True))
-            uid='serp-'+hashlib.sha256(identity.encode()).hexdigest()
-            if uid in existing:
-                continue
-            existing.add(uid)
-            description=str(job.get('description',''))[:45000]
-            emails=sorted(set(re.findall(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}',description)))
-            rows.append({'ID':uid,'Empresa':job.get('company_name',''),'Vaga':job.get('title',''),
-                'País':search['country'],'Canal':'E-mail' if len(emails)==1 else 'Link',
-                'E-mail':emails[0] if len(emails)==1 else '',
-                'Link da candidatura':next((x.get('link','') for x in links if x.get('link')),''),
-                'Idioma':{'BR':'pt-BR','PT':'pt-PT','IT':'it'}[search['country']],
-                'Status':'Triagem','Fonte':'SerpApi / Google Jobs','Descrição':description,
-                'Atualizado em':timestamp(),'Próxima ação':'Verificar requisitos, vigência e canal de candidatura',
-                'Observações':'E-mail extraído do anúncio; ainda não validado como canal de candidatura.'})
-        sheet.append_jobs(rows)
-        sheet.append_history(timestamp(),marker,'SEARCH_COMPLETE','','',str(len(rows))+' novas vagas')
+    from direct_sources import collect_direct
+    return collect_direct(sheet)
 
 
 def run():

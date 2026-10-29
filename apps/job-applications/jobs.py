@@ -48,19 +48,7 @@ def store_jobs(results, country):
                       (key, company, title, country, description, json.dumps(links), json.dumps(emails), time.time()))
 
 def collect():
-    import httpx
-    key = os.environ['SERPAPI_API_KEY']
-    searches = json.loads((ROOT / 'searches.json').read_text())
-    with httpx.Client(timeout=45) as client:
-        for search in searches:
-            r = client.get('https://serpapi.com/search', params={
-                'engine': 'google_jobs', 'api_key': key, **search['params']})
-            r.raise_for_status()
-            data = r.json()
-            if data.get('error'):
-                raise RuntimeError('Job source returned an error; check source account')
-            store_jobs(data.get('jobs_results', []), search['country'])
-    # One page/search per cycle, with configurable interval, to bound paid usage.
+    raise RuntimeError('Legacy collector retired. Use sheet_worker.py with sources.json.')
 
 
 def render(company, title, language):

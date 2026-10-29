@@ -42,6 +42,27 @@ class SheetsTests(unittest.TestCase):
         sheet = sheets.Sheets(httpx.Client(transport=httpx.MockTransport(handle)))
         sheet.append_history('2026-10-28', 'one', '=untrusted', '', 'Triagem', '')
 
+    def test_append_expands_existing_native_table_without_overwriting_rows(self):
+        calls=[]
+        def handle(request):
+            calls.append(request)
+            url=str(request.url)
+            if '/values/Candidaturas!A:X:append' in url:
+                return httpx.Response(200,json={'updates':{'updatedRange':'Candidaturas!A10:X11'}})
+            if '/values/' in url:
+                return httpx.Response(200,json={'values':[sheets.HEADERS]})
+            if request.method=='GET':
+                return httpx.Response(200,json={'sheets':[{'properties':{'title':'Candidaturas','sheetId':1},
+                    'tables':[{'tableId':'t1','name':'Candidaturas','range':{'sheetId':1,'endRowIndex':9,'endColumnIndex':24}}]}]})
+            body=__import__('json').loads(request.content)
+            table=body['requests'][0]['updateTable']
+            self.assertEqual(table['fields'],'range')
+            self.assertEqual(table['table']['range']['endRowIndex'],11)
+            return httpx.Response(200,json={})
+        sheet=sheets.Sheets(httpx.Client(transport=httpx.MockTransport(handle),trust_env=False))
+        sheet.append_jobs([{'ID':'new','Empresa':'Demo','Vaga':'Frontend'}])
+        self.assertEqual(len(calls),4)
+
     def test_approved_html_is_actual_mime_body(self):
         subject, body = jobs.render('Empresa & Filhos', 'Fullstack', 'pt-BR')
         self.assertIn('PROJETOS SELECIONADOS', body)

@@ -88,9 +88,33 @@ class Sheets:
         existing = self.read_jobs()
         if len(existing) + len(rows) > 999:
             raise ValueError('Sheet capacity reached')
-        self.request('POST', '/values/Candidaturas!A:X:append',
+        appended = self.request('POST', '/values/Candidaturas!A:X:append',
             params={'valueInputOption':'RAW','insertDataOption':'INSERT_ROWS'},
             json={'values': [[row.get(h, '') for h in HEADERS] for row in rows]})
+        # Extend the existing native table so appended jobs keep its dropdowns.
+        # No row sorting or rewriting of human edits.
+        import re
+        updated = appended.get('updates', {}).get('updatedRange', '')
+        end = re.search(r':X(\d+)$', updated)
+        if end:
+            self.expand_job_table(int(end.group(1)))
+
+    def expand_job_table(self, end_row):
+        metadata = self.request('GET', '', params={'fields': 'sheets(properties(sheetId,title),tables(tableId,name,range))'})
+        for tab in metadata.get('sheets', []):
+            if tab.get('properties', {}).get('title') != 'Candidaturas':
+                continue
+            for table in tab.get('tables', []):
+                if table.get('name') != 'Candidaturas':
+                    continue
+                span = table['range']
+                if span.get('endRowIndex', 0) >= end_row:
+                    return
+                self.request('POST', ':batchUpdate', json={'requests': [{'updateTable': {
+                    'table': {'tableId': table['tableId'], 'range': dict(span, endRowIndex=end_row)},
+                    'fields': 'range'}}]})
+                return
+
 
     def update_system(self, job_id, values):
         # Re-resolve ID each time; never keep row numbers across collection cycles.
