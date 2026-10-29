@@ -40,6 +40,19 @@ class DirectTests(unittest.TestCase):
         self.assertEqual(len(result),1)
         self.assertIn('Python',result[0]['description'])
 
+    def test_backend_titles_and_link_only_import(self):
+        for title in ('Backend Developer Pleno', 'Back-end Engineer', 'Back End Developer Mid'):
+            with self.subTest(title=title):
+                post = dict(POST, text=title, descriptionPlain='Python, APIs and PostgreSQL.')
+                job = list(direct.parse_jobs(SOURCE, json.dumps([post])))[0]
+                row = direct.to_row(SOURCE, job)
+                self.assertIsNotNone(row)
+                self.assertEqual(row['Canal'], 'Link')
+                self.assertEqual(row['Link da candidatura'], POST['applyUrl'])
+                self.assertEqual(row['Status'], 'Triagem')
+        self.assertFalse(direct.role_matches('Senior Backend Engineer'))
+        self.assertFalse(direct.role_matches('Marketing Analyst'))
+
     def test_rate_limit_is_not_retried(self):
         seen=[]
         def handle(req):

@@ -252,7 +252,7 @@ def role_matches(title):
         # Include explicitly mixed Mid/Senior opportunities for review, not senior-only.
         if not re.search(r'\b(pleno|mid|middle|intermediate)\b', text):
             return False
-    return bool(re.search(r'\b(full\s?stack|front\s?end|database|banco de dados|sql developer|web developer|sviluppatore web)\b', text))
+    return bool(re.search(r'\b(full\s?stack|front\s?end|back\s?end|database|banco de dados|sql developer|web developer|sviluppatore web)\b', text))
 
 
 def email_candidates(description):
