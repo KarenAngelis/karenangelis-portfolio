@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Seu domínio, do seu jeito | Karen Angelis</title>
+  <meta name="description" content="Encontre um endereço para seu negócio. Consulte domínios, veja o preço anual em reais e acompanhe seu pedido com Karen Angelis.">
+  <meta name="theme-color" content="#101211"><meta name="referrer" content="no-referrer">
+  <link rel="canonical" href="https://karenangelis.com/dominios/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/dominios/dominios.css">
+  <script type="module" src="/dominios/dominios.js"></script>
+</head>
+<body class="domain-page">
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="nav"><a class="brand" href="/" aria-label="Karen Angelis, página inicial">ka<span>✳</span></a><nav aria-label="Navegação principal"><a href="/empresas/">Preciso de um site</a><a href="#como-funciona">Como funciona</a><button class="account-link" id="account-button" type="button">Minha conta</button></nav></header>
+  <main id="conteudo">
+    <section class="domain-hero">
+      <p class="eyebrow"><span class="dot"></span> O ENDEREÇO DO SEU NEGÓCIO</p>
+      <h1>Um nome seu.<br><em>Um lugar na internet.</em></h1>
+      <p class="domain-intro">Seu domínio é o endereço que as pessoas digitam para encontrar você.<br>Escolha um nome fácil de lembrar. A gente ajuda com o resto.</p>
+      <form id="search-form" class="domain-search"><label for="domain-query">Qual nome você quer para seu site?</label><div class="search-row"><input id="domain-query" name="q" type="search" placeholder="Ex.: floresdamaria.com.br" maxlength="253" autocomplete="off" autocapitalize="none" spellcheck="false" required><button class="button lime" id="search-button" type="submit" disabled>Buscar domínio</button></div><p class="hint">Digite o nome da sua empresa ou o endereço completo, sem “www”.</p></form>
+      <p id="store-status" class="store-status" role="status">Verificando a disponibilidade da loja…</p>
+      <div class="domain-benefits"><span>Preços em reais por ano</span><span>Registro no nome do titular</span><span>Ajuda de uma pessoa de verdade</span></div>
+    </section>
+    <section class="domain-workspace" id="escolha" aria-label="Escolha e compra do domínio">
+      <div>
+        <div id="results" class="results" aria-live="polite"></div>
+        <section id="registrant-section" class="domain-card" hidden aria-labelledby="registrant-title">
+          <p class="eyebrow">02 / SEUS DADOS</p><h2 id="registrant-title">No seu nome.<br><em>Com tudo certinho.</em></h2>
+          <p>Esses dados identificam o dono do domínio. Use informações verdadeiras e um e-mail que você acompanha.</p>
+          <p id="buyer-email" class="hint"></p>
+          <form id="registrant-form" class="registrant-form">
+            <label class="full">Nome completo do responsável<input name="name" autocomplete="name" minlength="3" maxlength="100" required></label>
+            <label>CPF ou CNPJ do titular<input name="document" inputmode="numeric" maxlength="18" required></label>
+            <label>Razão social (se usar CNPJ)<input name="company" autocomplete="organization" maxlength="100"></label>
+            <label class="full">Rua, número e complemento<input name="address" autocomplete="street-address" minlength="5" maxlength="64" required></label>
+            <label>Cidade<input name="city" autocomplete="address-level2" minlength="2" maxlength="64" required></label>
+            <label>Estado (UF)<select name="state" autocomplete="address-level1" required><option value="">Selecione</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option></select></label>
+            <label>CEP<input name="zipcode" inputmode="numeric" autocomplete="postal-code" maxlength="9" required></label>
+            <label>Celular com DDD<input name="phone" type="tel" autocomplete="tel-national" maxlength="16" required></label>
+            <label class="terms-check full"><input name="accepted_terms" type="checkbox" required><span>Conferi meus dados e li as <a href="#condicoes">condições da compra e uso dos dados</a>. Autorizo o envio dos dados necessários ao registro e ao pagamento.</span></label>
+            <p class="hint full">O domínio será registrado por 1 ano, após a aprovação do pagamento e a confirmação do fornecedor. A busca não reserva o nome.</p>
+            <button class="button lime full" type="submit" id="checkout-button">Ir para o pagamento seguro</button>
+            <p class="hint full">Você será levado ao Mercado Pago para escolher Pix ou cartão em até 5x. As parcelas, juros e o total final aparecem antes de confirmar.</p>
+            <p class="full feedback" id="checkout-status" role="status"></p>
+          </form>
+        </section>
+      </div>
+      <aside class="domain-summary domain-card" id="summary" aria-labelledby="summary-title">
+        <p class="eyebrow">SEU PRÓXIMO ENDEREÇO</p><h2 id="summary-title">Começa com<br><em>um bom nome.</em></h2>
+        <div id="summary-empty"><p>Busque um nome e escolha uma opção disponível. O preço e os próximos passos aparecem aqui.</p><div class="address-sample" aria-hidden="true">www.<strong>seunegocio</strong>.com.br</div></div>
+        <div id="summary-selected" hidden><strong class="chosen-domain" id="chosen-domain"></strong><p class="summary-price"><strong id="chosen-price"></strong><span>/ primeiro ano</span></p><p id="renewal-price" class="hint"></p><p>Pix ou cartão em até 5x.<br><small>Condições e juros no pagamento.</small></p><button class="button lime" id="continue-button" type="button">Continuar com este domínio</button><p class="hint">Hospedagem, site e e-mail profissional são serviços separados.</p></div>
+        <a class="support-link" href="https://wa.me/5547997336808?text=Ol%C3%A1%2C%20Karen!%20Preciso%20de%20ajuda%20com%20meu%20dom%C3%ADnio." target="_blank" rel="noopener noreferrer">Preciso de ajuda para escolher</a>
+      </aside>
+    </section>
+    <section id="my-domains" class="domain-section" hidden><div class="panel-heading"><div><p class="eyebrow">MINHA CONTA</p><h2>Meus <em>domínios.</em></h2><p id="account-email"></p></div><div><button class="button" id="refresh-orders" type="button">Atualizar pedidos</button><button class="text-button" id="logout" type="button">Sair</button></div></div><p id="orders-status" role="status"></p><div id="orders-list" class="orders-list"></div></section>
+    <section id="como-funciona" class="domain-section"><p class="eyebrow">DO NOME AO SEU SITE</p><h2>Simples de escolher.<br><em>Fácil de acompanhar.</em></h2><div class="domain-steps"><article><span>01</span><h3>Encontre seu nome</h3><p>Consulte as opções disponíveis e confira o preço anual e a renovação.</p></article><article><span>02</span><h3>Entre e faça o pedido</h3><p>Use sua conta, confira os dados do titular e escolha como pagar.</p></article><article><span>03</span><h3>Acompanhe o registro</h3><p>Veja o andamento na sua conta. Quando estiver registrado, vamos conectar ao seu site.</p></article></div></section>
+    <section id="condicoes" class="domain-section domain-faq"><p class="eyebrow">SEM COMPLICAÇÃO, SEM SURPRESA</p><h2>Antes de <em>comprar.</em></h2>
+      <details><summary>O que estou comprando?</summary><p>O direito de usar o domínio por um ano, após confirmação do registro. O domínio será registrado nos dados do titular informado. Site, hospedagem e caixa de e-mail não estão incluídos. A confirmação do pagamento não garante o registro: a disponibilidade pode mudar até o fornecedor concluir a operação.</p></details>
+      <details><summary>Como funcionam parcelas e renovação?</summary><p>O valor exibido é anual, em reais. O Mercado Pago apresenta os meios de pagamento elegíveis, até 5 parcelas e eventuais juros antes da confirmação. A renovação é uma nova contratação anual; o valor de referência aparece na escolha do domínio e será confirmado antes da renovação. Nesta versão, a renovação é solicitada pelo atendimento, sem cobrança automática. Acompanhe a validade na sua conta e solicite a renovação antes do vencimento.</p></details>
+      <details><summary>E se o registro não acontecer?</summary><p>Quando o fornecedor confirma que o registro falhou, solicitamos o reembolso do pagamento. Se a resposta ficar incerta, conferimos o pedido antes de tentar registrar ou devolver, para evitar duplicidade. A situação aparece na sua conta. Entre em contato pelo WhatsApp em caso de dúvida; não faça outro pagamento para o mesmo pedido.</p></details>
+      <details><summary>Já tenho um cadastro no Registro.br. Posso usar .com.br?</summary><p>Sim, mas o CPF/CNPJ pode precisar de uma alteração de provedor no Registro.br para permitir este registro. Fale com Karen antes de pagar se já possui domínios .br. Não faremos essa alteração sem orientar você. Domínios premium, transferências e nomes com acentos não fazem parte desta primeira versão.</p></details>
+      <details><summary>Como meus dados serão usados?</summary><p>Usamos e-mail, dados de identificação, endereço e telefone para sua conta, atendimento e registro do domínio. Os dados necessários são enviados ao fornecedor de registro ResellerClub e ao Mercado Pago para processar o pedido. O cartão é informado diretamente no Mercado Pago; não armazenamos seus dados de cartão. Usamos cookies essenciais para manter seu acesso. Você pode solicitar atendimento sobre seus dados pelo contato abaixo.</p></details>
+      <details><summary>Onde encontro os códigos para conectar ao site?</summary><p>Depois da confirmação do registro, abra “Conectar ao site” no seu pedido. Os servidores DNS configurados para o domínio aparecem ali. Os registros A, CNAME, MX e TXT dependem da hospedagem e do e-mail escolhidos; o atendimento ajuda a configurar sem substituir registros existentes por engano.</p></details>
+      <p class="help-footer">Atendimento: <a href="mailto:contato@karenangelis.com">contato@karenangelis.com</a> · <a href="https://wa.me/5547997336808" target="_blank" rel="noopener noreferrer">WhatsApp da Karen</a></p>
+    </section>
+  </main>
+  <dialog id="auth-dialog" aria-labelledby="auth-title"><button class="dialog-close" id="close-auth" aria-label="Fechar" type="button">×</button><p class="eyebrow">SUA CONTA, SEUS DOMÍNIOS</p><h2 id="auth-title">Vamos <em>continuar?</em></h2><p>Entre ou crie sua conta para acompanhar seu domínio.</p><div id="google-button"></div><p id="google-status" class="hint" role="status"></p><form id="auth-form"><label>E-mail<input type="email" name="email" autocomplete="email" maxlength="254" required></label><label>Senha <span class="hint">(mínimo 12 caracteres)</span><input type="password" name="password" autocomplete="current-password" minlength="12" maxlength="128" required></label><div class="auth-actions"><button class="button lime" type="submit" value="login">Entrar</button><button class="button" type="submit" value="register">Criar conta</button></div><div class="auth-links"><button class="text-button" type="button" id="forgot-password">Esqueci minha senha</button><button class="text-button" type="button" id="resend-verification">Reenviar confirmação</button></div></form><form id="reset-form" hidden><label>Nova senha<input name="password" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label><button class="button lime" type="submit">Salvar nova senha</button></form><p id="auth-status" class="feedback" role="status"></p></dialog>
+  <footer><a class="brand" href="/">ka<span>✳</span></a><span>Karen Angelis · Domínios</span><a href="/empresas/">Conhecer os sites</a></footer>
+</body>
+</html>
