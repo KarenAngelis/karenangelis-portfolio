@@ -9,7 +9,7 @@ reembolso de falhas explícitas e painel privado dos pedidos. Links na home e em
 **Vendas desativadas por padrão.** Não existem credenciais ou preços comerciais aprovados neste repositório.
 A página não inventa disponibilidade e não permite pagar enquanto faltar configuração.
 Integrações foram verificadas com testes locais e respostas simuladas; a homologação com contas reais
-dos fornecedores e a publicação na VPS ainda precisam ocorrer. O checkout usado é o **Checkout Pro**:
+dos fornecedores ainda precisa ocorrer. A página e a API foram publicadas na VPS em 30/10/2026, com vendas desativadas. O checkout usado é o **Checkout Pro**:
 o cliente sai temporariamente para a página segura do Mercado Pago e retorna à loja. Não é checkout
 transparente embutido. Até 5 parcelas são solicitadas; elegibilidade, parcela mínima e juros dependem
 do meio de pagamento. Não anunciamos “5x sem juros”.
@@ -162,3 +162,13 @@ esses testes não substituem homologação com as contas de fornecedor.
 - https://www.mercadopago.com.br/developers/en/reference/online-payments/checkout-pro-preferences/create-preference/post
 - https://www.mercadopago.com.br/developers/en/docs/checkout-pro-preferences/payment-notifications
 - https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
+
+## Publicação de 30/10/2026
+
+PR #4 integrado ao main no commit `6ecee51335ff317a6977806552252061c8af999d`. Todos os seis jobs do GitHub passaram, incluindo 32 testes da API de domínios.
+
+Atualização seletiva em `/opt/karenangelis-portfolio`, preservando o mount local `web/meet-italiano` e os demais serviços. Backup em `/opt/karenangelis-backups/domains-20261030T121846Z`. Imagens `web` e `domains-api` construídas, Caddy validado e somente esses serviços atualizados.
+
+HTTPS: 200 em `/`, `/empresas/`, `/dominios/`, `/meet-italiano/`, `/api/profile` e `/api/stats/health`. `/api/domains/health` retornou `status: ok`. Configuração publicada: `search_ready=false`, `sales_ready=false`, `email_ready=false`, Google sem client ID; ainda não há `.env.domains` com fornecedores configurados. Nenhum pagamento ou registro real foi executado.
+
+A rede corporativa WEG bloqueou a abertura no navegador conectado por reputação não verificada. Conferência visual ficou pendente; nenhum bloqueio de rede foi contornado.
