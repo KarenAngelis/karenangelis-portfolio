@@ -14,6 +14,9 @@
     handle @trends {
         reverse_proxy trends-api:8000
     }
+    handle /api/domains/* {
+        reverse_proxy domains-api:8002
+    }
     handle /api/stats/* {
         reverse_proxy stats-api:8001
     }

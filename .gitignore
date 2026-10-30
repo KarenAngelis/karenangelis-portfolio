@@ -12,3 +12,10 @@ local.properties
 *.jks
 kotlin-js-store/
 stats.sqlite3
+
+# Private domain store configuration and runtime state
+.env.domains
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+__pycache__/

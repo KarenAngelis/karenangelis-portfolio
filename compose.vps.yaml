@@ -13,6 +13,7 @@ services:
       - trends-api
       - resume-api
       - stats-api
+      - domains-api
   trends-api:
     build:
       context: .
@@ -23,6 +24,16 @@ services:
       context: .
       dockerfile: apps/resume-api/Dockerfile
     restart: unless-stopped
+  domains-api:
+    build:
+      context: .
+      dockerfile: apps/domains-api/Dockerfile
+    restart: unless-stopped
+    env_file:
+      - path: .env.domains
+        required: false
+    volumes:
+      - domains_data:/data
   stats-api:
     build:
       context: .
@@ -31,4 +42,5 @@ services:
     volumes:
       - stats_data:/data
 volumes:
+  domains_data:
   stats_data:

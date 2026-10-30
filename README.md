@@ -143,3 +143,8 @@ $env:STATS_DB = "apps/stats-api/stats.sqlite3"
 ```
 
 Depois abra http://localhost:4173/painel/. Testes: `cd apps/stats-api; ../../.venv/Scripts/python.exe -m unittest -v`.
+# Loja de domínios
+
+A área `/dominios/` integra ResellerClub, Mercado Pago e contas de clientes. Vendas ficam
+desativadas até configurar e homologar os fornecedores. Consulte [a documentação de domínios](docs/domains.md)
+para configuração, limites desta versão, implantação e recuperação de pedidos.
