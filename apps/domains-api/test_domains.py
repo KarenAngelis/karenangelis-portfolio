@@ -1,6 +1,7 @@
 import hashlib
 import hmac
 import json
+import string
 import tempfile
 import time
 import unittest
@@ -302,6 +303,20 @@ class DomainTests(unittest.TestCase):
             registrar.contact(self.contact,'owner@example.com','customer','BrContact')
             self.assertNotIn('attr-name1',call.call_args.args[1])
 
+    def test_customer_signup_password_matches_registrar_policy(self):
+        registrar=Registrar(self.settings)
+        allowed=set(string.ascii_letters + string.digits + '~*!@$#%_+.?:,{}')
+        with patch.object(registrar,'call',return_value=123) as call:
+            self.assertEqual(registrar.customer(self.contact,'owner@example.com'),'123')
+            path,params,method=call.call_args.args
+            self.assertEqual((path,method),('customers/v2/signup','POST'))
+            password=params['passwd']
+            self.assertGreaterEqual(len(password),9)
+            self.assertLessEqual(len(password),16)
+            self.assertTrue(set(password) <= allowed)
+            for characters in (string.ascii_lowercase,string.ascii_uppercase,string.digits,'~*!@$#%_+.?:,{}'):
+                self.assertTrue(set(password) & set(characters))
+
     def test_checkout_gateway_contract(self):
         order=self.checkout(); payments=Payments(self.settings)
         with patch.object(payments,'call',return_value={'id':'1','sandbox_init_point':'https://sandbox.mercadopago.com.br/checkout/v1/redirect'}) as call:
@@ -317,3 +332,4 @@ class DomainTests(unittest.TestCase):
 
 
 if __name__ == '__main__': unittest.main()
+
