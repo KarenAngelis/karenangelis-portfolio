@@ -179,7 +179,9 @@ A rede corporativa WEG bloqueou a abertura no navegador conectado por reputaçã
 Configuração privada dos fornecedores e SMTP aplicada na VPS. Busca real de disponibilidade e preços
 verificada no navegador; envio de e-mail aceito pelo SMTP. A configuração de processamento está completa,
 mas `DOMAINS_SALES_ENABLED=false` permanece até concluir a preparação operacional e a homologação.
-Google OAuth e `.com.br` ainda não estão habilitados; cadastro com e-mail e senha está disponível.
+Google OAuth foi configurado posteriormente na VPS com cliente restrito a `https://karenangelis.com`;
+o botão de login foi conferido no navegador, mas a autenticação completa ainda precisa ser validada.
+`.com.br` ainda não está habilitado; cadastro com e-mail e senha está disponível.
 
 Uma preferência de Checkout Pro foi criada em sandbox pelo adaptador real. A página exibiu o valor
 esperado e opções de 1 a 5 parcelas. Nenhum pagamento ou registro real foi realizado; isso não valida
@@ -188,4 +190,52 @@ o ciclo completo de webhook, registro, confirmação e reembolso externo.
 Corrigida a senha automática do cadastro na registradora para respeitar a política de 9–16 caracteres,
 com maiúscula, minúscula, número e símbolo permitido. Um teste de regressão reproduziu a falha anterior;
 os 33 testes da API passaram após a correção. Esses testes usam fornecedores simulados.
+
+## Preparação de envio automático à registradora — ainda não ativada
+
+O objetivo é iniciar o envio do custo de registro após a confirmação do pagamento e disponibilidade
+do dinheiro, manter a margem na conta recebedora e registrar o domínio após a confirmação do crédito.
+Encontrada a API Payouts do Mercado Pago, que permite transferências bancárias e Pix.
+
+`payouts.py` prepara o transporte via Pix, com credencial separada da cobrança, validação da identidade
+e do ambiente, destino configurado, limite em centavos, referência estável, assinatura Ed25519 em
+produção e consulta de status. Uma resposta 202 apenas inicia o processamento. Falhas de escrita são
+tratadas como incertas, sem repetição automática; erros não exibem credenciais ou dados do destinatário.
+O modo padrão é `disabled`, o limite é zero e transferências reais exigem configuração explícita.
+
+**Este módulo não está conectado ao checkout nem ao worker e não foi publicado na VPS.** Não representa
+uma recarga automática funcional. Os 12 novos testes são simulados; não houve transferência externa.
+
+Teste externo posterior: a credencial de sandbox foi confirmada em `/users/me` como conta de teste.
+O `POST /v1/payouts`, com headers de sandbox e dados do exemplo oficial, retornou HTTP 403; nenhum
+payout foi criado. A liberação/permissão de Payouts para essa aplicação ainda precisa ser esclarecida
+com o Mercado Pago. O código já passou nas verificações de CI, mas isso não substitui a homologação.
+O par Ed25519 foi preparado no host, fora do repositório e com chave privada protegida; a chave pública
+ainda não foi cadastrada junto ao Mercado Pago.
+
+Antes de conectar ou habilitar essa etapa:
+
+1. Obter da ResellerClub um destino oficial, a forma de vincular cada pagamento à conta de revenda,
+   as taxas e uma confirmação verificável do crédito. Não assumir que uma transferência para uma
+   conta bancária genérica se transforma automaticamente em saldo de revenda. A API para adicionar
+   fundos de clientes/sub-revendedores não é uma recarga do saldo contratado junto ao fornecedor.
+2. Homologar Payouts com credencial de teste e uma conta destinatária de teste. Para produção,
+   cadastrar a chave pública na equipe de Integrações do Mercado Pago; chave privada somente no host,
+   com permissão 600. Não usar a credencial real da cobrança em testes.
+3. Implementar o diário durável de remessas por pedido: congelar custo/taxas/destino/referência antes
+   do envio, impedir duplicação inclusive após expirar a idempotência do provedor e reconciliar
+   estados incertos antes de qualquer nova escrita. Persistir payout e transaction IDs.
+4. Revalidar o pagamento e a disponibilidade do dinheiro antes da remessa. Revalidar o domínio antes
+   do envio e antes do registro. Não iniciar registro até confirmar o crédito do fornecedor; tratar
+   falhas, pagamentos estornados e domínio indisponível sem confundir remessa com reembolso ao cliente.
+5. Confirmar recebedor, teto por operação, tratamento de taxas e prazos de recebimento antes de
+   autorizar transferências reais. Concluir a homologação externa antes de habilitar vendas.
+
+Não é necessário depositar saldo real para preparar e executar a homologação em sandbox. Aprovação de
+pagamento, disponibilidade do dinheiro, conclusão da transferência e crédito na revenda são etapas
+distintas, com confirmações próprias.
+
+Referências: https://www.mercadopago.com.br/developers/pt/docs/payouts/overview,
+https://www.mercadopago.com.br/developers/pt/docs/payouts/integration-test e
+https://www.mercadopago.com.br/developers/pt/docs/payouts/go-to-production.
 
