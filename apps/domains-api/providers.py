@@ -3,6 +3,7 @@ import hashlib
 import hmac
 import json
 import secrets
+import string
 import time
 from datetime import datetime, timezone, timedelta
 from decimal import Decimal
@@ -51,8 +52,10 @@ class Registrar:
         return result
 
     def customer(self, contact, email):
+        # ResellerClub accepts 9–16 characters and requires all four character classes.
+        password = ''.join(secrets.choice(string.ascii_letters + string.digits) for _ in range(12)) + 'Aa1!'
         return str(self.call('customers/v2/signup', {
-            **self.contact_fields(contact), 'username': email, 'passwd': secrets.token_urlsafe(24) + 'Aa1!',
+            **self.contact_fields(contact), 'username': email, 'passwd': password,
             'lang-pref': 'pt', 'accept-policy': 'true', 'marketing-email-consent': 'false'}, 'POST'))
 
     @staticmethod
@@ -145,3 +148,4 @@ class Payments:
                     and payment.get('metadata', {}).get('domain_order_id') == order['id'])
         except (KeyError, ValueError, TypeError):
             return False
+

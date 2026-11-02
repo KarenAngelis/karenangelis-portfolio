@@ -8,8 +8,8 @@ reembolso de falhas explícitas e painel privado dos pedidos. Links na home e em
 
 **Vendas desativadas por padrão.** Não existem credenciais ou preços comerciais aprovados neste repositório.
 A página não inventa disponibilidade e não permite pagar enquanto faltar configuração.
-Integrações foram verificadas com testes locais e respostas simuladas; a homologação com contas reais
-dos fornecedores ainda precisa ocorrer. A página e a API foram publicadas na VPS em 30/10/2026, com vendas desativadas. O checkout usado é o **Checkout Pro**:
+Integrações têm testes locais com respostas simuladas e verificações externas parciais; o fluxo completo
+de pagamento e registro ainda precisa ser homologado. A página e a API foram publicadas na VPS em 30/10/2026, com vendas desativadas. O checkout usado é o **Checkout Pro**:
 o cliente sai temporariamente para a página segura do Mercado Pago e retorna à loja. Não é checkout
 transparente embutido. Até 5 parcelas são solicitadas; elegibilidade, parcela mínima e juros dependem
 do meio de pagamento. Não anunciamos “5x sem juros”.
@@ -156,6 +156,7 @@ esses testes não substituem homologação com as contas de fornecedor.
 - https://manage.resellerclub.com/kb/answer/764 — disponibilidade e premium/trademark.
 - https://manage.resellerclub.com/kb/answer/790 — contatos e requisitos .br.
 - https://cp.resellerclub.com/kb/answer/804 — cliente.
+- https://cp.resellerclub.com/kb/node/91 — política de senha do cliente (9–16 caracteres).
 - https://manage.resellerclub.com/kb/answer/752 — registro.
 - https://manage.resellerclub.com/kb/answer/770 — confirmação e titularidade.
 - https://cp.resellerclub.com/kb/answer/753 — autenticação e endpoints HTTP.
@@ -172,3 +173,19 @@ Atualização seletiva em `/opt/karenangelis-portfolio`, preservando o mount loc
 HTTPS: 200 em `/`, `/empresas/`, `/dominios/`, `/meet-italiano/`, `/api/profile` e `/api/stats/health`. `/api/domains/health` retornou `status: ok`. Configuração publicada: `search_ready=false`, `sales_ready=false`, `email_ready=false`, Google sem client ID; ainda não há `.env.domains` com fornecedores configurados. Nenhum pagamento ou registro real foi executado.
 
 A rede corporativa WEG bloqueou a abertura no navegador conectado por reputação não verificada. Conferência visual ficou pendente; nenhum bloqueio de rede foi contornado.
+
+## Configuração de 02/11/2026
+
+Configuração privada dos fornecedores e SMTP aplicada na VPS. Busca real de disponibilidade e preços
+verificada no navegador; envio de e-mail aceito pelo SMTP. A configuração de processamento está completa,
+mas `DOMAINS_SALES_ENABLED=false` permanece até concluir a preparação operacional e a homologação.
+Google OAuth e `.com.br` ainda não estão habilitados; cadastro com e-mail e senha está disponível.
+
+Uma preferência de Checkout Pro foi criada em sandbox pelo adaptador real. A página exibiu o valor
+esperado e opções de 1 a 5 parcelas. Nenhum pagamento ou registro real foi realizado; isso não valida
+o ciclo completo de webhook, registro, confirmação e reembolso externo.
+
+Corrigida a senha automática do cadastro na registradora para respeitar a política de 9–16 caracteres,
+com maiúscula, minúscula, número e símbolo permitido. Um teste de regressão reproduziu a falha anterior;
+os 33 testes da API passaram após a correção. Esses testes usam fornecedores simulados.
+
