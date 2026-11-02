@@ -206,6 +206,13 @@ O modo padrão é `disabled`, o limite é zero e transferências reais exigem co
 **Este módulo não está conectado ao checkout nem ao worker e não foi publicado na VPS.** Não representa
 uma recarga automática funcional. Os 12 novos testes são simulados; não houve transferência externa.
 
+Teste externo posterior: a credencial de sandbox foi confirmada em `/users/me` como conta de teste.
+O `POST /v1/payouts`, com headers de sandbox e dados do exemplo oficial, retornou HTTP 403; nenhum
+payout foi criado. A liberação/permissão de Payouts para essa aplicação ainda precisa ser esclarecida
+com o Mercado Pago. O código já passou nas verificações de CI, mas isso não substitui a homologação.
+O par Ed25519 foi preparado no host, fora do repositório e com chave privada protegida; a chave pública
+ainda não foi cadastrada junto ao Mercado Pago.
+
 Antes de conectar ou habilitar essa etapa:
 
 1. Obter da ResellerClub um destino oficial, a forma de vincular cada pagamento à conta de revenda,
