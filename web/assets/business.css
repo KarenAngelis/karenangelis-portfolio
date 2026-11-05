@@ -14,14 +14,52 @@
 @media(prefers-reduced-motion:reduce){.business-entry:hover{transform:none}}
 
 /* Black Friday uses the existing commercial card and WhatsApp buttons. */
-.black-friday-link{
-  display:inline-block;
-  margin-top:20px;
-  color:#f9dc91;
+.black-friday-banner{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:8px 18px;
+  padding:10px 16px;
+  border-block-end:2px solid #f34e59;
+  background:#080809;
+  color:#fff;
+  text-align:center;
+  line-height:1.4;
   font-size:14px;
-  line-height:1.6;
+}
+.black-friday-banner-label{
+  padding:4px 9px;
+  border-radius:4px;
+  background:#ff5660;
+  color:#080809;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.black-friday-banner-offer{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:2px 12px;
+}
+.black-friday-banner-action{
+  color:#ff8e95;
+  font-weight:700;
   text-decoration:underline;
-  text-underline-offset:4px;
+  text-underline-offset:3px;
+}
+.black-friday-banner:hover .black-friday-banner-action{
+  color:#fff;
+}
+.black-friday-banner:focus-visible{
+  outline-offset:-4px;
+}
+.offer-previous-price{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:14px;
 }
 .black-friday-entry .eyebrow,.black-friday-offer .offer-label{
   color:#f9dc91;

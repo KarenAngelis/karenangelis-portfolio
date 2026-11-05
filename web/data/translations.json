@@ -5393,5 +5393,20 @@
     "en-US": "See the Black Friday offer",
     "it-IT": "Scopri l’offerta Black Friday",
     "pt-PT": "Ver a oferta Black Friday"
+  },
+  "60% de desconto no preço inicial": {
+    "en-US": "60% off the starting price",
+    "it-IT": "60% di sconto sul prezzo di partenza",
+    "pt-PT": "60% de desconto no preço inicial"
+  },
+  "Site Essencial a partir de R$ 200": {
+    "en-US": "Essential Website from R$ 200",
+    "it-IT": "Sito Essenziale a partire da R$ 200",
+    "pt-PT": "Site Essencial a partir de R$ 200"
+  },
+  "Ver oferta": {
+    "en-US": "See offer",
+    "it-IT": "Scopri l’offerta",
+    "pt-PT": "Ver oferta"
   }
 }
