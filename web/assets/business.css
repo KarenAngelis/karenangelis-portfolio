@@ -12,3 +12,27 @@
 @media(max-width:760px){.sales-hero{grid-template-columns:1fr;padding-top:48px;gap:38px}.sales-hero h1{max-width:660px}.offer-card{max-width:550px;width:100%}.package-layout,.custom-offer{grid-template-columns:1fr;gap:30px}.sales-projects{grid-template-columns:1fr}.sales-project-image{height:180px}.sales-steps{grid-template-columns:1fr;gap:15px}.sales-section{padding-block:52px}.business-entry-grid{grid-template-columns:1fr}.business-entry-offer{justify-items:start}.business-entry{padding:26px}.business-page .nav{align-items:flex-start}.business-page .nav nav{gap:12px 18px;font-size:12px}.custom-offer{padding:26px}.sales-hero .intro{font-size:16px}}
 @media(max-width:420px){.sales-hero h1{font-size:42px;letter-spacing:-2px}.offer-card{padding:26px}.business-entry .button{white-space:normal}.business-entry h2{font-size:29px}.sales-actions{align-items:stretch;flex-direction:column}.sales-secondary{text-align:center}.business-page .nav nav{max-width:220px}}
 @media(prefers-reduced-motion:reduce){.business-entry:hover{transform:none}}
+
+/* Black Friday uses the existing commercial card and WhatsApp buttons. */
+.black-friday-link{
+  display:inline-block;
+  margin-top:20px;
+  color:#f9dc91;
+  font-size:14px;
+  line-height:1.6;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.black-friday-entry .eyebrow,.black-friday-offer .offer-label{
+  color:#f9dc91;
+}
+.black-friday-entry .business-entry-offer > div{
+  display:grid;
+  gap:4px;
+}
+.black-friday-offer .offer-label{
+  border-color:#887340;
+}
+.black-friday-offer .offer-summary{
+  margin-top:16px;
+}
