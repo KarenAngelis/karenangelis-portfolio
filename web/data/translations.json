@@ -5413,5 +5413,30 @@
     "en-US": "Website design",
     "it-IT": "Creazione siti web",
     "pt-PT": "Criação de sites"
+  },
+  "DESENVOLVIMENTO WEB": {
+    "en-US": "WEB DEVELOPMENT",
+    "it-IT": "SVILUPPO WEB",
+    "pt-PT": "DESENVOLVIMENTO WEB"
+  },
+  "Do front end ao back end.": {
+    "en-US": "From front end to back end.",
+    "it-IT": "Dal front end al back end.",
+    "pt-PT": "Do front end ao back end."
+  },
+  "Desenvolvimento front end": {
+    "en-US": "Front end development",
+    "it-IT": "Sviluppo front end",
+    "pt-PT": "Desenvolvimento front end"
+  },
+  "Desenvolvimento back end": {
+    "en-US": "Back end development",
+    "it-IT": "Sviluppo back end",
+    "pt-PT": "Desenvolvimento back end"
+  },
+  "Desenvolvimento full stack": {
+    "en-US": "Full stack development",
+    "it-IT": "Sviluppo full stack",
+    "pt-PT": "Desenvolvimento full stack"
   }
 }
